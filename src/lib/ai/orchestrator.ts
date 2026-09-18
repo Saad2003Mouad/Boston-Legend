@@ -312,7 +312,7 @@ export async function orchestrateAI(role: "customer" | "admin", messages: ChatMe
     if (firstStep && firstStep.finishReason === "tool-calls") {
       const generatedMessages = firstStep.response.messages;
 
-      const toolResults = firstStep.content
+      const toolResults = (firstStep as any).content
         .filter((c: any) => c.type === "tool-result")
         .map((c: any) => ({
           toolName: c.toolName,
@@ -320,7 +320,7 @@ export async function orchestrateAI(role: "customer" | "admin", messages: ChatMe
         }));
 
       const dataContext = toolResults
-        .map(tr => `[${tr.toolName} LIVE DATA]\n${JSON.stringify(tr.result, null, 2)}`)
+        .map((tr: any) => `[${tr.toolName} LIVE DATA]\n${JSON.stringify(tr.result, null, 2)}`)
         .join("\n\n");
 
       const step2System = `${systemPrompt}
@@ -383,7 +383,7 @@ ${dataContext}`;
         messages: updatedMessages as any,
       });
 
-      const toolCalls = firstStep.content.filter((c: any) => c.type === "tool-call") || [];
+      const toolCalls = (firstStep as any).content.filter((c: any) => c.type === "tool-call") || [];
 
       return {
         intent: "TOOL_EXECUTION",

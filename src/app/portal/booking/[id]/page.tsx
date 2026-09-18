@@ -219,7 +219,7 @@ export default async function BookingDetailPage({ params }: { params: Promise<{ 
                   <div className="mt-4 pt-4 border-t border-gray-100">
                     <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Additional Stops</p>
                     <div className="space-y-2">
-                      {booking.stops.map((stop, i) => (
+                      {booking.stops.map((stop: any, i: number) => (
                         <div key={stop.id} className="flex items-start gap-2 text-sm">
                           <span className="w-5 h-5 bg-coral/10 text-coral rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">
                             {i + 1}
