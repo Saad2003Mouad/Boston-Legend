@@ -123,7 +123,7 @@ export async function POST(req: Request) {
         startTime: time,
         durationMins,
         address,
-        city,
+        city: city || "",
         zip: zip || "",
         guests: totalGuests,
         eventType,
