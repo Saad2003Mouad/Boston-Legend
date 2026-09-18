@@ -134,7 +134,7 @@ export default function PackagesClient({
 
                 {/* Features list */}
                 <ul className="space-y-4 mb-12">
-                  {pkg.features.map((feature, idx) => (
+                  {pkg.features.map((feature: string, idx: number) => (
                     <li key={idx} className="flex items-center gap-4">
                       <div className="w-8 h-8 rounded-full bg-coral/20 border border-coral/30 flex items-center justify-center text-coral flex-shrink-0">
                         <Check size={15} strokeWidth={3} />
