@@ -295,7 +295,7 @@ function PackageGrid({ packages, accentColor }: { packages: any[]; accentColor: 
             <div className="p-5 sm:p-8 flex flex-col flex-grow bg-white">
               {/* Top 2 features always visible */}
               <ul className="space-y-3 mb-4 flex-grow">
-                {pkg.features.slice(0, 2).map((f, fi) => (
+                {pkg.features.slice(0, 2).map((f: string, fi: number) => (
                   <li key={fi} className="flex items-start gap-3">
                     <div className={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 ${checkClass}`}>
                       <Check size={11} strokeWidth={4} />
@@ -306,7 +306,7 @@ function PackageGrid({ packages, accentColor }: { packages: any[]; accentColor: 
 
                 {/* Expandable additional features */}
                 <AnimatePresence>
-                  {isOpen && pkg.features.slice(2).map((f, fi) => (
+                  {isOpen && pkg.features.slice(2).map((f: string, fi: number) => (
                     <motion.li key={fi + 2}
                       initial={{ opacity: 0, height: 0 }}
                       animate={{ opacity: 1, height: "auto" }}
