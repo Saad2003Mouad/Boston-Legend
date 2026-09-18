@@ -1,0 +1,411 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model User {
+  id                String     @id @default(cuid())
+  email             String     @unique
+  passwordHash      String
+  role              String     @default("DRIVER")
+  name              String
+  createdAt         DateTime   @default(now())
+  permissions       String     @default("[]") // JSON-encoded array; restored to String[] on Supabase migration
+  active            Boolean    @default(true)
+  deletedAt         DateTime?
+  auditLogs         AuditLog[]
+  driver            Driver?
+  assignedInquiries Inquiry[]
+  assignedTasks     Task[]
+  posts             Post[]
+  media             Media[]
+  conversations     Conversation[]
+  pushSubscriptions PushSubscription[]
+}
+
+model Vehicle {
+  id                 String              @id @default(cuid())
+  code               String              @unique
+  name               String
+  type               String
+  status             String              @default("AVAILABLE")
+  deletedAt          DateTime?
+  availabilityBlocks AvailabilityBlock[]
+  bookings           Booking[]
+  assignments        VehicleAssignment[]
+}
+
+model Driver {
+  id          String              @id @default(cuid())
+  userId      String              @unique
+  displayName String
+  phone       String?
+  active      Boolean             @default(true)
+  user        User                @relation(fields: [userId], references: [id])
+  assignments VehicleAssignment[]
+}
+
+model Package {
+  id              String    @id @default(cuid())
+  name            String
+  slug            String    @unique
+  serviceType     String
+  description     String?
+  servings        Int
+  price           Float
+  extraPiecePrice Float
+  imageUrl        String?
+  badge           String?
+  features        String?
+  isActive        Boolean   @default(true)
+  sortOrder       Int       @default(0)
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  extraGuestPrice Float     @default(5)
+  durationMins    Int       @default(60)
+  deletedAt       DateTime?
+  bookings        Booking[]
+}
+
+model Customer {
+  id           String    @id @default(cuid())
+  firstName    String
+  lastName     String
+  email        String    @unique
+  passwordHash String?
+  phone        String
+  address      String?
+  city         String?
+  zip          String?
+  createdAt    DateTime  @default(now())
+  deletedAt    DateTime?
+  bookings     Booking[]
+  inquiries    Inquiry[]
+  tasks        Task[]
+}
+
+model Booking {
+  id                 String             @id @default(cuid())
+  bookingNumber      String             @unique
+  customerId         String
+  packageId          String?
+  vehicleId          String?
+  status             String             @default("PENDING")
+  eventDate          DateTime
+  startTime          String
+  durationMins       Int
+  address            String
+  city               String
+  zip                String
+  guests             Int
+  eventType          String
+  notes              String?
+  totalAmount        Float              @default(0)
+  internalNote       String?
+  createdAt          DateTime           @default(now())
+  updatedAt          DateTime           @updatedAt
+  additionalStops    Int                @default(0)
+  additionalStopsFee Float              @default(0)
+  googleEventId      String?
+  auditLogs          AuditLog[]
+  customer           Customer           @relation(fields: [customerId], references: [id])
+  package            Package?           @relation(fields: [packageId], references: [id])
+  vehicle            Vehicle?           @relation(fields: [vehicleId], references: [id])
+  items              BookingItem[]
+  stops              BookingStop[]
+  inquiries          Inquiry[]
+  payments           Payment[]
+  quote              Quote?
+  tasks              Task[]
+  assignment         VehicleAssignment?
+
+  @@index([status])
+  @@index([eventDate])
+  @@index([customerId])
+}
+
+model BookingItem {
+  id          String  @id @default(cuid())
+  bookingId   String
+  lineType    String
+  description String
+  quantity    Int     @default(1)
+  unitPrice   Float
+  totalPrice  Float
+  booking     Booking @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+}
+
+model BookingStop {
+  id        String   @id @default(cuid())
+  bookingId String
+  stopOrder Int
+  label     String?
+  street    String
+  city      String
+  state     String   @default("MA")
+  zipCode   String
+  latitude  Float?
+  longitude Float?
+  notes     String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  booking   Booking  @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+
+  @@index([bookingId])
+  @@index([zipCode])
+}
+
+model Quote {
+  id            String   @id @default(cuid())
+  bookingId     String   @unique
+  basePrice     Float
+  distanceMiles Float    @default(0)
+  travelFee     Float    @default(0)
+  overtimeFee   Float    @default(0)
+  totalAmount   Float
+  snapshotJson  String
+  version       Int      @default(1)
+  createdAt     DateTime @default(now())
+  booking       Booking  @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+}
+
+model AvailabilityBlock {
+  id        String   @id @default(cuid())
+  vehicleId String
+  blockType String
+  startsAt  DateTime
+  endsAt    DateTime
+  reason    String?
+  vehicle   Vehicle  @relation(fields: [vehicleId], references: [id], onDelete: Cascade)
+}
+
+model VehicleAssignment {
+  id         String   @id @default(cuid())
+  bookingId  String   @unique
+  vehicleId  String
+  driverId   String?
+  assignedAt DateTime @default(now())
+  jobStatus  String   @default("PENDING")
+  driverNote String?
+  booking    Booking  @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+  driver     Driver?  @relation(fields: [driverId], references: [id])
+  vehicle    Vehicle  @relation(fields: [vehicleId], references: [id])
+}
+
+model Payment {
+  id             String   @id @default(cuid())
+  bookingId      String
+  gateway        String   @default("STRIPE")
+  intentId       String?  @unique
+  amount         Float
+  refundedAmount Float    @default(0)
+  status         String
+  createdAt      DateTime @default(now())
+  booking        Booking  @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+}
+
+model Inquiry {
+  id           String    @id @default(cuid())
+  name         String
+  email        String
+  phone        String?
+  eventType    String?
+  eventDate    DateTime?
+  guestCount   Int?
+  notes        String?
+  status       String    @default("NEW")
+  createdAt    DateTime  @default(now())
+  assignedToId String?
+  internalNote String?
+  pageUrl      String?
+  priority     String    @default("MEDIUM")
+  source       String    @default("CHAT_WIDGET")
+  bookingId    String?
+  customerId   String?
+  assignedTo   User?     @relation(fields: [assignedToId], references: [id])
+  booking      Booking?  @relation(fields: [bookingId], references: [id])
+  customer     Customer? @relation(fields: [customerId], references: [id])
+  tasks        Task[]
+}
+
+model AssistantMessage {
+  id        String   @id @default(cuid())
+  sessionId String
+  role      String
+  content   String
+  createdAt DateTime @default(now())
+}
+
+model Task {
+  id           String    @id @default(cuid())
+  title        String
+  description  String?
+  dueDate      DateTime?
+  priority     String    @default("MEDIUM")
+  status       String    @default("TODO")
+  createdAt    DateTime  @default(now())
+  assignedToId String?
+  bookingId    String?
+  customerId   String?
+  inquiryId    String?
+  assignedTo   User?     @relation(fields: [assignedToId], references: [id])
+  booking      Booking?  @relation(fields: [bookingId], references: [id])
+  customer     Customer? @relation(fields: [customerId], references: [id])
+  inquiry      Inquiry?  @relation(fields: [inquiryId], references: [id])
+}
+
+model AuditLog {
+  id            String   @id @default(cuid())
+  entityType    String
+  entityId      String
+  action        String
+  actorId       String?
+  userRole      String?  // The role of the user (e.g. CUSTOMER, ADMIN)
+  aiType        String?  // e.g. CUSTOMER_AI, ADMIN_AI
+  aiProvider    String?  // e.g. openai, openrouter
+  aiModel       String?  // e.g. gpt-4o
+  previousValue String?  // JSON string
+  newValue      String?  // JSON string
+  result        String?  // e.g. SUCCESS, FAILED
+  errors        String?  // JSON string of errors
+  requestId     String?
+  sessionId     String?
+  ipAddress     String?
+  metadataJson  String?  // Additional arbitrary data
+  createdAt     DateTime @default(now())
+  bookingId     String?
+  user          User?    @relation(fields: [actorId], references: [id])
+  booking       Booking? @relation(fields: [bookingId], references: [id])
+
+  @@index([entityType, entityId])
+  @@index([createdAt])
+}
+
+model Setting {
+  key   String @id
+  value String
+}
+
+model OtpCode {
+  id          String    @id @default(cuid())
+  email       String
+  code        String
+  expiresAt   DateTime
+  verified    Boolean   @default(false)
+  createdAt   DateTime  @default(now())
+  attempts    Int       @default(0)
+  lockedUntil DateTime?
+  purpose     String    @default("BOOKING")
+
+  @@index([email, purpose])
+}
+
+model ServiceZipCode {
+  id        String   @id @default(cuid())
+  zip       String   @unique
+  city      String
+  county    String?
+  isActive  Boolean  @default(true)
+  notes     String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model StaffInvite {
+  id          String   @id @default(cuid())
+  email       String   @unique
+  role        String   @default("SUPPORT")
+  token       String   @unique
+  invitedById String?
+  accepted    Boolean  @default(false)
+  expiresAt   DateTime
+  createdAt   DateTime @default(now())
+}
+
+model Media {
+  id           String   @id @default(cuid())
+  url          String
+  key          String   @unique
+  filename     String
+  mimeType     String
+  size         Int
+  width        Int?
+  height       Int?
+  altText      String?
+  uploadedById String?
+  createdAt    DateTime @default(now())
+  
+  uploadedBy   User?    @relation(fields: [uploadedById], references: [id])
+}
+
+model Category {
+  id          String   @id @default(cuid())
+  name        String
+  slug        String   @unique
+  description String?
+  createdAt   DateTime @default(now())
+  posts       Post[]
+}
+
+model Post {
+  id            String    @id @default(cuid())
+  title         String
+  slug          String    @unique
+  content       String    // Markdown or HTML
+  excerpt       String?
+  featuredImage String?
+  seoTitle      String?
+  seoDesc       String?
+  status        String    @default("DRAFT") // DRAFT, PUBLISHED
+  categoryId    String?
+  authorId      String?
+  publishedAt   DateTime?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  deletedAt     DateTime?
+
+  category      Category? @relation(fields: [categoryId], references: [id])
+  author        User?     @relation(fields: [authorId], references: [id])
+
+  @@index([status, publishedAt])
+}
+
+model Conversation {
+  id        String    @id @default(cuid())
+  title     String?
+  userId    String
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  messages  Message[]
+}
+
+model Message {
+  id             String       @id @default(cuid())
+  conversationId String
+  role           String       // "user" or "assistant"
+  content        String
+  createdAt      DateTime     @default(now())
+
+  conversation   Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+
+  @@index([conversationId])
+}
+
+model PushSubscription {
+  id        String   @id @default(cuid())
+  userId    String
+  endpoint  String   @unique
+  p256dh    String
+  auth      String
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
