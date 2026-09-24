@@ -6,7 +6,7 @@ export const DEFAULT_SETTINGS = {
   companyAddress: "38 Woodland Rd, Georgetown, MA 01833",
   companyPhone: "617-999-3803",
   companyEmail: "info@bostonlegendicecreamtruck.com",
-  logoUrl: "/images/logo-dark.png",
+  logoUrl: "/images/logo.png",
   faviconUrl: "/favicon.ico",
   businessHours: "Available 24 hours by reservation, 7 days a week",
   serviceRadius: "10",

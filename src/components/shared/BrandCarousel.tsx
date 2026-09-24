@@ -3,12 +3,12 @@
 import Image from "next/image";
 
 const brands = [
-  { name: "Good Humor", logo: "/images/brands/boston-legend-ice-cream-truck-good-humor.png" },
-  { name: "Richie's Italian Ice", logo: "/images/brands/boston-legend-ice-cream-truck-richies-italian-ice.png" },
-  { name: "Popsicle", logo: "/images/brands/boston-legend-ice-cream-truck-popsicle.png" },
-  { name: "Blue Bunny", logo: "/images/brands/boston-legend-ice-cream-truck-blue-bunny.png" },
-  { name: "Hood", logo: "/images/brands/boston-legend-ice-cream-truck-hood.png" },
-  { name: "Klondike", logo: "/images/brands/boston-legend-ice-cream-truck-klondike.png" }
+  { name: "Good Humor", logo: "/images/brands/american-legend-ice-cream-truck-good-humor.png" },
+  { name: "Richie's Italian Ice", logo: "/images/brands/american-legend-ice-cream-truck-richies-italian-ice.png" },
+  { name: "Popsicle", logo: "/images/brands/american-legend-ice-cream-truck-popsicle.png" },
+  { name: "Blue Bunny", logo: "/images/brands/american-legend-ice-cream-truck-blue-bunny.png" },
+  { name: "Hood", logo: "/images/brands/american-legend-ice-cream-truck-hood.png" },
+  { name: "Klondike", logo: "/images/brands/american-legend-ice-cream-truck-klondike.png" }
 ];
 
 import MeltingDrip from "@/components/shared/MeltingDrip";

@@ -13,7 +13,7 @@ type SEOProps = {
 export function constructMetadata({
   title,
   description,
-  image = "/images/Cover Image.png",
+  image = "/images/cover_image.png",
   url = "",
   noIndex = false,
   keywords = [],

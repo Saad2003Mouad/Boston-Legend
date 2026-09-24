@@ -9,52 +9,63 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // ─── Core Brand Palette ───────────────────────────────────
-        // Artisanal Dessert — STRICTLY ZERO blue/navy
-        cream:      "#FFFBF5",
-        sand:       "#F5EDE3",
-
-        // Rich Dark Belgian Chocolate (replaces navy)
-        navy:       "#1A1009",
-        "navy-mid": "#2C1A10",
-        cocoa: {
-          DEFAULT: "#1A1009",
-          mid:     "#2C1A10",
-          light:   "#4A3022",
+        // ─── American Legend Brand Palette ──────────────────────
+        // Primary Palette
+        navy: {
+          DEFAULT: "#071B3A", // Deep Navy
+          mid:     "#0D2B57", // Mid Navy
+          light:   "#123E73", // Heritage Blue
         },
-        chocolate:  "#2C1A10",
-
-        // Strawberry / Raspberry Glaze
-        coral: {
-          DEFAULT: "#FF4E74",
-          dark:    "#E63860",
-          light:   "#FF7B99",
+        red: {
+          DEFAULT: "#C9232D", // American Red
+          dark:    "#A31B24", // Dark Red
+          light:   "#E03040", // Light Red
         },
-        strawberry: "#FF4E74",
 
-        // Caramel / Golden Waffle Cone
+        // Cream & Warm Whites
+        cream:       "#FFF4D6", // Vanilla Cream
+        "warm-white": "#FFFDF8", // Warm White
+        parchment:   "#F5EAC8", // Parchment
+        ivory:       "#FAF6EC", // Ivory
+        white:       "#FFFFFF",
+
+        // Gold Accents
         gold: {
-          DEFAULT: "#D98A2C",
-          light:   "#F7D7A0",
-          warm:    "#E5A84B",
+          DEFAULT: "#C99A3D", // Antique Gold
+          light:   "#E8C06A", // Light Gold
+          dark:    "#A67C28", // Dark Gold
         },
-        caramel:    "#D98A2C",
-        waffle:     "#E5A84B",
 
-        // Pistachio Cream Mint
+        // Neutrals
+        charcoal:    "#171717",
+        gray: {
+          700: "#2D2D2D",
+          500: "#6B6B6B",
+          300: "#BDBDBD",
+          100: "#F5F5F0",
+        },
+
+        // Semantic Colors
+        success:     "#2A7A4B",
+        error:       "#C9232D",
+        warning:     "#C99A3D",
+
+        // Aliases for backward compatibility in codebase
+        coral: {
+          DEFAULT: "#C9232D",
+          dark:    "#A31B24",
+          light:   "#E03040",
+        },
         mint: {
-          DEFAULT: "#2E9365",
-          light:   "#E7F6EF",
+          DEFAULT: "#2A7A4B",
+          light:   "#E8F5EE",
         },
-        pistachio:  "#2E9365",
-
-        // Neutrals / Espresso
-        charcoal:   "#241812",
-
-        // Status
-        success:    "#2E9365",
-        error:      "#E63860",
-        warning:    "#D98A2C",
+        chocolate: "#171717",
+        cocoa: {
+          DEFAULT: "#171717",
+          mid: "#2D2D2D",
+          light: "#6B6B6B",
+        }
       },
 
       fontFamily: {

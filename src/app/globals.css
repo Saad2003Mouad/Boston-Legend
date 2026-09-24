@@ -3,61 +3,69 @@
 @tailwind utilities;
 
 :root {
-  /* Colors - Warm Artisanal Dessert Palette (Strictly ZERO Navy/Blue) */
-  --color-cream: #FFFBF5;
-  --color-sand: #F5EDE3;
-  --color-white: #FFFFFF;
-  
-  /* Rich Dark Belgian Chocolate & Truffle (Replaces all previous navy) */
-  --color-navy: #1A1009;
-  --color-navy-mid: #2C1A10;
-  --color-cocoa: #1A1009;
-  --color-chocolate: #2C1A10;
-  --color-chocolate-light: #4A3022;
+  /* ═══════════════════════════════════════════════════
+     AMERICAN LEGEND — DESIGN SYSTEM
+     Classic American Heritage × Premium Ice Cream
+  ═══════════════════════════════════════════════════ */
 
-  /* Gourmet Strawberry / Raspberry Cream */
-  --color-coral: #FF4E74;
-  --color-coral-dark: #E63860;
-  --color-coral-light: #FF7B99;
-  --color-strawberry: #FF4E74;
-  
-  /* Caramel & Golden Waffle Cone */
-  --color-gold: #D98A2C;
-  --color-gold-light: #F7D7A0;
-  --color-caramel: #D98A2C;
-  --color-waffle: #E5A84B;
-  
-  /* Pistachio Cream Mint */
-  --color-mint: #2E9365;
-  --color-mint-light: #E7F6EF;
-  --color-pistachio: #2E9365;
+  /* ── Primary Palette ─────────────────────────────── */
+  --color-navy:        #071B3A;   /* Deep Navy — primary bg, headers */
+  --color-navy-mid:    #0D2B57;   /* Mid Navy — hover states */
+  --color-navy-light:  #123E73;   /* Heritage Blue — secondary elements */
+  --color-red:         #C9232D;   /* American Red — accent, CTAs */
+  --color-red-dark:    #A31B24;   /* Dark Red — hover state */
+  --color-red-light:   #E03040;   /* Light Red — highlights */
 
-  /* Rich Espresso Charcoal & Neutrals */
-  --color-charcoal: #241812;
-  --color-gray-600: #574840;
-  --color-gray-400: #A89B92;
-  --color-gray-100: #F7EFE8;
+  /* ── Cream & Warm Whites ─────────────────────────── */
+  --color-cream:       #FFF4D6;   /* Cream / Vanilla — primary light bg */
+  --color-warm-white:  #FFFDF8;   /* Warm White — card backgrounds */
+  --color-parchment:   #F5EAC8;   /* Parchment — subtle texture bg */
+  --color-ivory:       #FAF6EC;   /* Ivory — section alternates */
 
-  --color-success: #2E9365;
-  --color-error: #E63860;
-  --color-warning: #D98A2C;
+  /* ── Gold Accents ────────────────────────────────── */
+  --color-gold:        #C99A3D;   /* Antique Gold — premium details */
+  --color-gold-light:  #E8C06A;   /* Light Gold — icon highlights */
+  --color-gold-dark:   #A67C28;   /* Dark Gold — borders, dividers */
 
-  /* Typography */
-  --font-display: var(--font-playfair);
-  --font-sans: var(--font-outfit);
+  /* ── Neutrals & Text ─────────────────────────────── */
+  --color-charcoal:    #171717;   /* Dark Charcoal — body text */
+  --color-gray-700:    #2D2D2D;   /* Dark gray — secondary text */
+  --color-gray-500:    #6B6B6B;   /* Mid gray — muted text */
+  --color-gray-300:    #BDBDBD;   /* Light gray — borders */
+  --color-gray-100:    #F5F5F0;   /* Near-white — subtle bg */
+  --color-white:       #FFFFFF;
 
-  /* Warm Dessert Shadows */
-  --shadow-xs: 0 1px 3px rgba(26, 16, 9, 0.04);
-  --shadow-sm: 0 2px 8px rgba(26, 16, 9, 0.06);
-  --shadow-md: 0 8px 24px rgba(26, 16, 9, 0.08);
-  --shadow-lg: 0 16px 48px rgba(26, 16, 9, 0.10);
-  --shadow-xl: 0 24px 64px rgba(26, 16, 9, 0.12);
-  --shadow-2xl: 0 32px 80px rgba(26, 16, 9, 0.16);
-  --shadow-float: 0 20px 40px -15px rgba(26, 16, 9, 0.06);
-  --shadow-coral: 0 8px 32px rgba(255, 78, 116, 0.35);
-  --shadow-coral-lg: 0 16px 48px rgba(255, 78, 116, 0.40);
-  --shadow-gold: 0 4px 20px rgba(217, 138, 44, 0.30);
-  --shadow-drip: 0 12px 28px -6px rgba(26, 16, 9, 0.18);
+  /* ── Semantic Colors ─────────────────────────────── */
+  --color-success:     #2A7A4B;
+  --color-error:       #C9232D;
+  --color-warning:     #C99A3D;
+
+  /* ── Aliases for backward compatibility ──────────── */
+  --color-coral:       var(--color-red);
+  --color-coral-dark:  var(--color-red-dark);
+  --color-coral-light: var(--color-red-light);
+  --color-mint:        #2A7A4B;
+  --color-mint-light:  #E8F5EE;
+
+  /* ── Typography ──────────────────────────────────── */
+  --font-display: var(--font-playfair);  /* Heritage serif headlines */
+  --font-sans:    var(--font-outfit);    /* Clean sans-serif body */
+
+  /* ── Shadows (Navy-toned) ────────────────────────── */
+  --shadow-xs:    0 1px 3px  rgba(7, 27, 58, 0.06);
+  --shadow-sm:    0 2px 8px  rgba(7, 27, 58, 0.08);
+  --shadow-md:    0 8px 24px rgba(7, 27, 58, 0.10);
+  --shadow-lg:    0 16px 48px rgba(7, 27, 58, 0.12);
+  --shadow-xl:    0 24px 64px rgba(7, 27, 58, 0.14);
+  --shadow-2xl:   0 32px 80px rgba(7, 27, 58, 0.18);
+  --shadow-float: 0 20px 40px -15px rgba(7, 27, 58, 0.08);
+  --shadow-gold:  0 4px 20px rgba(201, 154, 61, 0.30);
+  --shadow-red:   0 8px 32px rgba(201, 35, 45, 0.25);
+  --shadow-navy:  0 8px 32px rgba(7, 27, 58, 0.30);
+  /* legacy aliases */
+  --shadow-coral:    var(--shadow-red);
+  --shadow-coral-lg: var(--shadow-red);
+  --shadow-drip:     0 12px 28px -6px rgba(7, 27, 58, 0.18);
 }
 
 @keyframes marquee {
@@ -94,7 +102,7 @@
 
 @layer base {
   :root {
-    --background: var(--color-cream);
+    --background: var(--color-warm-white);
     --foreground: var(--color-charcoal);
   }
 
@@ -127,17 +135,42 @@
   }
   
   .glass {
-    background: rgba(255, 251, 245, 0.88);
-    backdrop-filter: blur(20px) saturate(1.8);
-    -webkit-backdrop-filter: blur(20px) saturate(1.8);
-    border: 1px solid rgba(255, 255, 255, 0.7);
+    background: rgba(255, 253, 248, 0.90);
+    backdrop-filter: blur(20px) saturate(1.6);
+    -webkit-backdrop-filter: blur(20px) saturate(1.6);
+    border: 1px solid rgba(201, 154, 61, 0.18);
   }
 
   .glass-dark {
-    background: rgba(26, 16, 9, 0.85);
+    background: rgba(7, 27, 58, 0.88);
     backdrop-filter: blur(20px) saturate(1.5);
     -webkit-backdrop-filter: blur(20px) saturate(1.5);
-    border: 1px solid rgba(255, 245, 235, 0.12);
+    border: 1px solid rgba(201, 154, 61, 0.15);
+  }
+
+  /* ── Heritage Design Utilities ──────────────────── */
+  .heritage-border {
+    border: 1px solid var(--color-gold-dark);
+  }
+
+  .gold-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+  }
+
+  .navy-section {
+    background-color: var(--color-navy);
+    color: var(--color-cream);
+  }
+
+  .cream-section {
+    background-color: var(--color-cream);
+    color: var(--color-charcoal);
+  }
+
+  .ivory-section {
+    background-color: var(--color-ivory);
+    color: var(--color-charcoal);
   }
 
   .animation-delay-2000 {
@@ -194,7 +227,7 @@
 }
 
 .leaflet-control-zoom a:hover {
-  background-color: #FF4E74 !important;
+  background-color: var(--color-red) !important;
   color: white !important;
 }
 

@@ -115,7 +115,7 @@ export default function CityMapSection() {
           <div className="absolute top-0 left-0 w-full p-3 sm:p-4 md:p-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 z-20 pointer-events-none">
             <div className="flex items-center gap-2 text-white/40 text-[0.65rem] font-bold tracking-widest uppercase">
               <Navigation size={12} style={{ color: "#FF4E74" }} />
-              Live Boston Legend Route Network
+              Live American Legend Route Network
             </div>
             <div className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm shadow-sm">
               <span className="w-1.5 h-1.5 rounded-full animate-pulse bg-emerald-400" />
@@ -247,7 +247,7 @@ export default function CityMapSection() {
                           border: isBoston && !hoveredCity ? "none" : "1px solid rgba(255,78,116,0.3)",
                         }}
                       >
-                        {isBoston && !hoveredCity ? "Boston HQ" : city.name}
+                        {isBoston && !hoveredCity ? "Boston Area" : city.name}
                       </div>
                     )}
                   </Link>

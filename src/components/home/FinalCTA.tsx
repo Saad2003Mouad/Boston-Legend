@@ -76,7 +76,7 @@ export default function FinalCTA({ themeColor }: FinalCTAProps = {}) {
               className="font-sans text-[clamp(1.1rem,1.5vw,1.25rem)] leading-relaxed max-w-2xl mx-auto mb-12 font-medium"
               style={{ color: "rgba(255,251,245,0.9)" }}
             >
-              Don&apos;t settle for boring catering. Treat your guests to the legendary Boston ice cream truck experience they&apos;ll be talking about for months.
+              Don&apos;t settle for boring catering. Treat your guests to the legendary American Legend ice cream truck experience they&apos;ll be talking about for months.
             </p>
 
             {/* CTA Buttons */}

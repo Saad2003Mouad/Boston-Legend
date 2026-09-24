@@ -43,7 +43,7 @@ export default function ServicesMarquee({ theme = "light", limit }: { theme?: "l
               <span className="italic font-serif" style={{ color: "#FF4E74" }}>Every Massachusetts City.</span>
             </h2>
             <p className="font-sans text-[clamp(0.95rem,1.4vw,1.25rem)] leading-relaxed max-w-xl" style={{ color: "rgba(26,16,9,0.7)" }}>
-              From intimate backyard birthdays of 25 to massive 2,500-guest corporate festivals across Greater Boston. Whenever there&apos;s a reason to celebrate, Boston Legend brings the sweet memories.
+              From intimate backyard birthdays of 25 to massive 2,500-guest corporate festivals across Greater Boston. Whenever there&apos;s a reason to celebrate, American Legend brings the sweet memories.
             </p>
           </div>
 

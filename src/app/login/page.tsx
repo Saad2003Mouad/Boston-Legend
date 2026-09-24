@@ -140,7 +140,7 @@ export default function LoginPage() {
           {/* Logo */}
           <div className="w-32 h-32 mb-10">
             <Image
-              src="/images/logo-white.png"
+              src="/images/logo.png"
               alt="Boston Legend Ice Cream Truck"
               width={128}
               height={128}
@@ -175,7 +175,7 @@ export default function LoginPage() {
         <div className="lg:hidden flex flex-col items-center mb-8">
           <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-navy/10 shadow-lg mb-3 p-2 bg-white">
             <Image
-              src="/images/logo-dark.png"
+              src="/images/logo.png"
               alt="Boston Legend Ice Cream Truck"
               width={80}
               height={80}

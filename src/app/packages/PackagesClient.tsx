@@ -174,10 +174,10 @@ export default function PackagesClient({
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent z-10" />
                 {/* Bottom label */}
                 <div className="absolute bottom-6 left-6 z-20 flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-5 py-3">
-                  <Image src="/images/logo-dark.png" alt="Boston Legend Ice Cream Truck" width={36} height={36} className="rounded-full object-cover" />
+                  <Image src="/images/logo.png" alt="American Legend Ice Cream Truck" width={36} height={36} className="rounded-full object-cover" />
                   <div>
-                    <div className="text-white font-black text-sm leading-none">Boston Legend Ice Cream Truck</div>
-                    <div className="text-white/60 font-medium text-xs mt-0.5">Boston&apos;s Premier Event Service</div>
+                    <div className="text-white font-black text-sm leading-none">American Legend Ice Cream Truck</div>
+                    <div className="text-white/60 font-medium text-xs mt-0.5">Massachusetts&apos; Premier Event Service</div>
                   </div>
                 </div>
                 <div className="absolute inset-0 bg-navy/10 z-10 group-hover:bg-transparent transition-colors duration-500 pointer-events-none" />

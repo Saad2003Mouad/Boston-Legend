@@ -153,12 +153,12 @@ export default function LocationPicker({
             ]
           });
 
-          // HQ Marker for Boston Legend
-          const hqPosition = { lat: 42.3588, lng: -71.0638 };
+          // HQ Marker for American Legend
+          const hqPosition = { lat: 42.7351, lng: -70.9856 }; // Georgetown
           new gMaps.Marker({
             position: hqPosition,
             map: gMap,
-            title: "Boston Legend HQ (02108)",
+            title: "American Legend HQ (01833)",
             icon: {
               url: "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(`
                 <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
@@ -266,7 +266,7 @@ export default function LocationPicker({
           iconAnchor: [22, 22],
         });
 
-        L.marker(homeCenter, { icon: homeIcon }).addTo(map).bindTooltip("Boston Legend (02108)", { permanent: true, direction: "right" });
+        L.marker(homeCenter, { icon: homeIcon }).addTo(map).bindTooltip("American Legend (01833)", { permanent: true, direction: "right" });
 
         const marker = L.marker(defaultCenter, {
           icon: markerIcon,

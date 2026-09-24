@@ -45,7 +45,7 @@ export default function BlogSection({ posts = [] }: { posts?: any[] }) {
               <div className="relative h-64 overflow-hidden">
                 <Image
                   src={post.featuredImage || "/images/blog/starter-event.jpg"}
-                  alt={`${post.title} - Boston Legend Ice Cream Truck Massachusetts Blog`}
+                  alt={`${post.title} - American Legend Ice Cream Truck Massachusetts Blog`}
                   title={post.title}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"

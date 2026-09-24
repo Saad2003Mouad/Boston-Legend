@@ -33,7 +33,7 @@ const outfit = Outfit({
 export const metadata: Metadata = constructMetadata();
 
 export const viewport: Viewport = {
-  themeColor: "#FFFBF5",
+  themeColor: "#071B3A",
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
@@ -65,7 +65,7 @@ export default async function RootLayout({
 
     const jsonLd = {
       "@context": "https://schema.org",
-      "@type": "IceCreamShop",
+      "@type": "LocalBusiness",
       name: BUSINESS_CONFIG.name,
       image: `${BUSINESS_CONFIG.domain}/images/og-default.jpg`,
       "@id": BUSINESS_CONFIG.domain,
@@ -105,7 +105,7 @@ export default async function RootLayout({
         {/* Preloads go here */}
       </head>
       <body
-        className={`${playfair.variable} ${outfit.variable} font-sans bg-cream text-charcoal antialiased min-h-screen flex flex-col relative`}
+        className={`${playfair.variable} ${outfit.variable} font-sans antialiased min-h-screen flex flex-col relative`} style={{ backgroundColor: 'var(--color-warm-white)', color: 'var(--color-charcoal)' }}
       >
         <script
           type="application/ld+json"

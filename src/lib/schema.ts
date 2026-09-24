@@ -14,7 +14,7 @@ export function getLocalBusinessSchema() {
     name: BUSINESS_CONFIG.legalName,
     alternateName: BUSINESS_CONFIG.name,
     url: BUSINESS_CONFIG.domain,
-    logo: `${BUSINESS_CONFIG.domain}/images/logo-dark.png`,
+    logo: `${BUSINESS_CONFIG.domain}/images/logo.png`,
     image: `${BUSINESS_CONFIG.domain}/images/fundraise.jpg`,
     description: BUSINESS_CONFIG.description,
     telephone: BUSINESS_CONFIG.contact.phone1Formatted,

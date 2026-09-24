@@ -57,7 +57,7 @@ export default function PackagesPreview({ featuredPackages }: { featuredPackages
               transition={{ delay: 0.1 }}
               className="font-sans text-charcoal/70 text-[clamp(1.05rem,1.4vw,1.25rem)] leading-relaxed font-medium"
             >
-              Choose between our iconic full-size Boston Legend truck or boutique setup. All packages include trained friendly staff, unlimited smiles, and certified Massachusetts service.
+              Choose between our iconic full-size American Legend truck or boutique setup. All packages include trained friendly staff, unlimited smiles, and certified Massachusetts service.
             </motion.p>
           </div>
           
@@ -106,7 +106,7 @@ export default function PackagesPreview({ featuredPackages }: { featuredPackages
                   
                   <Image 
                     src={pkg.imageUrl} 
-                    alt={`${pkg.name} - Boston Legend ice cream truck catering package in Massachusetts`} 
+                    alt={`${pkg.name} - American Legend ice cream truck catering package in Massachusetts`} 
                     title={`Rent ${pkg.name} for your event in MA`}
                     fill 
                     className="object-contain p-4 transition-transform duration-700 group-hover:scale-105 drop-shadow-md"

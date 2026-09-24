@@ -1,26 +1,26 @@
 // ============================================================
 // BUSINESS CONFIGURATION — SINGLE SOURCE OF TRUTH
-// Boston Legend Ice Cream Truck
+// American Legend Ice Cream Truck
 // Change anything here and it updates across the entire site:
 // footer, schema markup, contact page, SEO, click-to-call links
 // ============================================================
 
 export const BUSINESS_CONFIG = {
-  name: "Boston Legend Ice Cream Truck",
-  legalName: "Boston Legend Ice Cream Truck LLC",
-  tagline: "Boston's Legendary Sweet Experience.",
+  name: "American Legend Ice Cream Truck",
+  legalName: "American Legend Ice Cream Truck LLC",
+  tagline: "A True American Ice Cream Experience.",
   description:
-    "Massachusetts' premier ice cream truck catering service. Bringing artisan frozen treats, nostalgic novelties, and legendary sweet celebrations to birthdays, corporate events, weddings, and festivals across all of Massachusetts.",
-  domain: "https://bostonlegendicecreamtruck.com",
+    "Massachusetts' premier ice cream truck catering service. Bringing classic American frozen treats, nostalgic novelties, and legendary sweet celebrations to birthdays, corporate events, weddings, and festivals across all of Massachusetts.",
+  domain: "https://americanlegendicecreamtruck.com",
 
   contact: {
-    phone1: "617-999-3803",
-    phone1Formatted: "+16179993803",
+    phone1: "781-947-7676",
+    phone1Formatted: "+17819477676",
     phone1Label: "Main Line",
-    phone2: "617-866-2727",
-    phone2Formatted: "+16178662727",
+    phone2: "781-947-7676",
+    phone2Formatted: "+17819477676",
     phone2Label: "Reservations",
-    email: "info@bostonlegendicecreamtruck.com",
+    email: "info@americanlegendicecreamtruck.com",
   },
 
   // Change this once to update ALL schema markup, footer, contact page
@@ -56,8 +56,8 @@ export const BUSINESS_CONFIG = {
 
   // Update when social accounts are created
   social: {
-    instagram: "https://instagram.com/bostonlegendicecream",
-    facebook: "https://www.facebook.com/BostonLegend/",
+    instagram: "https://instagram.com/americanlegendicecream",
+    facebook: "https://www.facebook.com/AmericanLegendIceCream/",
     tiktok: "",
     youtube: "",
   },
@@ -75,12 +75,12 @@ export const BUSINESS_CONFIG = {
   // SEO
   keywords: [
     // ── Brand ─────────────────────────────────────────────────────────────
-    "Boston Legend Ice Cream Truck",
-    "Boston Legend Ice Cream",
-    "Boston Legend",
-    "Boston Legend Ice Cream Truck Massachusetts",
-    "bostonlegendicecreamtruck",
-    "Boston Legend Ice Cream Truck Boston",
+    "American Legend Ice Cream Truck",
+    "American Legend Ice Cream",
+    "American Legend",
+    "American Legend Ice Cream Truck Massachusetts",
+    "americanlegendicecreamtruck",
+    "American Legend Ice Cream Truck Boston",
 
     // ── Core Service ──────────────────────────────────────────────────────
     "ice cream truck rental Massachusetts",

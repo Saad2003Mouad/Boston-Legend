@@ -26,27 +26,27 @@ export default function SplashScreen() {
           exit={{ opacity: 0, scale: 1.05 }}
           transition={{ duration: 0.6, ease: "easeInOut" }}
           className="fixed inset-0 z-[9999] flex flex-col items-center justify-center"
-          style={{ background: "linear-gradient(135deg, #1A1009 0%, #2C1A10 50%, #1A1009 100%)" }}
+          style={{ background: "linear-gradient(135deg, #071B3A 0%, #123E73 50%, #071B3A 100%)" }}
           onClick={() => setVisible(false)}
         >
           {/* Animated background rings — gold and strawberry */}
           <motion.div
             className="absolute w-[600px] h-[600px] rounded-full"
-            style={{ border: "1px solid rgba(217,138,44,0.15)" }}
+            style={{ border: "1px solid rgba(201,154,61,0.15)" }}
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
           />
           <motion.div
             className="absolute w-[400px] h-[400px] rounded-full"
-            style={{ border: "1px solid rgba(255,78,116,0.18)" }}
+            style={{ border: "1px solid rgba(201,35,45,0.18)" }}
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.1 }}
           />
           <motion.div
             className="absolute w-[200px] h-[200px] rounded-full"
-            style={{ background: "rgba(217,138,44,0.06)" }}
+            style={{ background: "rgba(201,154,61,0.06)" }}
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
@@ -61,8 +61,8 @@ export default function SplashScreen() {
           >
             <div className="relative w-64 md:w-80 h-32 md:h-40 flex items-center justify-center">
               <Image
-                src="/images/logo-white.png"
-                alt="Boston Legend Ice Cream Truck"
+                src="/images/logo.png"
+                alt="American Legend Ice Cream Truck"
                 fill
                 className="object-contain"
                 priority
@@ -76,7 +76,7 @@ export default function SplashScreen() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              <p className="font-sans font-black text-xs md:text-sm tracking-[0.35em] uppercase text-coral">
+              <p className="font-sans font-black text-xs md:text-sm tracking-[0.35em] uppercase text-red">
                 Ice Cream Truck • Massachusetts
               </p>
             </motion.div>
@@ -92,7 +92,7 @@ export default function SplashScreen() {
                 <motion.div
                   key={i}
                   className="w-2 h-2 rounded-full"
-                  style={{ backgroundColor: "#D4AF37" }}
+                  style={{ backgroundColor: "#C99A3D" }}
                   animate={{ y: [0, -8, 0], opacity: [0.4, 1, 0.4] }}
                   transition={{
                     duration: 0.8,

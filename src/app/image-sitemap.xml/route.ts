@@ -19,7 +19,7 @@ const IMAGES = [
     pages: ['/', '/about', '/packages'],
   },
   {
-    loc: `${BASE_URL}/images/logo-dark.png`,
+    loc: `${BASE_URL}/images/logo.png`,
     title: 'Boston Legend Ice Cream Truck — Professional Catering Service',
     caption: 'Professional, licensed ice cream truck catering for any event size. Serving Greater Boston and all Massachusetts communities.',
     pages: ['/'],

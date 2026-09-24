@@ -9,7 +9,7 @@ const testimonials = [
     city: "Boston",
     event: "Wedding",
     rating: 5,
-    text: "Having Boston Legend at our wedding was the highlight of the night! The ice cream was premium, the staff was impeccable, and every guest was talking about it for weeks.",
+    text: "Having American Legend at our wedding was the highlight of the night! The ice cream was premium, the staff was impeccable, and every guest was talking about it for weeks.",
     avatar: "SM",
     color: "#FF4E74",
   },

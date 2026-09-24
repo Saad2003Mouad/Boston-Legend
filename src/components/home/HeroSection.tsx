@@ -80,7 +80,7 @@ export default function HeroSection() {
                   color: "#FF4E74",
                 }}
               >
-                🍦 Boston&apos;s Premier Ice Cream Truck
+                🍦 Massachusetts&apos; Premier Ice Cream Truck
               </span>
             </motion.div>
 
@@ -218,8 +218,8 @@ export default function HeroSection() {
               }}
             >
               <Image
-                src="/images/Cover Image.png"
-                alt="Boston Legend Ice Cream Truck — Premium Ice Cream Catering in Massachusetts"
+                src="/images/cover_image.png"
+                alt="American Legend Ice Cream Truck — Premium Ice Cream Catering in Massachusetts"
                 fill
                 className="object-contain scale-110"
                 sizes="(max-width: 1024px) 90vw, 55vw"

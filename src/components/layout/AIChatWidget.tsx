@@ -34,7 +34,7 @@ interface BookingRequest {
 const WELCOME_MESSAGE: Message = {
   id: "welcome",
   role: "assistant",
-  content: "Hey there! 👋 I'm your Boston Legend Concierge.\n\nI can help you explore our packages, check pricing, and book your event directly here.\n\nHow can I sweeten your day?",
+  content: "Hey there! 👋 I'm your American Legend Concierge.\n\nI can help you explore our packages, check pricing, and book your event directly here.\n\nHow can I sweeten your day?",
 };
 
 const QUICK_REPLIES = [
@@ -146,7 +146,7 @@ export default function AIChatWidget() {
           {
             id: `a-${Date.now()}`,
             role: "assistant",
-            content: `🎉 **Booking Confirmed!**\n\nYour reference number is **#${data.bookingNumber}**.\n\nOur team will review it and contact you shortly. Thank you for choosing Boston Legend Ice Cream Truck! 🍦`,
+            content: `🎉 **Booking Confirmed!**\n\nYour reference number is **#${data.bookingNumber}**.\n\nOur team will review it and contact you shortly. Thank you for choosing American Legend Ice Cream Truck! 🍦`,
           },
         ]);
       } else {
@@ -323,7 +323,7 @@ export default function AIChatWidget() {
               </div>
               <div className="flex-1 min-w-0 pt-1">
                 <h3 className="font-display font-black text-navy text-xl leading-none flex items-center gap-2 mb-1.5 drop-shadow-sm">
-                  Boston Legend <Sparkles className="w-4 h-4 text-coral" />
+                  American Legend <Sparkles className="w-4 h-4 text-red" />
                 </h3>
                 <p className="flex items-center gap-1.5 text-navy-light text-[10px] font-bold uppercase tracking-[0.2em]">
                   <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" /> AI Concierge

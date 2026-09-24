@@ -6,7 +6,7 @@ const BRAND_NAVY  = "#1A1009";
 const BRAND_CORAL = "#FF6B6B";
 // Hardcode the site URL to the domain so the logo always loads in emails
 const SITE_URL    = "https://bostonlegendicecream.com";
-const LOGO_URL    = `${SITE_URL}/images/logo-dark.png`; 
+const LOGO_URL    = `${SITE_URL}/images/logo.png`; 
 
 const SENDER_EMAIL = 'info@bostonlegendicecream.com';
 const ADMIN_EMAIL  = process.env.ADMIN_EMAIL || 'info@bostonlegendicecream.com';

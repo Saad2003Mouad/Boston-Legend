@@ -21,10 +21,10 @@ function createPrismaClient(): PrismaClient {
 
   const pool = new Pool({
     connectionString,
-    max: 2,
-    idleTimeoutMillis: 10000,
-    connectionTimeoutMillis: 20000,
-    allowExitOnIdle: true,
+    max: 3,
+    idleTimeoutMillis: 30000,
+    connectionTimeoutMillis: 30000,
+    allowExitOnIdle: false,
     // Supabase uses self-signed certificates behind Cloudflare.
     // rejectUnauthorized: false accepts the Supabase certificate chain.
     ssl: isLocal

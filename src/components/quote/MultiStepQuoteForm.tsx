@@ -463,7 +463,7 @@ export default function MultiStepQuoteForm({ dbPackages }: { dbPackages?: any[] 
                     <div className="flex items-start justify-between">
                       <div>
                         <p className="font-black text-navy text-sm">📍 {address || "Selected Location"}, {city} {zip}</p>
-                        <p className="text-xs text-gray-500 font-medium mt-1">{distance} miles from our Boston HQ</p>
+                        <p className="text-xs text-gray-500 font-medium mt-1">{distance} miles from our American Legend HQ</p>
                       </div>
                       <div className="text-right">
                         <p className="text-xs text-gray-500 font-medium">Travel Fee</p>
@@ -732,12 +732,12 @@ export default function MultiStepQuoteForm({ dbPackages }: { dbPackages?: any[] 
                     <div className="bg-gradient-to-r from-coral/10 to-navy/5 border-t border-gray-100 p-6">
                       <p className="text-sm text-gray-500 font-medium mb-4 text-center">For custom events, our team will provide a personalized quote. Contact us now with your details!</p>
                       <div className="flex flex-col gap-3">
-                        <a href={`https://wa.me/16179993803?text=${encodeURIComponent(`Hi Boston Legend! Custom Event inquiry.\n\nName: ${name}\nDate: ${date} at ${time}\nEvent: ${eventType}\nGuests: ${customGuests}\nDuration: ${customDuration}\nLocation: ${address}, ${city} ${zip}\n\nPlease send a quote!`)}`}
+                        <a href={`https://wa.me/17819477676?text=${encodeURIComponent(`Hi American Legend! Custom Event inquiry.\n\nName: ${name}\nDate: ${date} at ${time}\nEvent: ${eventType}\nGuests: ${customGuests}\nDuration: ${customDuration}\nLocation: ${address}, ${city} ${zip}\n\nPlease send a quote!`)}`}
                           target="_blank" rel="noreferrer"
                           className="w-full py-4 rounded-2xl font-black bg-[#25D366] text-white hover:bg-[#128C7E] transition-all shadow-lg flex items-center justify-center gap-2">
                           📱 WhatsApp: 617-999-3803
                         </a>
-                        <a href={`https://wa.me/16178662727?text=${encodeURIComponent(`Hi Boston Legend! Custom Event inquiry.\n\nName: ${name}\nDate: ${date} at ${time}\nEvent: ${eventType}\nGuests: ${customGuests}\nDuration: ${customDuration}\nLocation: ${address}, ${city} ${zip}\n\nPlease send a quote!`)}`}
+                        <a href={`https://wa.me/17819477676?text=${encodeURIComponent(`Hi American Legend! Custom Event inquiry.\n\nName: ${name}\nDate: ${date} at ${time}\nEvent: ${eventType}\nGuests: ${customGuests}\nDuration: ${customDuration}\nLocation: ${address}, ${city} ${zip}\n\nPlease send a quote!`)}`}
                           target="_blank" rel="noreferrer"
                           className="w-full py-4 rounded-2xl font-black bg-[#25D366] text-white hover:bg-[#128C7E] transition-all shadow-lg flex items-center justify-center gap-2">
                           📱 WhatsApp: 617-866-2727
