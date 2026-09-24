@@ -79,13 +79,13 @@ const config: Config = {
       },
 
       boxShadow: {
-        soft:       "0 4px 20px -2px rgba(26, 16, 9, 0.05)",
-        lift:       "0 10px 40px -10px rgba(26, 16, 9, 0.1)",
-        drip:       "0 12px 28px -6px rgba(26, 16, 9, 0.18)",
-        coral:      "0 8px 32px rgba(255, 78, 116, 0.35)",
-        "coral-lg": "0 16px 48px rgba(255, 78, 116, 0.40)",
-        gold:       "0 4px 20px rgba(217, 138, 44, 0.30)",
-        float:      "0 20px 40px -15px rgba(26, 16, 9, 0.06)",
+        soft:       "0 4px 20px -2px rgba(7, 27, 58, 0.05)",
+        lift:       "0 10px 40px -10px rgba(7, 27, 58, 0.1)",
+        drip:       "0 12px 28px -6px rgba(7, 27, 58, 0.15)",
+        coral:      "0 8px 32px rgba(201, 35, 45, 0.35)",
+        "coral-lg": "0 16px 48px rgba(201, 35, 45, 0.40)",
+        gold:       "0 4px 20px rgba(201, 154, 61, 0.30)",
+        float:      "0 20px 40px -15px rgba(7, 27, 58, 0.06)",
       },
 
       keyframes: {

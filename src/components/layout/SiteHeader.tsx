@@ -94,7 +94,7 @@ export default function SiteHeader() {
       <div suppressHydrationWarning className="container mx-auto px-4 md:px-6 flex items-center justify-between pointer-events-auto">
         {/* Logo */}
         <Link href="/" className="z-50">
-          <Logo variant="dark" />
+          <Logo iconOnlyOnMobile={true} />
         </Link>
 
         {/* Desktop Nav */}

@@ -4,34 +4,40 @@ import { cn } from "@/lib/utils";
 
 interface LogoProps {
   className?: string;
-  variant?: "dark" | "light";
-  forceColor?: string;
-  width?: number;
-  height?: number;
+  iconOnlyOnMobile?: boolean;
 }
 
 export default function Logo({
   className,
-  variant = "dark",
-  width = 170,
-  height = 85,
+  iconOnlyOnMobile = false,
 }: LogoProps) {
-  const isDarkVariant = variant === "dark";
-  
-  // Use only the custom slogan logo element
-  const logoSrc = "/images/slogan.png";
-
   return (
     <div className={cn("inline-flex items-center transition-transform hover:scale-[1.02]", className)}>
-      <div className="relative h-12 md:h-20 w-auto flex items-center">
+      <div className="relative h-12 md:h-16 lg:h-20 w-auto flex items-center justify-center">
+        {/* Full Logo - hidden on mobile if iconOnlyOnMobile is true */}
         <Image
-          src={logoSrc}
-          alt="Brand Slogan"
-          width={width}
-          height={height}
-          className="w-auto h-full max-h-20 object-contain drop-shadow-md"
+          src="/images/logo.png"
+          alt="American Legend Ice Cream Truck"
+          width={240}
+          height={85}
+          className={cn(
+            "w-auto h-full max-h-12 md:max-h-16 lg:max-h-20 object-contain drop-shadow-md",
+            iconOnlyOnMobile ? "hidden md:block" : "block"
+          )}
           priority
         />
+        
+        {/* Icon Logo - visible only on mobile if iconOnlyOnMobile is true */}
+        {iconOnlyOnMobile && (
+          <Image
+            src="/images/icon.png"
+            alt="American Legend Icon"
+            width={48}
+            height={48}
+            className="w-auto h-full max-h-10 md:max-h-12 object-contain drop-shadow-md block md:hidden"
+            priority
+          />
+        )}
       </div>
     </div>
   );
