@@ -15,17 +15,18 @@ interface FinalCTAProps {
 }
 
 export default function FinalCTA({ themeColor }: FinalCTAProps = {}) {
-  const bgColor = themeColor || "#FF4E74";
-  const gradient = themeColor ? `linear-gradient(135deg, ${themeColor} 0%, ${themeColor}dd 100%)` : "linear-gradient(135deg, #FF4E74 0%, #E63860 100%)";
+  const bgColor = themeColor || "#C9232D";
+  const gradient = themeColor ? `linear-gradient(135deg, ${themeColor} 0%, ${themeColor}dd 100%)` : "linear-gradient(135deg, #C9232D 0%, #A31B24 100%)";
 
   return (
     <div className="relative w-full overflow-hidden" style={{ backgroundColor: bgColor }}>
-      {/* Vanilla melting drip INTO the strawberry section */}
-      <MeltingDrip
-        color="#FFFBF5"
-        height={100}
-        variant="random"
-      />
+      {/* Elegant animated wave from the section above */}
+      <div className="absolute top-0 left-0 right-0 z-0">
+        <MeltingDrip
+          color="#071B3A"
+          height={140}
+        />
+      </div>
 
       <section
         className="relative w-full py-16 md:py-32 flex items-center justify-center overflow-hidden"
@@ -50,7 +51,7 @@ export default function FinalCTA({ themeColor }: FinalCTAProps = {}) {
               style={{
                 background: "rgba(255,255,255,0.2)",
                 border: "1px solid rgba(255,255,255,0.4)",
-                color: "#FFFBF5",
+                color: "#FFF4D6",
               }}
             >
               <Sparkles className="w-3.5 h-3.5" />
@@ -61,19 +62,19 @@ export default function FinalCTA({ themeColor }: FinalCTAProps = {}) {
             <h2
               className="font-display font-black tracking-tight leading-[1.05] mb-6"
               style={{
-                fontSize: "clamp(2.75rem, 6vw, 5rem)",
-                color: "#FFFBF5",
+                fontSize: "clamp(2rem, 6vw, 5rem)",
+                color: "#FFF4D6",
               }}
             >
               Ready for the{" "}
-              <span className="italic font-serif" style={{ color: "#FFFBF5", opacity: 0.9 }}>
+              <span className="italic font-serif" style={{ color: "#FFF4D6", opacity: 0.9 }}>
                 Sweetest Event
               </span>
               <br /> of the Year?
             </h2>
 
             <p
-              className="font-sans text-[clamp(1.1rem,1.5vw,1.25rem)] leading-relaxed max-w-2xl mx-auto mb-12 font-medium"
+              className="font-sans text-[0.95rem] md:text-[clamp(1.1rem,1.5vw,1.25rem)] leading-relaxed max-w-2xl mx-auto mb-10 md:mb-12 font-medium"
               style={{ color: "rgba(255,251,245,0.9)" }}
             >
               Don&apos;t settle for boring catering. Treat your guests to the legendary American Legend ice cream truck experience they&apos;ll be talking about for months.
@@ -83,7 +84,7 @@ export default function FinalCTA({ themeColor }: FinalCTAProps = {}) {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-5 w-full sm:w-auto mb-12">
               <Link
                 href="/book"
-                className="group relative flex items-center justify-center gap-3 w-full sm:w-auto px-10 py-5 rounded-full font-black text-sm tracking-[0.15em] uppercase transition-all duration-300 transform hover:scale-[1.02] shadow-xl hover:shadow-2xl bg-[#FFFBF5] text-[#FF4E74]"
+                className="group relative flex items-center justify-center gap-3 w-full sm:w-auto px-10 py-5 rounded-full font-black text-sm tracking-[0.15em] uppercase transition-all duration-300 transform hover:scale-[1.02] shadow-xl hover:shadow-2xl bg-[#FFF4D6] text-[#C9232D]"
               >
                 Book Your Truck Now
                 <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
@@ -116,3 +117,5 @@ export default function FinalCTA({ themeColor }: FinalCTAProps = {}) {
     </div>
   );
 }
+
+

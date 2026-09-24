@@ -25,18 +25,15 @@ export default function PackagesPreview({ featuredPackages }: { featuredPackages
 
   return (
     <section className="relative py-16 md:py-32 overflow-hidden bg-cream">
-      {/* Cream drip from BlogSection above */}
+      {/* Elegant animated wave from BlogSection above */}
       <div className="absolute top-0 left-0 right-0 z-0">
         <MeltingDrip
-          color="#FFFBF5"
+          color="#FFF4D6"
           height={120}
-          variant="center-heavy"
         />
       </div>
 
       <div className="container mx-auto px-5 md:px-12 lg:px-24 relative z-10 pt-10 md:pt-20">
-
-        {/* Section Header */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16 md:mb-24 text-center lg:text-left">
           <div className="max-w-2xl mx-auto lg:mx-0">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-coral/10 text-coral text-xs font-black uppercase tracking-widest mb-4 border border-coral/20">
@@ -46,7 +43,7 @@ export default function PackagesPreview({ featuredPackages }: { featuredPackages
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="font-display italic font-light text-[clamp(2.5rem,5vw,4.25rem)] leading-tight text-charcoal mb-4"
+              className="font-display italic font-bold text-[clamp(2.5rem,5vw,4.25rem)] leading-tight text-charcoal mb-4"
             >
               Legendary <span className="text-coral">Ice Cream Packages</span>
             </motion.h2>
@@ -117,7 +114,7 @@ export default function PackagesPreview({ featuredPackages }: { featuredPackages
               )}
 
               {/* Card Header */}
-              <div className={`relative z-20 px-6 md:px-10 pb-6 md:pb-10 pt-4 border-b ${
+              <div className={`relative z-20 px-5 md:px-10 pb-6 md:pb-10 pt-4 border-b ${
                 pkg.isPopular ? "bg-coral text-white border-white/10" : "bg-white text-charcoal border-navy/5"
               }`}>
                 <div className={`text-xs font-black uppercase tracking-widest mb-3 ${
@@ -125,18 +122,18 @@ export default function PackagesPreview({ featuredPackages }: { featuredPackages
                 }`}>
                   {pkg.durationLabel} · {pkg.servings} Servings Included
                 </div>
-                <h3 className={`font-display italic font-light text-3xl md:text-4xl mb-2 ${
+                <h3 className={`font-display italic font-black text-2xl md:text-4xl mb-2 ${
                   pkg.isPopular ? "text-white" : "text-charcoal"
                 }`}>
                   {pkg.name}
                 </h3>
-                <p className={`text-sm md:text-base font-medium mb-6 min-h-[44px] ${
+                <p className={`text-[0.85rem] md:text-base font-medium mb-5 min-h-[44px] ${
                   pkg.isPopular ? "text-white/80" : "text-charcoal/70"
                 }`}>
                   {pkg.tagline}
                 </p>
                 <div className="flex items-baseline gap-2">
-                  <span className={`text-5xl md:text-6xl font-black tracking-tight ${
+                  <span className={`text-4xl md:text-6xl font-black tracking-tight ${
                     pkg.isPopular ? "text-white" : "text-charcoal"
                   }`}>
                     ${pkg.price}
@@ -150,8 +147,8 @@ export default function PackagesPreview({ featuredPackages }: { featuredPackages
               </div>
 
               {/* Card Body */}
-              <div className="p-6 md:p-10 flex flex-col flex-1 bg-white">
-                <ul className="flex flex-col gap-4 mb-8 md:mb-10 flex-1">
+              <div className="p-5 md:p-10 flex flex-col flex-1 bg-white">
+                <ul className="flex flex-col gap-3 md:gap-4 mb-6 md:mb-10 flex-1">
                   {pkg.features.slice(0, 4).map((feature: string, idx: number) => (
                     <li key={idx} className="flex items-start gap-3.5">
                       <div className="bg-coral/10 p-1.5 rounded-full shrink-0 mt-0.5">
@@ -181,4 +178,6 @@ export default function PackagesPreview({ featuredPackages }: { featuredPackages
     </section>
   );
 }
+
+
 

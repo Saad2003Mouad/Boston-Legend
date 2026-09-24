@@ -12,7 +12,7 @@ const stats = [
     label: "Events Catered",
     desc: "Birthday, corporate & wedding memories",
     icon: Award,
-    gradient: "linear-gradient(135deg, #FF4E74, #E63860)",
+    gradient: "linear-gradient(135deg, #C9232D, #A31B24)",
     glow: "rgba(255,78,116,0.25)",
   },
   {
@@ -21,7 +21,7 @@ const stats = [
     label: "Client Rating",
     desc: "Consistently rated 5-star across MA",
     icon: ShieldCheck,
-    gradient: "linear-gradient(135deg, #D98A2C, #E5A84B)",
+    gradient: "linear-gradient(135deg, #C99A3D, #E8C06A)",
     glow: "rgba(217,138,44,0.25)",
   },
   {
@@ -39,7 +39,7 @@ const stats = [
     label: "Licensed & Insured",
     desc: "Commercial liability & health permits",
     icon: HeartHandshake,
-    gradient: "linear-gradient(135deg, #FF4E74, #D98A2C)",
+    gradient: "linear-gradient(135deg, #C9232D, #C99A3D)",
     glow: "rgba(255,78,116,0.20)",
   },
 ];
@@ -55,11 +55,11 @@ const card = {
 
 export default function TrustStats() {
   return (
-    <div className="relative w-full overflow-hidden bg-[#FFFBF5]">
+    <div className="relative w-full overflow-hidden bg-[#FFF4D6]">
       {/* Vanilla Drip from the Hero section pouring down into the section */}
       <div className="absolute top-0 left-0 right-0 z-0" style={{ height: "450px", overflow: "visible" }}>
         <MeltingDrip
-          color="#FFFBF5"
+          color="#FFF4D6"
           height={450}
           variant="right-heavy"
         />
@@ -67,7 +67,7 @@ export default function TrustStats() {
 
       <section
         className="relative w-full"
-        style={{ background: "linear-gradient(180deg, #FFFBF5 0%, #FDF6EC 100%)" }}
+        style={{ background: "linear-gradient(180deg, #FFF4D6 0%, #FAF6EC 100%)" }}
       >
       <div className="container mx-auto px-5 md:px-10 lg:px-20 py-12 md:py-28">
 
@@ -84,7 +84,7 @@ export default function TrustStats() {
             style={{
               background: "linear-gradient(90deg, rgba(255,78,116,0.12), rgba(217,138,44,0.12))",
               border: "1px solid rgba(255,78,116,0.20)",
-              color: "#1A1009",
+              color: "#071B3A",
             }}
           >
             🏆 Why Massachusetts Trusts Us
@@ -93,13 +93,13 @@ export default function TrustStats() {
             className="font-display font-black tracking-tight leading-tight"
             style={{
               fontSize: "clamp(2rem, 4vw, 3rem)",
-              color: "#1A1009",
+              color: "#071B3A",
             }}
           >
             Legendary Service.{" "}
             <span
               style={{
-                background: "linear-gradient(135deg, #FF4E74, #D98A2C)",
+                background: "linear-gradient(135deg, #C9232D, #C99A3D)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
@@ -178,7 +178,7 @@ export default function TrustStats() {
 
                 <h3
                   className="font-black uppercase tracking-wider text-xs mb-2"
-                  style={{ color: "#1A1009" }}
+                  style={{ color: "#071B3A" }}
                 >
                   {stat.label}
                 </h3>
@@ -195,3 +195,5 @@ export default function TrustStats() {
     </div>
   );
 }
+
+

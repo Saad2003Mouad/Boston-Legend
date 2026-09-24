@@ -29,10 +29,10 @@ export default function CityMapSection() {
   const boston = allCities.find(c => c.slug === "boston");
 
   return (
-    <section className="relative w-full py-12 md:py-32 overflow-hidden bg-[#FFF9F0]">
-      {/* Drip from section above */}
+    <section className="relative w-full py-12 md:py-32 overflow-hidden" style={{ background: "#FFF4D6" }}>
+      {/* Drip from Navy Testimonials Section above */}
       <div className="absolute top-0 left-0 right-0 z-0">
-        <MeltingDrip color="#DCFCE7" height={130} variant="random" />
+        <MeltingDrip color="#0A2348" height={130} variant="random" />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 md:px-10 lg:px-20 relative z-10 pt-6 md:pt-10">
@@ -41,13 +41,13 @@ export default function CityMapSection() {
           <div className="max-w-2xl">
             <div
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest mb-4"
-              style={{ background: "rgba(255,78,116,0.15)", color: "#FF4E74" }}
+              style={{ background: "rgba(255,78,116,0.15)", color: "#C9232D" }}
             >
               <Sparkles className="w-3.5 h-3.5" /> Statewide Catering Fleet
             </div>
-            <h2 className="font-display font-black text-[clamp(2rem,5.5vw,4.5rem)] leading-[1.05] text-[#1A1009] mb-4 sm:mb-6 tracking-tight">
+            <h2 className="font-display font-black text-[clamp(2rem,5.5vw,4.5rem)] leading-[1.05] text-[#071B3A] mb-4 sm:mb-6 tracking-tight">
               Serving All of<br />
-              <span className="italic font-serif" style={{ color: "#FF4E74" }}>Massachusetts</span>
+              <span className="italic font-serif" style={{ color: "#C9232D" }}>Massachusetts</span>
             </h2>
             <p className="font-sans text-[clamp(0.95rem,1.4vw,1.25rem)] leading-relaxed" style={{ color: "rgba(26,16,9,0.7)" }}>
               From downtown Boston and Cambridge to Cape Cod, Worcester, and the North Shore. We bring the legendary celebration to your doorstep.
@@ -56,9 +56,9 @@ export default function CityMapSection() {
           <Link
             href="/cities"
             className="font-sans font-bold uppercase tracking-widest text-xs border-b-2 pb-2 transition-colors inline-block"
-            style={{ color: "#1A1009", borderColor: "#FF4E74" }}
-            onMouseEnter={(e) => (e.currentTarget.style.color = "#FF4E74")}
-            onMouseLeave={(e) => (e.currentTarget.style.color = "#1A1009")}
+            style={{ color: "#071B3A", borderColor: "#C9232D" }}
+            onMouseEnter={(e) => (e.currentTarget.style.color = "#C9232D")}
+            onMouseLeave={(e) => (e.currentTarget.style.color = "#071B3A")}
           >
             Explore 500+ Cities We Serve &rarr;
           </Link>
@@ -114,7 +114,7 @@ export default function CityMapSection() {
           {/* Top Control Bar */}
           <div className="absolute top-0 left-0 w-full p-3 sm:p-4 md:p-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 z-20 pointer-events-none">
             <div className="flex items-center gap-2 text-white/40 text-[0.65rem] font-bold tracking-widest uppercase">
-              <Navigation size={12} style={{ color: "#FF4E74" }} />
+              <Navigation size={12} style={{ color: "#C9232D" }} />
               Live American Legend Route Network
             </div>
             <div className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm shadow-sm">
@@ -146,7 +146,7 @@ export default function CityMapSection() {
                     key={`line-${city.slug}`}
                     d={`M ${bCoords.x} ${bCoords.y} Q ${(bCoords.x + cCoords.x) / 2} ${(bCoords.y + cCoords.y) / 2 - 6} ${cCoords.x} ${cCoords.y}`}
                     fill="none"
-                    stroke={isActive ? "#FF4E74" : "rgba(255,78,116,0.35)"}
+                    stroke={isActive ? "#C9232D" : "rgba(255,78,116,0.35)"}
                     strokeWidth={isActive ? "0.35" : "0.18"}
                     filter={isActive ? "url(#glow)" : undefined}
                     className="transition-all duration-500"
@@ -221,9 +221,9 @@ export default function CityMapSection() {
                       )}
                       style={{
                         background: isBoston
-                          ? "#FF4E74"
+                          ? "#C9232D"
                           : isHovered
-                          ? "#D98A2C"
+                          ? "#C99A3D"
                           : isTop
                           ? "rgba(255,78,116,0.7)"
                           : "rgba(255,255,255,0.25)",
@@ -243,7 +243,7 @@ export default function CityMapSection() {
                         className="absolute top-full left-1/2 -translate-x-1/2 mt-2 px-2.5 py-1 rounded-lg text-[0.6rem] uppercase tracking-widest font-black whitespace-nowrap shadow-xl pointer-events-none z-30"
                         style={{
                           background: isBoston && !hoveredCity ? "transparent" : "rgba(20,8,28,0.98)",
-                          color: isBoston && !hoveredCity ? "#FF4E74" : "#fff",
+                          color: isBoston && !hoveredCity ? "#C9232D" : "#fff",
                           border: isBoston && !hoveredCity ? "none" : "1px solid rgba(255,78,116,0.3)",
                         }}
                       >
@@ -265,7 +265,7 @@ export default function CityMapSection() {
               backdropFilter: "blur(12px)",
             }}
           >
-            <MapPin size={11} style={{ color: "#FF4E74" }} /> Hover points to explore coverage
+            <MapPin size={11} style={{ color: "#C9232D" }} /> Hover points to explore coverage
           </div>
         </div>
 
@@ -273,3 +273,5 @@ export default function CityMapSection() {
     </section>
   );
 }
+
+

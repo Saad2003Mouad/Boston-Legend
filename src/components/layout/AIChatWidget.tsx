@@ -272,12 +272,13 @@ export default function AIChatWidget() {
             {/* Core Button */}
             <div className="relative flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/70 backdrop-blur-xl border border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.12),0_0_0_1px_rgba(255,255,255,0.4)_inset] overflow-hidden">
                {/* Animated gradient background on hover */}
+             {/* Animated gradient background on hover */}
                <div className="absolute inset-0 bg-gradient-to-tr from-coral/10 via-transparent to-navy/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                <Image
                  src="/images/icon.png"
                  alt="Assistant"
                  fill
-                 className="object-contain p-3 sm:p-4 drop-shadow-md relative z-10 transition-transform duration-500 group-hover:scale-110"
+                 className="object-contain relative z-10 transition-transform duration-500 group-hover:scale-110"
                  sizes="80px"
                />
             </div>
@@ -420,3 +421,4 @@ export default function AIChatWidget() {
     </>
   );
 }
+

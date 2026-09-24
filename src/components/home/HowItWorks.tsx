@@ -28,12 +28,12 @@ export default function HowItWorks() {
   return (
     <section
       className="relative w-full py-16 md:py-36 overflow-hidden"
-      style={{ background: "#FFFBF5" }}
+      style={{ background: "#FFF4D6" }}
     >
       {/* Strawberry Drip coming DOWN from BrandCarousel into HowItWorks */}
       <div className="absolute top-0 left-0 right-0 z-0">
         <MeltingDrip
-          color="#E63860"
+          color="#A31B24"
           height={80}
           variant="left-heavy"
         />
@@ -52,22 +52,22 @@ export default function HowItWorks() {
           <span
             className="inline-flex items-center gap-2 px-5 py-2 rounded-full text-[0.68rem] font-black tracking-[0.22em] uppercase mb-5"
             style={{
-              background: "linear-gradient(90deg, rgba(255,78,116,0.10), rgba(217,138,44,0.10))",
-              border: "1px solid rgba(255,78,116,0.18)",
-              color: "#FF4E74",
+              background: "linear-gradient(90deg, rgba(7,27,58,0.07), rgba(201,154,61,0.08))",
+              border: "1px solid rgba(7,27,58,0.12)",
+              color: "#071B3A",
             }}
           >
             The Process
           </span>
           <h2
             className="font-display font-black tracking-tight leading-[1.06]"
-            style={{ fontSize: "clamp(2.4rem, 5vw, 4rem)", color: "#1A1009" }}
+            style={{ fontSize: "clamp(2.4rem, 5vw, 4rem)", color: "#071B3A" }}
           >
             Three Steps to{" "}
             <span
               className="italic"
               style={{
-                background: "linear-gradient(135deg, #FF4E74, #D98A2C)",
+                background: "linear-gradient(135deg, #C9232D, #C99A3D)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
@@ -97,7 +97,7 @@ export default function HowItWorks() {
                 <div
                   className="hidden md:block absolute top-10 left-full w-full h-px z-0 pointer-events-none"
                   style={{
-                    background: "linear-gradient(90deg, rgba(255,78,116,0.25), rgba(217,138,44,0.08))",
+                    background: "linear-gradient(90deg, rgba(201,35,45,0.25), rgba(201,154,61,0.08))",
                     width: "calc(100% - 3rem)",
                     transform: "translateX(1.5rem)",
                   }}
@@ -105,15 +105,15 @@ export default function HowItWorks() {
               )}
 
               <div
-                className="relative z-10 flex flex-col h-full rounded-[2rem] p-8 md:p-9 transition-all duration-400"
+                className="relative z-10 flex flex-col h-full rounded-[2rem] p-6 md:p-9 transition-all duration-400"
                 style={{
                   background: "#fff",
                   border: "1.5px solid rgba(26,16,9,0.06)",
                   boxShadow: "0 4px 24px rgba(26,16,9,0.04)",
                 }}
                 onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.boxShadow = "0 16px 48px rgba(255,78,116,0.12), 0 4px 16px rgba(26,16,9,0.06)";
-                  (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,78,116,0.20)";
+                  (e.currentTarget as HTMLElement).style.boxShadow = "0 16px 48px rgba(201,35,45,0.12), 0 4px 16px rgba(26,16,9,0.06)";
+                  (e.currentTarget as HTMLElement).style.borderColor = "rgba(201,35,45,0.20)";
                   (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)";
                 }}
                 onMouseLeave={(e) => {
@@ -126,7 +126,7 @@ export default function HowItWorks() {
                 <div
                   className="text-[3.5rem] font-black font-display leading-none mb-4 select-none"
                   style={{
-                    background: "linear-gradient(135deg, rgba(255,78,116,0.08), rgba(217,138,44,0.06))",
+                    background: "linear-gradient(135deg, rgba(201,35,45,0.08), rgba(201,154,61,0.06))",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text",
@@ -139,16 +139,16 @@ export default function HowItWorks() {
                 <div
                   className="w-14 h-14 rounded-2xl flex items-center justify-center text-2xl mb-5"
                   style={{
-                    background: "linear-gradient(135deg, rgba(255,78,116,0.10), rgba(217,138,44,0.08))",
-                    border: "1px solid rgba(255,78,116,0.15)",
+                    background: "linear-gradient(135deg, rgba(201,35,45,0.10), rgba(201,154,61,0.08))",
+                    border: "1px solid rgba(201,35,45,0.15)",
                   }}
                 >
                   {step.emoji}
                 </div>
 
                 <h3
-                  className="font-display font-black text-xl md:text-2xl mb-3 tracking-tight"
-                  style={{ color: "#1A1009" }}
+                  className="font-display italic font-bold text-2xl md:text-3xl mb-3"
+                  style={{ color: "#071B3A" }}
                 >
                   {step.title}
                 </h3>
@@ -163,7 +163,7 @@ export default function HowItWorks() {
                 >
                   <div
                     className="w-5 h-5 rounded-full flex items-center justify-center text-xs font-black text-white"
-                    style={{ background: "linear-gradient(135deg, #FF4E74, #E63860)" }}
+                    style={{ background: "linear-gradient(135deg, #C9232D, #A31B24)" }}
                   >
                     ✓
                   </div>
@@ -182,3 +182,5 @@ export default function HowItWorks() {
     </section>
   );
 }
+
+

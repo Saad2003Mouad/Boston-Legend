@@ -9,7 +9,7 @@ export default function BlogSection({ posts = [] }: { posts?: any[] }) {
   if (!posts || posts.length === 0) return null;
 
   return (
-    <section className="relative py-24 bg-transparent overflow-hidden" id="blog">
+    <section className="relative py-24 overflow-hidden" style={{ background: "#FFF4D6" }} id="blog">
       {/* Decorative Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-coral/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-mint/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3"></div>
@@ -44,7 +44,7 @@ export default function BlogSection({ posts = [] }: { posts?: any[] }) {
             >
               <div className="relative h-64 overflow-hidden">
                 <Image
-                  src={post.featuredImage || "/images/blog/starter-event.jpg"}
+                  src={post.featuredImage || "/images/blog/68f61f1bb2531f6cb5a40346_corporate_party_with_ice_cream_truck.jpg"}
                   alt={`${post.title} - American Legend Ice Cream Truck Massachusetts Blog`}
                   title={post.title}
                   fill
@@ -79,3 +79,5 @@ export default function BlogSection({ posts = [] }: { posts?: any[] }) {
     </section>
   );
 }
+
+

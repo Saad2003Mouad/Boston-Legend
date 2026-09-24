@@ -32,7 +32,7 @@ export default function SiteFooter({
 
   return (
     <footer className="relative z-10 text-cream">
-      <div className="bg-[#1A1009] pt-16 pb-12 relative overflow-hidden">
+      <div className="bg-[#071B3A] pt-16 pb-12 relative overflow-hidden">
         {/* Professional Vector Drip Texture in Background */}
         <div className="absolute top-0 left-0 right-0 opacity-5 pointer-events-none">
           <MeltingDrip color="#FFFFFF" height={250} variant="random" />
@@ -149,3 +149,4 @@ export default function SiteFooter({
     </footer>
   );
 }
+

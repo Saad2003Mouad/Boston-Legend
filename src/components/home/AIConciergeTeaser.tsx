@@ -16,17 +16,17 @@ export default function AIConciergeTeaser() {
   ];
 
   return (
-    <div className="relative w-full overflow-hidden bg-[#1A1009]">
-      {/* Caramel/Gold drip coming DOWN from CityMap into this dark section */}
+    <div className="relative w-full overflow-hidden bg-[#071B3A]">
+      {/* Cream drip coming DOWN from CityMap into this dark section */}
       <MeltingDrip
-        color="#FFF9F0"
+        color="#FFF4D6"
         height={100}
         variant="center-heavy"
       />
 
       <section
         className="relative w-full py-16 md:py-24 overflow-hidden"
-        style={{ background: "linear-gradient(135deg, #1A1009 0%, #2C1A0F 50%, #1A1009 100%)" }}
+        style={{ background: "linear-gradient(135deg, #071B3A 0%, #2C1A0F 50%, #071B3A 100%)" }}
       >
         {/* Strawberry ambient glow */}
         <div
@@ -75,7 +75,7 @@ export default function AIConciergeTeaser() {
                   style={{
                     background: "rgba(255,78,116,0.15)",
                     border: "1px solid rgba(255,78,116,0.30)",
-                    color: "#FF4E74",
+                    color: "#C9232D",
                   }}
                 >
                   <Sparkles className="w-3 h-3" />
@@ -84,13 +84,13 @@ export default function AIConciergeTeaser() {
 
                 <h2
                   className="font-display font-black leading-[1.06] tracking-tight mb-5"
-                  style={{ fontSize: "clamp(2rem, 4vw, 3.25rem)", color: "#FFFBF5" }}
+                  style={{ fontSize: "clamp(2rem, 4vw, 3.25rem)", color: "#FFF4D6" }}
                 >
                   Not Sure Which{" "}
                   <span
                     className="italic"
                     style={{
-                      background: "linear-gradient(135deg, #FF4E74, #D98A2C)",
+                      background: "linear-gradient(135deg, #C9232D, #C99A3D)",
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent",
                       backgroundClip: "text",
@@ -116,7 +116,7 @@ export default function AIConciergeTeaser() {
                         color: "rgba(255,251,245,0.75)",
                       }}
                     >
-                      <Icon className="w-3.5 h-3.5" style={{ color: "#D98A2C" }} />
+                      <Icon className="w-3.5 h-3.5" style={{ color: "#C99A3D" }} />
                       {label}
                     </div>
                   ))}
@@ -129,7 +129,7 @@ export default function AIConciergeTeaser() {
                   onClick={handleLaunch}
                   className="group relative inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full font-black text-white text-base overflow-hidden transition-all duration-300 hover:scale-[1.04] active:scale-[0.97]"
                   style={{
-                    background: "linear-gradient(135deg, #FF4E74, #E63860)",
+                    background: "linear-gradient(135deg, #C9232D, #A31B24)",
                     boxShadow: "0 8px 32px rgba(255,78,116,0.50)",
                     minWidth: 220,
                   }}
@@ -150,3 +150,5 @@ export default function AIConciergeTeaser() {
     </div>
   );
 }
+
+

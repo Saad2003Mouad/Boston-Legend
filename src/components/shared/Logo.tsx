@@ -5,11 +5,17 @@ import { cn } from "@/lib/utils";
 interface LogoProps {
   className?: string;
   iconOnlyOnMobile?: boolean;
+  width?: number;
+  height?: number;
+  variant?: string;
 }
 
 export default function Logo({
   className,
   iconOnlyOnMobile = false,
+  width,
+  height,
+  variant,
 }: LogoProps) {
   return (
     <div className={cn("inline-flex items-center transition-transform hover:scale-[1.02]", className)}>
@@ -42,3 +48,4 @@ export default function Logo({
     </div>
   );
 }
+

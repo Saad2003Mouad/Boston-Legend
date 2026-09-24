@@ -162,7 +162,7 @@ export default function LocationPicker({
             icon: {
               url: "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(`
                 <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
-                  <circle cx="22" cy="22" r="20" fill="#1A1009" stroke="#ffffff" stroke-width="3"/>
+                  <circle cx="22" cy="22" r="20" fill="#071B3A" stroke="#ffffff" stroke-width="3"/>
                   <text x="22" y="27" font-size="18" text-anchor="middle">🍦</text>
                 </svg>
               `),
@@ -186,9 +186,9 @@ export default function LocationPicker({
                       <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
                     </filter>
                   </defs>
-                  <path d="M20 0C9 0 0 9 0 20C0 34 20 50 20 50C20 50 40 34 40 20C40 9 31 0 20 0Z" fill="#FF4E74" stroke="#ffffff" stroke-width="2.5" filter="url(#shadow)"/>
+                  <path d="M20 0C9 0 0 9 0 20C0 34 20 50 20 50C20 50 40 34 40 20C40 9 31 0 20 0Z" fill="#C9232D" stroke="#ffffff" stroke-width="2.5" filter="url(#shadow)"/>
                   <circle cx="20" cy="19" r="8" fill="#ffffff"/>
-                  <circle cx="20" cy="19" r="4.5" fill="#FF4E74"/>
+                  <circle cx="20" cy="19" r="4.5" fill="#C9232D"/>
                 </svg>
               `),
               scaledSize: new gMaps.Size(40, 50),
@@ -261,7 +261,7 @@ export default function LocationPicker({
         const homeCenter: [number, number] = [42.3588, -71.0638];
         const homeIcon = L.divIcon({
           className: "custom-leaflet-icon",
-          html: `<div style="background:linear-gradient(135deg,#1A1009,#2C1A10);color:#D98A2C;border-radius:50%;width:44px;height:44px;display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 8px 24px rgba(26,16,9,0.5);border:3px solid white;">🍦</div>`,
+          html: `<div style="background:linear-gradient(135deg,#071B3A,#2C1A10);color:#C99A3D;border-radius:50%;width:44px;height:44px;display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 8px 24px rgba(26,16,9,0.5);border:3px solid white;">🍦</div>`,
           iconSize: [44, 44],
           iconAnchor: [22, 22],
         });
@@ -623,10 +623,10 @@ export default function LocationPicker({
           <style>{`
             .leaflet-container { background: #f8f9fc; font-family: 'Inter', sans-serif; }
             .leaflet-control-zoom { border: none !important; box-shadow: 0 8px 24px rgba(0,0,0,0.12) !important; border-radius: 12px !important; overflow: hidden; margin: 16px !important; }
-            .leaflet-control-zoom a { background: rgba(255,255,255,0.9) !important; backdrop-filter: blur(12px); color: #1A1009 !important; width: 36px !important; height: 36px !important; line-height: 36px !important; transition: all 0.2s !important; border-bottom: 1px solid rgba(0,0,0,0.05) !important; }
-            .leaflet-control-zoom a:hover { background: #1A1009 !important; color: #FF4E74 !important; }
+            .leaflet-control-zoom a { background: rgba(255,255,255,0.9) !important; backdrop-filter: blur(12px); color: #071B3A !important; width: 36px !important; height: 36px !important; line-height: 36px !important; transition: all 0.2s !important; border-bottom: 1px solid rgba(0,0,0,0.05) !important; }
+            .leaflet-control-zoom a:hover { background: #071B3A !important; color: #C9232D !important; }
             .leaflet-control-attribution { background: rgba(255,255,255,0.7) !important; backdrop-filter: blur(4px); border-radius: 4px 0 0 0; font-size: 9px !important; color: #9CA3AF !important; }
-            .leaflet-control-attribution a { color: #1A1009 !important; }
+            .leaflet-control-attribution a { color: #071B3A !important; }
             @keyframes bounce-in { 0% { transform: scale(0.3) translateY(20px); opacity: 0; } 50% { transform: scale(1.1) translateY(-5px); } 100% { transform: scale(1) translateY(0); opacity: 1; } }
           `}</style>
         </div>
@@ -690,3 +690,4 @@ export default function LocationPicker({
     </div>
   );
 }
+

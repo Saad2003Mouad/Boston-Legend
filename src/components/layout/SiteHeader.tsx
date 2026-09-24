@@ -88,13 +88,13 @@ export default function SiteHeader() {
     >
       {isScrolled && (
         <div className="absolute top-full left-0 right-0 pointer-events-none opacity-95">
-          <MeltingDrip color="#FFFBF5" height={14} variant="random" />
+          <MeltingDrip color="#FFF4D6" height={14} variant="random" />
         </div>
       )}
       <div suppressHydrationWarning className="container mx-auto px-4 md:px-6 flex items-center justify-between pointer-events-auto">
         {/* Logo */}
         <Link href="/" className="z-50">
-          <Logo iconOnlyOnMobile={true} />
+          <Logo iconOnlyOnMobile={false} />
         </Link>
 
         {/* Desktop Nav */}
@@ -349,3 +349,4 @@ export default function SiteHeader() {
     </header>
   );
 }
+

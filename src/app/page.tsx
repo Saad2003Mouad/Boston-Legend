@@ -3,7 +3,6 @@ import { BUSINESS_CONFIG } from "@/lib/config";
 import { constructMetadata } from "@/lib/seo";
 
 import HeroSection from "@/components/home/HeroSection";
-import TrustStats from "@/components/home/TrustStats";
 import ServicesMarquee from "@/components/home/ServicesMarquee";
 import BrandCarousel from "@/components/shared/BrandCarousel";
 import HowItWorks from "@/components/home/HowItWorks";
@@ -102,7 +101,7 @@ export default async function HomePage() {
       */}
       
       <HeroSection />
-      <TrustStats />
+
       <ServicesMarquee limit={5} />
       <BrandCarousel />
       <HowItWorks />

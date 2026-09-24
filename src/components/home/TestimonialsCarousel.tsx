@@ -11,7 +11,7 @@ const testimonials = [
     rating: 5,
     text: "Having American Legend at our wedding was the highlight of the night! The ice cream was premium, the staff was impeccable, and every guest was talking about it for weeks.",
     avatar: "SM",
-    color: "#FF4E74",
+    color: "#C9232D",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const testimonials = [
     rating: 5,
     text: "We booked the Sprinter Van for 150 employees. They served everyone flawlessly in under 90 minutes. Completely stress-free from booking to the last scoop.",
     avatar: "DT",
-    color: "#D98A2C",
+    color: "#C99A3D",
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const testimonials = [
     rating: 5,
     text: "The look on my son's face when the truck pulled up was absolutely priceless. The crew was wonderful with the kids. 10/10 would book again.",
     avatar: "JP",
-    color: "#2E9365",
+    color: "#123E73",
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const testimonials = [
     rating: 5,
     text: "Incredible! They helped us raise over $500 for our school's athletic program in just two hours. Kids loved the huge variety of flavors.",
     avatar: "MR",
-    color: "#FF4E74",
+    color: "#C9232D",
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ const testimonials = [
     rating: 5,
     text: "Our block party wouldn't have been the same without them. Arrived right on time, great energy, and the ice cream was absolutely delicious.",
     avatar: "AL",
-    color: "#D98A2C",
+    color: "#C99A3D",
   },
   {
     id: 6,
@@ -61,7 +61,7 @@ const testimonials = [
     rating: 5,
     text: "A huge hit at my daughter's graduation! The vintage truck looked stunning in photos and the staff made every guest feel special.",
     avatar: "JK",
-    color: "#2E9365",
+    color: "#123E73",
   },
 ];
 
@@ -71,14 +71,13 @@ export default function TestimonialsCarousel() {
   return (
     <section
       className="relative w-full overflow-hidden py-16 md:py-32"
-      style={{ background: "linear-gradient(180deg, #F0FDF4 0%, #DCFCE7 100%)" }}
+      style={{ background: "linear-gradient(180deg, #071B3A 0%, #0A2348 100%)" }}
     >
-      {/* Blueberry Drip coming DOWN from PackagesPreview into Testimonials */}
+      {/* Elegant animated wave from the Packages section */}
       <div className="absolute top-0 left-0 right-0 z-0">
         <MeltingDrip
-          color="#F0F7FF"
+          color="#FFF4D6"
           height={140}
-          variant="left-heavy"
         />
       </div>
 
@@ -89,22 +88,22 @@ export default function TestimonialsCarousel() {
             <span
               className="inline-flex items-center gap-2 px-5 py-2 rounded-full text-[0.68rem] font-black tracking-[0.22em] uppercase mb-5"
               style={{
-                background: "rgba(255,78,116,0.08)",
-                border: "1px solid rgba(255,78,116,0.18)",
-                color: "#FF4E74",
+                background: "rgba(201,154,61,0.15)",
+                border: "1px solid rgba(201,154,61,0.3)",
+                color: "#C99A3D",
               }}
             >
               Client Stories
             </span>
             <h2
               className="font-display font-black tracking-tight leading-[1.06]"
-              style={{ fontSize: "clamp(2.2rem, 4.5vw, 3.5rem)", color: "#1A1009" }}
+              style={{ fontSize: "clamp(2.2rem, 4.5vw, 3.5rem)", color: "#ffffff" }}
             >
               What Our Clients{" "}
               <span
                 className="italic"
                 style={{
-                  background: "linear-gradient(135deg, #FF4E74, #D98A2C)",
+                  background: "linear-gradient(135deg, #C9232D, #C99A3D)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -118,15 +117,15 @@ export default function TestimonialsCarousel() {
           <div className="flex items-center gap-4 flex-shrink-0">
             <div className="flex gap-0.5">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-5 h-5 fill-current" style={{ color: "#D98A2C" }} />
+                <Star key={i} className="w-5 h-5 fill-current" style={{ color: "#C99A3D" }} />
               ))}
             </div>
             <div className="text-left">
-              <p className="font-black text-lg" style={{ color: "#1A1009" }}>
+              <p className="font-black text-lg" style={{ color: "#ffffff" }}>
                 {BUSINESS_CONFIG.stats.rating}
-                <span className="text-sm font-medium" style={{ color: "rgba(26,16,9,0.45)" }}>/5.0</span>
+                <span className="text-sm font-medium" style={{ color: "rgba(255,255,255,0.5)" }}>/5.0</span>
               </p>
-              <p className="text-xs font-bold" style={{ color: "rgba(26,16,9,0.45)" }}>
+              <p className="text-xs font-bold" style={{ color: "rgba(255,255,255,0.45)" }}>
                 {BUSINESS_CONFIG.stats.reviewCount}+ Reviews
               </p>
             </div>
@@ -136,20 +135,20 @@ export default function TestimonialsCarousel() {
 
       {/* Fade edges */}
       <div className="absolute left-0 top-0 bottom-0 w-20 md:w-32 pointer-events-none z-10"
-        style={{ background: "linear-gradient(90deg, #fff, transparent)" }} />
+        style={{ background: "linear-gradient(90deg, #071B3A, transparent)" }} />
       <div className="absolute right-0 top-0 bottom-0 w-20 md:w-32 pointer-events-none z-10"
-        style={{ background: "linear-gradient(-90deg, #FFFBF5, transparent)" }} />
+        style={{ background: "linear-gradient(-90deg, #0A2348, transparent)" }} />
 
       {/* Scrolling cards */}
       <div className="flex w-full overflow-hidden">
         <div
-          className="flex items-stretch gap-6 px-6"
+          className="flex items-stretch gap-4 md:gap-6 px-4 md:px-6"
           style={{ animation: "marquee 45s linear infinite", width: "max-content" }}
         >
           {doubled.map((t, idx) => (
             <div
               key={`${t.id}-${idx}`}
-              className="flex-shrink-0 w-[80vw] sm:w-[300px] md:w-[340px] flex flex-col rounded-[1.75rem] p-6 sm:p-7 transition-all duration-300"
+              className="flex-shrink-0 w-[75vw] sm:w-[300px] md:w-[340px] flex flex-col rounded-[1.5rem] p-5 md:p-7 transition-all duration-300"
               style={{
                 background: "#fff",
                 border: "1.5px solid rgba(26,16,9,0.06)",
@@ -160,7 +159,7 @@ export default function TestimonialsCarousel() {
               <div className="flex items-center justify-between mb-5">
                 <div className="flex gap-0.5">
                   {[...Array(t.rating)].map((_, i) => (
-                    <Star key={i} className="w-3.5 h-3.5 fill-current" style={{ color: "#D98A2C" }} />
+                    <Star key={i} className="w-3.5 h-3.5 fill-current" style={{ color: "#C99A3D" }} />
                   ))}
                 </div>
                 <Quote className="w-8 h-8" style={{ color: `${t.color}20` }} />
@@ -168,7 +167,7 @@ export default function TestimonialsCarousel() {
 
               {/* Review text */}
               <p
-                className="text-sm md:text-[0.95rem] leading-relaxed flex-1 mb-6"
+                className="text-[0.85rem] md:text-[0.95rem] leading-relaxed flex-1 mb-5"
                 style={{ color: "rgba(26,16,9,0.70)", fontStyle: "italic" }}
               >
                 &ldquo;{t.text}&rdquo;
@@ -183,7 +182,7 @@ export default function TestimonialsCarousel() {
                   {t.avatar}
                 </div>
                 <div>
-                  <p className="font-bold text-sm" style={{ color: "#1A1009" }}>{t.name}</p>
+                  <p className="font-bold text-sm" style={{ color: "#071B3A" }}>{t.name}</p>
                   <p className="text-[0.68rem] font-bold uppercase tracking-wider" style={{ color: "rgba(26,16,9,0.40)" }}>
                     {t.event} · {t.city}, MA
                   </p>
@@ -196,3 +195,5 @@ export default function TestimonialsCarousel() {
     </section>
   );
 }
+
+
