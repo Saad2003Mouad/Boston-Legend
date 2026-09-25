@@ -23,7 +23,7 @@ import CancelBookingButton from "./CancelBookingButton";
 import EditBookingButton from "./EditBookingButton";
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
-  return { title: "Booking Details | Boston Legend Ice Cream Truck" };
+  return { title: "Booking Details | American Legend Ice Cream Truck" };
 }
 
 export const dynamic = "force-dynamic";

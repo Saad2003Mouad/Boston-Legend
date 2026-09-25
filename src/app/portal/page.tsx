@@ -7,7 +7,7 @@ import { CalendarDays, ChevronRight, Truck, MapPin, Users, Clock, Package, Spark
 import SignOutButton from "./SignOutButton";
 
 export const metadata = {
-  title: "My Portal | Boston Legend Ice Cream Truck",
+  title: "My Portal | American Legend Ice Cream Truck",
 };
 
 export const dynamic = "force-dynamic";

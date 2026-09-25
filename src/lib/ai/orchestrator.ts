@@ -33,7 +33,7 @@ const google = createGoogleGenerativeAI({
 // ── Tool Registry ─────────────────────────────────────────────────
 const CUSTOMER_TOOLS = {
   getPackages: tool({
-    description: "Get all available Boston Legend Ice Cream Truck packages, pricing, and descriptions.",
+    description: "Get all available American Legend Ice Cream Truck packages, pricing, and descriptions.",
     parameters: z.object({ dummy: z.string().optional() }),
     execute: async (args: any) => {
       const res = await getPackages();
@@ -325,7 +325,7 @@ export async function orchestrateAI(role: "customer" | "admin", messages: ChatMe
 
       const step2System = `${systemPrompt}
 
-IMPORTANT: You have just retrieved the following LIVE DATA from the Boston Legend Ice Cream Truck database. 
+IMPORTANT: You have just retrieved the following LIVE DATA from the American Legend Ice Cream Truck database. 
 Use ONLY this data to answer the user. Do NOT say you don't have access to data. 
 Present the results in a clear, professional markdown format.
 

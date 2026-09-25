@@ -8,8 +8,8 @@ import BlogSection from "@/components/home/BlogSection";
 import { prisma } from "@/lib/prisma";
 
 export const metadata: Metadata = constructMetadata({
-  title: "Ice Cream Truck Services | Boston Legend Ice Cream Truck",
-  description: "From corporate events and weddings to birthday parties and school festivals. Discover how Boston Legend Ice Cream Truck can elevate your next Massachusetts event.",
+  title: "Ice Cream Truck Services | American Legend Ice Cream Truck",
+  description: "From corporate events and weddings to birthday parties and school festivals. Discover how American Legend Ice Cream Truck can elevate your next New England event.",
   url: "/occasions",
 });
 

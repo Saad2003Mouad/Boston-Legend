@@ -19,7 +19,7 @@ const stats = [
     value: "5.0",
     suffix: "★",
     label: "Client Rating",
-    desc: "Consistently rated 5-star across MA",
+    desc: "Consistently rated 5-star across New England",
     icon: ShieldCheck,
     gradient: "linear-gradient(135deg, #C99A3D, #E8C06A)",
     glow: "rgba(217,138,44,0.25)",
@@ -27,7 +27,7 @@ const stats = [
   {
     value: "50",
     suffix: "+",
-    label: "Massachusetts Towns",
+    label: "New England Towns",
     desc: "Full statewide catering coverage",
     icon: MapPin,
     gradient: "linear-gradient(135deg, #2E9365, #3DB87A)",
@@ -87,7 +87,7 @@ export default function TrustStats() {
               color: "#071B3A",
             }}
           >
-            🏆 Why Massachusetts Trusts Us
+            🏆 Why New England Trusts Us
           </span>
           <h2
             className="font-display font-black tracking-tight leading-tight"
@@ -126,7 +126,7 @@ export default function TrustStats() {
                 variants={card}
                 className="group relative rounded-[2rem] p-6 sm:p-8 text-center flex flex-col items-center overflow-hidden cursor-default"
                 style={{
-                  background: "#fff",
+                  background: "#FFFDF8",
                   border: "1.5px solid rgba(26,16,9,0.06)",
                   boxShadow: "0 4px 24px rgba(26,16,9,0.05)",
                   transition: "all 0.4s ease",

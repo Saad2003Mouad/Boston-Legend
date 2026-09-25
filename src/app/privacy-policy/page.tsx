@@ -1,15 +1,15 @@
 import { BUSINESS_CONFIG } from "@/lib/config";
 
 export const metadata = {
-  title: "Privacy Policy | Boston Legend Ice Cream Truck",
-  description: "Privacy policy and data handling practices for Boston Legend Ice Cream Truck.",
+  title: "Privacy Policy | American Legend Ice Cream Truck",
+  description: "Privacy policy and data handling practices for American Legend Ice Cream Truck.",
 };
 
 export default function PrivacyPolicyPage() {
   return (
     <div className="py-20 min-h-screen">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-10 md:p-16 shadow-xl shadow-navy/5 border border-gray-100">
+        <div className="bg-cream/80 backdrop-blur-sm rounded-3xl p-10 md:p-16 shadow-xl shadow-navy/5 border border-gray-100">
           <h1 className="font-display font-black text-4xl md:text-5xl text-navy mb-4">Privacy Policy</h1>
             <p className="text-gray-500 font-medium mb-10">Last Updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</p>
 

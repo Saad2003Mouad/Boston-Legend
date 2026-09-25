@@ -8,19 +8,19 @@ const IMAGES = [
   // ── Hero & Brand ───────────────────────────────────────────────
   {
     loc: `${BASE_URL}/images/hero-cinematic.jpg`,
-    title: 'Boston Legend Ice Cream Truck — Premium Event Catering in Massachusetts',
+    title: 'American Legend Ice Cream Truck — Premium Event Catering in Massachusetts',
     caption: 'Massachusetts\' most trusted premium ice cream truck catering service, bringing sweet smiles to birthdays, corporate events, weddings, and every celebration.',
     pages: ['/', '/about'],
   },
   {
     loc: `${BASE_URL}/images/classic-truck.jpg`,
-    title: 'Boston Legend Ice Cream Truck — Classic Ice Cream Truck for Events',
+    title: 'American Legend Ice Cream Truck — Classic Ice Cream Truck for Events',
     caption: 'Our iconic, well-maintained ice cream truck ready to make your event unforgettable. Available for private bookings across all of Massachusetts.',
     pages: ['/', '/about', '/packages'],
   },
   {
     loc: `${BASE_URL}/images/logo.png`,
-    title: 'Boston Legend Ice Cream Truck — Professional Catering Service',
+    title: 'American Legend Ice Cream Truck — Professional Catering Service',
     caption: 'Professional, licensed ice cream truck catering for any event size. Serving Greater Boston and all Massachusetts communities.',
     pages: ['/'],
   },
@@ -29,13 +29,13 @@ const IMAGES = [
   {
     loc: `${BASE_URL}/images/birthday-parties.jpg`,
     title: 'Ice Cream Truck for Birthday Parties in Massachusetts',
-    caption: 'Turn any birthday into a magical memory with a Boston Legend Ice Cream Truck! Premium ice cream catering for kids and adult birthday parties across Massachusetts.',
+    caption: 'Turn any birthday into a magical memory with a American Legend Ice Cream Truck! Premium ice cream catering for kids and adult birthday parties across Massachusetts.',
     pages: ['/occasions/birthday-parties'],
   },
   {
     loc: `${BASE_URL}/images/corporate-parties.jpg`,
     title: 'Corporate Ice Cream Truck Catering — Boston & Massachusetts',
-    caption: 'Elevate your corporate event, company picnic, or team-building day with Boston Legend Ice Cream Truck. Professional catering for businesses of all sizes across Massachusetts.',
+    caption: 'Elevate your corporate event, company picnic, or team-building day with American Legend Ice Cream Truck. Professional catering for businesses of all sizes across Massachusetts.',
     pages: ['/occasions/corporate-events'],
   },
   {
@@ -47,25 +47,25 @@ const IMAGES = [
   {
     loc: `${BASE_URL}/images/block-parties.jpg`,
     title: 'Ice Cream Truck for Block Parties in Massachusetts',
-    caption: 'Make your neighborhood block party legendary! Boston Legend Ice Cream Truck brings premium frozen treats and fun for the whole community.',
+    caption: 'Make your neighborhood block party legendary! American Legend Ice Cream Truck brings premium frozen treats and fun for the whole community.',
     pages: ['/occasions/block-parties'],
   },
   {
     loc: `${BASE_URL}/images/fundraise.jpg`,
     title: 'Ice Cream Truck Fundraiser Events — Massachusetts Schools & Nonprofits',
-    caption: 'Partner with Boston Legend Ice Cream Truck for your next school fundraiser, charity event, or community cause. Delicious ice cream that helps raise funds and smiles.',
+    caption: 'Partner with American Legend Ice Cream Truck for your next school fundraiser, charity event, or community cause. Delicious ice cream that helps raise funds and smiles.',
     pages: ['/occasions/fundraisers'],
   },
   {
     loc: `${BASE_URL}/images/launch-parties.jpg`,
     title: 'Grand Opening & Launch Party Ice Cream Catering',
-    caption: 'Make your grand opening or product launch unforgettable with Boston Legend Ice Cream Truck. Premium ice cream catering that creates buzz and draws a crowd.',
+    caption: 'Make your grand opening or product launch unforgettable with American Legend Ice Cream Truck. Premium ice cream catering that creates buzz and draws a crowd.',
     pages: ['/occasions/launch-parties'],
   },
   {
     loc: `${BASE_URL}/images/marketing-events.jpg`,
     title: 'Marketing Event Ice Cream Truck Activation — Massachusetts',
-    caption: 'Ice cream truck activations are the ultimate marketing tool. Boston Legend Ice Cream Truck creates memorable brand experiences at trade shows, pop-ups, and marketing events.',
+    caption: 'Ice cream truck activations are the ultimate marketing tool. American Legend Ice Cream Truck creates memorable brand experiences at trade shows, pop-ups, and marketing events.',
     pages: ['/occasions/marketing-events'],
   },
   {
@@ -76,21 +76,21 @@ const IMAGES = [
   },
   {
     loc: `${BASE_URL}/images/sweeter-together.jpg`,
-    title: 'Boston Legend Ice Cream Truck — Sweeter Together Events',
-    caption: 'Every celebration is sweeter with Boston Legend Ice Cream Truck. From intimate gatherings to large festivals, we bring premium ice cream and joy to every event.',
+    title: 'American Legend Ice Cream Truck — Sweeter Together Events',
+    caption: 'Every celebration is sweeter with American Legend Ice Cream Truck. From intimate gatherings to large festivals, we bring premium ice cream and joy to every event.',
     pages: ['/', '/occasions'],
   },
 
   // ── Packages ────────────────────────────────────────────────────
   {
     loc: `${BASE_URL}/images/packages_truck/sweet_star.jpg`,
-    title: 'Sweet Star Ice Cream Catering Package — Boston Legend Ice Cream Truck',
+    title: 'Sweet Star Ice Cream Catering Package — American Legend Ice Cream Truck',
     caption: 'Our Sweet Star package — the perfect introduction to premium ice cream truck catering for smaller, intimate celebrations in Massachusetts.',
     pages: ['/packages'],
   },
   {
     loc: `${BASE_URL}/images/packages_truck/classic_celebiation.jpg`,
-    title: 'Classic Celebration Package — Boston Legend Ice Cream Truck Massachusetts',
+    title: 'Classic Celebration Package — American Legend Ice Cream Truck Massachusetts',
     caption: 'The Classic Celebration package offers premium ice cream catering for mid-sized events. Perfect for birthday parties, family reunions, and community gatherings.',
     pages: ['/packages'],
   },
@@ -102,7 +102,7 @@ const IMAGES = [
   },
   {
     loc: `${BASE_URL}/images/packages_truck/grand_celebiation.jpg`,
-    title: 'Grand Celebration Package — Boston Legend Ice Cream Truck',
+    title: 'Grand Celebration Package — American Legend Ice Cream Truck',
     caption: 'The Grand Celebration package is designed for large-scale events across Massachusetts. Premium ice cream catering for corporate events, festivals, and big celebrations.',
     pages: ['/packages'],
   },
@@ -114,7 +114,7 @@ const IMAGES = [
   },
   {
     loc: `${BASE_URL}/images/packages_truck/platinum_celebiation.jpg`,
-    title: 'Platinum Celebration Package — Boston Legend Ice Cream Truck',
+    title: 'Platinum Celebration Package — American Legend Ice Cream Truck',
     caption: 'Our flagship Platinum Celebration package is the gold standard of ice cream catering in Massachusetts — ideal for large corporate events, major fundraisers, and grand celebrations.',
     pages: ['/packages'],
   },

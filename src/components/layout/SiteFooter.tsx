@@ -23,8 +23,8 @@ export default function SiteFooter({
 }: SiteFooterProps) {
   const currentYear = new Date().getFullYear();
 
-  const phone = companyPhone || BUSINESS_CONFIG.contact.phone1;
-  const email = companyEmail || BUSINESS_CONFIG.contact.email;
+  const phone = BUSINESS_CONFIG.contact.phone1;
+  const email = BUSINESS_CONFIG.contact.email;
   const address = companyAddress || BUSINESS_CONFIG.address.display;
   const name = companyName || BUSINESS_CONFIG.name;
   const fbUrl = facebookUrl || BUSINESS_CONFIG.social.facebook;
@@ -100,7 +100,7 @@ export default function SiteFooter({
                   <li><Link href="/packages" className="hover:text-coral hover:translate-x-2 inline-block transition-transform duration-300">Packages & Pricing</Link></li>
                   <li><Link href="/menu" className="hover:text-coral hover:translate-x-2 inline-block transition-transform duration-300">Ice Cream Menu</Link></li>
                   <li><Link href="/occasions" className="hover:text-coral hover:translate-x-2 inline-block transition-transform duration-300">Events & Catering</Link></li>
-                  <li><Link href="/cities" className="hover:text-coral hover:translate-x-2 inline-block transition-transform duration-300">Massachusetts Cities</Link></li>
+                  <li><Link href="/cities" className="hover:text-coral hover:translate-x-2 inline-block transition-transform duration-300">New England Cities</Link></li>
                   <li><Link href="/blog" className="hover:text-coral hover:translate-x-2 inline-block transition-transform duration-300">Sweet Stories & Blog</Link></li>
                   <li><Link href="/contact" className="hover:text-coral hover:translate-x-2 inline-block transition-transform duration-300">Contact & Inquiries</Link></li>
                 </ul>
@@ -119,10 +119,7 @@ export default function SiteFooter({
               <ul className="space-y-5 text-base font-medium text-cream/80">
                 <li className="flex items-start gap-3 group">
                   <Phone className="text-coral shrink-0 mt-0.5 group-hover:scale-110 transition-transform" size={18} />
-                  <div className="space-y-1">
-                    <a href={`tel:${phone.replace(/[^0-9+]/g, "")}`} className="block hover:text-white transition-colors font-bold">{phone}</a>
-                    <a href={`tel:${BUSINESS_CONFIG.contact.phone2Formatted}`} className="block hover:text-white transition-colors text-xs opacity-75">{BUSINESS_CONFIG.contact.phone2} (Reservations)</a>
-                  </div>
+                  <a href={`tel:${BUSINESS_CONFIG.contact.phone1Formatted}`} className="hover:text-white transition-colors font-bold">{BUSINESS_CONFIG.contact.phone1}</a>
                 </li>
                 <li className="flex items-center gap-3 group">
                   <Mail className="text-coral shrink-0 group-hover:scale-110 transition-transform" size={18} />
@@ -138,7 +135,7 @@ export default function SiteFooter({
 
           {/* Bottom Bar */}
           <div className="pt-8 border-t border-cream/10 flex flex-col md:flex-row items-center justify-between gap-6 text-xs font-medium text-cream/50">
-            <p>&copy; {currentYear} {name}. Serving all of Massachusetts with pride.</p>
+            <p>&copy; {currentYear} {name}. Serving all of New England with pride.</p>
             <div className="flex gap-6">
               <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
               <Link href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>

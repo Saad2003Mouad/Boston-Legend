@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   return {
-    title: `${post.seoTitle || post.title} | Boston Legend Ice Cream Truck`,
+    title: `${post.seoTitle || post.title} | American Legend Ice Cream Truck`,
     description: post.seoDesc || post.excerpt || "",
     openGraph: {
       images: post.featuredImage ? [post.featuredImage] : [],
@@ -58,7 +58,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           {post.title}
         </h1>
         <div className="flex items-center justify-center gap-4 text-sm font-bold text-gray-500">
-          <span className="text-coral">{post.author?.name || "Boston Legend Ice Cream Truck"}</span>
+          <span className="text-coral">{post.author?.name || "American Legend Ice Cream Truck"}</span>
           <span className="w-1.5 h-1.5 rounded-full bg-gray-300"></span>
           <span>{post.publishedAt ? new Date(post.publishedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }) : ''}</span>
         </div>

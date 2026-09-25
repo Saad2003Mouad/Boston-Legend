@@ -178,7 +178,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           <div className="relative animate-pulse">
             <div className="w-16 h-16 rounded-2xl overflow-hidden shadow-lg">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <Image src="/images/icon.png" alt="Boston Legend Assistant" fill className="object-contain" sizes="48px" />
+              <Image src="/images/icon.png" alt="American Legend Assistant" fill className="object-contain" sizes="48px" />
             </div>
             <div className="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-coral border-2 border-white animate-ping" />
           </div>

@@ -70,8 +70,8 @@ function baseTemplate(content: string, title: string) {
         <!-- Header -->
         <tr>
           <td class="hdr" style="background:#ffffff;padding:32px 24px 24px;text-align:center;border-bottom:3px solid ${BRAND_CORAL};">
-            <img src="${LOGO_URL}" alt="Boston Legend Ice Cream Truck" width="80" height="80" style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin:0 auto 12px;border:3px solid #F4F2EE;"/>
-            <p style="margin:0;font-size:13px;font-weight:700;color:#9CA3AF;letter-spacing:2px;text-transform:uppercase;">Boston Legend Ice Cream Truck</p>
+            <img src="${LOGO_URL}" alt="American Legend Ice Cream Truck" width="80" height="80" style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin:0 auto 12px;border:3px solid #F4F2EE;"/>
+            <p style="margin:0;font-size:13px;font-weight:700;color:#9CA3AF;letter-spacing:2px;text-transform:uppercase;">American Legend Ice Cream Truck</p>
           </td>
         </tr>
 
@@ -85,9 +85,9 @@ function baseTemplate(content: string, title: string) {
         <!-- Footer -->
         <tr>
           <td class="ftr" style="background:#F8F7F5;padding:20px 28px;text-align:center;border-top:1px solid #EDE9E4;">
-            <p style="margin:0 0 4px;font-size:13px;font-weight:700;color:${BRAND_NAVY};">Boston Legend Ice Cream Truck</p>
+            <p style="margin:0 0 4px;font-size:13px;font-weight:700;color:${BRAND_NAVY};">American Legend Ice Cream Truck</p>
             <p style="margin:0 0 4px;font-size:12px;color:#9CA3AF;">Greater Boston, MA &middot; <a href="tel:617-999-3803" style="color:${BRAND_CORAL};font-weight:600;text-decoration:none;">617-999-3803</a></p>
-            <p style="margin:0;font-size:11px;color:#C4BFB8;">&copy; ${new Date().getFullYear()} Boston Legend Ice Cream Truck LLC. All rights reserved.</p>
+            <p style="margin:0;font-size:11px;color:#C4BFB8;">&copy; ${new Date().getFullYear()} American Legend Ice Cream Truck LLC. All rights reserved.</p>
           </td>
         </tr>
 
@@ -114,7 +114,7 @@ export async function sendEmail({ to, subject, html, title, replyTo }: { to: str
   for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
     try {
       const info = await transporter.sendMail({
-        from: `"Boston Legend Ice Cream Truck" <${SENDER_EMAIL}>`,
+        from: `"American Legend Ice Cream Truck" <${SENDER_EMAIL}>`,
         replyTo: replyTo || REPLY_TO,
         to: recipients,
         subject: subject,
@@ -176,9 +176,9 @@ export async function sendOtpEmail(
 
   return sendEmail({
     to,
-    subject: `${otp} — Your Boston Legend Ice Cream Truck ${label} Code`,
+    subject: `${otp} — Your American Legend Ice Cream Truck ${label} Code`,
     html,
-    title: `Boston Legend Ice Cream Truck ${label}`,
+    title: `American Legend Ice Cream Truck ${label}`,
   });
 }
 
@@ -193,7 +193,7 @@ export async function sendWelcomeEmail(to: string, firstName: string) {
     </div>
 
     <p style="color:#6B7280;font-size:14px;line-height:1.7;margin:0 0 24px;">
-      Thank you for joining Boston Legend Ice Cream Truck! Browse our packages and book your sweet event today.
+      Thank you for joining American Legend Ice Cream Truck! Browse our packages and book your sweet event today.
     </p>
 
     <table cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:20px;">
@@ -204,7 +204,7 @@ export async function sendWelcomeEmail(to: string, firstName: string) {
 
     <p style="text-align:center;font-size:13px;color:#9CA3AF;margin:0;">Questions? <a href="tel:617-999-3803" style="color:${BRAND_CORAL};font-weight:700;text-decoration:none;">617-999-3803</a></p>
   `;
-  return sendEmail({ to, subject: "Welcome to Boston Legend Ice Cream Truck! 🍦", html, title: "Welcome to Boston Legend Ice Cream Truck" });
+  return sendEmail({ to, subject: "Welcome to American Legend Ice Cream Truck! 🍦", html, title: "Welcome to American Legend Ice Cream Truck" });
 }
 
 // ─── FORGOT PASSWORD EMAIL ────────────────────────────────────
@@ -233,7 +233,7 @@ export async function sendForgotPasswordEmail(to: string, otp: string, firstName
       Need help? Call us at <a href="tel:617-999-3803" style="color:${BRAND_NAVY};font-weight:800;">617-999-3803</a>
     </p>
   `;
-  return sendEmail({ to, subject: `${otp} — Boston Legend Ice Cream Truck Password Reset Code`, html, title: "Password Reset" });
+  return sendEmail({ to, subject: `${otp} — American Legend Ice Cream Truck Password Reset Code`, html, title: "Password Reset" });
 }
 
 // ─── STAFF INVITE EMAIL ──────────────────────────────────────
@@ -248,7 +248,7 @@ export async function sendStaffInviteEmail(to: string, inviterName: string, invi
       </p>
     </div>
   `;
-  return sendEmail({ to, subject: `You've been invited to join Boston Legend Ice Cream Truck Staff`, html, title: "Staff Invitation" });
+  return sendEmail({ to, subject: `You've been invited to join American Legend Ice Cream Truck Staff`, html, title: "Staff Invitation" });
 }
 
 // ─── SENSITIVE ACTION OTP EMAIL ──────────────────────────────
@@ -278,7 +278,7 @@ export async function sendSensitiveActionOtpEmail(to: string, otp: string, actio
       </p>
     </div>
   `;
-  return sendEmail({ to, subject: `${otp} — Boston Legend Ice Cream Truck Admin Security Code`, html, title: "Security Verification" });
+  return sendEmail({ to, subject: `${otp} — American Legend Ice Cream Truck Admin Security Code`, html, title: "Security Verification" });
 }
 
 // ─── BOOKING DETAIL FORMATTER ─────────────────────────────────
@@ -400,7 +400,7 @@ export async function sendBookingApprovedEmail(to: string, firstName: string, bo
     if (booking?.package?.slug === "custom-event-package" || booking?.packageId === "custom-event-package" || booking?.package?.name === "Custom Event Package") isCustom = true;
   } catch (e) { console.error("Error formatting booking details for approved email:", e); }
 
-  const subject = isCustom ? `Approved: Your Boston Legend Ice Cream Truck Custom Quote #${bookingNumber}` : `Approved: Your Boston Legend Ice Cream Truck Booking #${bookingNumber}`;
+  const subject = isCustom ? `Approved: Your American Legend Ice Cream Truck Custom Quote #${bookingNumber}` : `Approved: Your American Legend Ice Cream Truck Booking #${bookingNumber}`;
   const headerText = isCustom ? `Your Custom Quote is Approved! 🎉` : `Legendary News, ${firstName}! 🎉`;
   const bodyText = isCustom
     ? `Your custom quote request **#${bookingNumber}** has been approved with a finalized price.`
@@ -436,7 +436,7 @@ export async function sendBookingPendingEmail(to: string, firstName: string, boo
     <h2 style="margin:0 0 16px;color:${BRAND_NAVY};font-size:24px;font-weight:900;">🎉 Booking Confirmed!</h2>
     <p style="margin:0 0 24px;color:#4B5563;font-size:16px;line-height:1.6;font-weight:600;">
       Hello ${firstName},<br/><br/>
-      Your Boston Legend Ice Cream Truck booking has been <strong style="color:#16a34a;">confirmed</strong>! We're excited to bring the sweet celebration to your event. You'll receive a follow-up from our team with final details.
+      Your American Legend Ice Cream Truck booking has been <strong style="color:#16a34a;">confirmed</strong>! We're excited to bring the sweet celebration to your event. You'll receive a follow-up from our team with final details.
     </p>
     <div style="background:#F9FAFB;border:1px solid #E5E7EB;border-radius:12px;padding:16px;margin-bottom:24px;text-align:center;">
       <p style="margin:0 0 4px;color:\${BRAND_NAVY};font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1px;">Booking Reference</p>
@@ -459,7 +459,7 @@ export async function sendBookingPendingEmail(to: string, firstName: string, boo
       <p style="margin:0;color:#6B7280;font-size:13px;font-weight:600;">Questions? Call us directly at <a href="tel:617-999-3803" style="color:${BRAND_NAVY};text-decoration:none;font-weight:800;">617-999-3803</a>.</p>
     </div>
   `;
-  return sendEmail({ to, subject: `✅ Booking Confirmed — #${bookingNumber} | Boston Legend Ice Cream Truck`, html });
+  return sendEmail({ to, subject: `✅ Booking Confirmed — #${bookingNumber} | American Legend Ice Cream Truck`, html });
 }
 
 // ─── BOOKING REJECTED ─────────────────────────────────────────
@@ -489,7 +489,7 @@ export async function sendBookingRejectedEmail(to: string, firstName: string, bo
       <a href="${portalUrl}" style="display:block;width:100%;box-sizing:border-box;background:${BRAND_NAVY};color:${BRAND_CORAL};padding:18px 24px;border-radius:12px;text-decoration:none;font-weight:900;font-size:16px;text-transform:uppercase;">Update My Booking Request</a>
     </div>
   `;
-  return sendEmail({ to, subject: `Update Needed: Your Boston Legend Ice Cream Truck Booking Request #${bookingNumber}`, html });
+  return sendEmail({ to, subject: `Update Needed: Your American Legend Ice Cream Truck Booking Request #${bookingNumber}`, html });
 }
 
 // ─── BOOKING PENDING REVIEW ───────────────────────────────────
@@ -519,7 +519,7 @@ export async function sendBookingPendingReviewEmail(to: string, firstName: strin
       <a href="${portalUrl}" style="display:block;width:100%;box-sizing:border-box;background:${BRAND_NAVY};color:${BRAND_CORAL};padding:18px 24px;border-radius:12px;text-decoration:none;font-weight:900;font-size:16px;text-transform:uppercase;">View or Manage Your Booking</a>
     </div>
   `;
-  return sendEmail({ to, subject: `Booking Under Review: Your Boston Legend Ice Cream Truck Request #${bookingNumber}`, html });
+  return sendEmail({ to, subject: `Booking Under Review: Your American Legend Ice Cream Truck Request #${bookingNumber}`, html });
 }
 
 // ─── CUSTOM QUOTE ─────────────────────────────────────────────
@@ -543,7 +543,7 @@ export async function sendCustomQuoteEmail(to: string, firstName: string, bookin
   const html = `
     <div style="text-align:center;padding:24px 0 24px;">
       <h2 style="margin:0 0 8px;color:${BRAND_NAVY};font-size:26px;font-weight:900;">Custom Quote Request Received</h2>
-      <p style="margin:8px 0 0;color:#4B5563;font-size:16px;font-weight:600;line-height:1.5;">Hi ${firstName}, thank you for requesting a custom Boston Legend Ice Cream Truck event package. Because your event is for more than 200 guests, our team will personally review your request before preparing your final quote.</p>
+      <p style="margin:8px 0 0;color:#4B5563;font-size:16px;font-weight:600;line-height:1.5;">Hi ${firstName}, thank you for requesting a custom American Legend Ice Cream Truck event package. Because your event is for more than 200 guests, our team will personally review your request before preparing your final quote.</p>
     </div>
     <div style="background:#F3F4F6;border-radius:16px;padding:20px 24px;margin-bottom:24px;">
       <p style="margin:0 0 6px;font-size:12px;font-weight:900;text-transform:uppercase;color:#9CA3AF;">Booking Reference</p>
@@ -560,7 +560,7 @@ export async function sendCustomQuoteEmail(to: string, firstName: string, bookin
       <a href="${portalUrl}" style="display:block;width:100%;box-sizing:border-box;background:${BRAND_NAVY};color:${BRAND_CORAL};padding:18px 24px;border-radius:12px;text-decoration:none;font-weight:950;font-size:16px;text-transform:uppercase;">View or Manage Your Request</a>
     </div>
   `;
-  return sendEmail({ to, subject: `Custom Quote Request Received — Boston Legend Ice Cream Truck`, html });
+  return sendEmail({ to, subject: `Custom Quote Request Received — American Legend Ice Cream Truck`, html });
 }
 
 // ─── OWNER NOTIFICATIONS ────────────────────────────────────────
@@ -694,7 +694,7 @@ export async function sendGoogleReviewRequestEmail(booking: { id: string; bookin
       <p style="font-size:20px;font-weight:900;color:${BRAND_NAVY};margin:0;">${packageName} — ${eventDate}</p>
     </div>
     <p style="font-size:16px;color:#374151;font-weight:600;line-height:1.7;margin-bottom:20px;">
-      It was a pleasure serving your event! If you enjoyed your Boston Legend Ice Cream Truck experience, we'd be incredibly grateful if you could take 30 seconds to leave us a review on Google. It really helps other families and businesses discover us!
+      It was a pleasure serving your event! If you enjoyed your American Legend Ice Cream Truck experience, we'd be incredibly grateful if you could take 30 seconds to leave us a review on Google. It really helps other families and businesses discover us!
     </p>
     <div style="text-align:center;margin:28px 0;">
       <a href="${GOOGLE_REVIEW_URL}" style="display:inline-block;background:${BRAND_CORAL};color:${BRAND_NAVY};padding:18px 40px;border-radius:50px;text-decoration:none;font-weight:900;font-size:17px;box-shadow:0 8px 20px rgba(255,160,0,0.35);">⭐ Leave a Google Review</a>
@@ -705,7 +705,7 @@ export async function sendGoogleReviewRequestEmail(booking: { id: string; bookin
       <a href="https://www.bostonlegendicecreamtruck.com/packages" style="color:${BRAND_CORAL};font-weight:800;font-size:14px;">Book your next event →</a>
     </div>
   `;
-  return sendEmail({ to: booking.customer.email, subject: `${customerName}, thank you for choosing Boston Legend Ice Cream Truck! ⭐`, html, title: "Thank You — Boston Legend Ice Cream Truck" });
+  return sendEmail({ to: booking.customer.email, subject: `${customerName}, thank you for choosing American Legend Ice Cream Truck! ⭐`, html, title: "Thank You — American Legend Ice Cream Truck" });
 }
 
 // ─── CONTACT AND QUOTE REQUEST NOTIFICATIONS ──────────────────

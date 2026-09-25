@@ -10,7 +10,7 @@ import confetti from "canvas-confetti";
 const TRUST_ITEMS = [
   { icon: "🏆", label: "500+ Events" },
   { icon: "⭐", label: "5-Star Rated" },
-  { icon: "📍", label: "All of Massachusetts" },
+  { icon: "📍", label: "All of New England" },
   { icon: "✅", label: "Fully Licensed" },
 ];
 
@@ -36,7 +36,7 @@ export default function HeroSection() {
       <div className="absolute top-0 left-0 right-0 h-[55vh] md:h-full md:inset-0 z-0">
         <Image
           src="/images/cover_image.png"
-          alt="American Legend Ice Cream Truck — Premium Ice Cream Catering in Massachusetts"
+          alt="American Legend Ice Cream Truck — Premium Ice Cream Catering in New England"
           fill
           className="object-cover object-center"
           sizes="100vw"
@@ -114,7 +114,7 @@ export default function HeroSection() {
                 color: "#C99A3D",
               }}
             >
-              🍦 Massachusetts&apos; Premier Ice Cream Truck
+              🍦 New England&apos; Premier Ice Cream Truck
             </span>
           </motion.div>
 
@@ -132,7 +132,7 @@ export default function HeroSection() {
               Sweet Memories
             </span>
             <br />
-            <span className="italic font-medium text-white/90">Across Massachusetts.</span>
+            <span className="italic font-medium text-white/90">Across New England.</span>
           </motion.h1>
 
           {/* Sub-text */}
@@ -145,7 +145,7 @@ export default function HeroSection() {
           >
             From intimate birthday parties to massive corporate festivals —
             we bring the ice cream truck experience that gets talked about for years.
-            Serving <strong className="text-white font-bold">all of Massachusetts.</strong>
+            Serving <strong className="text-white font-bold">all of New England.</strong>
           </motion.p>
 
           {/* CTA Buttons */}

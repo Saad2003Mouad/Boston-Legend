@@ -24,7 +24,7 @@ export async function POST(req: NextRequest, { params }: { params: Promise<{ id:
       }, { status: 400 });
     }
 
-    const replySubject = subject || "Boston Legend Ice Cream Truck Support Response";
+    const replySubject = subject || "American Legend Ice Cream Truck Support Response";
     const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.bostonlegendicecreamtruck.com";
     
     const emailSent = await sendEmail({
@@ -33,7 +33,7 @@ export async function POST(req: NextRequest, { params }: { params: Promise<{ id:
       html: `
         <h2 style="margin:0 0 8px;color:#000223;font-size:24px;font-weight:900;">Hi ${inquiry.name}, 👋</h2>
         <p style="margin:0 0 24px;color:#4B5563;font-size:16px;line-height:1.6;font-weight:600;">
-          Thank you for reaching out to Boston Legend Ice Cream Truck. Here is our response to your inquiry:
+          Thank you for reaching out to American Legend Ice Cream Truck. Here is our response to your inquiry:
         </p>
 
         <div style="background:#F8F9FC;border-left:4px solid #FFA000;border-radius:4px 12px 12px 4px;padding:20px 24px;margin-bottom:28px;">
@@ -56,7 +56,7 @@ export async function POST(req: NextRequest, { params }: { params: Promise<{ id:
         </div>
 
         <p style="margin:24px 0 0;color:#9CA3AF;font-size:13px;font-weight:700;text-align:center;">
-          Boston Legend Ice Cream Truck Ice Cream Concierge Team
+          American Legend Ice Cream Truck Ice Cream Concierge Team
         </p>
       `,
       title: replySubject,

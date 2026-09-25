@@ -31,7 +31,7 @@ export async function POST(req: NextRequest) {
 
     const html = `
       <h2 style="color:#000223;font-size:24px;font-weight:900;">Test Email ✅</h2>
-      <p style="color:#4B5563;font-size:16px;">This is a test email sent from the Boston Legend Ice Cream Truck admin panel to verify SMTP configuration.</p>
+      <p style="color:#4B5563;font-size:16px;">This is a test email sent from the American Legend Ice Cream Truck admin panel to verify SMTP configuration.</p>
       <table style="margin-top:16px;font-size:14px;" cellpadding="8">
         <tr><td style="font-weight:bold;color:#6B7280;">Sent to</td><td>${to}</td></tr>
         <tr><td style="font-weight:bold;color:#6B7280;">SMTP User</td><td>${process.env.SMTP_USER || "NOT SET"}</td></tr>
@@ -42,7 +42,7 @@ export async function POST(req: NextRequest) {
 
     const sent = await sendEmail({
       to,
-      subject: "Boston Legend Ice Cream Truck — SMTP Test Email",
+      subject: "American Legend Ice Cream Truck — SMTP Test Email",
       html,
       title: "SMTP Test",
     });

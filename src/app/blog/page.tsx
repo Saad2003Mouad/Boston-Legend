@@ -5,8 +5,8 @@ import { Metadata } from "next";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Our Stories | Boston Legend Ice Cream Truck Boston",
-  description: "Real events. Real smiles. Explore stories from birthday parties, corporate events, weddings, and more across Greater Boston with Boston Legend Ice Cream Truck.",
+  title: "Our Stories | American Legend Ice Cream Truck Boston",
+  description: "Real events. Real smiles. Explore stories from birthday parties, corporate events, weddings, and more across Greater Boston with American Legend Ice Cream Truck.",
 };
 
 const CATEGORY_COLORS: Record<string, { bg: string; text: string; dot: string }> = {
@@ -206,7 +206,7 @@ export default async function BlogPage() {
           Ready to Create Your Own Story?
         </h2>
         <p className="text-white/60 text-lg mb-8 max-w-xl mx-auto">
-          Book Boston Legend Ice Cream Truck for your next birthday, corporate event, or wedding and let us bring the joy.
+          Book American Legend Ice Cream Truck for your next birthday, corporate event, or wedding and let us bring the joy.
         </p>
         <Link
           href="/book"

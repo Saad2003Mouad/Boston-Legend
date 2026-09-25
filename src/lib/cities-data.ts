@@ -89,14 +89,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.3601,
     lng: -71.0589,
     metaTitle:
-      "Ice Cream Truck Rental in Boston, MA | Boston Legend Ice Cream Truck | Book Now",
+      "Ice Cream Truck Rental in Boston, MA | American Legend Ice Cream Truck | Book Now",
     metaDescription:
       "Premium ice cream truck catering in Boston, MA. Serving all Boston neighborhoods for birthdays, corporate events, weddings & more. Call 617-999-3803 for a free quote.",
     heroHeadline: "Boston's Favorite Ice Cream Truck",
     heroSubline:
       "Serving every Boston neighborhood — from Back Bay to Dorchester. Premium ice cream catering for birthdays, corporate events, weddings, and every celebration.",
     localIntro:
-      "Boston Legend Ice Cream Truck is Boston's premier mobile ice cream catering service, proudly serving the entire city and its surrounding neighborhoods. Whether you're planning a birthday party in Beacon Hill, a corporate employee appreciation day in the Financial District, a wedding reception near the Charles River, or a school event in Dorchester — we bring premium, freshly-served ice cream directly to your event. Our professional team arrives on time, sets up quickly, and delivers an unforgettable experience for every guest. Boston deserves the best, and that's exactly what we deliver.",
+      "American Legend Ice Cream Truck is Boston's premier mobile ice cream catering service, proudly serving the entire city and its surrounding neighborhoods. Whether you're planning a birthday party in Beacon Hill, a corporate employee appreciation day in the Financial District, a wedding reception near the Charles River, or a school event in Dorchester — we bring premium, freshly-served ice cream directly to your event. Our professional team arrives on time, sets up quickly, and delivers an unforgettable experience for every guest. Boston deserves the best, and that's exactly what we deliver.",
     neighborhoods: [
       "Back Bay",
       "South End",
@@ -126,7 +126,7 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
       {
         question: "Do you serve ice cream trucks in all Boston neighborhoods?",
         answer:
-          "Yes! Boston Legend Ice Cream Truck serves all Boston neighborhoods including Back Bay, South End, Beacon Hill, Fenway, Dorchester, Jamaica Plain, Charlestown, South Boston, Allston, Brighton, Hyde Park, Mattapan, Roslindale, and West Roxbury.",
+          "Yes! American Legend Ice Cream Truck serves all Boston neighborhoods including Back Bay, South End, Beacon Hill, Fenway, Dorchester, Jamaica Plain, Charlestown, South Boston, Allston, Brighton, Hyde Park, Mattapan, Roslindale, and West Roxbury.",
       },
       {
         question: "How much does an ice cream truck rental cost in Boston?",
@@ -159,14 +159,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     population: 118977,
     lat: 42.3736,
     lng: -71.1097,
-    metaTitle: "Ice Cream Truck Rental in Cambridge, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Cambridge, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Cambridge, MA. Serving Harvard Square, MIT, and all Cambridge neighborhoods. Free quotes available — call 617-999-3803.",
     heroHeadline: "Cambridge's Premier Ice Cream Truck",
     heroSubline:
       "From Harvard Square to MIT — serving Cambridge's vibrant neighborhoods with premium ice cream catering for every celebration.",
     localIntro:
-      "Boston Legend Ice Cream Truck brings premium mobile ice cream catering to Cambridge, MA — home to Harvard University, MIT, and some of the most vibrant neighborhoods in New England. Whether you're planning a corporate event for a Cambridge tech company, a birthday celebration near Harvard Square, a school festival for Cambridge public schools, or a community block party in Inman Square — our professional team delivers an unforgettable experience. Cambridge's unique energy deserves a premium catering partner, and Boston Legend Ice Cream Truck is proud to serve every corner of this incredible city.",
+      "American Legend Ice Cream Truck brings premium mobile ice cream catering to Cambridge, MA — home to Harvard University, MIT, and some of the most vibrant neighborhoods in New England. Whether you're planning a corporate event for a Cambridge tech company, a birthday celebration near Harvard Square, a school festival for Cambridge public schools, or a community block party in Inman Square — our professional team delivers an unforgettable experience. Cambridge's unique energy deserves a premium catering partner, and American Legend Ice Cream Truck is proud to serve every corner of this incredible city.",
     neighborhoods: [
       "Harvard Square",
       "Central Square",
@@ -240,14 +240,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     population: 206518,
     lat: 42.2626,
     lng: -71.8023,
-    metaTitle: "Ice Cream Truck Rental in Worcester, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Worcester, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Worcester, MA. Serving all Worcester neighborhoods for birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Worcester's Favorite Ice Cream Experience",
     heroSubline:
       "Central Massachusetts' premier ice cream truck catering service — serving all of Worcester for birthdays, corporate events, school festivals, and every celebration.",
     localIntro:
-      "Boston Legend Ice Cream Truck is proud to serve Worcester, Massachusetts — the heart of Central Massachusetts and New England's second-largest city. From birthday parties in Shrewsbury Street to corporate events downtown, school festivals in the city's vibrant neighborhoods, and community gatherings at Elm Park — our premium mobile ice cream service brings joy to every occasion. Worcester's diverse, energetic community deserves a premium experience, and that's exactly what Boston Legend Ice Cream Truck delivers.",
+      "American Legend Ice Cream Truck is proud to serve Worcester, Massachusetts — the heart of Central Massachusetts and New England's second-largest city. From birthday parties in Shrewsbury Street to corporate events downtown, school festivals in the city's vibrant neighborhoods, and community gatherings at Elm Park — our premium mobile ice cream service brings joy to every occasion. Worcester's diverse, energetic community deserves a premium experience, and that's exactly what American Legend Ice Cream Truck delivers.",
     neighborhoods: [
       "Downtown Worcester",
       "Shrewsbury Street",
@@ -269,7 +269,7 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
       {
         question: "Do you serve ice cream trucks in Worcester, MA?",
         answer:
-          "Yes! Boston Legend Ice Cream Truck proudly serves all of Worcester, including downtown, Shrewsbury Street, Elm Park, and all surrounding neighborhoods.",
+          "Yes! American Legend Ice Cream Truck proudly serves all of Worcester, including downtown, Shrewsbury Street, Elm Park, and all surrounding neighborhoods.",
       },
       {
         question: "How much does an ice cream truck cost in Worcester?",
@@ -303,14 +303,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Greater Boston",
     lat: 42.3876,
     lng: -71.0995,
-    metaTitle: "Ice Cream Truck Rental in Somerville, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Somerville, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Somerville, MA. Serving Davis Square, Union Square & all Somerville neighborhoods. Call 617-999-3803.",
     heroHeadline: "Somerville's Sweet Spot",
     heroSubline:
       "From Davis Square to Union Square — bringing premium ice cream catering to every Somerville celebration.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Somerville, MA — one of Greater Boston's most vibrant and community-focused cities. Perfect for Davis Square birthday parties, Union Square block parties, corporate events near Assembly Row, and school events throughout the city.",
+      "American Legend Ice Cream Truck serves Somerville, MA — one of Greater Boston's most vibrant and community-focused cities. Perfect for Davis Square birthday parties, Union Square block parties, corporate events near Assembly Row, and school events throughout the city.",
     neighborhoods: [
       "Davis Square",
       "Union Square",
@@ -356,14 +356,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Greater Boston",
     lat: 42.337,
     lng: -71.2092,
-    metaTitle: "Ice Cream Truck Rental in Newton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Newton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Newton, MA for birthdays, corporate events & more. Free quote — call 617-999-3803.",
     heroHeadline: "Newton's Premier Ice Cream Experience",
     heroSubline:
       "Serving Newton's villages with premium ice cream catering for every occasion.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Newton, MA — home to beautiful neighborhoods, top schools, and vibrant community events. From Newtonville birthday parties to corporate events in Newton Upper Falls and school celebrations throughout the city, we deliver premium ice cream catering with professional service.",
+      "American Legend Ice Cream Truck serves Newton, MA — home to beautiful neighborhoods, top schools, and vibrant community events. From Newtonville birthday parties to corporate events in Newton Upper Falls and school celebrations throughout the city, we deliver premium ice cream catering with professional service.",
     neighborhoods: [
       "Newtonville",
       "Newton Centre",
@@ -411,14 +411,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Greater Boston",
     lat: 42.2529,
     lng: -71.0023,
-    metaTitle: "Ice Cream Truck Rental in Quincy, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Quincy, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Quincy, MA. Serving all Quincy neighborhoods for birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Quincy's Favorite Ice Cream Truck",
     heroSubline:
       "South Shore's premium ice cream truck catering — serving all of Quincy for every celebration.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Quincy, MA — the City of Presidents and one of Greater Boston's most dynamic South Shore communities. Whether it's a Quincy Center birthday party, a North Quincy corporate event, or a community celebration near Wollaston Beach, we deliver premium ice cream catering with professional service.",
+      "American Legend Ice Cream Truck serves Quincy, MA — the City of Presidents and one of Greater Boston's most dynamic South Shore communities. Whether it's a Quincy Center birthday party, a North Quincy corporate event, or a community celebration near Wollaston Beach, we deliver premium ice cream catering with professional service.",
     neighborhoods: [
       "Quincy Center",
       "North Quincy",
@@ -466,14 +466,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Greater Boston",
     lat: 42.3318,
     lng: -71.1212,
-    metaTitle: "Ice Cream Truck Rental in Brookline, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Brookline, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Brookline, MA. Serving Coolidge Corner and all Brookline for birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Brookline's Premium Ice Cream Experience",
     heroSubline:
       "Serving Coolidge Corner, Brookline Village, and beyond with world-class ice cream catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck proudly serves Brookline, MA — one of Greater Boston's most sought-after communities. From elegant birthday parties near Coolidge Corner to corporate events downtown and school celebrations throughout Brookline, our premium service matches the high standards this community expects.",
+      "American Legend Ice Cream Truck proudly serves Brookline, MA — one of Greater Boston's most sought-after communities. From elegant birthday parties near Coolidge Corner to corporate events downtown and school celebrations throughout Brookline, our premium service matches the high standards this community expects.",
     neighborhoods: [
       "Coolidge Corner",
       "Brookline Village",
@@ -487,7 +487,7 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
       {
         question: "Do you serve Coolidge Corner events in Brookline?",
         answer:
-          "Yes! Coolidge Corner and all Brookline neighborhoods are fully covered by Boston Legend Ice Cream Truck.",
+          "Yes! Coolidge Corner and all Brookline neighborhoods are fully covered by American Legend Ice Cream Truck.",
       },
       {
         question: "How much does ice cream truck catering cost in Brookline?",
@@ -519,14 +519,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "North Shore",
     lat: 42.5195,
     lng: -70.8967,
-    metaTitle: "Ice Cream Truck Rental in Salem, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Salem, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Salem, MA. Serving all Salem events — birthdays, corporate, festivals & more. Call 617-999-3803.",
     heroHeadline: "Salem's Sweetest Celebration Upgrade",
     heroSubline:
       "From historic downtown to Pickering Wharf — premium ice cream catering for every Salem celebration.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Salem, MA — the Witch City and one of Massachusetts' most historically rich and vibrant communities. Whether it's a summer birthday celebration near Pickering Wharf, a corporate event downtown, a school festival, or a Halloween season event, we bring premium ice cream service to every corner of Salem.",
+      "American Legend Ice Cream Truck serves Salem, MA — the Witch City and one of Massachusetts' most historically rich and vibrant communities. Whether it's a summer birthday celebration near Pickering Wharf, a corporate event downtown, a school festival, or a Halloween season event, we bring premium ice cream service to every corner of Salem.",
     neighborhoods: [
       "Downtown Salem",
       "Pickering Wharf",
@@ -580,14 +580,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Greater Boston",
     lat: 42.4184,
     lng: -71.1062,
-    metaTitle: "Ice Cream Truck Rental in Medford, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Medford, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Medford, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Premium Ice Cream Catering in Medford, MA",
     heroSubline:
       "Serving all of Medford with professional ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Medford, MA with premium mobile ice cream catering. Whether it's a birthday party, corporate event, or school celebration, we deliver an unforgettable experience to every Medford neighborhood.",
+      "American Legend Ice Cream Truck serves Medford, MA with premium mobile ice cream catering. Whether it's a birthday party, corporate event, or school celebration, we deliver an unforgettable experience to every Medford neighborhood.",
     nearbyAreas: ["Somerville", "Arlington", "Malden", "Cambridge", "Woburn"],
     localFAQs: [
       {
@@ -625,14 +625,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Greater Boston",
     lat: 42.3765,
     lng: -71.2356,
-    metaTitle: "Ice Cream Truck Rental in Waltham, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Waltham, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Waltham, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Waltham, MA",
     heroSubline:
       "Serving all of Waltham with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Waltham, MA with premium mobile ice cream catering for every occasion. From birthday parties to corporate employee appreciation days near Route 128 — we deliver.",
+      "American Legend Ice Cream Truck serves Waltham, MA with premium mobile ice cream catering for every occasion. From birthday parties to corporate employee appreciation days near Route 128 — we deliver.",
     nearbyAreas: ["Watertown", "Newton", "Belmont", "Lexington", "Burlington"],
     localFAQs: [
       {
@@ -668,13 +668,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "North Shore",
     lat: 42.4668,
     lng: -70.9495,
-    metaTitle: "Ice Cream Truck Rental in Lynn, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Lynn, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Lynn, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Lynn, MA",
     heroSubline: "Serving all of Lynn with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Lynn, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Lynn, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: ["Revere", "Saugus", "Swampscott", "Salem", "Peabody"],
     localFAQs: [
       {
@@ -711,14 +711,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Merrimack Valley",
     lat: 42.6334,
     lng: -71.3162,
-    metaTitle: "Ice Cream Truck Rental in Lowell, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Lowell, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Lowell, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Lowell, MA",
     heroSubline:
       "Serving Lowell and the Merrimack Valley with premium ice cream catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Lowell, MA with premium mobile ice cream catering. From downtown Lowell corporate events to school celebrations and birthday parties throughout the city.",
+      "American Legend Ice Cream Truck serves Lowell, MA with premium mobile ice cream catering. From downtown Lowell corporate events to school celebrations and birthday parties throughout the city.",
     nearbyAreas: [
       "Chelmsford",
       "Tewksbury",
@@ -783,14 +783,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Pioneer Valley",
     lat: 42.1015,
     lng: -72.5898,
-    metaTitle: "Ice Cream Truck Rental in Springfield, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Springfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Springfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Springfield, MA",
     heroSubline:
       "Bringing premium ice cream catering to Western Massachusetts.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Springfield, MA and the Pioneer Valley with premium mobile ice cream catering. From birthday celebrations to large corporate events in Western Massachusetts, we travel the distance.",
+      "American Legend Ice Cream Truck serves Springfield, MA and the Pioneer Valley with premium mobile ice cream catering. From birthday celebrations to large corporate events in Western Massachusetts, we travel the distance.",
     nearbyAreas: [
       "Chicopee",
       "Holyoke",
@@ -834,14 +834,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "MetroWest",
     lat: 42.2793,
     lng: -71.4162,
-    metaTitle: "Ice Cream Truck Rental in Framingham, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Framingham, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Framingham, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Framingham, MA",
     heroSubline:
       "Serving MetroWest Massachusetts with premium ice cream catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Framingham, MA and the MetroWest region with premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Framingham, MA and the MetroWest region with premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [
       "Natick",
       "Ashland",
@@ -884,14 +884,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "South Shore",
     lat: 42.0834,
     lng: -71.0184,
-    metaTitle: "Ice Cream Truck Rental in Brockton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Brockton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Brockton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Brockton, MA",
     heroSubline:
       "Serving Brockton and Plymouth County with premium ice cream catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Brockton, MA with premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations throughout Plymouth County.",
+      "American Legend Ice Cream Truck serves Brockton, MA with premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations throughout Plymouth County.",
     nearbyAreas: ["Stoughton", "Avon", "Abington", "Whitman", "Randolph"],
     localFAQs: [
       {
@@ -928,14 +928,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "South Shore",
     lat: 41.9584,
     lng: -70.6673,
-    metaTitle: "Ice Cream Truck Rental in Plymouth, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Plymouth, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Plymouth, MA. Serving America's Hometown for birthdays, events & more. Call 617-999-3803.",
     heroHeadline: "Plymouth's Favorite Ice Cream Experience",
     heroSubline:
       "Serving America's Hometown with premium ice cream catering for every celebration.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Plymouth, MA — America's Hometown. From birthday parties near Plymouth Harbor to corporate events and school celebrations throughout this historic coastal city, we deliver premium ice cream service with a smile.",
+      "American Legend Ice Cream Truck serves Plymouth, MA — America's Hometown. From birthday parties near Plymouth Harbor to corporate events and school celebrations throughout this historic coastal city, we deliver premium ice cream service with a smile.",
     nearbyAreas: ["Kingston", "Duxbury", "Marshfield", "Carver", "Bourne"],
     landmarkMentions: ["Plymouth Rock", "Plymouth Harbor", "Plimoth Patuxent"],
     localFAQs: [
@@ -974,14 +974,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Greater Boston",
     lat: 42.4084,
     lng: -71.012,
-    metaTitle: "Ice Cream Truck Rental in Revere, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Revere, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Revere, MA. Serving Revere Beach and all neighborhoods. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Revere, MA",
     heroSubline:
       "Serving Revere Beach and all neighborhoods with premium ice cream catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck is based in Revere, MA — giving us unparalleled access to serve the city and surrounding communities. From Revere Beach events to birthday parties and corporate celebrations throughout the city, we deliver premium ice cream with hometown pride.",
+      "American Legend Ice Cream Truck is based in Revere, MA — giving us unparalleled access to serve the city and surrounding communities. From Revere Beach events to birthday parties and corporate celebrations throughout the city, we deliver premium ice cream with hometown pride.",
     neighborhoods: [
       "Revere Beach",
       "Point of Pines",
@@ -993,7 +993,7 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     landmarkMentions: ["Revere Beach", "Wonderland Station"],
     localFAQs: [
       {
-        question: "Is Boston Legend Ice Cream Truck based in Revere?",
+        question: "Is American Legend Ice Cream Truck based in Revere?",
         answer:
           "Yes! Our base of operations is in Revere, MA — meaning we can serve Revere events with the fastest response time.",
       },
@@ -1029,13 +1029,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.140549,
     lng: -72.788661,
-    metaTitle: "Ice Cream Truck Rental in Agawam, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Agawam, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Agawam, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Agawam, MA",
     heroSubline: "Serving all of Agawam with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Agawam, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Agawam, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -1067,14 +1067,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.367092,
     lng: -72.464571,
-    metaTitle: "Ice Cream Truck Rental in Amherst, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Amherst, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Amherst, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Amherst, MA",
     heroSubline:
       "Serving all of Amherst with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Amherst, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Amherst, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -1106,13 +1106,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.32916,
     lng: -72.139465,
-    metaTitle: "Ice Cream Truck Rental in Barre, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Barre, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Barre, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Barre, MA",
     heroSubline: "Serving all of Barre with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Barre, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Barre, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -1143,14 +1143,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.280267,
     lng: -72.402056,
-    metaTitle: "Ice Cream Truck Rental in Belchertown, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Belchertown, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Belchertown, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Belchertown, MA",
     heroSubline:
       "Serving all of Belchertown with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Belchertown, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Belchertown, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -1182,14 +1182,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.177833,
     lng: -72.958359,
-    metaTitle: "Ice Cream Truck Rental in Blandford, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Blandford, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Blandford, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Blandford, MA",
     heroSubline:
       "Serving all of Blandford with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Blandford, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Blandford, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -1221,14 +1221,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.206092,
     lng: -72.340486,
-    metaTitle: "Ice Cream Truck Rental in Bondsville, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Bondsville, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Bondsville, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Bondsville, MA",
     heroSubline:
       "Serving all of Bondsville with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Bondsville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Bondsville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -1260,14 +1260,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.108585,
     lng: -72.20448,
-    metaTitle: "Ice Cream Truck Rental in Brimfield, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Brimfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Brimfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Brimfield, MA",
     heroSubline:
       "Serving all of Brimfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Brimfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Brimfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -1299,14 +1299,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.294259,
     lng: -72.952776,
-    metaTitle: "Ice Cream Truck Rental in Chester, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Chester, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Chester, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Chester, MA",
     heroSubline:
       "Serving all of Chester with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Chester, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Chester, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -1339,14 +1339,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.392274,
     lng: -72.825607,
     metaTitle:
-      "Ice Cream Truck Rental in Chesterfield, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Chesterfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Chesterfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Chesterfield, MA",
     heroSubline:
       "Serving all of Chesterfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Chesterfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Chesterfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -1379,14 +1379,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.161492,
     lng: -72.667341,
-    metaTitle: "Ice Cream Truck Rental in Chicopee, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Chicopee, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Chicopee, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Chicopee, MA",
     heroSubline:
       "Serving all of Chicopee with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Chicopee, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Chicopee, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -1418,14 +1418,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.428617,
     lng: -72.909841,
-    metaTitle: "Ice Cream Truck Rental in Cummington, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Cummington, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Cummington, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Cummington, MA",
     heroSubline:
       "Serving all of Cummington with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Cummington, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Cummington, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -1457,14 +1457,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.368303,
     lng: -72.768839,
-    metaTitle: "Ice Cream Truck Rental in Easthampton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Easthampton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Easthampton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Easthampton, MA",
     heroSubline:
       "Serving all of Easthampton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Easthampton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Easthampton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -1497,14 +1497,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.062009,
     lng: -72.49874,
     metaTitle:
-      "Ice Cream Truck Rental in East Longmeadow, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in East Longmeadow, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in East Longmeadow, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in East Longmeadow, MA",
     heroSubline:
       "Serving all of East Longmeadow with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves East Longmeadow, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves East Longmeadow, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -1538,14 +1538,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.190904,
     lng: -73.051661,
-    metaTitle: "Ice Cream Truck Rental in East Otis, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in East Otis, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in East Otis, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in East Otis, MA",
     heroSubline:
       "Serving all of East Otis with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves East Otis, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves East Otis, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -1578,14 +1578,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.189335,
     lng: -72.79774,
     metaTitle:
-      "Ice Cream Truck Rental in Feeding Hills, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Feeding Hills, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Feeding Hills, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Feeding Hills, MA",
     heroSubline:
       "Serving all of Feeding Hills with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Feeding Hills, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Feeding Hills, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -1619,14 +1619,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.352554,
     lng: -72.205724,
     metaTitle:
-      "Ice Cream Truck Rental in Gilbertville, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Gilbertville, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Gilbertville, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Gilbertville, MA",
     heroSubline:
       "Serving all of Gilbertville with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Gilbertville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Gilbertville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -1659,13 +1659,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.443837,
     lng: -72.819446,
-    metaTitle: "Ice Cream Truck Rental in Goshen, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Goshen, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Goshen, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Goshen, MA",
     heroSubline: "Serving all of Goshen with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Goshen, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Goshen, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -1697,13 +1697,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.262285,
     lng: -72.504086,
-    metaTitle: "Ice Cream Truck Rental in Granby, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Granby, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Granby, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Granby, MA",
     heroSubline: "Serving all of Granby with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Granby, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Granby, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -1735,14 +1735,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.112748,
     lng: -72.952003,
-    metaTitle: "Ice Cream Truck Rental in Granville, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Granville, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Granville, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Granville, MA",
     heroSubline:
       "Serving all of Granville with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Granville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Granville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -1774,13 +1774,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.356804,
     lng: -72.576613,
-    metaTitle: "Ice Cream Truck Rental in Hadley, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Hadley, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Hadley, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Hadley, MA",
     heroSubline: "Serving all of Hadley with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Hadley, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Hadley, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -1812,14 +1812,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.067614,
     lng: -72.417507,
-    metaTitle: "Ice Cream Truck Rental in Hampden, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Hampden, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Hampden, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Hampden, MA",
     heroSubline:
       "Serving all of Hampden with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Hampden, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Hampden, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -1851,14 +1851,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.347856,
     lng: -72.225251,
-    metaTitle: "Ice Cream Truck Rental in Hardwick, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Hardwick, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Hardwick, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Hardwick, MA",
     heroSubline:
       "Serving all of Hardwick with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Hardwick, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Hardwick, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -1890,14 +1890,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.387269,
     lng: -72.643081,
-    metaTitle: "Ice Cream Truck Rental in Hatfield, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Hatfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Hatfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Hatfield, MA",
     heroSubline:
       "Serving all of Hatfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Hatfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Hatfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -1929,14 +1929,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.35641,
     lng: -72.682127,
-    metaTitle: "Ice Cream Truck Rental in Haydenville, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Haydenville, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Haydenville, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Haydenville, MA",
     heroSubline:
       "Serving all of Haydenville with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Haydenville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Haydenville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -1968,14 +1968,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.198291,
     lng: -72.64207,
-    metaTitle: "Ice Cream Truck Rental in Holyoke, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Holyoke, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Holyoke, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Holyoke, MA",
     heroSubline:
       "Serving all of Holyoke with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Holyoke, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Holyoke, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -2007,14 +2007,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.313427,
     lng: -72.903677,
-    metaTitle: "Ice Cream Truck Rental in Huntington, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Huntington, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Huntington, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Huntington, MA",
     heroSubline:
       "Serving all of Huntington with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Huntington, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Huntington, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -2046,13 +2046,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.353838,
     lng: -72.704385,
-    metaTitle: "Ice Cream Truck Rental in Leeds, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Leeds, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Leeds, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Leeds, MA",
     heroSubline: "Serving all of Leeds with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Leeds, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Leeds, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -2083,14 +2083,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.474681,
     lng: -72.467543,
-    metaTitle: "Ice Cream Truck Rental in Leverett, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Leverett, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Leverett, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Leverett, MA",
     heroSubline:
       "Serving all of Leverett with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Leverett, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Leverett, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -2122,13 +2122,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.173276,
     lng: -72.627038,
-    metaTitle: "Ice Cream Truck Rental in Ludlow, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Ludlow, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Ludlow, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Ludlow, MA",
     heroSubline: "Serving all of Ludlow with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Ludlow, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Ludlow, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -2160,13 +2160,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.095323,
     lng: -72.282063,
-    metaTitle: "Ice Cream Truck Rental in Monson, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Monson, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Monson, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Monson, MA",
     heroSubline: "Serving all of Monson with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Monson, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Monson, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -2199,14 +2199,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.369562,
     lng: -72.63599,
     metaTitle:
-      "Ice Cream Truck Rental in North Amherst, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in North Amherst, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in North Amherst, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in North Amherst, MA",
     heroSubline:
       "Serving all of North Amherst with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves North Amherst, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves North Amherst, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -2239,14 +2239,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.415154,
     lng: -72.76927,
-    metaTitle: "Ice Cream Truck Rental in Northampton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Northampton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Northampton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Northampton, MA",
     heroSubline:
       "Serving all of Northampton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Northampton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Northampton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -2278,14 +2278,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.328838,
     lng: -72.845227,
-    metaTitle: "Ice Cream Truck Rental in Florence, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Florence, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Florence, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Florence, MA",
     heroSubline:
       "Serving all of Florence with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Florence, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Florence, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -2318,14 +2318,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.406697,
     lng: -72.633901,
     metaTitle:
-      "Ice Cream Truck Rental in North Hatfield, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in North Hatfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in North Hatfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in North Hatfield, MA",
     heroSubline:
       "Serving all of North Hatfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves North Hatfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves North Hatfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -2359,13 +2359,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.346144,
     lng: -72.058847,
-    metaTitle: "Ice Cream Truck Rental in Oakham, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Oakham, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Oakham, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Oakham, MA",
     heroSubline: "Serving all of Oakham with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Oakham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Oakham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -2397,13 +2397,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.176131,
     lng: -72.31457,
-    metaTitle: "Ice Cream Truck Rental in Palmer, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Palmer, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Palmer, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Palmer, MA",
     heroSubline: "Serving all of Palmer with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Palmer, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Palmer, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -2435,14 +2435,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.448984,
     lng: -72.958397,
-    metaTitle: "Ice Cream Truck Rental in Plainfield, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Plainfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Plainfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Plainfield, MA",
     heroSubline:
       "Serving all of Plainfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Plainfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Plainfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -2474,14 +2474,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.177432,
     lng: -72.864558,
-    metaTitle: "Ice Cream Truck Rental in Russell, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Russell, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Russell, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Russell, MA",
     heroSubline:
       "Serving all of Russell with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Russell, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Russell, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -2513,14 +2513,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.471562,
     lng: -72.44017,
-    metaTitle: "Ice Cream Truck Rental in Shutesbury, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Shutesbury, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Shutesbury, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Shutesbury, MA",
     heroSubline:
       "Serving all of Shutesbury with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Shutesbury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Shutesbury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -2552,14 +2552,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.230008,
     lng: -72.728463,
-    metaTitle: "Ice Cream Truck Rental in Southampton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Southampton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Southampton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Southampton, MA",
     heroSubline:
       "Serving all of Southampton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Southampton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Southampton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -2591,14 +2591,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.375998,
     lng: -72.149388,
-    metaTitle: "Ice Cream Truck Rental in South Barre, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in South Barre, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in South Barre, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in South Barre, MA",
     heroSubline:
       "Serving all of South Barre with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves South Barre, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves South Barre, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -2631,14 +2631,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.24984,
     lng: -72.58152,
     metaTitle:
-      "Ice Cream Truck Rental in South Hadley, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in South Hadley, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in South Hadley, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in South Hadley, MA",
     heroSubline:
       "Serving all of South Hadley with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves South Hadley, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves South Hadley, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -2671,14 +2671,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.066644,
     lng: -72.541205,
-    metaTitle: "Ice Cream Truck Rental in Southwick, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Southwick, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Southwick, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Southwick, MA",
     heroSubline:
       "Serving all of Southwick with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Southwick, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Southwick, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -2710,14 +2710,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.192892,
     lng: -72.329574,
-    metaTitle: "Ice Cream Truck Rental in Thorndike, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Thorndike, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Thorndike, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Thorndike, MA",
     heroSubline:
       "Serving all of Thorndike with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Thorndike, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Thorndike, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -2750,14 +2750,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.179805,
     lng: -72.517813,
     metaTitle:
-      "Ice Cream Truck Rental in Three Rivers, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Three Rivers, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Three Rivers, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Three Rivers, MA",
     heroSubline:
       "Serving all of Three Rivers with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Three Rivers, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Three Rivers, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -2790,13 +2790,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.061948,
     lng: -72.213598,
-    metaTitle: "Ice Cream Truck Rental in Wales, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Wales, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Wales, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Wales, MA",
     heroSubline: "Serving all of Wales with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Wales, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Wales, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -2827,13 +2827,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.377471,
     lng: -72.548549,
-    metaTitle: "Ice Cream Truck Rental in Ware, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Ware, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Ware, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Ware, MA",
     heroSubline: "Serving all of Ware with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Ware, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Ware, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -2864,13 +2864,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.204027,
     lng: -72.199439,
-    metaTitle: "Ice Cream Truck Rental in Warren, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Warren, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Warren, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Warren, MA",
     heroSubline: "Serving all of Warren with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Warren, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Warren, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -2903,14 +2903,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.390303,
     lng: -72.870857,
     metaTitle:
-      "Ice Cream Truck Rental in West Chesterfield, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in West Chesterfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in West Chesterfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in West Chesterfield, MA",
     heroSubline:
       "Serving all of West Chesterfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves West Chesterfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves West Chesterfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -2944,14 +2944,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.14869,
     lng: -72.501887,
-    metaTitle: "Ice Cream Truck Rental in Westfield, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Westfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Westfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Westfield, MA",
     heroSubline:
       "Serving all of Westfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Westfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Westfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -2984,14 +2984,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.390583,
     lng: -72.646894,
     metaTitle:
-      "Ice Cream Truck Rental in West Hatfield, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in West Hatfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in West Hatfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in West Hatfield, MA",
     heroSubline:
       "Serving all of West Hatfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves West Hatfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves West Hatfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -3025,14 +3025,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.125793,
     lng: -72.645334,
     metaTitle:
-      "Ice Cream Truck Rental in West Springfield, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in West Springfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in West Springfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in West Springfield, MA",
     heroSubline:
       "Serving all of West Springfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves West Springfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves West Springfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -3066,14 +3066,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.202887,
     lng: -72.229025,
-    metaTitle: "Ice Cream Truck Rental in West Warren, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in West Warren, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in West Warren, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in West Warren, MA",
     heroSubline:
       "Serving all of West Warren with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves West Warren, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves West Warren, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -3105,14 +3105,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.442673,
     lng: -72.652511,
-    metaTitle: "Ice Cream Truck Rental in Whately, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Whately, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Whately, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Whately, MA",
     heroSubline:
       "Serving all of Whately with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Whately, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Whately, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -3144,14 +3144,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.358201,
     lng: -72.140846,
-    metaTitle: "Ice Cream Truck Rental in Wheelwright, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Wheelwright, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Wheelwright, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Wheelwright, MA",
     heroSubline:
       "Serving all of Wheelwright with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Wheelwright, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Wheelwright, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -3183,14 +3183,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.125974,
     lng: -72.489988,
-    metaTitle: "Ice Cream Truck Rental in Wilbraham, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Wilbraham, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Wilbraham, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Wilbraham, MA",
     heroSubline:
       "Serving all of Wilbraham with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Wilbraham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Wilbraham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -3223,14 +3223,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.413069,
     lng: -72.821653,
     metaTitle:
-      "Ice Cream Truck Rental in Williamsburg, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Williamsburg, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Williamsburg, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Williamsburg, MA",
     heroSubline:
       "Serving all of Williamsburg with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Williamsburg, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Williamsburg, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -3263,14 +3263,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.161743,
     lng: -72.845912,
-    metaTitle: "Ice Cream Truck Rental in Woronoco, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Woronoco, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Woronoco, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Woronoco, MA",
     heroSubline:
       "Serving all of Woronoco with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Woronoco, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Woronoco, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -3302,14 +3302,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.40494,
     lng: -72.896133,
-    metaTitle: "Ice Cream Truck Rental in Worthington, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Worthington, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Worthington, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Worthington, MA",
     heroSubline:
       "Serving all of Worthington with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Worthington, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Worthington, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -3341,14 +3341,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.049194,
     lng: -72.567882,
-    metaTitle: "Ice Cream Truck Rental in Longmeadow, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Longmeadow, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Longmeadow, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Longmeadow, MA",
     heroSubline:
       "Serving all of Longmeadow with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Longmeadow, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Longmeadow, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -3381,14 +3381,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.150593,
     lng: -72.51278,
     metaTitle:
-      "Ice Cream Truck Rental in Indian Orchard, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Indian Orchard, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Indian Orchard, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Indian Orchard, MA",
     heroSubline:
       "Serving all of Indian Orchard with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Indian Orchard, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Indian Orchard, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -3422,14 +3422,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.479475,
     lng: -73.24807,
-    metaTitle: "Ice Cream Truck Rental in Pittsfield, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Pittsfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Pittsfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Pittsfield, MA",
     heroSubline:
       "Serving all of Pittsfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Pittsfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Pittsfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -3461,13 +3461,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.385595,
     lng: -73.172166,
-    metaTitle: "Ice Cream Truck Rental in Adams, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Adams, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Adams, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Adams, MA",
     heroSubline: "Serving all of Adams with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Adams, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Adams, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -3499,14 +3499,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.185969,
     lng: -73.318695,
     metaTitle:
-      "Ice Cream Truck Rental in Ashley Falls, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Ashley Falls, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Ashley Falls, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Ashley Falls, MA",
     heroSubline:
       "Serving all of Ashley Falls with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Ashley Falls, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Ashley Falls, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -3539,13 +3539,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.3418,
     lng: -73.103468,
-    metaTitle: "Ice Cream Truck Rental in Becket, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Becket, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Becket, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Becket, MA",
     heroSubline: "Serving all of Becket with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Becket, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Becket, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -3577,14 +3577,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.3929,
     lng: -73.228483,
-    metaTitle: "Ice Cream Truck Rental in Berkshire, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Berkshire, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Berkshire, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Berkshire, MA",
     heroSubline:
       "Serving all of Berkshire with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Berkshire, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Berkshire, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -3616,14 +3616,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.482125,
     lng: -73.127483,
-    metaTitle: "Ice Cream Truck Rental in Cheshire, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Cheshire, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Cheshire, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Cheshire, MA",
     heroSubline:
       "Serving all of Cheshire with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Cheshire, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Cheshire, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -3655,13 +3655,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.470296,
     lng: -73.08895,
-    metaTitle: "Ice Cream Truck Rental in Dalton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Dalton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Dalton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Dalton, MA",
     heroSubline: "Serving all of Dalton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Dalton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Dalton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -3693,14 +3693,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.279292,
     lng: -73.343545,
-    metaTitle: "Ice Cream Truck Rental in Glendale, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Glendale, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Glendale, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Glendale, MA",
     heroSubline:
       "Serving all of Glendale with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Glendale, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Glendale, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -3733,14 +3733,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.299392,
     lng: -73.26665,
     metaTitle:
-      "Ice Cream Truck Rental in Great Barrington, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Great Barrington, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Great Barrington, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Great Barrington, MA",
     heroSubline:
       "Serving all of Great Barrington with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Great Barrington, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Great Barrington, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -3774,14 +3774,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.29237,
     lng: -73.22164,
-    metaTitle: "Ice Cream Truck Rental in Hinsdale, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Hinsdale, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Hinsdale, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Hinsdale, MA",
     heroSubline:
       "Serving all of Hinsdale with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Hinsdale, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Hinsdale, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -3813,14 +3813,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.291299,
     lng: -73.358798,
-    metaTitle: "Ice Cream Truck Rental in Housatonic, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Housatonic, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Housatonic, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Housatonic, MA",
     heroSubline:
       "Serving all of Housatonic with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Housatonic, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Housatonic, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -3852,14 +3852,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.487569,
     lng: -73.235048,
-    metaTitle: "Ice Cream Truck Rental in Lanesboro, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Lanesboro, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Lanesboro, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Lanesboro, MA",
     heroSubline:
       "Serving all of Lanesboro with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Lanesboro, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Lanesboro, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -3891,13 +3891,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.369856,
     lng: -73.267465,
-    metaTitle: "Ice Cream Truck Rental in Lee, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Lee, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Lee, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Lee, MA",
     heroSubline: "Serving all of Lee with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Lee, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Lee, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -3928,13 +3928,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.459202,
     lng: -73.219858,
-    metaTitle: "Ice Cream Truck Rental in Lenox, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Lenox, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Lenox, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Lenox, MA",
     heroSubline: "Serving all of Lenox with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Lenox, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Lenox, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -3965,14 +3965,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.338594,
     lng: -73.250891,
-    metaTitle: "Ice Cream Truck Rental in Lenox Dale, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Lenox Dale, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Lenox Dale, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Lenox Dale, MA",
     heroSubline:
       "Serving all of Lenox Dale with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Lenox Dale, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Lenox Dale, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -4004,14 +4004,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.356088,
     lng: -73.010448,
-    metaTitle: "Ice Cream Truck Rental in Middlefield, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Middlefield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Middlefield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Middlefield, MA",
     heroSubline:
       "Serving all of Middlefield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Middlefield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Middlefield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -4043,14 +4043,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.122827,
     lng: -73.253983,
-    metaTitle: "Ice Cream Truck Rental in Mill River, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Mill River, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Mill River, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Mill River, MA",
     heroSubline:
       "Serving all of Mill River with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Mill River, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Mill River, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -4082,14 +4082,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.18669,
     lng: -73.206498,
-    metaTitle: "Ice Cream Truck Rental in Monterey, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Monterey, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Monterey, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Monterey, MA",
     heroSubline:
       "Serving all of Monterey with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Monterey, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Monterey, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -4121,14 +4121,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.426974,
     lng: -73.18632,
-    metaTitle: "Ice Cream Truck Rental in North Adams, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in North Adams, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in North Adams, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in North Adams, MA",
     heroSubline:
       "Serving all of North Adams with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves North Adams, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves North Adams, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -4161,14 +4161,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.198648,
     lng: -73.446234,
     metaTitle:
-      "Ice Cream Truck Rental in North Egremont, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in North Egremont, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in North Egremont, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in North Egremont, MA",
     heroSubline:
       "Serving all of North Egremont with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves North Egremont, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves North Egremont, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -4202,13 +4202,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.213156,
     lng: -73.090434,
-    metaTitle: "Ice Cream Truck Rental in Otis, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Otis, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Otis, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Otis, MA",
     heroSubline: "Serving all of Otis with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Otis, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Otis, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -4239,14 +4239,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.233105,
     lng: -73.238358,
-    metaTitle: "Ice Cream Truck Rental in Richmond, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Richmond, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Richmond, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Richmond, MA",
     heroSubline:
       "Serving all of Richmond with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Richmond, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Richmond, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -4278,14 +4278,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.148975,
     lng: -73.14861,
-    metaTitle: "Ice Cream Truck Rental in Sandisfield, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Sandisfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Sandisfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Sandisfield, MA",
     heroSubline:
       "Serving all of Sandisfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Sandisfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Sandisfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -4317,13 +4317,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.367341,
     lng: -73.128528,
-    metaTitle: "Ice Cream Truck Rental in Savoy, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Savoy, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Savoy, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Savoy, MA",
     heroSubline: "Serving all of Savoy with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Savoy, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Savoy, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -4354,14 +4354,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.314564,
     lng: -73.267694,
-    metaTitle: "Ice Cream Truck Rental in Sheffield, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Sheffield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Sheffield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Sheffield, MA",
     heroSubline:
       "Serving all of Sheffield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Sheffield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Sheffield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -4394,14 +4394,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.128075,
     lng: -73.36089,
     metaTitle:
-      "Ice Cream Truck Rental in South Egremont, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in South Egremont, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in South Egremont, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in South Egremont, MA",
     heroSubline:
       "Serving all of South Egremont with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves South Egremont, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves South Egremont, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -4435,14 +4435,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.198712,
     lng: -73.278543,
-    metaTitle: "Ice Cream Truck Rental in Southfield, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Southfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Southfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Southfield, MA",
     heroSubline:
       "Serving all of Southfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Southfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Southfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -4474,14 +4474,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.286586,
     lng: -73.313274,
-    metaTitle: "Ice Cream Truck Rental in South Lee, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in South Lee, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in South Lee, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in South Lee, MA",
     heroSubline:
       "Serving all of South Lee with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves South Lee, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves South Lee, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -4513,14 +4513,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.304604,
     lng: -73.330001,
-    metaTitle: "Ice Cream Truck Rental in Stockbridge, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Stockbridge, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Stockbridge, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Stockbridge, MA",
     heroSubline:
       "Serving all of Stockbridge with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Stockbridge, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Stockbridge, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -4552,14 +4552,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.220001,
     lng: -73.197865,
-    metaTitle: "Ice Cream Truck Rental in Tyringham, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Tyringham, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Tyringham, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Tyringham, MA",
     heroSubline:
       "Serving all of Tyringham with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Tyringham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Tyringham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -4592,14 +4592,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.360482,
     lng: -73.265354,
     metaTitle:
-      "Ice Cream Truck Rental in West Stockbridge, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in West Stockbridge, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in West Stockbridge, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in West Stockbridge, MA",
     heroSubline:
       "Serving all of West Stockbridge with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves West Stockbridge, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves West Stockbridge, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -4634,14 +4634,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.642075,
     lng: -73.257699,
     metaTitle:
-      "Ice Cream Truck Rental in Williamstown, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Williamstown, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Williamstown, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Williamstown, MA",
     heroSubline:
       "Serving all of Williamstown with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Williamstown, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Williamstown, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -4674,14 +4674,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.443726,
     lng: -73.116127,
-    metaTitle: "Ice Cream Truck Rental in Windsor, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Windsor, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Windsor, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Windsor, MA",
     heroSubline:
       "Serving all of Windsor with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Windsor, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Windsor, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -4713,14 +4713,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.601335,
     lng: -72.623619,
-    metaTitle: "Ice Cream Truck Rental in Greenfield, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Greenfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Greenfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Greenfield, MA",
     heroSubline:
       "Serving all of Greenfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Greenfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Greenfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -4752,14 +4752,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.562391,
     lng: -72.738152,
-    metaTitle: "Ice Cream Truck Rental in Ashfield, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Ashfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Ashfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Ashfield, MA",
     heroSubline:
       "Serving all of Ashfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Ashfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Ashfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -4791,13 +4791,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.547302,
     lng: -72.183903,
-    metaTitle: "Ice Cream Truck Rental in Athol, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Athol, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Athol, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Athol, MA",
     heroSubline: "Serving all of Athol with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Athol, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Athol, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -4828,14 +4828,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.62706,
     lng: -72.642888,
-    metaTitle: "Ice Cream Truck Rental in Bernardston, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Bernardston, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Bernardston, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Bernardston, MA",
     heroSubline:
       "Serving all of Bernardston with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Bernardston, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Bernardston, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -4867,14 +4867,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.573832,
     lng: -72.769487,
-    metaTitle: "Ice Cream Truck Rental in Buckland, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Buckland, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Buckland, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Buckland, MA",
     heroSubline:
       "Serving all of Buckland with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Buckland, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Buckland, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -4906,14 +4906,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.594252,
     lng: -72.665507,
-    metaTitle: "Ice Cream Truck Rental in Charlemont, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Charlemont, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Charlemont, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Charlemont, MA",
     heroSubline:
       "Serving all of Charlemont with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Charlemont, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Charlemont, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -4945,14 +4945,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.681539,
     lng: -72.822986,
-    metaTitle: "Ice Cream Truck Rental in Colrain, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Colrain, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Colrain, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Colrain, MA",
     heroSubline:
       "Serving all of Colrain with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Colrain, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Colrain, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -4984,13 +4984,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.590824,
     lng: -72.70976,
-    metaTitle: "Ice Cream Truck Rental in Conway, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Conway, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Conway, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Conway, MA",
     heroSubline: "Serving all of Conway with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Conway, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Conway, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -5022,14 +5022,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.54723,
     lng: -72.607679,
-    metaTitle: "Ice Cream Truck Rental in Deerfield, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Deerfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Deerfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Deerfield, MA",
     heroSubline:
       "Serving all of Deerfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Deerfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Deerfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -5061,13 +5061,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.642666,
     lng: -72.986231,
-    metaTitle: "Ice Cream Truck Rental in Drury, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Drury, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Drury, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Drury, MA",
     heroSubline: "Serving all of Drury with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Drury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Drury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -5098,13 +5098,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.627072,
     lng: -72.553654,
-    metaTitle: "Ice Cream Truck Rental in Erving, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Erving, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Erving, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Erving, MA",
     heroSubline: "Serving all of Erving with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Erving, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Erving, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -5136,13 +5136,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.618011,
     lng: -72.788896,
-    metaTitle: "Ice Cream Truck Rental in Heath, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Heath, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Heath, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Heath, MA",
     heroSubline: "Serving all of Heath with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Heath, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Heath, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -5174,14 +5174,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.556558,
     lng: -72.518104,
     metaTitle:
-      "Ice Cream Truck Rental in Lake Pleasant, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Lake Pleasant, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Lake Pleasant, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Lake Pleasant, MA",
     heroSubline:
       "Serving all of Lake Pleasant with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Lake Pleasant, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Lake Pleasant, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -5215,14 +5215,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.621412,
     lng: -72.705633,
     metaTitle:
-      "Ice Cream Truck Rental in Turners Falls, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Turners Falls, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Turners Falls, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Turners Falls, MA",
     heroSubline:
       "Serving all of Turners Falls with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Turners Falls, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Turners Falls, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -5256,14 +5256,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.721456,
     lng: -72.976204,
     metaTitle:
-      "Ice Cream Truck Rental in Monroe Bridge, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Monroe Bridge, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Monroe Bridge, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Monroe Bridge, MA",
     heroSubline:
       "Serving all of Monroe Bridge with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Monroe Bridge, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Monroe Bridge, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -5296,14 +5296,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.548107,
     lng: -72.48693,
-    metaTitle: "Ice Cream Truck Rental in Montague, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Montague, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Montague, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Montague, MA",
     heroSubline:
       "Serving all of Montague with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Montague, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Montague, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -5335,14 +5335,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.522178,
     lng: -72.624164,
-    metaTitle: "Ice Cream Truck Rental in Northfield, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Northfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Northfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Northfield, MA",
     heroSubline:
       "Serving all of Northfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Northfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Northfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -5374,14 +5374,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.518718,
     lng: -72.534371,
-    metaTitle: "Ice Cream Truck Rental in New Salem, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in New Salem, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in New Salem, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in New Salem, MA",
     heroSubline:
       "Serving all of New Salem with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves New Salem, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves New Salem, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -5413,13 +5413,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.578325,
     lng: -72.556589,
-    metaTitle: "Ice Cream Truck Rental in Orange, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Orange, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Orange, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Orange, MA",
     heroSubline: "Serving all of Orange with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Orange, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Orange, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -5451,14 +5451,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.459632,
     lng: -72.182962,
-    metaTitle: "Ice Cream Truck Rental in Petersham, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Petersham, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Petersham, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Petersham, MA",
     heroSubline:
       "Serving all of Petersham with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Petersham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Petersham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -5490,13 +5490,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.683065,
     lng: -72.715667,
-    metaTitle: "Ice Cream Truck Rental in Rowe, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Rowe, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Rowe, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Rowe, MA",
     heroSubline: "Serving all of Rowe with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Rowe, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Rowe, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -5527,14 +5527,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.672182,
     lng: -72.196376,
-    metaTitle: "Ice Cream Truck Rental in Royalston, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Royalston, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Royalston, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Royalston, MA",
     heroSubline:
       "Serving all of Royalston with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Royalston, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Royalston, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -5566,14 +5566,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.522178,
     lng: -72.624164,
     metaTitle:
-      "Ice Cream Truck Rental in Shattuckville, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Shattuckville, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Shattuckville, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Shattuckville, MA",
     heroSubline:
       "Serving all of Shattuckville with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Shattuckville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Shattuckville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -5607,14 +5607,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.588812,
     lng: -72.758781,
     metaTitle:
-      "Ice Cream Truck Rental in Shelburne Falls, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Shelburne Falls, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Shelburne Falls, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Shelburne Falls, MA",
     heroSubline:
       "Serving all of Shelburne Falls with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Shelburne Falls, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Shelburne Falls, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -5649,14 +5649,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.464522,
     lng: -72.682346,
     metaTitle:
-      "Ice Cream Truck Rental in South Deerfield, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in South Deerfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in South Deerfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in South Deerfield, MA",
     heroSubline:
       "Serving all of South Deerfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves South Deerfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves South Deerfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -5690,14 +5690,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.565346,
     lng: -72.70094,
-    metaTitle: "Ice Cream Truck Rental in Sunderland, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Sunderland, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Sunderland, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Sunderland, MA",
     heroSubline:
       "Serving all of Sunderland with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Sunderland, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Sunderland, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -5729,14 +5729,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.667059,
     lng: -72.339655,
-    metaTitle: "Ice Cream Truck Rental in Warwick, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Warwick, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Warwick, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Warwick, MA",
     heroSubline:
       "Serving all of Warwick with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Warwick, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Warwick, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -5768,14 +5768,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.581007,
     lng: -72.437179,
-    metaTitle: "Ice Cream Truck Rental in Wendell, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Wendell, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Wendell, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Wendell, MA",
     heroSubline:
       "Serving all of Wendell with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Wendell, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Wendell, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -5808,14 +5808,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.553431,
     lng: -72.392694,
     metaTitle:
-      "Ice Cream Truck Rental in Wendell Depot, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Wendell Depot, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Wendell Depot, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Wendell Depot, MA",
     heroSubline:
       "Serving all of Wendell Depot with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Wendell Depot, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Wendell Depot, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -5848,14 +5848,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.583689,
     lng: -71.816767,
-    metaTitle: "Ice Cream Truck Rental in Fitchburg, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Fitchburg, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Fitchburg, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Fitchburg, MA",
     heroSubline:
       "Serving all of Fitchburg with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Fitchburg, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Fitchburg, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -5887,14 +5887,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.654906,
     lng: -71.920942,
-    metaTitle: "Ice Cream Truck Rental in Ashburnham, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Ashburnham, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Ashburnham, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Ashburnham, MA",
     heroSubline:
       "Serving all of Ashburnham with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Ashburnham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Ashburnham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -5926,13 +5926,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Ashby, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Ashby, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Ashby, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Ashby, MA",
     heroSubline: "Serving all of Ashby with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Ashby, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Ashby, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -5963,13 +5963,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Ayer, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Ayer, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Ayer, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Ayer, MA",
     heroSubline: "Serving all of Ayer with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Ayer, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Ayer, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -6001,14 +6001,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.601427,
     lng: -72.083838,
     metaTitle:
-      "Ice Cream Truck Rental in Baldwinville, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Baldwinville, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Baldwinville, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Baldwinville, MA",
     heroSubline:
       "Serving all of Baldwinville with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Baldwinville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Baldwinville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -6042,14 +6042,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.551681,
     lng: -72.029434,
     metaTitle:
-      "Ice Cream Truck Rental in East Templeton, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in East Templeton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in East Templeton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in East Templeton, MA",
     heroSubline:
       "Serving all of East Templeton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves East Templeton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves East Templeton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -6083,14 +6083,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.582529,
     lng: -72.025884,
-    metaTitle: "Ice Cream Truck Rental in Gardner, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Gardner, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Gardner, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Gardner, MA",
     heroSubline:
       "Serving all of Gardner with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Gardner, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Gardner, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -6122,14 +6122,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.364807,
     lng: -71.896868,
-    metaTitle: "Ice Cream Truck Rental in Westminster, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Westminster, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Westminster, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Westminster, MA",
     heroSubline:
       "Serving all of Westminster with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Westminster, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Westminster, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -6161,13 +6161,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Groton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Groton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Groton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Groton, MA",
     heroSubline: "Serving all of Groton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Groton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Groton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -6199,14 +6199,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.500187,
     lng: -71.575864,
-    metaTitle: "Ice Cream Truck Rental in Harvard, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Harvard, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Harvard, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Harvard, MA",
     heroSubline:
       "Serving all of Harvard with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Harvard, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Harvard, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -6238,14 +6238,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.483895,
     lng: -72.011516,
-    metaTitle: "Ice Cream Truck Rental in Hubbardston, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Hubbardston, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Hubbardston, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Hubbardston, MA",
     heroSubline:
       "Serving all of Hubbardston with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Hubbardston, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Hubbardston, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -6277,14 +6277,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.471316,
     lng: -71.837509,
-    metaTitle: "Ice Cream Truck Rental in Leominster, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Leominster, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Leominster, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Leominster, MA",
     heroSubline:
       "Serving all of Leominster with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Leominster, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Leominster, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -6316,14 +6316,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Littleton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Littleton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Littleton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Littleton, MA",
     heroSubline:
       "Serving all of Littleton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Littleton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Littleton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -6355,14 +6355,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.583322,
     lng: -71.752266,
-    metaTitle: "Ice Cream Truck Rental in Lunenburg, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Lunenburg, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Lunenburg, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Lunenburg, MA",
     heroSubline:
       "Serving all of Lunenburg with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Lunenburg, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Lunenburg, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -6394,14 +6394,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Pepperell, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Pepperell, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Pepperell, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Pepperell, MA",
     heroSubline:
       "Serving all of Pepperell with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Pepperell, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Pepperell, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -6433,14 +6433,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Shirley, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Shirley, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Shirley, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Shirley, MA",
     heroSubline:
       "Serving all of Shirley with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Shirley, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Shirley, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -6472,14 +6472,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.487056,
     lng: -71.613078,
-    metaTitle: "Ice Cream Truck Rental in Still River, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Still River, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Still River, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Still River, MA",
     heroSubline:
       "Serving all of Still River with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Still River, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Still River, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -6511,14 +6511,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.555059,
     lng: -72.072285,
-    metaTitle: "Ice Cream Truck Rental in Templeton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Templeton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Templeton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Templeton, MA",
     heroSubline:
       "Serving all of Templeton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Templeton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Templeton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -6550,14 +6550,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Townsend, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Townsend, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Townsend, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Townsend, MA",
     heroSubline:
       "Serving all of Townsend with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Townsend, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Townsend, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -6589,14 +6589,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in West Groton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in West Groton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in West Groton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in West Groton, MA",
     heroSubline:
       "Serving all of West Groton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves West Groton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves West Groton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -6629,14 +6629,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.446396,
     lng: -71.459405,
     metaTitle:
-      "Ice Cream Truck Rental in West Townsend, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in West Townsend, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in West Townsend, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in West Townsend, MA",
     heroSubline:
       "Serving all of West Townsend with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves West Townsend, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves West Townsend, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -6669,14 +6669,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.661612,
     lng: -72.047876,
-    metaTitle: "Ice Cream Truck Rental in Winchendon, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Winchendon, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Winchendon, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Winchendon, MA",
     heroSubline:
       "Serving all of Winchendon with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Winchendon, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Winchendon, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -6709,14 +6709,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.364807,
     lng: -71.896868,
     metaTitle:
-      "Ice Cream Truck Rental in Winchendon Springs, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Winchendon Springs, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Winchendon Springs, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Winchendon Springs, MA",
     heroSubline:
       "Serving all of Winchendon Springs with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Winchendon Springs, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Winchendon Springs, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -6750,13 +6750,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.184835,
     lng: -71.947184,
-    metaTitle: "Ice Cream Truck Rental in Auburn, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Auburn, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Auburn, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Auburn, MA",
     heroSubline: "Serving all of Auburn with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Auburn, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Auburn, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -6788,13 +6788,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.3129,
     lng: -71.841656,
-    metaTitle: "Ice Cream Truck Rental in Berlin, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Berlin, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Berlin, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Berlin, MA",
     heroSubline: "Serving all of Berlin with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Berlin, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Berlin, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -6826,14 +6826,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.114078,
     lng: -71.799785,
-    metaTitle: "Ice Cream Truck Rental in Blackstone, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Blackstone, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Blackstone, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Blackstone, MA",
     heroSubline:
       "Serving all of Blackstone with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Blackstone, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Blackstone, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -6865,14 +6865,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.300037,
     lng: -71.943458,
-    metaTitle: "Ice Cream Truck Rental in Boylston, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Boylston, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Boylston, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Boylston, MA",
     heroSubline:
       "Serving all of Boylston with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Boylston, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Boylston, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -6904,14 +6904,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.19169,
     lng: -72.105011,
-    metaTitle: "Ice Cream Truck Rental in Brookfield, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Brookfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Brookfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Brookfield, MA",
     heroSubline:
       "Serving all of Brookfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Brookfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Brookfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -6943,14 +6943,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.13277,
     lng: -71.972627,
-    metaTitle: "Ice Cream Truck Rental in Charlton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Charlton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Charlton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Charlton, MA",
     heroSubline:
       "Serving all of Charlton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Charlton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Charlton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -6983,14 +6983,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.109748,
     lng: -72.079455,
     metaTitle:
-      "Ice Cream Truck Rental in Charlton City, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Charlton City, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Charlton City, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Charlton City, MA",
     heroSubline:
       "Serving all of Charlton City with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Charlton City, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Charlton City, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -7024,14 +7024,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.364807,
     lng: -71.896868,
     metaTitle:
-      "Ice Cream Truck Rental in Charlton Depot, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Charlton Depot, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Charlton Depot, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Charlton Depot, MA",
     heroSubline:
       "Serving all of Charlton Depot with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Charlton Depot, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Charlton Depot, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -7065,14 +7065,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.413972,
     lng: -71.687523,
-    metaTitle: "Ice Cream Truck Rental in Clinton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Clinton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Clinton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Clinton, MA",
     heroSubline:
       "Serving all of Clinton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Clinton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Clinton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -7105,14 +7105,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.205311,
     lng: -72.049907,
     metaTitle:
-      "Ice Cream Truck Rental in East Brookfield, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in East Brookfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in East Brookfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in East Brookfield, MA",
     heroSubline:
       "Serving all of East Brookfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves East Brookfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves East Brookfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -7146,14 +7146,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.113076,
     lng: -71.891139,
-    metaTitle: "Ice Cream Truck Rental in Douglas, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Douglas, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Douglas, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Douglas, MA",
     heroSubline:
       "Serving all of Douglas with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Douglas, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Douglas, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -7186,14 +7186,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.364807,
     lng: -71.896868,
     metaTitle:
-      "Ice Cream Truck Rental in East Princeton, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in East Princeton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in East Princeton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in East Princeton, MA",
     heroSubline:
       "Serving all of East Princeton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves East Princeton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves East Princeton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -7227,14 +7227,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.106405,
     lng: -72.114045,
-    metaTitle: "Ice Cream Truck Rental in Fiskdale, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Fiskdale, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Fiskdale, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Fiskdale, MA",
     heroSubline:
       "Serving all of Fiskdale with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Fiskdale, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Fiskdale, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -7266,14 +7266,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.203944,
     lng: -71.682862,
-    metaTitle: "Ice Cream Truck Rental in Grafton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Grafton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Grafton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Grafton, MA",
     heroSubline:
       "Serving all of Grafton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Grafton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Grafton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -7305,13 +7305,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.336791,
     lng: -71.845316,
-    metaTitle: "Ice Cream Truck Rental in Holden, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Holden, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Holden, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Holden, MA",
     heroSubline: "Serving all of Holden with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Holden, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Holden, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -7343,14 +7343,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.061063,
     lng: -72.163991,
-    metaTitle: "Ice Cream Truck Rental in Holland, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Holland, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Holland, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Holland, MA",
     heroSubline:
       "Serving all of Holland with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Holland, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Holland, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -7382,14 +7382,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.264629,
     lng: -71.795442,
-    metaTitle: "Ice Cream Truck Rental in Jefferson, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Jefferson, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Jefferson, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Jefferson, MA",
     heroSubline:
       "Serving all of Jefferson with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Jefferson, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Jefferson, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -7421,14 +7421,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.427188,
     lng: -71.91177,
-    metaTitle: "Ice Cream Truck Rental in Lancaster, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Lancaster, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Lancaster, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Lancaster, MA",
     heroSubline:
       "Serving all of Lancaster with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Lancaster, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Lancaster, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -7460,14 +7460,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.238192,
     lng: -72.012379,
-    metaTitle: "Ice Cream Truck Rental in Leicester, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Leicester, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Leicester, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Leicester, MA",
     heroSubline:
       "Serving all of Leicester with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Leicester, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Leicester, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -7499,14 +7499,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.364807,
     lng: -71.896868,
-    metaTitle: "Ice Cream Truck Rental in Linwood, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Linwood, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Linwood, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Linwood, MA",
     heroSubline:
       "Serving all of Linwood with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Linwood, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Linwood, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -7538,14 +7538,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.364807,
     lng: -71.896868,
-    metaTitle: "Ice Cream Truck Rental in Manchaug, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Manchaug, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Manchaug, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Manchaug, MA",
     heroSubline:
       "Serving all of Manchaug with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Manchaug, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Manchaug, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -7577,14 +7577,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.255642,
     lng: -71.819961,
-    metaTitle: "Ice Cream Truck Rental in Millbury, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Millbury, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Millbury, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Millbury, MA",
     heroSubline:
       "Serving all of Millbury with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Millbury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Millbury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -7616,14 +7616,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.124662,
     lng: -71.846943,
-    metaTitle: "Ice Cream Truck Rental in Millville, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Millville, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Millville, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Millville, MA",
     heroSubline:
       "Serving all of Millville with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Millville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Millville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -7656,14 +7656,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.320938,
     lng: -72.128644,
     metaTitle:
-      "Ice Cream Truck Rental in New Braintree, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in New Braintree, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in New Braintree, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in New Braintree, MA",
     heroSubline:
       "Serving all of New Braintree with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves New Braintree, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves New Braintree, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -7697,14 +7697,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.322118,
     lng: -71.64282,
     metaTitle:
-      "Ice Cream Truck Rental in Northborough, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Northborough, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Northborough, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Northborough, MA",
     heroSubline:
       "Serving all of Northborough with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Northborough, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Northborough, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -7737,14 +7737,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.207191,
     lng: -71.856807,
-    metaTitle: "Ice Cream Truck Rental in Northbridge, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Northbridge, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Northbridge, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Northbridge, MA",
     heroSubline:
       "Serving all of Northbridge with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Northbridge, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Northbridge, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -7777,14 +7777,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.275382,
     lng: -72.089338,
     metaTitle:
-      "Ice Cream Truck Rental in North Brookfield, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in North Brookfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in North Brookfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in North Brookfield, MA",
     heroSubline:
       "Serving all of North Brookfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves North Brookfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves North Brookfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -7819,14 +7819,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.407556,
     lng: -71.860402,
     metaTitle:
-      "Ice Cream Truck Rental in North Grafton, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in North Grafton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in North Grafton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in North Grafton, MA",
     heroSubline:
       "Serving all of North Grafton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves North Grafton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves North Grafton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -7860,14 +7860,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.166241,
     lng: -71.891052,
     metaTitle:
-      "Ice Cream Truck Rental in North Oxford, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in North Oxford, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in North Oxford, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in North Oxford, MA",
     heroSubline:
       "Serving all of North Oxford with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves North Oxford, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves North Oxford, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -7901,14 +7901,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.364807,
     lng: -71.896868,
     metaTitle:
-      "Ice Cream Truck Rental in North Uxbridge, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in North Uxbridge, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in North Uxbridge, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in North Uxbridge, MA",
     heroSubline:
       "Serving all of North Uxbridge with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves North Uxbridge, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves North Uxbridge, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -7942,13 +7942,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.109223,
     lng: -71.855444,
-    metaTitle: "Ice Cream Truck Rental in Oxford, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Oxford, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Oxford, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Oxford, MA",
     heroSubline: "Serving all of Oxford with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Oxford, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Oxford, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -7980,14 +7980,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.451926,
     lng: -71.880057,
-    metaTitle: "Ice Cream Truck Rental in Princeton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Princeton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Princeton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Princeton, MA",
     heroSubline:
       "Serving all of Princeton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Princeton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Princeton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -8019,14 +8019,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.220085,
     lng: -71.914361,
-    metaTitle: "Ice Cream Truck Rental in Rochdale, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Rochdale, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Rochdale, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Rochdale, MA",
     heroSubline:
       "Serving all of Rochdale with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Rochdale, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Rochdale, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -8058,14 +8058,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.383516,
     lng: -71.95463,
-    metaTitle: "Ice Cream Truck Rental in Rutland, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Rutland, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Rutland, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Rutland, MA",
     heroSubline:
       "Serving all of Rutland with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Rutland, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Rutland, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -8097,14 +8097,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.286992,
     lng: -71.715313,
-    metaTitle: "Ice Cream Truck Rental in Shrewsbury, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Shrewsbury, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Shrewsbury, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Shrewsbury, MA",
     heroSubline:
       "Serving all of Shrewsbury with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Shrewsbury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Shrewsbury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -8136,14 +8136,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.129251,
     lng: -72.031155,
-    metaTitle: "Ice Cream Truck Rental in Southbridge, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Southbridge, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Southbridge, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Southbridge, MA",
     heroSubline:
       "Serving all of Southbridge with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Southbridge, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Southbridge, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -8176,14 +8176,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.176544,
     lng: -71.681912,
     metaTitle:
-      "Ice Cream Truck Rental in South Grafton, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in South Grafton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in South Grafton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in South Grafton, MA",
     heroSubline:
       "Serving all of South Grafton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves South Grafton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves South Grafton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -8217,14 +8217,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.443539,
     lng: -71.686137,
     metaTitle:
-      "Ice Cream Truck Rental in South Lancaster, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in South Lancaster, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in South Lancaster, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in South Lancaster, MA",
     heroSubline:
       "Serving all of South Lancaster with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves South Lancaster, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves South Lancaster, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -8258,14 +8258,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.254837,
     lng: -72.065612,
-    metaTitle: "Ice Cream Truck Rental in Spencer, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Spencer, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Spencer, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Spencer, MA",
     heroSubline:
       "Serving all of Spencer with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Spencer, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Spencer, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -8297,14 +8297,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.366765,
     lng: -71.939375,
-    metaTitle: "Ice Cream Truck Rental in Sterling, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Sterling, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Sterling, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Sterling, MA",
     heroSubline:
       "Serving all of Sterling with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Sterling, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Sterling, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -8336,14 +8336,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.10273,
     lng: -72.080996,
-    metaTitle: "Ice Cream Truck Rental in Sturbridge, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Sturbridge, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Sturbridge, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Sturbridge, MA",
     heroSubline:
       "Serving all of Sturbridge with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Sturbridge, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Sturbridge, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -8375,13 +8375,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.175591,
     lng: -71.603197,
-    metaTitle: "Ice Cream Truck Rental in Upton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Upton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Upton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Upton, MA",
     heroSubline: "Serving all of Upton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Upton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Upton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -8412,14 +8412,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.059736,
     lng: -71.638438,
-    metaTitle: "Ice Cream Truck Rental in Uxbridge, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Uxbridge, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Uxbridge, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Uxbridge, MA",
     heroSubline:
       "Serving all of Uxbridge with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Uxbridge, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Uxbridge, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -8451,14 +8451,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.1351,
     lng: -71.994169,
-    metaTitle: "Ice Cream Truck Rental in Webster, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Webster, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Webster, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Webster, MA",
     heroSubline:
       "Serving all of Webster with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Webster, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Webster, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -8490,13 +8490,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.059189,
     lng: -71.937037,
-    metaTitle: "Ice Cream Truck Rental in Dudley, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Dudley, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Dudley, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Dudley, MA",
     heroSubline: "Serving all of Dudley with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Dudley, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Dudley, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -8528,14 +8528,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.364807,
     lng: -71.896868,
-    metaTitle: "Ice Cream Truck Rental in Westborough, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Westborough, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Westborough, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Westborough, MA",
     heroSubline:
       "Serving all of Westborough with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Westborough, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Westborough, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -8568,14 +8568,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.362783,
     lng: -71.781215,
     metaTitle:
-      "Ice Cream Truck Rental in West Boylston, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in West Boylston, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in West Boylston, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in West Boylston, MA",
     heroSubline:
       "Serving all of West Boylston with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves West Boylston, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves West Boylston, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -8609,14 +8609,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.235638,
     lng: -72.172523,
     metaTitle:
-      "Ice Cream Truck Rental in West Brookfield, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in West Brookfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in West Brookfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in West Brookfield, MA",
     heroSubline:
       "Serving all of West Brookfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves West Brookfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves West Brookfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -8651,14 +8651,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.364807,
     lng: -71.896868,
     metaTitle:
-      "Ice Cream Truck Rental in West Millbury, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in West Millbury, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in West Millbury, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in West Millbury, MA",
     heroSubline:
       "Serving all of West Millbury with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves West Millbury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves West Millbury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -8692,14 +8692,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.166554,
     lng: -71.899484,
     metaTitle:
-      "Ice Cream Truck Rental in Whitinsville, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Whitinsville, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Whitinsville, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Whitinsville, MA",
     heroSubline:
       "Serving all of Whitinsville with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Whitinsville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Whitinsville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -8732,13 +8732,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.126575,
     lng: -71.755193,
-    metaTitle: "Ice Cream Truck Rental in Sutton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Sutton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Sutton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Sutton, MA",
     heroSubline: "Serving all of Sutton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Sutton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Sutton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -8771,14 +8771,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.239392,
     lng: -71.878716,
     metaTitle:
-      "Ice Cream Truck Rental in Cherry Valley, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Cherry Valley, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Cherry Valley, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Cherry Valley, MA",
     heroSubline:
       "Serving all of Cherry Valley with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Cherry Valley, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Cherry Valley, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -8811,13 +8811,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.304675,
     lng: -71.892875,
-    metaTitle: "Ice Cream Truck Rental in Paxton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Paxton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Paxton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Paxton, MA",
     heroSubline: "Serving all of Paxton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Paxton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Paxton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -8850,14 +8850,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.446396,
     lng: -71.459405,
     metaTitle:
-      "Ice Cream Truck Rental in Village Of Nagog Woods, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Village Of Nagog Woods, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Village Of Nagog Woods, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Village Of Nagog Woods, MA",
     heroSubline:
       "Serving all of Village Of Nagog Woods with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Village Of Nagog Woods, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Village Of Nagog Woods, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -8891,14 +8891,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Boxborough, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Boxborough, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Boxborough, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Boxborough, MA",
     heroSubline:
       "Serving all of Boxborough with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Boxborough, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Boxborough, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -8930,13 +8930,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Acton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Acton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Acton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Acton, MA",
     heroSubline: "Serving all of Acton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Acton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Acton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -8967,14 +8967,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Ashland, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Ashland, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Ashland, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Ashland, MA",
     heroSubline:
       "Serving all of Ashland with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Ashland, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Ashland, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -9006,14 +9006,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Bedford, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Bedford, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Bedford, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Bedford, MA",
     heroSubline:
       "Serving all of Bedford with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Bedford, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Bedford, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -9045,14 +9045,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Hanscom Afb, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Hanscom Afb, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Hanscom Afb, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Hanscom Afb, MA",
     heroSubline:
       "Serving all of Hanscom Afb with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Hanscom Afb, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Hanscom Afb, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -9084,13 +9084,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.436043,
     lng: -71.605916,
-    metaTitle: "Ice Cream Truck Rental in Bolton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Bolton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Bolton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Bolton, MA",
     heroSubline: "Serving all of Bolton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Bolton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Bolton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -9122,14 +9122,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Carlisle, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Carlisle, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Carlisle, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Carlisle, MA",
     heroSubline:
       "Serving all of Carlisle with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Carlisle, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Carlisle, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -9161,14 +9161,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Concord, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Concord, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Concord, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Concord, MA",
     heroSubline:
       "Serving all of Concord with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Concord, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Concord, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -9200,14 +9200,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.293442,
     lng: -71.502762,
-    metaTitle: "Ice Cream Truck Rental in Fayville, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Fayville, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Fayville, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Fayville, MA",
     heroSubline:
       "Serving all of Fayville with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Fayville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Fayville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -9239,14 +9239,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Holliston, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Holliston, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Holliston, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Holliston, MA",
     heroSubline:
       "Serving all of Holliston with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Holliston, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Holliston, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -9278,14 +9278,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.127515,
     lng: -71.533138,
-    metaTitle: "Ice Cream Truck Rental in Hopedale, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Hopedale, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Hopedale, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Hopedale, MA",
     heroSubline:
       "Serving all of Hopedale with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Hopedale, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Hopedale, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -9317,14 +9317,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Hopkinton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Hopkinton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Hopkinton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Hopkinton, MA",
     heroSubline:
       "Serving all of Hopkinton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Hopkinton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Hopkinton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -9356,13 +9356,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Hudson, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Hudson, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Hudson, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Hudson, MA",
     heroSubline: "Serving all of Hudson with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Hudson, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Hudson, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -9394,14 +9394,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Marlborough, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Marlborough, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Marlborough, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Marlborough, MA",
     heroSubline:
       "Serving all of Marlborough with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Marlborough, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Marlborough, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -9433,14 +9433,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Maynard, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Maynard, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Maynard, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Maynard, MA",
     heroSubline:
       "Serving all of Maynard with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Maynard, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Maynard, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -9472,13 +9472,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.100352,
     lng: -71.546961,
-    metaTitle: "Ice Cream Truck Rental in Mendon, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Mendon, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Mendon, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Mendon, MA",
     heroSubline: "Serving all of Mendon with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Mendon, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Mendon, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -9510,14 +9510,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.147087,
     lng: -71.528085,
-    metaTitle: "Ice Cream Truck Rental in Milford, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Milford, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Milford, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Milford, MA",
     heroSubline:
       "Serving all of Milford with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Milford, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Milford, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -9549,13 +9549,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Natick, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Natick, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Natick, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Natick, MA",
     heroSubline: "Serving all of Natick with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Natick, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Natick, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -9587,14 +9587,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Sherborn, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Sherborn, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Sherborn, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Sherborn, MA",
     heroSubline:
       "Serving all of Sherborn with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Sherborn, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Sherborn, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -9627,14 +9627,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.296842,
     lng: -71.533229,
     metaTitle:
-      "Ice Cream Truck Rental in Southborough, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Southborough, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Southborough, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Southborough, MA",
     heroSubline:
       "Serving all of Southborough with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Southborough, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Southborough, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -9667,14 +9667,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Lincoln, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Lincoln, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Lincoln, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Lincoln, MA",
     heroSubline:
       "Serving all of Lincoln with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Lincoln, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Lincoln, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -9706,13 +9706,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Stow, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Stow, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Stow, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Stow, MA",
     heroSubline: "Serving all of Stow with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Stow, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Stow, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -9743,14 +9743,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Sudbury, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Sudbury, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Sudbury, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Sudbury, MA",
     heroSubline:
       "Serving all of Sudbury with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Sudbury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Sudbury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -9782,14 +9782,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Wayland, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Wayland, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Wayland, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Wayland, MA",
     heroSubline:
       "Serving all of Wayland with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Wayland, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Wayland, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -9821,14 +9821,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Woodville, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Woodville, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Woodville, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Woodville, MA",
     heroSubline:
       "Serving all of Woodville with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Woodville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Woodville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -9860,13 +9860,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.488595,
     lng: -71.157271,
-    metaTitle: "Ice Cream Truck Rental in Woburn, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Woburn, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Woburn, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Woburn, MA",
     heroSubline: "Serving all of Woburn with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Woburn, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Woburn, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -9898,14 +9898,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.504844,
     lng: -71.201539,
-    metaTitle: "Ice Cream Truck Rental in Burlington, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Burlington, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Burlington, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Burlington, MA",
     heroSubline:
       "Serving all of Burlington with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Burlington, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Burlington, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -9937,14 +9937,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.647991,
     lng: -71.165685,
-    metaTitle: "Ice Cream Truck Rental in Andover, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Andover, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Andover, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Andover, MA",
     heroSubline:
       "Serving all of Andover with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Andover, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Andover, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -9976,14 +9976,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Billerica, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Billerica, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Billerica, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Billerica, MA",
     heroSubline:
       "Serving all of Billerica with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Billerica, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Billerica, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -10015,14 +10015,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Chelmsford, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Chelmsford, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Chelmsford, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Chelmsford, MA",
     heroSubline:
       "Serving all of Chelmsford with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Chelmsford, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Chelmsford, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -10054,13 +10054,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Dracut, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Dracut, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Dracut, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Dracut, MA",
     heroSubline: "Serving all of Dracut with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Dracut, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Dracut, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -10092,14 +10092,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Dunstable, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Dunstable, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Dunstable, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Dunstable, MA",
     heroSubline:
       "Serving all of Dunstable with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Dunstable, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Dunstable, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -10131,14 +10131,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.792639,
     lng: -71.072501,
-    metaTitle: "Ice Cream Truck Rental in Haverhill, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Haverhill, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Haverhill, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Haverhill, MA",
     heroSubline:
       "Serving all of Haverhill with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Haverhill, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Haverhill, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -10170,14 +10170,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.72377,
     lng: -70.981298,
-    metaTitle: "Ice Cream Truck Rental in Georgetown, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Georgetown, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Georgetown, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Georgetown, MA",
     heroSubline:
       "Serving all of Georgetown with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Georgetown, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Georgetown, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -10209,14 +10209,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.751074,
     lng: -71.021437,
-    metaTitle: "Ice Cream Truck Rental in Groveland, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Groveland, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Groveland, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Groveland, MA",
     heroSubline:
       "Serving all of Groveland with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Groveland, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Groveland, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -10248,14 +10248,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.70734,
     lng: -71.161052,
-    metaTitle: "Ice Cream Truck Rental in Lawrence, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Lawrence, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Lawrence, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Lawrence, MA",
     heroSubline:
       "Serving all of Lawrence with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Lawrence, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Lawrence, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -10287,14 +10287,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.73184,
     lng: -71.186915,
-    metaTitle: "Ice Cream Truck Rental in Methuen, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Methuen, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Methuen, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Methuen, MA",
     heroSubline:
       "Serving all of Methuen with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Methuen, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Methuen, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -10327,14 +10327,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.672835,
     lng: -71.087689,
     metaTitle:
-      "Ice Cream Truck Rental in North Andover, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in North Andover, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in North Andover, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in North Andover, MA",
     heroSubline:
       "Serving all of North Andover with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves North Andover, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves North Andover, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -10367,14 +10367,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.802441,
     lng: -71.0896,
-    metaTitle: "Ice Cream Truck Rental in Merrimac, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Merrimac, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Merrimac, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Merrimac, MA",
     heroSubline:
       "Serving all of Merrimac with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Merrimac, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Merrimac, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -10407,14 +10407,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.446396,
     lng: -71.459405,
     metaTitle:
-      "Ice Cream Truck Rental in North Billerica, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in North Billerica, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in North Billerica, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in North Billerica, MA",
     heroSubline:
       "Serving all of North Billerica with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves North Billerica, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves North Billerica, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -10449,14 +10449,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.446396,
     lng: -71.459405,
     metaTitle:
-      "Ice Cream Truck Rental in North Chelmsford, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in North Chelmsford, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in North Chelmsford, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in North Chelmsford, MA",
     heroSubline:
       "Serving all of North Chelmsford with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves North Chelmsford, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves North Chelmsford, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -10491,14 +10491,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.581332,
     lng: -71.083725,
     metaTitle:
-      "Ice Cream Truck Rental in North Reading, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in North Reading, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in North Reading, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in North Reading, MA",
     heroSubline:
       "Serving all of North Reading with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves North Reading, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves North Reading, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -10532,14 +10532,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.446396,
     lng: -71.459405,
     metaTitle:
-      "Ice Cream Truck Rental in Nutting Lake, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Nutting Lake, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Nutting Lake, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Nutting Lake, MA",
     heroSubline:
       "Serving all of Nutting Lake with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Nutting Lake, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Nutting Lake, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -10572,14 +10572,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Pinehurst, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Pinehurst, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Pinehurst, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Pinehurst, MA",
     heroSubline:
       "Serving all of Pinehurst with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Pinehurst, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Pinehurst, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -10611,14 +10611,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.537065,
     lng: -71.107172,
-    metaTitle: "Ice Cream Truck Rental in Reading, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Reading, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Reading, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Reading, MA",
     heroSubline:
       "Serving all of Reading with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Reading, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Reading, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -10650,14 +10650,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Tewksbury, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Tewksbury, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Tewksbury, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Tewksbury, MA",
     heroSubline:
       "Serving all of Tewksbury with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Tewksbury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Tewksbury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -10689,14 +10689,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Tyngsboro, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Tyngsboro, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Tyngsboro, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Tyngsboro, MA",
     heroSubline:
       "Serving all of Tyngsboro with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Tyngsboro, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Tyngsboro, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -10728,14 +10728,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.499891,
     lng: -71.068829,
-    metaTitle: "Ice Cream Truck Rental in Wakefield, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Wakefield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Wakefield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Wakefield, MA",
     heroSubline:
       "Serving all of Wakefield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Wakefield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Wakefield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -10768,14 +10768,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.635443,
     lng: -70.879123,
     metaTitle:
-      "Ice Cream Truck Rental in West Boxford, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in West Boxford, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in West Boxford, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in West Boxford, MA",
     heroSubline:
       "Serving all of West Boxford with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves West Boxford, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves West Boxford, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -10808,14 +10808,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Westford, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Westford, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Westford, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Westford, MA",
     heroSubline:
       "Serving all of Westford with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Westford, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Westford, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -10847,14 +10847,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.561782,
     lng: -71.173888,
-    metaTitle: "Ice Cream Truck Rental in Wilmington, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Wilmington, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Wilmington, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Wilmington, MA",
     heroSubline:
       "Serving all of Wilmington with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Wilmington, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Wilmington, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -10886,14 +10886,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.454545,
     lng: -71.148779,
-    metaTitle: "Ice Cream Truck Rental in Winchester, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Winchester, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Winchester, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Winchester, MA",
     heroSubline:
       "Serving all of Winchester with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Winchester, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Winchester, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -10925,13 +10925,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.472112,
     lng: -70.997794,
-    metaTitle: "Ice Cream Truck Rental in Saugus, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Saugus, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Saugus, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Saugus, MA",
     heroSubline: "Serving all of Saugus with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Saugus, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Saugus, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -10963,14 +10963,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.513295,
     lng: -70.905893,
-    metaTitle: "Ice Cream Truck Rental in Swampscott, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Swampscott, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Swampscott, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Swampscott, MA",
     heroSubline:
       "Serving all of Swampscott with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Swampscott, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Swampscott, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -11002,13 +11002,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.427296,
     lng: -70.922442,
-    metaTitle: "Ice Cream Truck Rental in Nahant, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Nahant, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Nahant, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Nahant, MA",
     heroSubline: "Serving all of Nahant with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Nahant, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Nahant, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -11040,14 +11040,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.853539,
     lng: -70.948211,
-    metaTitle: "Ice Cream Truck Rental in Amesbury, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Amesbury, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Amesbury, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Amesbury, MA",
     heroSubline:
       "Serving all of Amesbury with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Amesbury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Amesbury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -11079,14 +11079,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.565145,
     lng: -70.853843,
-    metaTitle: "Ice Cream Truck Rental in Beverly, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Beverly, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Beverly, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Beverly, MA",
     heroSubline:
       "Serving all of Beverly with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Beverly, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Beverly, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -11118,14 +11118,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.683256,
     lng: -71.017403,
-    metaTitle: "Ice Cream Truck Rental in Boxford, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Boxford, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Boxford, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Boxford, MA",
     heroSubline:
       "Serving all of Boxford with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Boxford, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Boxford, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -11157,14 +11157,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.763216,
     lng: -70.92812,
-    metaTitle: "Ice Cream Truck Rental in Byfield, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Byfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Byfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Byfield, MA",
     heroSubline:
       "Serving all of Byfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Byfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Byfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -11196,14 +11196,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.577188,
     lng: -70.949245,
-    metaTitle: "Ice Cream Truck Rental in Danvers, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Danvers, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Danvers, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Danvers, MA",
     heroSubline:
       "Serving all of Danvers with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Danvers, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Danvers, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -11235,13 +11235,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.62781,
     lng: -70.780576,
-    metaTitle: "Ice Cream Truck Rental in Essex, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Essex, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Essex, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Essex, MA",
     heroSubline: "Serving all of Essex with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Essex, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Essex, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -11272,14 +11272,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.630011,
     lng: -70.694179,
-    metaTitle: "Ice Cream Truck Rental in Gloucester, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Gloucester, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Gloucester, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Gloucester, MA",
     heroSubline:
       "Serving all of Gloucester with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Gloucester, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Gloucester, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -11311,14 +11311,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.635443,
     lng: -70.879123,
-    metaTitle: "Ice Cream Truck Rental in Hamilton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Hamilton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Hamilton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Hamilton, MA",
     heroSubline:
       "Serving all of Hamilton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Hamilton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Hamilton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -11350,14 +11350,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.635443,
     lng: -70.879123,
-    metaTitle: "Ice Cream Truck Rental in Hathorne, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Hathorne, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Hathorne, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Hathorne, MA",
     heroSubline:
       "Serving all of Hathorne with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Hathorne, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Hathorne, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -11389,14 +11389,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.68571,
     lng: -70.864132,
-    metaTitle: "Ice Cream Truck Rental in Ipswich, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Ipswich, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Ipswich, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Ipswich, MA",
     heroSubline:
       "Serving all of Ipswich with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Ipswich, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Ipswich, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -11428,14 +11428,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.533732,
     lng: -71.028775,
-    metaTitle: "Ice Cream Truck Rental in Lynnfield, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Lynnfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Lynnfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Lynnfield, MA",
     heroSubline:
       "Serving all of Lynnfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Lynnfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Lynnfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -11467,14 +11467,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.579503,
     lng: -70.755062,
-    metaTitle: "Ice Cream Truck Rental in Manchester, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Manchester, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Manchester, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Manchester, MA",
     heroSubline:
       "Serving all of Manchester with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Manchester, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Manchester, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -11506,14 +11506,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.56142,
     lng: -70.770768,
-    metaTitle: "Ice Cream Truck Rental in Marblehead, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Marblehead, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Marblehead, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Marblehead, MA",
     heroSubline:
       "Serving all of Marblehead with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Marblehead, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Marblehead, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -11545,14 +11545,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.644942,
     lng: -71.087905,
-    metaTitle: "Ice Cream Truck Rental in Middleton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Middleton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Middleton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Middleton, MA",
     heroSubline:
       "Serving all of Middleton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Middleton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Middleton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -11584,14 +11584,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.80965,
     lng: -70.873196,
-    metaTitle: "Ice Cream Truck Rental in Newburyport, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Newburyport, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Newburyport, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Newburyport, MA",
     heroSubline:
       "Serving all of Newburyport with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Newburyport, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Newburyport, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -11623,14 +11623,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.777524,
     lng: -70.867246,
-    metaTitle: "Ice Cream Truck Rental in Newbury, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Newbury, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Newbury, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Newbury, MA",
     heroSubline:
       "Serving all of Newbury with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Newbury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Newbury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -11662,14 +11662,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.851234,
     lng: -70.865667,
-    metaTitle: "Ice Cream Truck Rental in Salisbury, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Salisbury, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Salisbury, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Salisbury, MA",
     heroSubline:
       "Serving all of Salisbury with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Salisbury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Salisbury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -11701,14 +11701,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.536996,
     lng: -70.973646,
-    metaTitle: "Ice Cream Truck Rental in Peabody, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Peabody, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Peabody, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Peabody, MA",
     heroSubline:
       "Serving all of Peabody with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Peabody, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Peabody, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -11741,14 +11741,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.558113,
     lng: -70.825743,
     metaTitle:
-      "Ice Cream Truck Rental in Prides Crossing, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Prides Crossing, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Prides Crossing, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Prides Crossing, MA",
     heroSubline:
       "Serving all of Prides Crossing with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Prides Crossing, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Prides Crossing, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -11782,14 +11782,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.657866,
     lng: -70.618057,
-    metaTitle: "Ice Cream Truck Rental in Rockport, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Rockport, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Rockport, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Rockport, MA",
     heroSubline:
       "Serving all of Rockport with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Rockport, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Rockport, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -11821,13 +11821,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.716155,
     lng: -70.892754,
-    metaTitle: "Ice Cream Truck Rental in Rowley, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Rowley, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Rowley, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Rowley, MA",
     heroSubline: "Serving all of Rowley with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Rowley, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Rowley, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -11860,14 +11860,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.626664,
     lng: -70.851125,
     metaTitle:
-      "Ice Cream Truck Rental in South Hamilton, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in South Hamilton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in South Hamilton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in South Hamilton, MA",
     heroSubline:
       "Serving all of South Hamilton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves South Hamilton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves South Hamilton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -11901,14 +11901,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.661793,
     lng: -70.954487,
-    metaTitle: "Ice Cream Truck Rental in Topsfield, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Topsfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Topsfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Topsfield, MA",
     heroSubline:
       "Serving all of Topsfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Topsfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Topsfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -11940,13 +11940,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.597691,
     lng: -70.8732,
-    metaTitle: "Ice Cream Truck Rental in Wenham, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Wenham, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Wenham, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Wenham, MA",
     heroSubline: "Serving all of Wenham with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Wenham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Wenham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -11979,14 +11979,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.79414,
     lng: -70.971068,
     metaTitle:
-      "Ice Cream Truck Rental in West Newbury, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in West Newbury, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in West Newbury, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in West Newbury, MA",
     heroSubline:
       "Serving all of West Newbury with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves West Newbury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves West Newbury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -12019,13 +12019,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.970474,
     lng: -70.701357,
-    metaTitle: "Ice Cream Truck Rental in Accord, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Accord, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Accord, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Accord, MA",
     heroSubline: "Serving all of Accord with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Accord, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Accord, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -12057,14 +12057,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.076501,
     lng: -71.470464,
-    metaTitle: "Ice Cream Truck Rental in Bellingham, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Bellingham, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Bellingham, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Bellingham, MA",
     heroSubline:
       "Serving all of Bellingham with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Bellingham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Bellingham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -12096,14 +12096,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.081825,
     lng: -70.643868,
-    metaTitle: "Ice Cream Truck Rental in Brant Rock, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Brant Rock, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Brant Rock, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Brant Rock, MA",
     heroSubline:
       "Serving all of Brant Rock with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Brant Rock, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Brant Rock, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -12135,13 +12135,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.179146,
     lng: -71.121185,
-    metaTitle: "Ice Cream Truck Rental in Canton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Canton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Canton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Canton, MA",
     heroSubline: "Serving all of Canton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Canton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Canton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -12173,14 +12173,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.233938,
     lng: -70.815826,
-    metaTitle: "Ice Cream Truck Rental in Cohasset, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Cohasset, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Cohasset, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Cohasset, MA",
     heroSubline:
       "Serving all of Cohasset with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Cohasset, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Cohasset, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -12212,13 +12212,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.244733,
     lng: -71.181141,
-    metaTitle: "Ice Cream Truck Rental in Dedham, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Dedham, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Dedham, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Dedham, MA",
     heroSubline: "Serving all of Dedham with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Dedham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Dedham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -12250,13 +12250,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.236114,
     lng: -71.283072,
-    metaTitle: "Ice Cream Truck Rental in Dover, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Dover, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Dover, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Dover, MA",
     heroSubline: "Serving all of Dover with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Dover, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Dover, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -12287,14 +12287,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.998799,
     lng: -71.200894,
     metaTitle:
-      "Ice Cream Truck Rental in East Mansfield, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in East Mansfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in East Mansfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in East Mansfield, MA",
     heroSubline:
       "Serving all of East Mansfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves East Mansfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves East Mansfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -12329,14 +12329,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.153786,
     lng: -71.21455,
     metaTitle:
-      "Ice Cream Truck Rental in East Walpole, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in East Walpole, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in East Walpole, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in East Walpole, MA",
     heroSubline:
       "Serving all of East Walpole with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves East Walpole, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves East Walpole, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -12369,14 +12369,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.062204,
     lng: -71.235774,
-    metaTitle: "Ice Cream Truck Rental in Foxboro, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Foxboro, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Foxboro, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Foxboro, MA",
     heroSubline:
       "Serving all of Foxboro with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Foxboro, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Foxboro, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -12408,14 +12408,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.08868,
     lng: -71.404814,
-    metaTitle: "Ice Cream Truck Rental in Franklin, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Franklin, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Franklin, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Franklin, MA",
     heroSubline:
       "Serving all of Franklin with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Franklin, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Franklin, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -12447,14 +12447,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.970474,
     lng: -70.701357,
-    metaTitle: "Ice Cream Truck Rental in Greenbush, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Greenbush, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Greenbush, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Greenbush, MA",
     heroSubline:
       "Serving all of Greenbush with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Greenbush, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Greenbush, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -12487,14 +12487,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.069642,
     lng: -70.649075,
     metaTitle:
-      "Ice Cream Truck Rental in Green Harbor, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Green Harbor, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Green Harbor, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Green Harbor, MA",
     heroSubline:
       "Serving all of Green Harbor with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Green Harbor, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Green Harbor, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -12527,14 +12527,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.212105,
     lng: -70.884989,
-    metaTitle: "Ice Cream Truck Rental in Hingham, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Hingham, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Hingham, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Hingham, MA",
     heroSubline:
       "Serving all of Hingham with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Hingham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Hingham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -12566,13 +12566,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.284413,
     lng: -70.873659,
-    metaTitle: "Ice Cream Truck Rental in Hull, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Hull, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Hull, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Hull, MA",
     heroSubline: "Serving all of Hull with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Hull, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Hull, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -12603,14 +12603,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.142836,
     lng: -70.69353,
-    metaTitle: "Ice Cream Truck Rental in Humarock, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Humarock, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Humarock, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Humarock, MA",
     heroSubline:
       "Serving all of Humarock with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Humarock, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Humarock, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -12642,14 +12642,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.013182,
     lng: -71.218373,
-    metaTitle: "Ice Cream Truck Rental in Mansfield, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Mansfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Mansfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Mansfield, MA",
     heroSubline:
       "Serving all of Mansfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Mansfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Mansfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -12681,14 +12681,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.111805,
     lng: -70.710744,
-    metaTitle: "Ice Cream Truck Rental in Marshfield, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Marshfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Marshfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Marshfield, MA",
     heroSubline:
       "Serving all of Marshfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Marshfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Marshfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -12721,14 +12721,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.151202,
     lng: -70.734146,
     metaTitle:
-      "Ice Cream Truck Rental in Marshfield Hills, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Marshfield Hills, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Marshfield Hills, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Marshfield Hills, MA",
     heroSubline:
       "Serving all of Marshfield Hills with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Marshfield Hills, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Marshfield Hills, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -12762,14 +12762,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.181265,
     lng: -71.309934,
-    metaTitle: "Ice Cream Truck Rental in Medfield, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Medfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Medfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Medfield, MA",
     heroSubline:
       "Serving all of Medfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Medfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Medfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -12801,13 +12801,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.156282,
     lng: -71.427663,
-    metaTitle: "Ice Cream Truck Rental in Medway, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Medway, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Medway, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Medway, MA",
     heroSubline: "Serving all of Medway with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Medway, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Medway, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -12839,13 +12839,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.165249,
     lng: -71.36126,
-    metaTitle: "Ice Cream Truck Rental in Millis, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Millis, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Millis, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Millis, MA",
     heroSubline: "Serving all of Millis with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Millis, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Millis, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -12877,13 +12877,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.970474,
     lng: -70.701357,
-    metaTitle: "Ice Cream Truck Rental in Minot, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Minot, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Minot, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Minot, MA",
     heroSubline: "Serving all of Minot with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Minot, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Minot, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -12914,14 +12914,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.117511,
     lng: -71.331793,
-    metaTitle: "Ice Cream Truck Rental in Norfolk, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Norfolk, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Norfolk, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Norfolk, MA",
     heroSubline:
       "Serving all of Norfolk with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Norfolk, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Norfolk, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -12954,14 +12954,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.970474,
     lng: -70.701357,
     metaTitle:
-      "Ice Cream Truck Rental in North Marshfield, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in North Marshfield, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in North Marshfield, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in North Marshfield, MA",
     heroSubline:
       "Serving all of North Marshfield with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves North Marshfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves North Marshfield, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -12996,14 +12996,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.970474,
     lng: -70.701357,
     metaTitle:
-      "Ice Cream Truck Rental in North Scituate, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in North Scituate, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in North Scituate, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in North Scituate, MA",
     heroSubline:
       "Serving all of North Scituate with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves North Scituate, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves North Scituate, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -13037,14 +13037,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.154145,
     lng: -70.823035,
-    metaTitle: "Ice Cream Truck Rental in Norwell, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Norwell, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Norwell, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Norwell, MA",
     heroSubline:
       "Serving all of Norwell with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Norwell, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Norwell, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -13076,14 +13076,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.182798,
     lng: -71.196277,
-    metaTitle: "Ice Cream Truck Rental in Norwood, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Norwood, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Norwood, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Norwood, MA",
     heroSubline:
       "Serving all of Norwood with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Norwood, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Norwood, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -13115,14 +13115,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.097219,
     lng: -70.651567,
-    metaTitle: "Ice Cream Truck Rental in Ocean Bluff, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Ocean Bluff, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Ocean Bluff, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Ocean Bluff, MA",
     heroSubline:
       "Serving all of Ocean Bluff with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Ocean Bluff, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Ocean Bluff, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -13154,14 +13154,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.207254,
     lng: -70.770188,
-    metaTitle: "Ice Cream Truck Rental in Scituate, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Scituate, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Scituate, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Scituate, MA",
     heroSubline:
       "Serving all of Scituate with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Scituate, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Scituate, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -13193,13 +13193,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.105288,
     lng: -71.184785,
-    metaTitle: "Ice Cream Truck Rental in Sharon, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Sharon, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Sharon, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Sharon, MA",
     heroSubline: "Serving all of Sharon with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Sharon, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Sharon, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -13232,14 +13232,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.180048,
     lng: -71.08923,
     metaTitle:
-      "Ice Cream Truck Rental in Sheldonville, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Sheldonville, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Sheldonville, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Sheldonville, MA",
     heroSubline:
       "Serving all of Sheldonville with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Sheldonville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Sheldonville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -13273,14 +13273,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.100399,
     lng: -71.270933,
     metaTitle:
-      "Ice Cream Truck Rental in South Walpole, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in South Walpole, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in South Walpole, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in South Walpole, MA",
     heroSubline:
       "Serving all of South Walpole with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves South Walpole, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves South Walpole, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -13313,14 +13313,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.118416,
     lng: -71.105733,
-    metaTitle: "Ice Cream Truck Rental in Stoughton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Stoughton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Stoughton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Stoughton, MA",
     heroSubline:
       "Serving all of Stoughton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Stoughton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Stoughton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -13352,14 +13352,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.148624,
     lng: -71.255533,
-    metaTitle: "Ice Cream Truck Rental in Walpole, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Walpole, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Walpole, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Walpole, MA",
     heroSubline:
       "Serving all of Walpole with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Walpole, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Walpole, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -13391,14 +13391,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.220548,
     lng: -71.199238,
-    metaTitle: "Ice Cream Truck Rental in Westwood, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Westwood, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Westwood, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Westwood, MA",
     heroSubline:
       "Serving all of Westwood with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Westwood, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Westwood, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -13430,14 +13430,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.054311,
     lng: -71.371169,
-    metaTitle: "Ice Cream Truck Rental in Wrentham, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Wrentham, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Wrentham, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Wrentham, MA",
     heroSubline:
       "Serving all of Wrentham with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Wrentham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Wrentham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -13469,14 +13469,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.301247,
     lng: -71.105195,
-    metaTitle: "Ice Cream Truck Rental in Mattapan, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Mattapan, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Mattapan, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Mattapan, MA",
     heroSubline:
       "Serving all of Mattapan with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Mattapan, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Mattapan, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -13508,14 +13508,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.382588,
     lng: -71.065287,
-    metaTitle: "Ice Cream Truck Rental in Charlestown, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Charlestown, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Charlestown, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Charlestown, MA",
     heroSubline:
       "Serving all of Charlestown with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Charlestown, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Charlestown, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -13548,14 +13548,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.309661,
     lng: -71.121097,
     metaTitle:
-      "Ice Cream Truck Rental in Jamaica Plain, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Jamaica Plain, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Jamaica Plain, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Jamaica Plain, MA",
     heroSubline:
       "Serving all of Jamaica Plain with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Jamaica Plain, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Jamaica Plain, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -13588,14 +13588,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.284197,
     lng: -71.120896,
-    metaTitle: "Ice Cream Truck Rental in Roslindale, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Roslindale, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Roslindale, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Roslindale, MA",
     heroSubline:
       "Serving all of Roslindale with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Roslindale, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Roslindale, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -13628,14 +13628,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.277897,
     lng: -71.155833,
     metaTitle:
-      "Ice Cream Truck Rental in West Roxbury, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in West Roxbury, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in West Roxbury, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in West Roxbury, MA",
     heroSubline:
       "Serving all of West Roxbury with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves West Roxbury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves West Roxbury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -13668,14 +13668,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.357169,
     lng: -71.112646,
-    metaTitle: "Ice Cream Truck Rental in Allston, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Allston, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Allston, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Allston, MA",
     heroSubline:
       "Serving all of Allston with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Allston, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Allston, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -13707,14 +13707,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.349768,
     lng: -71.104888,
-    metaTitle: "Ice Cream Truck Rental in Brighton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Brighton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Brighton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Brighton, MA",
     heroSubline:
       "Serving all of Brighton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Brighton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Brighton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -13746,14 +13746,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.254248,
     lng: -71.129321,
-    metaTitle: "Ice Cream Truck Rental in Hyde Park, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Hyde Park, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Hyde Park, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Hyde Park, MA",
     heroSubline:
       "Serving all of Hyde Park with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Hyde Park, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Hyde Park, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -13785,14 +13785,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.338947,
     lng: -70.919635,
-    metaTitle: "Ice Cream Truck Rental in Readville, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Readville, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Readville, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Readville, MA",
     heroSubline:
       "Serving all of Readville with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Readville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Readville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -13824,13 +13824,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.436545,
     lng: -71.085396,
-    metaTitle: "Ice Cream Truck Rental in Malden, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Malden, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Malden, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Malden, MA",
     heroSubline: "Serving all of Malden with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Malden, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Malden, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -13862,14 +13862,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.407396,
     lng: -71.051183,
-    metaTitle: "Ice Cream Truck Rental in Everett, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Everett, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Everett, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Everett, MA",
     heroSubline:
       "Serving all of Everett with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Everett, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Everett, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -13901,14 +13901,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.378197,
     lng: -71.038894,
-    metaTitle: "Ice Cream Truck Rental in Chelsea, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Chelsea, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Chelsea, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Chelsea, MA",
     heroSubline:
       "Serving all of Chelsea with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Chelsea, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Chelsea, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -13940,14 +13940,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.378447,
     lng: -70.981679,
-    metaTitle: "Ice Cream Truck Rental in Winthrop, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Winthrop, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Winthrop, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Winthrop, MA",
     heroSubline:
       "Serving all of Winthrop with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Winthrop, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Winthrop, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -13980,14 +13980,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.446396,
     lng: -71.459405,
     metaTitle:
-      "Ice Cream Truck Rental in West Medford, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in West Medford, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in West Medford, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in West Medford, MA",
     heroSubline:
       "Serving all of West Medford with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves West Medford, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves West Medford, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -14020,14 +14020,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.458995,
     lng: -71.053095,
-    metaTitle: "Ice Cream Truck Rental in Melrose, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Melrose, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Melrose, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Melrose, MA",
     heroSubline:
       "Serving all of Melrose with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Melrose, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Melrose, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -14059,14 +14059,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.474595,
     lng: -71.098146,
-    metaTitle: "Ice Cream Truck Rental in Stoneham, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Stoneham, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Stoneham, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Stoneham, MA",
     heroSubline:
       "Serving all of Stoneham with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Stoneham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Stoneham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -14098,14 +14098,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.202216,
     lng: -71.005192,
-    metaTitle: "Ice Cream Truck Rental in Braintree, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Braintree, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Braintree, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Braintree, MA",
     heroSubline:
       "Serving all of Braintree with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Braintree, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Braintree, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -14137,13 +14137,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.240598,
     lng: -71.078494,
-    metaTitle: "Ice Cream Truck Rental in Milton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Milton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Milton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Milton, MA",
     heroSubline: "Serving all of Milton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Milton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Milton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -14176,14 +14176,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.180048,
     lng: -71.08923,
     metaTitle:
-      "Ice Cream Truck Rental in Milton Village, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Milton Village, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Milton Village, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Milton Village, MA",
     heroSubline:
       "Serving all of Milton Village with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Milton Village, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Milton Village, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -14217,14 +14217,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.20794,
     lng: -70.95514,
-    metaTitle: "Ice Cream Truck Rental in Weymouth, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Weymouth, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Weymouth, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Weymouth, MA",
     heroSubline:
       "Serving all of Weymouth with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Weymouth, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Weymouth, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -14256,14 +14256,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.375,
     lng: -71.03972,
-    metaTitle: "Ice Cream Truck Rental in East Boston, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in East Boston, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in East Boston, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in East Boston, MA",
     heroSubline:
       "Serving all of East Boston with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves East Boston, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves East Boston, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -14295,13 +14295,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.126049,
     lng: -71.048216,
-    metaTitle: "Ice Cream Truck Rental in Avon, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Avon, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Avon, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Avon, MA",
     heroSubline: "Serving all of Avon with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Avon, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Avon, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -14332,14 +14332,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.973741,
     lng: -70.976558,
-    metaTitle: "Ice Cream Truck Rental in Bridgewater, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Bridgewater, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Bridgewater, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Bridgewater, MA",
     heroSubline:
       "Serving all of Bridgewater with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Bridgewater, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Bridgewater, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -14371,14 +14371,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.040708,
     lng: -70.827245,
-    metaTitle: "Ice Cream Truck Rental in Bryantville, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Bryantville, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Bryantville, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Bryantville, MA",
     heroSubline:
       "Serving all of Bryantville with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Bryantville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Bryantville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -14410,13 +14410,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.896238,
     lng: -70.759689,
-    metaTitle: "Ice Cream Truck Rental in Carver, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Carver, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Carver, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Carver, MA",
     heroSubline: "Serving all of Carver with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Carver, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Carver, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -14448,14 +14448,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.970474,
     lng: -70.701357,
-    metaTitle: "Ice Cream Truck Rental in Duxbury, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Duxbury, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Duxbury, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Duxbury, MA",
     heroSubline:
       "Serving all of Duxbury with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Duxbury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Duxbury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -14488,14 +14488,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.02285,
     lng: -70.931056,
     metaTitle:
-      "Ice Cream Truck Rental in East Bridgewater, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in East Bridgewater, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in East Bridgewater, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in East Bridgewater, MA",
     heroSubline:
       "Serving all of East Bridgewater with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves East Bridgewater, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves East Bridgewater, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -14529,13 +14529,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.023528,
     lng: -71.132397,
-    metaTitle: "Ice Cream Truck Rental in Easton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Easton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Easton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Easton, MA",
     heroSubline: "Serving all of Easton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Easton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Easton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -14567,14 +14567,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.022225,
     lng: -70.931588,
-    metaTitle: "Ice Cream Truck Rental in Elmwood, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Elmwood, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Elmwood, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Elmwood, MA",
     heroSubline:
       "Serving all of Elmwood with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Elmwood, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Elmwood, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -14606,14 +14606,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.988351,
     lng: -70.860578,
-    metaTitle: "Ice Cream Truck Rental in Halifax, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Halifax, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Halifax, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Halifax, MA",
     heroSubline:
       "Serving all of Halifax with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Halifax, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Halifax, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -14645,14 +14645,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.123534,
     lng: -70.851048,
-    metaTitle: "Ice Cream Truck Rental in Hanover, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Hanover, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Hanover, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Hanover, MA",
     heroSubline:
       "Serving all of Hanover with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Hanover, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Hanover, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -14684,13 +14684,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.055701,
     lng: -70.875936,
-    metaTitle: "Ice Cream Truck Rental in Hanson, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Hanson, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Hanson, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Hanson, MA",
     heroSubline: "Serving all of Hanson with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Hanson, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Hanson, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -14722,14 +14722,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.144424,
     lng: -71.00289,
-    metaTitle: "Ice Cream Truck Rental in Holbrook, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Holbrook, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Holbrook, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Holbrook, MA",
     heroSubline:
       "Serving all of Holbrook with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Holbrook, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Holbrook, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -14761,14 +14761,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.970474,
     lng: -70.701357,
-    metaTitle: "Ice Cream Truck Rental in Middleboro, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Middleboro, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Middleboro, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Middleboro, MA",
     heroSubline:
       "Serving all of Middleboro with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Middleboro, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Middleboro, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -14800,14 +14800,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.888198,
     lng: -70.581029,
-    metaTitle: "Ice Cream Truck Rental in Manomet, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Manomet, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Manomet, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Manomet, MA",
     heroSubline:
       "Serving all of Manomet with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Manomet, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Manomet, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -14839,14 +14839,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.843757,
     lng: -70.959981,
-    metaTitle: "Ice Cream Truck Rental in Lakeville, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Lakeville, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Lakeville, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Lakeville, MA",
     heroSubline:
       "Serving all of Lakeville with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Lakeville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Lakeville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -14878,14 +14878,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.018525,
     lng: -70.847486,
-    metaTitle: "Ice Cream Truck Rental in Monponsett, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Monponsett, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Monponsett, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Monponsett, MA",
     heroSubline:
       "Serving all of Monponsett with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Monponsett, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Monponsett, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -14917,14 +14917,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.11749,
     lng: -70.959888,
-    metaTitle: "Ice Cream Truck Rental in Abington, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Abington, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Abington, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Abington, MA",
     heroSubline:
       "Serving all of Abington with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Abington, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Abington, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -14957,14 +14957,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.916918,
     lng: -70.801331,
     metaTitle:
-      "Ice Cream Truck Rental in North Carver, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in North Carver, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in North Carver, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in North Carver, MA",
     heroSubline:
       "Serving all of North Carver with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves North Carver, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves North Carver, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -14998,14 +14998,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.053408,
     lng: -71.12033,
     metaTitle:
-      "Ice Cream Truck Rental in North Easton, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in North Easton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in North Easton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in North Easton, MA",
     heroSubline:
       "Serving all of North Easton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves North Easton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves North Easton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -15039,14 +15039,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.95351,
     lng: -70.713109,
     metaTitle:
-      "Ice Cream Truck Rental in North Pembroke, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in North Pembroke, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in North Pembroke, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in North Pembroke, MA",
     heroSubline:
       "Serving all of North Pembroke with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves North Pembroke, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves North Pembroke, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -15080,14 +15080,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.065702,
     lng: -70.800778,
-    metaTitle: "Ice Cream Truck Rental in Pembroke, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Pembroke, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Pembroke, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Pembroke, MA",
     heroSubline:
       "Serving all of Pembroke with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Pembroke, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Pembroke, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -15119,14 +15119,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.979405,
     lng: -70.744813,
-    metaTitle: "Ice Cream Truck Rental in Kingston, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Kingston, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Kingston, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Kingston, MA",
     heroSubline:
       "Serving all of Kingston with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Kingston, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Kingston, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -15159,14 +15159,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.850087,
     lng: -70.704431,
     metaTitle:
-      "Ice Cream Truck Rental in South Carver, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in South Carver, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in South Carver, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in South Carver, MA",
     heroSubline:
       "Serving all of South Carver with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves South Carver, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves South Carver, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -15199,14 +15199,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.96914,
     lng: -70.812299,
-    metaTitle: "Ice Cream Truck Rental in Plympton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Plympton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Plympton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Plympton, MA",
     heroSubline:
       "Serving all of Plympton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Plympton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Plympton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -15238,14 +15238,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.171467,
     lng: -71.055602,
-    metaTitle: "Ice Cream Truck Rental in Randolph, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Randolph, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Randolph, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Randolph, MA",
     heroSubline:
       "Serving all of Randolph with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Randolph, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Randolph, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -15277,14 +15277,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.954199,
     lng: -70.885095,
-    metaTitle: "Ice Cream Truck Rental in Rockland, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Rockland, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Rockland, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Rockland, MA",
     heroSubline:
       "Serving all of Rockland with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Rockland, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Rockland, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -15317,14 +15317,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.023199,
     lng: -71.111091,
     metaTitle:
-      "Ice Cream Truck Rental in South Easton, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in South Easton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in South Easton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in South Easton, MA",
     heroSubline:
       "Serving all of South Easton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves South Easton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves South Easton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -15358,14 +15358,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.02165,
     lng: -71.023588,
     metaTitle:
-      "Ice Cream Truck Rental in West Bridgewater, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in West Bridgewater, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in West Bridgewater, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in West Bridgewater, MA",
     heroSubline:
       "Serving all of West Bridgewater with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves West Bridgewater, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves West Bridgewater, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -15400,14 +15400,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.931602,
     lng: -70.561051,
     metaTitle:
-      "Ice Cream Truck Rental in White Horse Beach, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in White Horse Beach, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in White Horse Beach, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in White Horse Beach, MA",
     heroSubline:
       "Serving all of White Horse Beach with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves White Horse Beach, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves White Horse Beach, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -15441,14 +15441,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.0785,
     lng: -70.940837,
-    metaTitle: "Ice Cream Truck Rental in Whitman, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Whitman, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Whitman, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Whitman, MA",
     heroSubline:
       "Serving all of Whitman with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Whitman, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Whitman, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -15480,14 +15480,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.45631,
     lng: -71.21665,
-    metaTitle: "Ice Cream Truck Rental in Lexington, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Lexington, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Lexington, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Lexington, MA",
     heroSubline:
       "Serving all of Lexington with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Lexington, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Lexington, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -15520,14 +15520,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.180048,
     lng: -71.08923,
     metaTitle:
-      "Ice Cream Truck Rental in Brookline Village, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Brookline Village, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Brookline Village, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Brookline Village, MA",
     heroSubline:
       "Serving all of Brookline Village with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Brookline Village, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Brookline Village, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -15562,14 +15562,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.404644,
     lng: -71.234086,
     metaTitle:
-      "Ice Cream Truck Rental in North Waltham, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in North Waltham, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in North Waltham, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in North Waltham, MA",
     heroSubline:
       "Serving all of North Waltham with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves North Waltham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves North Waltham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -15602,14 +15602,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in New Town, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in New Town, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in New Town, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in New Town, MA",
     heroSubline:
       "Serving all of New Town with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves New Town, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves New Town, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -15641,14 +15641,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.180048,
     lng: -71.08923,
-    metaTitle: "Ice Cream Truck Rental in Babson Park, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Babson Park, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Babson Park, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Babson Park, MA",
     heroSubline:
       "Serving all of Babson Park with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Babson Park, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Babson Park, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -15681,14 +15681,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.334146,
     lng: -71.183298,
     metaTitle:
-      "Ice Cream Truck Rental in Newton Center, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Newton Center, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Newton Center, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Newton Center, MA",
     heroSubline:
       "Serving all of Newton Center with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Newton Center, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Newton Center, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -15721,14 +15721,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.374296,
     lng: -71.182371,
-    metaTitle: "Ice Cream Truck Rental in Newtonville, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Newtonville, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Newtonville, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Newtonville, MA",
     heroSubline:
       "Serving all of Newtonville with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Newtonville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Newtonville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -15761,14 +15761,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.361196,
     lng: -71.205349,
     metaTitle:
-      "Ice Cream Truck Rental in Newton Highlands, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Newton Highlands, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Newton Highlands, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Newton Highlands, MA",
     heroSubline:
       "Serving all of Newton Highlands with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Newton Highlands, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Newton Highlands, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -15803,14 +15803,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.349496,
     lng: -71.209699,
     metaTitle:
-      "Ice Cream Truck Rental in Newton Lower Falls, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Newton Lower Falls, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Newton Lower Falls, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Newton Lower Falls, MA",
     heroSubline:
       "Serving all of Newton Lower Falls with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Newton Lower Falls, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Newton Lower Falls, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -15845,14 +15845,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.36599,
     lng: -71.221849,
     metaTitle:
-      "Ice Cream Truck Rental in Newton Upper Falls, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Newton Upper Falls, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Newton Upper Falls, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Newton Upper Falls, MA",
     heroSubline:
       "Serving all of Newton Upper Falls with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Newton Upper Falls, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Newton Upper Falls, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -15886,14 +15886,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.378145,
     lng: -71.213199,
-    metaTitle: "Ice Cream Truck Rental in West Newton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in West Newton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in West Newton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in West Newton, MA",
     heroSubline:
       "Serving all of West Newton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves West Newton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves West Newton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -15925,14 +15925,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.346696,
     lng: -71.224957,
-    metaTitle: "Ice Cream Truck Rental in Auburndale, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Auburndale, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Auburndale, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Auburndale, MA",
     heroSubline:
       "Serving all of Auburndale with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Auburndale, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Auburndale, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -15965,14 +15965,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.357564,
     lng: -71.211649,
     metaTitle:
-      "Ice Cream Truck Rental in Chestnut Hill, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Chestnut Hill, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Chestnut Hill, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Chestnut Hill, MA",
     heroSubline:
       "Serving all of Chestnut Hill with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Chestnut Hill, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Chestnut Hill, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -16005,13 +16005,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.327146,
     lng: -71.231534,
-    metaTitle: "Ice Cream Truck Rental in Waban, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Waban, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Waban, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Waban, MA",
     heroSubline: "Serving all of Waban with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Waban, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Waban, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -16042,14 +16042,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Watertown, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Watertown, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Watertown, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Watertown, MA",
     heroSubline:
       "Serving all of Watertown with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Watertown, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Watertown, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -16081,14 +16081,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.417595,
     lng: -71.159696,
-    metaTitle: "Ice Cream Truck Rental in Arlington, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Arlington, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Arlington, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Arlington, MA",
     heroSubline:
       "Serving all of Arlington with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Arlington, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Arlington, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -16121,14 +16121,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.446396,
     lng: -71.459405,
     metaTitle:
-      "Ice Cream Truck Rental in Arlington Heights, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Arlington Heights, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Arlington Heights, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Arlington Heights, MA",
     heroSubline:
       "Serving all of Arlington Heights with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Arlington Heights, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Arlington Heights, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -16162,14 +16162,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.412795,
     lng: -71.204399,
-    metaTitle: "Ice Cream Truck Rental in Belmont, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Belmont, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Belmont, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Belmont, MA",
     heroSubline:
       "Serving all of Belmont with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Belmont, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Belmont, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -16201,14 +16201,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Waverley, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Waverley, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Waverley, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Waverley, MA",
     heroSubline:
       "Serving all of Waverley with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Waverley, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Waverley, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -16241,14 +16241,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.310597,
     lng: -71.274652,
     metaTitle:
-      "Ice Cream Truck Rental in Wellesley Hills, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Wellesley Hills, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Wellesley Hills, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Wellesley Hills, MA",
     heroSubline:
       "Serving all of Wellesley Hills with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Wellesley Hills, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Wellesley Hills, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -16282,14 +16282,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.294546,
     lng: -71.299201,
-    metaTitle: "Ice Cream Truck Rental in Wellesley, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Wellesley, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Wellesley, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Wellesley, MA",
     heroSubline:
       "Serving all of Wellesley with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Wellesley, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Wellesley, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -16321,14 +16321,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.279797,
     lng: -71.25006,
-    metaTitle: "Ice Cream Truck Rental in Needham, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Needham, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Needham, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Needham, MA",
     heroSubline:
       "Serving all of Needham with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Needham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Needham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -16360,13 +16360,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.375925,
     lng: -71.227208,
-    metaTitle: "Ice Cream Truck Rental in Weston, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Weston, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Weston, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Weston, MA",
     heroSubline: "Serving all of Weston with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Weston, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Weston, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -16399,14 +16399,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 42.300147,
     lng: -71.26315,
     metaTitle:
-      "Ice Cream Truck Rental in Needham Heights, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Needham Heights, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Needham Heights, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Needham Heights, MA",
     heroSubline:
       "Serving all of Needham Heights with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Needham Heights, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Needham Heights, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -16440,14 +16440,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.446396,
     lng: -71.459405,
-    metaTitle: "Ice Cream Truck Rental in Nonantum, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Nonantum, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Nonantum, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Nonantum, MA",
     heroSubline:
       "Serving all of Nonantum with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Nonantum, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Nonantum, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -16480,14 +16480,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.745505,
     lng: -70.590471,
     metaTitle:
-      "Ice Cream Truck Rental in Buzzards Bay, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Buzzards Bay, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Buzzards Bay, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Buzzards Bay, MA",
     heroSubline:
       "Serving all of Buzzards Bay with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Buzzards Bay, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Buzzards Bay, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -16520,14 +16520,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.669373,
     lng: -70.62337,
-    metaTitle: "Ice Cream Truck Rental in Cataumet, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Cataumet, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Cataumet, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Cataumet, MA",
     heroSubline:
       "Serving all of Cataumet with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Cataumet, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Cataumet, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -16559,14 +16559,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.379034,
     lng: -70.673082,
-    metaTitle: "Ice Cream Truck Rental in Chilmark, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Chilmark, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Chilmark, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Chilmark, MA",
     heroSubline:
       "Serving all of Chilmark with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Chilmark, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Chilmark, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -16599,14 +16599,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.662506,
     lng: -70.562843,
     metaTitle:
-      "Ice Cream Truck Rental in East Falmouth, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in East Falmouth, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in East Falmouth, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in East Falmouth, MA",
     heroSubline:
       "Serving all of East Falmouth with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves East Falmouth, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves East Falmouth, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -16640,14 +16640,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.72832,
     lng: -70.439975,
     metaTitle:
-      "Ice Cream Truck Rental in East Sandwich, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in East Sandwich, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in East Sandwich, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in East Sandwich, MA",
     heroSubline:
       "Serving all of East Sandwich with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves East Sandwich, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves East Sandwich, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -16681,14 +16681,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.77544,
     lng: -70.660562,
     metaTitle:
-      "Ice Cream Truck Rental in East Wareham, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in East Wareham, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in East Wareham, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in East Wareham, MA",
     heroSubline:
       "Serving all of East Wareham with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves East Wareham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves East Wareham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -16721,14 +16721,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.401176,
     lng: -70.552054,
-    metaTitle: "Ice Cream Truck Rental in Edgartown, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Edgartown, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Edgartown, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Edgartown, MA",
     heroSubline:
       "Serving all of Edgartown with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Edgartown, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Edgartown, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -16760,14 +16760,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.614199,
     lng: -70.493263,
-    metaTitle: "Ice Cream Truck Rental in Falmouth, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Falmouth, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Falmouth, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Falmouth, MA",
     heroSubline:
       "Serving all of Falmouth with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Falmouth, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Falmouth, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -16799,14 +16799,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.593809,
     lng: -70.646442,
-    metaTitle: "Ice Cream Truck Rental in Woods Hole, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Woods Hole, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Woods Hole, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Woods Hole, MA",
     heroSubline:
       "Serving all of Woods Hole with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Woods Hole, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Woods Hole, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -16838,14 +16838,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.379836,
     lng: -70.643092,
-    metaTitle: "Ice Cream Truck Rental in Menemsha, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Menemsha, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Menemsha, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Menemsha, MA",
     heroSubline:
       "Serving all of Menemsha with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Menemsha, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Menemsha, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -16878,14 +16878,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.67336,
     lng: -70.608047,
     metaTitle:
-      "Ice Cream Truck Rental in Monument Beach, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Monument Beach, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Monument Beach, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Monument Beach, MA",
     heroSubline:
       "Serving all of Monument Beach with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Monument Beach, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Monument Beach, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -16919,14 +16919,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.287647,
     lng: -70.08665,
-    metaTitle: "Ice Cream Truck Rental in Nantucket, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Nantucket, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Nantucket, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Nantucket, MA",
     heroSubline:
       "Serving all of Nantucket with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Nantucket, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Nantucket, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -16959,14 +16959,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.652967,
     lng: -70.375475,
     metaTitle:
-      "Ice Cream Truck Rental in North Falmouth, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in North Falmouth, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in North Falmouth, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in North Falmouth, MA",
     heroSubline:
       "Serving all of North Falmouth with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves North Falmouth, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves North Falmouth, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -17000,14 +17000,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.417376,
     lng: -70.560032,
-    metaTitle: "Ice Cream Truck Rental in Oak Bluffs, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Oak Bluffs, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Oak Bluffs, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Oak Bluffs, MA",
     heroSubline:
       "Serving all of Oak Bluffs with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Oak Bluffs, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Oak Bluffs, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -17039,13 +17039,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.74756,
     lng: -70.658164,
-    metaTitle: "Ice Cream Truck Rental in Onset, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Onset, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Onset, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Onset, MA",
     heroSubline: "Serving all of Onset with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Onset, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Onset, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -17076,14 +17076,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.694771,
     lng: -70.622769,
-    metaTitle: "Ice Cream Truck Rental in Pocasset, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Pocasset, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Pocasset, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Pocasset, MA",
     heroSubline:
       "Serving all of Pocasset with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Pocasset, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Pocasset, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -17115,14 +17115,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.770254,
     lng: -70.533664,
-    metaTitle: "Ice Cream Truck Rental in Sagamore, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Sagamore, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Sagamore, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Sagamore, MA",
     heroSubline:
       "Serving all of Sagamore with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Sagamore, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Sagamore, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -17155,14 +17155,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.793263,
     lng: -70.519584,
     metaTitle:
-      "Ice Cream Truck Rental in Sagamore Beach, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Sagamore Beach, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Sagamore Beach, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Sagamore Beach, MA",
     heroSubline:
       "Serving all of Sagamore Beach with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Sagamore Beach, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Sagamore Beach, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -17196,14 +17196,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.711291,
     lng: -70.477482,
-    metaTitle: "Ice Cream Truck Rental in Sandwich, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Sandwich, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Sandwich, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Sandwich, MA",
     heroSubline:
       "Serving all of Sandwich with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Sandwich, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Sandwich, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -17235,14 +17235,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.273949,
     lng: -70.015545,
-    metaTitle: "Ice Cream Truck Rental in Siasconset, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Siasconset, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Siasconset, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Siasconset, MA",
     heroSubline:
       "Serving all of Siasconset with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Siasconset, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Siasconset, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -17275,14 +17275,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.799312,
     lng: -70.308662,
     metaTitle:
-      "Ice Cream Truck Rental in Silver Beach, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Silver Beach, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Silver Beach, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Silver Beach, MA",
     heroSubline:
       "Serving all of Silver Beach with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Silver Beach, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Silver Beach, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -17316,14 +17316,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.41595,
     lng: -70.595235,
     metaTitle:
-      "Ice Cream Truck Rental in Vineyard Haven, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Vineyard Haven, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Vineyard Haven, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Vineyard Haven, MA",
     heroSubline:
       "Serving all of Vineyard Haven with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Vineyard Haven, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Vineyard Haven, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -17357,14 +17357,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.760216,
     lng: -70.694662,
-    metaTitle: "Ice Cream Truck Rental in Wareham, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Wareham, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Wareham, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Wareham, MA",
     heroSubline:
       "Serving all of Wareham with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Wareham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Wareham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -17396,14 +17396,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.379836,
     lng: -70.643092,
-    metaTitle: "Ice Cream Truck Rental in West Chop, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in West Chop, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in West Chop, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in West Chop, MA",
     heroSubline:
       "Serving all of West Chop with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves West Chop, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves West Chop, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -17436,14 +17436,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.603946,
     lng: -70.638189,
     metaTitle:
-      "Ice Cream Truck Rental in West Falmouth, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in West Falmouth, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in West Falmouth, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in West Falmouth, MA",
     heroSubline:
       "Serving all of West Falmouth with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves West Falmouth, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves West Falmouth, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -17477,14 +17477,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.42125,
     lng: -70.642806,
     metaTitle:
-      "Ice Cream Truck Rental in West Tisbury, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in West Tisbury, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in West Tisbury, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in West Tisbury, MA",
     heroSubline:
       "Serving all of West Tisbury with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves West Tisbury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves West Tisbury, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -17518,14 +17518,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.769863,
     lng: -70.749688,
     metaTitle:
-      "Ice Cream Truck Rental in West Wareham, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in West Wareham, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in West Wareham, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in West Wareham, MA",
     heroSubline:
       "Serving all of West Wareham with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves West Wareham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves West Wareham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -17558,14 +17558,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.829813,
     lng: -70.138834,
-    metaTitle: "Ice Cream Truck Rental in Hyannis, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Hyannis, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Hyannis, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Hyannis, MA",
     heroSubline:
       "Serving all of Hyannis with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Hyannis, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Hyannis, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -17597,14 +17597,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.697313,
     lng: -70.301394,
-    metaTitle: "Ice Cream Truck Rental in Barnstable, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Barnstable, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Barnstable, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Barnstable, MA",
     heroSubline:
       "Serving all of Barnstable with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Barnstable, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Barnstable, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -17636,14 +17636,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.852997,
     lng: -70.044462,
-    metaTitle: "Ice Cream Truck Rental in Brewster, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Brewster, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Brewster, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Brewster, MA",
     heroSubline:
       "Serving all of Brewster with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Brewster, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Brewster, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -17675,14 +17675,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.796311,
     lng: -70.175129,
-    metaTitle: "Ice Cream Truck Rental in Centerville, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Centerville, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Centerville, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Centerville, MA",
     heroSubline:
       "Serving all of Centerville with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Centerville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Centerville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -17714,14 +17714,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.859559,
     lng: -70.0468,
-    metaTitle: "Ice Cream Truck Rental in Chatham, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Chatham, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Chatham, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Chatham, MA",
     heroSubline:
       "Serving all of Chatham with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Chatham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Chatham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -17753,13 +17753,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.624341,
     lng: -70.43638,
-    metaTitle: "Ice Cream Truck Rental in Cotuit, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Cotuit, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Cotuit, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Cotuit, MA",
     heroSubline: "Serving all of Cotuit with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Cotuit, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Cotuit, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -17791,14 +17791,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.701438,
     lng: -70.277212,
-    metaTitle: "Ice Cream Truck Rental in Cummaquid, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Cummaquid, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Cummaquid, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Cummaquid, MA",
     heroSubline:
       "Serving all of Cummaquid with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Cummaquid, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Cummaquid, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -17830,13 +17830,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.725716,
     lng: -70.089142,
-    metaTitle: "Ice Cream Truck Rental in Dennis, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Dennis, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Dennis, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Dennis, MA",
     heroSubline: "Serving all of Dennis with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Dennis, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Dennis, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -17868,14 +17868,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.750745,
     lng: -70.071836,
-    metaTitle: "Ice Cream Truck Rental in Dennis Port, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Dennis Port, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Dennis Port, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Dennis Port, MA",
     heroSubline:
       "Serving all of Dennis Port with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Dennis Port, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Dennis Port, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -17907,14 +17907,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.734713,
     lng: -70.20467,
-    metaTitle: "Ice Cream Truck Rental in East Dennis, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in East Dennis, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in East Dennis, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in East Dennis, MA",
     heroSubline:
       "Serving all of East Dennis with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves East Dennis, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves East Dennis, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -17946,14 +17946,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.850612,
     lng: -70.020648,
-    metaTitle: "Ice Cream Truck Rental in Eastham, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Eastham, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Eastham, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Eastham, MA",
     heroSubline:
       "Serving all of Eastham with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Eastham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Eastham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -17986,14 +17986,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.784308,
     lng: -69.962034,
     metaTitle:
-      "Ice Cream Truck Rental in East Orleans, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in East Orleans, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in East Orleans, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in East Orleans, MA",
     heroSubline:
       "Serving all of East Orleans with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves East Orleans, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves East Orleans, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -18026,14 +18026,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.790031,
     lng: -70.268632,
-    metaTitle: "Ice Cream Truck Rental in Forestdale, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Forestdale, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Forestdale, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Forestdale, MA",
     heroSubline:
       "Serving all of Forestdale with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Forestdale, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Forestdale, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -18065,14 +18065,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.835582,
     lng: -70.043359,
-    metaTitle: "Ice Cream Truck Rental in Harwich, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Harwich, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Harwich, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Harwich, MA",
     heroSubline:
       "Serving all of Harwich with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Harwich, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Harwich, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -18105,14 +18105,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.845717,
     lng: -70.053544,
     metaTitle:
-      "Ice Cream Truck Rental in Harwich Port, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Harwich Port, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Harwich Port, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Harwich Port, MA",
     heroSubline:
       "Serving all of Harwich Port with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Harwich Port, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Harwich Port, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -18146,14 +18146,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.635004,
     lng: -70.306336,
     metaTitle:
-      "Ice Cream Truck Rental in Hyannis Port, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Hyannis Port, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Hyannis Port, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Hyannis Port, MA",
     heroSubline:
       "Serving all of Hyannis Port with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Hyannis Port, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Hyannis Port, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -18187,14 +18187,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.813034,
     lng: -70.246666,
     metaTitle:
-      "Ice Cream Truck Rental in Marstons Mills, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Marstons Mills, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Marstons Mills, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Marstons Mills, MA",
     heroSubline:
       "Serving all of Marstons Mills with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Marstons Mills, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Marstons Mills, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -18228,14 +18228,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.788337,
     lng: -70.253543,
-    metaTitle: "Ice Cream Truck Rental in Mashpee, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Mashpee, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Mashpee, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Mashpee, MA",
     heroSubline:
       "Serving all of Mashpee with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Mashpee, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Mashpee, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -18268,14 +18268,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.73497,
     lng: -70.029065,
     metaTitle:
-      "Ice Cream Truck Rental in North Chatham, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in North Chatham, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in North Chatham, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in North Chatham, MA",
     heroSubline:
       "Serving all of North Chatham with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves North Chatham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves North Chatham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -18309,14 +18309,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.824264,
     lng: -69.98176,
     metaTitle:
-      "Ice Cream Truck Rental in North Eastham, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in North Eastham, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in North Eastham, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in North Eastham, MA",
     heroSubline:
       "Serving all of North Eastham with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves North Eastham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves North Eastham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -18349,14 +18349,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.931061,
     lng: -70.283584,
-    metaTitle: "Ice Cream Truck Rental in North Truro, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in North Truro, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in North Truro, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in North Truro, MA",
     heroSubline:
       "Serving all of North Truro with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves North Truro, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves North Truro, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -18388,14 +18388,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.852933,
     lng: -70.01539,
-    metaTitle: "Ice Cream Truck Rental in Orleans, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Orleans, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Orleans, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Orleans, MA",
     heroSubline:
       "Serving all of Orleans with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Orleans, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Orleans, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -18427,14 +18427,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.810178,
     lng: -70.191269,
-    metaTitle: "Ice Cream Truck Rental in Osterville, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Osterville, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Osterville, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Osterville, MA",
     heroSubline:
       "Serving all of Osterville with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Osterville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Osterville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -18467,14 +18467,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.888775,
     lng: -70.091057,
     metaTitle:
-      "Ice Cream Truck Rental in Provincetown, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Provincetown, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Provincetown, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Provincetown, MA",
     heroSubline:
       "Serving all of Provincetown with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Provincetown, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Provincetown, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -18508,14 +18508,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.848932,
     lng: -70.030194,
     metaTitle:
-      "Ice Cream Truck Rental in South Chatham, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in South Chatham, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in South Chatham, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in South Chatham, MA",
     heroSubline:
       "Serving all of South Chatham with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves South Chatham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves South Chatham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -18549,14 +18549,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.80038,
     lng: -70.089244,
     metaTitle:
-      "Ice Cream Truck Rental in South Dennis, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in South Dennis, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in South Dennis, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in South Dennis, MA",
     heroSubline:
       "Serving all of South Dennis with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves South Dennis, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves South Dennis, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -18590,14 +18590,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.686205,
     lng: -70.032858,
     metaTitle:
-      "Ice Cream Truck Rental in South Harwich, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in South Harwich, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in South Harwich, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in South Harwich, MA",
     heroSubline:
       "Serving all of South Harwich with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves South Harwich, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves South Harwich, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -18631,14 +18631,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.756694,
     lng: -69.984123,
     metaTitle:
-      "Ice Cream Truck Rental in South Orleans, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in South Orleans, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in South Orleans, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in South Orleans, MA",
     heroSubline:
       "Serving all of South Orleans with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves South Orleans, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves South Orleans, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -18672,14 +18672,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.800531,
     lng: -70.076776,
     metaTitle:
-      "Ice Cream Truck Rental in South Wellfleet, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in South Wellfleet, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in South Wellfleet, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in South Wellfleet, MA",
     heroSubline:
       "Serving all of South Wellfleet with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves South Wellfleet, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves South Wellfleet, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -18714,14 +18714,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.82412,
     lng: -70.084259,
     metaTitle:
-      "Ice Cream Truck Rental in South Yarmouth, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in South Yarmouth, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in South Yarmouth, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in South Yarmouth, MA",
     heroSubline:
       "Serving all of South Yarmouth with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves South Yarmouth, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves South Yarmouth, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -18755,13 +18755,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.987377,
     lng: -70.047163,
-    metaTitle: "Ice Cream Truck Rental in Truro, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Truro, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Truro, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Truro, MA",
     heroSubline: "Serving all of Truro with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Truro, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Truro, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -18792,14 +18792,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.821307,
     lng: -70.022806,
-    metaTitle: "Ice Cream Truck Rental in Wellfleet, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Wellfleet, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Wellfleet, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Wellfleet, MA",
     heroSubline:
       "Serving all of Wellfleet with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Wellfleet, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Wellfleet, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -18832,14 +18832,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.79055,
     lng: -70.201719,
     metaTitle:
-      "Ice Cream Truck Rental in West Barnstable, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in West Barnstable, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in West Barnstable, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in West Barnstable, MA",
     heroSubline:
       "Serving all of West Barnstable with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves West Barnstable, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves West Barnstable, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -18874,14 +18874,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.698721,
     lng: -70.004937,
     metaTitle:
-      "Ice Cream Truck Rental in West Chatham, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in West Chatham, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in West Chatham, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in West Chatham, MA",
     heroSubline:
       "Serving all of West Chatham with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves West Chatham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves West Chatham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -18914,14 +18914,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.710855,
     lng: -70.072195,
-    metaTitle: "Ice Cream Truck Rental in West Dennis, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in West Dennis, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in West Dennis, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in West Dennis, MA",
     heroSubline:
       "Serving all of West Dennis with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves West Dennis, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves West Dennis, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -18954,14 +18954,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.846719,
     lng: -70.038282,
     metaTitle:
-      "Ice Cream Truck Rental in West Harwich, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in West Harwich, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in West Harwich, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in West Harwich, MA",
     heroSubline:
       "Serving all of West Harwich with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves West Harwich, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves West Harwich, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -18995,14 +18995,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.635635,
     lng: -70.323307,
     metaTitle:
-      "Ice Cream Truck Rental in West Hyannisport, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in West Hyannisport, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in West Hyannisport, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in West Hyannisport, MA",
     heroSubline:
       "Serving all of West Hyannisport with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves West Hyannisport, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves West Hyannisport, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -19037,14 +19037,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.776105,
     lng: -70.150512,
     metaTitle:
-      "Ice Cream Truck Rental in West Yarmouth, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in West Yarmouth, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in West Yarmouth, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in West Yarmouth, MA",
     heroSubline:
       "Serving all of West Yarmouth with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves West Yarmouth, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves West Yarmouth, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -19078,14 +19078,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.716271,
     lng: -70.135884,
     metaTitle:
-      "Ice Cream Truck Rental in Yarmouth Port, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Yarmouth Port, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Yarmouth Port, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Yarmouth Port, MA",
     heroSubline:
       "Serving all of Yarmouth Port with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Yarmouth Port, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Yarmouth Port, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -19118,14 +19118,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.782993,
     lng: -71.017328,
-    metaTitle: "Ice Cream Truck Rental in Assonet, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Assonet, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Assonet, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Assonet, MA",
     heroSubline:
       "Serving all of Assonet with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Assonet, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Assonet, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -19157,14 +19157,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.938976,
     lng: -71.302297,
-    metaTitle: "Ice Cream Truck Rental in Attleboro, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Attleboro, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Attleboro, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Attleboro, MA",
     heroSubline:
       "Serving all of Attleboro with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Attleboro, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Attleboro, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -19196,14 +19196,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.756214,
     lng: -71.067062,
-    metaTitle: "Ice Cream Truck Rental in Chartley, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Chartley, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Chartley, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Chartley, MA",
     heroSubline:
       "Serving all of Chartley with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Chartley, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Chartley, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -19235,14 +19235,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.42178,
     lng: -70.931309,
-    metaTitle: "Ice Cream Truck Rental in Cuttyhunk, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Cuttyhunk, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Cuttyhunk, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Cuttyhunk, MA",
     heroSubline:
       "Serving all of Cuttyhunk with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Cuttyhunk, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Cuttyhunk, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -19274,14 +19274,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.756214,
     lng: -71.067062,
-    metaTitle: "Ice Cream Truck Rental in Dartmouth, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Dartmouth, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Dartmouth, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Dartmouth, MA",
     heroSubline:
       "Serving all of Dartmouth with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Dartmouth, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Dartmouth, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -19313,14 +19313,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.817659,
     lng: -71.151787,
-    metaTitle: "Ice Cream Truck Rental in Dighton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Dighton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Dighton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Dighton, MA",
     heroSubline:
       "Serving all of Dighton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Dighton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Dighton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -19353,14 +19353,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.747358,
     lng: -70.978947,
     metaTitle:
-      "Ice Cream Truck Rental in East Freetown, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in East Freetown, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in East Freetown, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in East Freetown, MA",
     heroSubline:
       "Serving all of East Freetown with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves East Freetown, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves East Freetown, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -19394,14 +19394,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.871407,
     lng: -71.013148,
     metaTitle:
-      "Ice Cream Truck Rental in East Taunton, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in East Taunton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in East Taunton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in East Taunton, MA",
     heroSubline:
       "Serving all of East Taunton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves East Taunton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves East Taunton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -19434,14 +19434,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.631672,
     lng: -70.870045,
-    metaTitle: "Ice Cream Truck Rental in Fairhaven, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Fairhaven, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Fairhaven, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Fairhaven, MA",
     heroSubline:
       "Serving all of Fairhaven with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Fairhaven, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Fairhaven, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -19473,14 +19473,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.819766,
     lng: -71.165971,
-    metaTitle: "Ice Cream Truck Rental in Fall River, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Fall River, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Fall River, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Fall River, MA",
     heroSubline:
       "Serving all of Fall River with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Fall River, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Fall River, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -19512,14 +19512,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.723851,
     lng: -71.173989,
-    metaTitle: "Ice Cream Truck Rental in Somerset, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Somerset, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Somerset, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Somerset, MA",
     heroSubline:
       "Serving all of Somerset with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Somerset, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Somerset, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -19551,13 +19551,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.736735,
     lng: -70.754015,
-    metaTitle: "Ice Cream Truck Rental in Marion, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Marion, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Marion, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Marion, MA",
     heroSubline: "Serving all of Marion with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Marion, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Marion, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -19590,14 +19590,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.664976,
     lng: -70.810856,
     metaTitle:
-      "Ice Cream Truck Rental in Mattapoisett, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Mattapoisett, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Mattapoisett, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Mattapoisett, MA",
     heroSubline:
       "Serving all of Mattapoisett with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Mattapoisett, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Mattapoisett, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -19630,14 +19630,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.633416,
     lng: -70.951045,
-    metaTitle: "Ice Cream Truck Rental in New Bedford, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in New Bedford, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in New Bedford, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in New Bedford, MA",
     heroSubline:
       "Serving all of New Bedford with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves New Bedford, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves New Bedford, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -19669,14 +19669,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.711894,
     lng: -70.908286,
-    metaTitle: "Ice Cream Truck Rental in Acushnet, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Acushnet, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Acushnet, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Acushnet, MA",
     heroSubline:
       "Serving all of Acushnet with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Acushnet, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Acushnet, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -19709,14 +19709,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.639261,
     lng: -71.007578,
     metaTitle:
-      "Ice Cream Truck Rental in North Dartmouth, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in North Dartmouth, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in North Dartmouth, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in North Dartmouth, MA",
     heroSubline:
       "Serving all of North Dartmouth with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves North Dartmouth, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves North Dartmouth, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -19751,14 +19751,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.566464,
     lng: -70.984253,
     metaTitle:
-      "Ice Cream Truck Rental in South Dartmouth, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in South Dartmouth, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in South Dartmouth, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in South Dartmouth, MA",
     heroSubline:
       "Serving all of South Dartmouth with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves South Dartmouth, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves South Dartmouth, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -19793,14 +19793,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.964376,
     lng: -71.326448,
     metaTitle:
-      "Ice Cream Truck Rental in North Attleboro, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in North Attleboro, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in North Attleboro, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in North Attleboro, MA",
     heroSubline:
       "Serving all of North Attleboro with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves North Attleboro, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves North Attleboro, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -19834,14 +19834,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 42.013553,
     lng: -71.334399,
-    metaTitle: "Ice Cream Truck Rental in Plainville, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Plainville, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Plainville, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Plainville, MA",
     heroSubline:
       "Serving all of Plainville with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Plainville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Plainville, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -19874,14 +19874,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.972584,
     lng: -71.308229,
     metaTitle:
-      "Ice Cream Truck Rental in Attleboro Falls, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Attleboro Falls, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Attleboro Falls, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Attleboro Falls, MA",
     heroSubline:
       "Serving all of Attleboro Falls with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Attleboro Falls, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Attleboro Falls, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -19916,14 +19916,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.847791,
     lng: -71.155797,
     metaTitle:
-      "Ice Cream Truck Rental in North Dighton, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in North Dighton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in North Dighton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in North Dighton, MA",
     heroSubline:
       "Serving all of North Dighton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves North Dighton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves North Dighton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -19956,13 +19956,13 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.959149,
     lng: -71.180393,
-    metaTitle: "Ice Cream Truck Rental in Norton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Norton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Norton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Norton, MA",
     heroSubline: "Serving all of Norton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Norton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Norton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -19994,14 +19994,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.9367,
     lng: -71.048941,
-    metaTitle: "Ice Cream Truck Rental in Raynham, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Raynham, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Raynham, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Raynham, MA",
     heroSubline:
       "Serving all of Raynham with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Raynham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Raynham, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -20034,14 +20034,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.756214,
     lng: -71.067062,
     metaTitle:
-      "Ice Cream Truck Rental in Raynham Center, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Raynham Center, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Raynham Center, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Raynham Center, MA",
     heroSubline:
       "Serving all of Raynham Center with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Raynham Center, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Raynham Center, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -20075,14 +20075,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.852989,
     lng: -71.243061,
-    metaTitle: "Ice Cream Truck Rental in Rehoboth, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Rehoboth, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Rehoboth, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Rehoboth, MA",
     heroSubline:
       "Serving all of Rehoboth with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Rehoboth, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Rehoboth, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -20114,14 +20114,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.751812,
     lng: -70.846041,
-    metaTitle: "Ice Cream Truck Rental in Rochester, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Rochester, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Rochester, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Rochester, MA",
     heroSubline:
       "Serving all of Rochester with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Rochester, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Rochester, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -20153,14 +20153,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.840103,
     lng: -71.318995,
-    metaTitle: "Ice Cream Truck Rental in Seekonk, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Seekonk, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Seekonk, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Seekonk, MA",
     heroSubline:
       "Serving all of Seekonk with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Seekonk, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Seekonk, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -20192,14 +20192,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.766629,
     lng: -71.234443,
-    metaTitle: "Ice Cream Truck Rental in Swansea, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Swansea, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Swansea, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Swansea, MA",
     heroSubline:
       "Serving all of Swansea with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Swansea, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Swansea, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -20231,14 +20231,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.828249,
     lng: -71.064135,
-    metaTitle: "Ice Cream Truck Rental in Berkley, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Berkley, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Berkley, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Berkley, MA",
     heroSubline:
       "Serving all of Berkley with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Berkley, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Berkley, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -20270,14 +20270,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.858851,
     lng: -71.092827,
-    metaTitle: "Ice Cream Truck Rental in Taunton, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Taunton, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Taunton, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Taunton, MA",
     heroSubline:
       "Serving all of Taunton with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Taunton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Taunton, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -20309,14 +20309,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     region: "Massachusetts",
     lat: 41.61547,
     lng: -71.079636,
-    metaTitle: "Ice Cream Truck Rental in Westport, MA | Boston Legend Ice Cream Truck",
+    metaTitle: "Ice Cream Truck Rental in Westport, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Westport, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Westport, MA",
     heroSubline:
       "Serving all of Westport with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Westport, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Westport, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -20349,14 +20349,14 @@ export const MASSACHUSETTS_CITIES: CityData[] = [
     lat: 41.519104,
     lng: -71.085137,
     metaTitle:
-      "Ice Cream Truck Rental in Westport Point, MA | Boston Legend Ice Cream Truck",
+      "Ice Cream Truck Rental in Westport Point, MA | American Legend Ice Cream Truck",
     metaDescription:
       "Premium ice cream truck catering in Westport Point, MA. Birthdays, corporate events & more. Call 617-999-3803.",
     heroHeadline: "Ice Cream Truck Catering in Westport Point, MA",
     heroSubline:
       "Serving all of Westport Point with premium ice cream truck catering.",
     localIntro:
-      "Boston Legend Ice Cream Truck serves Westport Point, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
+      "American Legend Ice Cream Truck serves Westport Point, MA with professional, premium mobile ice cream catering for birthdays, corporate events, school events, and community celebrations.",
     nearbyAreas: [],
     localFAQs: [
       {
@@ -20414,4 +20414,14 @@ export function getNearbyAreas(slug: string): CityData[] {
 
 export function getAllCitySlugs(): string[] {
   return MASSACHUSETTS_CITIES.map((c) => c.slug);
+}
+
+// ─── NEW ENGLAND UNIFIED HELPERS ────────────────────────────
+// Import and re-export New England data for unified access
+export { NEW_ENGLAND_CITIES, NEW_ENGLAND_STATES, CONNECTICUT_CITIES, RHODE_ISLAND_CITIES, NEW_HAMPSHIRE_CITIES, VERMONT_CITIES, MAINE_CITIES } from "./new-england-data";
+
+export function getAllNewEnglandSlugs(): string[] {
+  // Import inline to avoid circular deps
+  const { NEW_ENGLAND_CITIES } = require("./new-england-data");
+  return [...MASSACHUSETTS_CITIES, ...NEW_ENGLAND_CITIES].map((c: CityData) => c.slug);
 }

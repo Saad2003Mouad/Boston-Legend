@@ -111,7 +111,8 @@ export async function POST(req: Request) {
     // ─── 4. Create Booking ────────────────────────────────────────
     const bookingNumber = `BK-${Math.floor(100000 + Math.random() * 900000)}`;
     const isCustom = dbPackage?.serviceType === "CUSTOM";
-    const status = isCustom || (serverTotalAmount < 500 && distance > 30) ? "PENDING_REVIEW" : "CONFIRMED";
+    // All bookings start as PENDING_REVIEW — admin must approve before confirmation
+    const status = "PENDING_REVIEW";
 
     const booking = await prisma.booking.create({
       data: {

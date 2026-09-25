@@ -4,6 +4,25 @@ import { unstable_cache } from "next/cache";
 import Link from "next/link";
 import { BUSINESS_CONFIG } from "@/lib/config";
 import { getCityBySlug, MASSACHUSETTS_CITIES, getNearbyAreas } from "@/lib/cities-data";
+import { NEW_ENGLAND_CITIES } from "@/lib/new-england-data";
+
+// Combined lookup across all 6 New England states
+function getCityBySlugAllStates(slug: string) {
+  return getCityBySlug(slug) ||
+    NEW_ENGLAND_CITIES.find((c) => c.slug === slug) ||
+    null;
+}
+
+// Extract state abbreviation from slug (e.g. 'hartford-ct' → 'CT')
+function getStateFromSlug(slug: string): string {
+  const suffixMap: Record<string, string> = {
+    '-ct': 'CT', '-ri': 'RI', '-nh': 'NH', '-vt': 'VT', '-me': 'ME'
+  };
+  for (const [suffix, code] of Object.entries(suffixMap)) {
+    if (slug.endsWith(suffix)) return code;
+  }
+  return 'MA';
+}
 import { getLocalBusinessSchema, getCityPageSchema, getFAQSchema } from "@/lib/schema";
 import { constructMetadata } from "@/lib/seo";
 import { MapPin, Star, Calendar, IceCream, Truck, Phone, ArrowRight, ChevronRight, Info } from "lucide-react";
@@ -30,10 +49,10 @@ function hashSlug(slug: string): number {
 
 // --- PROGRAMMATIC SEO TEXT SPINNERS ---
 const H1_TEMPLATES = [
-  (city: string) => `Ice Cream Truck Rental in ${city}, MA`,
+  (city: string, state: string) => `Ice Cream Truck Rental in ${city}, ${state}`,
   (city: string) => `Premium Ice Cream Truck Catering in ${city}`,
-  (city: string) => `Book an Ice Cream Truck in ${city}, Massachusetts`,
-  (city: string) => `The Best Ice Cream Truck in ${city}, MA`,
+  (city: string, state: string) => `Book an Ice Cream Truck in ${city}, ${state}`,
+  (city: string, state: string) => `The Best Ice Cream Truck in ${city}, ${state}`,
   (city: string) => `${city}'s Favorite Ice Cream Truck Rental`,
 ];
 
@@ -42,7 +61,7 @@ const H2_TEMPLATES = [
   (city: string) => `Making ${city} Celebrations Unforgettable`,
   (city: string) => `Five-Star Ice Cream Catering in ${city}`,
   (city: string) => `Why ${city} Loves Our Ice Cream Trucks`,
-  (city: string) => `Elevate Your Event in ${city}, MA`,
+  (city: string, state: string) => `Elevate Your Event in ${city}, ${state}`,
 ];
 
 const INTRO_TEMPLATES = [
@@ -112,7 +131,8 @@ export const revalidate = 86400; // 24 hours
 
 // Generate static params for top cities at build time to prevent DB connection exhaustion
 export async function generateStaticParams() {
-  return MASSACHUSETTS_CITIES.slice(0, 10).map((city) => ({
+  const allCities = [...MASSACHUSETTS_CITIES, ...NEW_ENGLAND_CITIES];
+  return allCities.slice(0, 20).map((city) => ({
     slug: city.slug,
   }));
 }
@@ -123,15 +143,16 @@ export async function generateMetadata(
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const { slug } = await params;
-  const cityObj = getCityBySlug(slug);
+  const cityObj = getCityBySlugAllStates(slug);
+  const stateCode = getStateFromSlug(slug);
 
   if (!cityObj) {
     return { title: "City Not Found" };
   }
 
   return constructMetadata({
-    title: `Ice Cream Truck Rental in ${cityObj.name}, MA`,
-    description: `Book the best ice cream truck in ${cityObj.name}, Massachusetts. Perfect for birthdays, weddings, corporate events, and parties in ${cityObj.name}.`,
+    title: cityObj.metaTitle || `Ice Cream Truck Rental in ${cityObj.name}, ${stateCode} | American Legend`,
+    description: cityObj.metaDescription || `Book the best ice cream truck in ${cityObj.name}. Perfect for birthdays, weddings, corporate events, and parties.`,
     url: `/cities/${slug}`,
   });
 }
@@ -149,7 +170,8 @@ const EVENT_TYPES = [
 
 export default async function CityPage({ params }: Props) {
   const resolvedParams = await params;
-  const city = getCityBySlug(resolvedParams.slug);
+  const city = getCityBySlugAllStates(resolvedParams.slug);
+  const stateCode = getStateFromSlug(resolvedParams.slug);
 
   if (!city) {
     notFound();
@@ -160,8 +182,8 @@ export default async function CityPage({ params }: Props) {
   // Deterministic variations
   const seed = hashSlug(city.slug);
   const theme = THEMES[seed % THEMES.length];
-  const h1Text = H1_TEMPLATES[seed % H1_TEMPLATES.length](city.name);
-  const h2Text = H2_TEMPLATES[(seed + 1) % H2_TEMPLATES.length](city.name);
+  const h1Text = H1_TEMPLATES[seed % H1_TEMPLATES.length](city.name, stateCode);
+  const h2Text = H2_TEMPLATES[(seed + 1) % H2_TEMPLATES.length](city.name, stateCode);
   const introText = INTRO_TEMPLATES[(seed + 2) % INTRO_TEMPLATES.length](city.name);
   
   // Cache packages fetch to prevent connection exhaustion during static generation of 500+ cities
@@ -350,7 +372,7 @@ export default async function CityPage({ params }: Props) {
       {/* ── LOCAL INTRO ──────────────────────────────────────────── */}
       <section className="py-24 md:py-32 relative -mt-16 z-20">
         <div className="container mx-auto px-6 md:px-12 max-w-6xl">
-          <div className="bg-white rounded-[3rem] shadow-2xl border border-navy/5 p-8 md:p-16">
+          <div className="bg-[#FFFDF8] rounded-[3rem] shadow-2xl border border-navy/5 p-8 md:p-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
               {/* Text */}
               <div className={layoutFlip ? 'lg:order-2' : ''}>
@@ -444,7 +466,7 @@ export default async function CityPage({ params }: Props) {
                 <Link
                   key={nearby.slug}
                   href={`/cities/${nearby.slug}`}
-                  className={`group flex items-center gap-2 p-4 bg-white rounded-2xl border border-navy/5 hover:shadow-md transition-all duration-200 hover:border-[var(--hover-color)]`}
+                  className={`group flex items-center gap-2 p-4 bg-[#FFFDF8] rounded-2xl border border-navy/5 hover:shadow-md transition-all duration-200 hover:border-[var(--hover-color)]`}
                   style={{ '--hover-color': 'currentColor' } as any}
                 >
                   <MapPin size={14} className={`${theme.primaryColorClass} shrink-0`} />

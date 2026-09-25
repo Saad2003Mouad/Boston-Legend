@@ -74,7 +74,7 @@ function AcceptInviteContent() {
           <div className="flex flex-col items-center py-8 gap-4 text-center">
             <CheckCircle2 className="w-14 h-14 text-emerald-500" />
             <h2 className="text-xl font-black text-navy">Account Activated! 🎉</h2>
-            <p className="text-sm text-slate-500 font-semibold">Your Boston Legend Ice Cream Truck staff account is ready. Redirecting...</p>
+            <p className="text-sm text-slate-500 font-semibold">Your American Legend Ice Cream Truck staff account is ready. Redirecting...</p>
           </div>
         )}
 

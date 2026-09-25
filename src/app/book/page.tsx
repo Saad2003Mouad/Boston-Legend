@@ -10,8 +10,8 @@ import Logo from "@/components/shared/Logo";
 import prisma from "@/lib/prisma";
 
 export const metadata: Metadata = constructMetadata({
-  title: "Book Your Event | Boston Legend Ice Cream Truck",
-  description: "Book your ice cream truck or van experience for any event in Massachusetts. Easy online booking in just a few steps.",
+  title: "Book Your Event | American Legend Ice Cream Truck",
+  description: "Book your ice cream truck or van experience for any event in New England. Easy online booking in just a few steps.",
   url: "/book",
 });
 
@@ -65,7 +65,7 @@ export default async function BookPage({
           <span>Packages</span>
         </Link>
         <Link href="/" className="flex flex-col items-center justify-center text-center">
-          <div className="text-xl md:text-3xl font-black text-navy leading-none font-display italic">Boston Legend</div>
+          <div className="text-xl md:text-3xl font-black text-navy leading-none font-display italic">American Legend</div>
           <div className="text-[10px] md:text-sm font-bold text-coral tracking-widest uppercase mt-0.5 md:mt-1.5">Book Your Event</div>
         </Link>
         <div className="flex items-center gap-1.5 text-xs md:text-sm text-gray-500 font-medium">

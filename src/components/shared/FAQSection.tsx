@@ -30,8 +30,8 @@ export default function FAQSection({
     <section className={cn("py-20 md:py-32 relative overflow-hidden", className)}>
 
       {/* Pink Vector Drip from the top */}
-      <div className="absolute top-0 left-0 right-0 z-0 pointer-events-none">
-        <MeltingDrip color="#F07A90" height={320} variant="random" />
+      <div className="absolute top-0 left-0 right-0 z-0 pointer-events-none opacity-30">
+        <MeltingDrip color="#B3191F" height={200} variant="random" />
       </div>
 
       <div className="container mx-auto px-6 md:px-12 lg:px-24 relative z-20">
@@ -70,8 +70,8 @@ export default function FAQSection({
                 className={cn(
                   "border-2 rounded-2xl overflow-hidden transition-colors duration-300",
                   isOpen
-                    ? "border-coral bg-white shadow-md shadow-coral/10"
-                    : "border-charcoal/10 bg-white/50 hover:border-charcoal/20"
+                    ? "border-coral bg-[#FFFDF8] shadow-md shadow-coral/10"
+                    : "border-charcoal/10 bg-[#FFFDF8]/50 hover:border-charcoal/20"
                 )}
               >
                 <button

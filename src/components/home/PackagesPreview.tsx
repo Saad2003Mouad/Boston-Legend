@@ -54,7 +54,7 @@ export default function PackagesPreview({ featuredPackages }: { featuredPackages
               transition={{ delay: 0.1 }}
               className="font-sans text-charcoal/70 text-[clamp(1.05rem,1.4vw,1.25rem)] leading-relaxed font-medium"
             >
-              Choose between our iconic full-size American Legend truck or boutique setup. All packages include trained friendly staff, unlimited smiles, and certified Massachusetts service.
+              Choose between our iconic full-size American Legend truck or boutique setup. All packages include trained friendly staff, unlimited smiles, and certified New England service.
             </motion.p>
           </div>
           
@@ -65,7 +65,7 @@ export default function PackagesPreview({ featuredPackages }: { featuredPackages
           >
             <Link
               href="/packages"
-              className="group inline-flex items-center gap-3 font-sans font-bold text-charcoal uppercase tracking-widest text-sm bg-white px-8 py-4 rounded-full border-2 border-charcoal/10 hover:border-coral hover:text-coral transition-all shadow-soft hover:shadow-md"
+              className="group inline-flex items-center gap-3 font-sans font-bold text-charcoal uppercase tracking-widest text-sm bg-[#FFFDF8] px-8 py-4 rounded-full border-2 border-charcoal/10 hover:border-coral hover:text-coral transition-all shadow-soft hover:shadow-md"
             >
               View All 5 Packages
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
@@ -86,7 +86,7 @@ export default function PackagesPreview({ featuredPackages }: { featuredPackages
               key={pkg.id}
               variants={itemVariants}
               whileHover={{ y: -8 }}
-              className={`group flex flex-col bg-white rounded-[2.5rem] overflow-hidden border transition-all duration-300 shadow-xl ${
+              className={`group flex flex-col bg-[#FFFDF8] rounded-[2.5rem] overflow-hidden border transition-all duration-300 shadow-xl ${
                 pkg.isPopular ? "border-coral shadow-coral/20 relative" : "border-navy/5 shadow-soft"
               }`}
             >
@@ -103,8 +103,8 @@ export default function PackagesPreview({ featuredPackages }: { featuredPackages
                   
                   <Image 
                     src={pkg.imageUrl} 
-                    alt={`${pkg.name} - American Legend ice cream truck catering package in Massachusetts`} 
-                    title={`Rent ${pkg.name} for your event in MA`}
+                    alt={`${pkg.name} - American Legend ice cream truck catering package in New England`} 
+                    title={`Rent ${pkg.name} for your event in New England`}
                     fill 
                     className="object-contain p-4 transition-transform duration-700 group-hover:scale-105 drop-shadow-md"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -115,7 +115,7 @@ export default function PackagesPreview({ featuredPackages }: { featuredPackages
 
               {/* Card Header */}
               <div className={`relative z-20 px-5 md:px-10 pb-6 md:pb-10 pt-4 border-b ${
-                pkg.isPopular ? "bg-coral text-white border-white/10" : "bg-white text-charcoal border-navy/5"
+                pkg.isPopular ? "bg-coral text-white border-white/10" : "bg-[#FFFDF8] text-charcoal border-navy/5"
               }`}>
                 <div className={`text-xs font-black uppercase tracking-widest mb-3 ${
                   pkg.isPopular ? "text-white/80" : "text-coral"
@@ -147,7 +147,7 @@ export default function PackagesPreview({ featuredPackages }: { featuredPackages
               </div>
 
               {/* Card Body */}
-              <div className="p-5 md:p-10 flex flex-col flex-1 bg-white">
+              <div className="p-5 md:p-10 flex flex-col flex-1 bg-[#FFFDF8]">
                 <ul className="flex flex-col gap-3 md:gap-4 mb-6 md:mb-10 flex-1">
                   {pkg.features.slice(0, 4).map((feature: string, idx: number) => (
                     <li key={idx} className="flex items-start gap-3.5">

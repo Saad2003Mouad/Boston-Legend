@@ -89,13 +89,13 @@ export default function ForgotPasswordPage() {
         </div>
 
         {success ? (
-          <div className="bg-white p-8 rounded-[2rem] shadow-xl text-center space-y-4">
+          <div className="bg-[#FFFDF8] p-8 rounded-[2rem] shadow-xl text-center space-y-4">
             <CheckCircle2 className="mx-auto text-green-500" size={64} />
             <h2 className="text-2xl font-black text-navy">Password Reset!</h2>
             <p className="text-gray-500 font-medium">Your password has been successfully updated. Redirecting to login...</p>
           </div>
         ) : (
-          <div className="bg-white p-8 rounded-[2rem] shadow-xl shadow-navy/5 border border-navy/5">
+          <div className="bg-[#FFFDF8] p-8 rounded-[2rem] shadow-xl shadow-navy/5 border border-navy/5">
             {error && (
               <div className="p-4 mb-6 bg-red-50 text-red-600 rounded-xl text-sm font-bold text-center border border-red-100">
                 {error}

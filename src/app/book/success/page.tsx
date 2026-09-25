@@ -1,12 +1,21 @@
 import Link from "next/link";
-import { CheckCircle2, Clock } from "lucide-react";
+import { Clock, MessageCircle } from "lucide-react";
+import { BUSINESS_CONFIG } from "@/lib/config";
 
 export default async function BookingSuccessPage(props: {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
   const searchParams = await props.searchParams;
-  const isPending = searchParams?.status === "PENDING_REVIEW";
+  // All bookings are now pending review initially
+  const isPending = true; // Hardcoded true now that all bookings start as PENDING_REVIEW
   const bookingNumber = (searchParams?.bookingNumber as string) || "";
+  
+  // WhatsApp Link Generation
+  const whatsappNumber = BUSINESS_CONFIG.contact.phone1Formatted.replace("+", "");
+  const whatsappMessage = encodeURIComponent(
+    `Hello! I just submitted a booking request (${bookingNumber ? `Booking #${bookingNumber}` : "New Booking"}). I would like to confirm the details.`
+  );
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
     <div className="min-h-screen pt-32 pb-20 bg-cream flex items-center justify-center px-4">
@@ -18,36 +27,42 @@ export default async function BookingSuccessPage(props: {
         </div>
 
         <div className="relative z-10">
-          <div className={`w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 border ${isPending ? 'bg-amber-50 border-amber-100' : 'bg-emerald-50 border-emerald-100'}`}>
-            {isPending ? (
-              <Clock className="w-10 h-10 text-amber-500" />
-            ) : (
-              <CheckCircle2 className="w-10 h-10 text-emerald-500" />
-            )}
+          <div className={`w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 border bg-amber-50 border-amber-100`}>
+            <Clock className="w-10 h-10 text-amber-500" />
           </div>
           
           <h1 className="text-3xl font-black text-navy tracking-tight mb-3">
-            {isPending ? "Under Review" : "Booking Confirmed!"}
+            Request Received
           </h1>
           
           <p className="text-gray-500 font-medium mb-2">
-            {isPending 
-              ? "Your request has been received. Our team will review the details and get back to you shortly." 
-              : "Thank you for choosing Boston Legend Ice Cream Truck. We've received your booking and sent a confirmation email to your inbox."}
+            Thank you! Your booking request has been received and is currently <span className="font-bold text-amber-600">Pending Review</span> by our team.
+          </p>
+          <p className="text-sm text-gray-500 mb-6">
+            We will review your details and confirm the booking shortly. If you need immediate assistance, please message us on WhatsApp.
           </p>
           
           {bookingNumber && (
-            <p className="text-navy font-bold mb-8 text-lg">
-              Booking #{bookingNumber}
-            </p>
+            <div className="bg-navy/5 rounded-xl py-3 px-4 mb-8 inline-block">
+              <span className="text-navy/60 text-xs uppercase tracking-widest font-bold block mb-1">Booking Ref</span>
+              <p className="text-navy font-black text-xl">
+                #{bookingNumber}
+              </p>
+            </div>
           )}
 
-          <div className="space-y-3 mt-4">
+          <div className="space-y-3 mt-2">
+            <a 
+              href={whatsappUrl} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center justify-center gap-2 w-full py-3.5 bg-[#25D366] text-white rounded-xl font-bold hover:bg-[#128C7E] transition-colors shadow-sm"
+            >
+              <MessageCircle size={20} />
+              Message us on WhatsApp
+            </a>
             <Link href="/" className="block w-full py-3.5 bg-navy text-white rounded-xl font-bold hover:bg-navy-mid transition-colors shadow-sm">
               Return Home
-            </Link>
-            <Link href="/packages" className="block w-full py-3.5 bg-gray-50 text-gray-700 rounded-xl font-bold hover:bg-gray-100 transition-colors">
-              Explore Our Packages
             </Link>
           </div>
         </div>

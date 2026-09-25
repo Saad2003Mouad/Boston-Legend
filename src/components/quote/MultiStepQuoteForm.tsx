@@ -223,7 +223,7 @@ export default function MultiStepQuoteForm({ dbPackages }: { dbPackages?: any[] 
 
   const submitFinal = async () => {
     const effectiveAddress = address || (zip ? `ZIP: ${zip}` : "");
-    const effectiveCity = city || (zip ? "Massachusetts" : "");
+    const effectiveCity = city || (zip ? "New England" : "");
     if (!effectiveAddress || effectiveAddress.length < 5) {
       alert("Please select or enter your event location before submitting.");
       setStep(2);

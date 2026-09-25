@@ -14,7 +14,7 @@ export const servicesData: Record<string, ServiceData> = {
     "slug": "birthday-parties",
     "name": "Birthday Parties",
     "shortDescription": "Make their special day unforgettable with a surprise ice cream truck visit.",
-    "longDescription": "Imagine the look on their face when a premium Boston Legend Ice Cream Truck pulls up playing their favorite tune! We specialize in turning ordinary birthdays into magical memories. From classic soft serve to artisan waffle cones, we have treats for kids and adults alike. Our friendly staff handles all the serving and cleanup, so you can focus on celebrating.",
+    "longDescription": "Imagine the look on their face when a premium American Legend Ice Cream Truck pulls up playing their favorite tune! We specialize in turning ordinary birthdays into magical memories. From classic soft serve to artisan waffle cones, we have treats for kids and adults alike. Our friendly staff handles all the serving and cleanup, so you can focus on celebrating.",
     "icon": "Gift",
     "features": [
       "Customized music playlist",
@@ -29,7 +29,7 @@ export const servicesData: Record<string, ServiceData> = {
     "slug": "block-parties",
     "name": "Neighborhood Block Parties",
     "shortDescription": "Bring the neighborhood together with the classic sound of the ice cream truck.",
-    "longDescription": "Nothing screams summer like an ice cream truck rolling down your street. Make your neighborhood block party legendary by booking Boston Legend Ice Cream Truck exclusively for your street. We'll park right in the center of the action and serve up smiles to neighbors of all ages.",
+    "longDescription": "Nothing screams summer like an ice cream truck rolling down your street. Make your neighborhood block party legendary by booking American Legend Ice Cream Truck exclusively for your street. We'll park right in the center of the action and serve up smiles to neighbors of all ages.",
     "icon": "Home",
     "features": [
       "Nostalgic neighborhood experience",
@@ -44,7 +44,7 @@ export const servicesData: Record<string, ServiceData> = {
     "slug": "corporate-events",
     "name": "Corporate Parties",
     "shortDescription": "Boost morale and show appreciation with premium ice cream catering at your office.",
-    "longDescription": "Nothing says 'Thank You' to your team quite like a surprise ice cream break. Whether it's a product launch, a summer outing, or just a Tuesday afternoon pick-me-up, Boston Legend Ice Cream Truck delivers a premium corporate catering experience. We can serve hundreds of employees quickly and efficiently, ensuring everyone gets back to their day refreshed and smiling.",
+    "longDescription": "Nothing says 'Thank You' to your team quite like a surprise ice cream break. Whether it's a product launch, a summer outing, or just a Tuesday afternoon pick-me-up, American Legend Ice Cream Truck delivers a premium corporate catering experience. We can serve hundreds of employees quickly and efficiently, ensuring everyone gets back to their day refreshed and smiling.",
     "icon": "Building",
     "features": [
       "Rapid serving for large groups",
@@ -59,7 +59,7 @@ export const servicesData: Record<string, ServiceData> = {
     "slug": "fundraisers",
     "name": "Fundraisers",
     "shortDescription": "Raise money for your cause with the sweetest attraction in town.",
-    "longDescription": "Looking for a unique way to draw a crowd and raise funds? Boston Legend Ice Cream Truck loves supporting local Massachusetts communities. We partner with schools, sports teams, and non-profits to host 'Giveback Nights' or provide a percentage of sales directly to your organization. It's a win-win: your supporters get premium ice cream, and you hit your fundraising goals.",
+    "longDescription": "Looking for a unique way to draw a crowd and raise funds? American Legend Ice Cream Truck loves supporting local Massachusetts communities. We partner with schools, sports teams, and non-profits to host 'Giveback Nights' or provide a percentage of sales directly to your organization. It's a win-win: your supporters get premium ice cream, and you hit your fundraising goals.",
     "icon": "HeartHandshake",
     "features": [
       "Percentage-of-sales giveback programs",
@@ -74,7 +74,7 @@ export const servicesData: Record<string, ServiceData> = {
     "slug": "launch-parties",
     "name": "Launch Parties",
     "shortDescription": "Make a statement at your next product launch or brand activation.",
-    "longDescription": "First impressions matter. When you are launching a new product, opening a new retail location, or hosting a VIP event, you need vendors that match your brand's quality. Boston Legend Ice Cream Truck offers a sleek, premium aesthetic that enhances your brand activation and keeps attendees engaged and talking.",
+    "longDescription": "First impressions matter. When you are launching a new product, opening a new retail location, or hosting a VIP event, you need vendors that match your brand's quality. American Legend Ice Cream Truck offers a sleek, premium aesthetic that enhances your brand activation and keeps attendees engaged and talking.",
     "icon": "Rocket",
     "features": [
       "Sleek, modern truck aesthetic",
@@ -89,7 +89,7 @@ export const servicesData: Record<string, ServiceData> = {
     "slug": "marketing-events",
     "name": "Marketing Events",
     "shortDescription": "Attract crowds and capture leads with an irresistible incentive.",
-    "longDescription": "Ice cream is the ultimate lead magnet. Use Boston Legend Ice Cream Truck as the centerpiece of your next marketing activation, real estate open house, or promotional tour. We attract the crowds so your sales team can work their magic. We can even serve custom-colored treats to match your brand.",
+    "longDescription": "Ice cream is the ultimate lead magnet. Use American Legend Ice Cream Truck as the centerpiece of your next marketing activation, real estate open house, or promotional tour. We attract the crowds so your sales team can work their magic. We can even serve custom-colored treats to match your brand.",
     "icon": "Megaphone",
     "features": [
       "Unmatched crowd attraction",
@@ -104,7 +104,7 @@ export const servicesData: Record<string, ServiceData> = {
     "slug": "movie-rental",
     "name": "Movie Rental",
     "shortDescription": "Elevate your film production with an authentic ice cream truck prop or cast catering.",
-    "longDescription": "Need a classic ice cream truck for a film, commercial, or photo shoot? Boston Legend Ice Cream Truck offers our beautifully maintained vehicles as authentic props for your production. We also provide full-service catering for your cast and crew to keep morale high during long shoot days.",
+    "longDescription": "Need a classic ice cream truck for a film, commercial, or photo shoot? American Legend Ice Cream Truck offers our beautifully maintained vehicles as authentic props for your production. We also provide full-service catering for your cast and crew to keep morale high during long shoot days.",
     "icon": "Film",
     "features": [
       "Authentic vintage and modern trucks",
@@ -149,7 +149,7 @@ export const servicesData: Record<string, ServiceData> = {
     "slug": "school-occasions",
     "name": "School Occasions",
     "shortDescription": "The ultimate reward for students, teachers, and faculty.",
-    "longDescription": "From end-of-year celebrations and field days to teacher appreciation week, Boston Legend Ice Cream Truck is the highlight of any school event. We bring joy to the playground with a massive selection of classic novelties and premium scooped ice cream. We handle large crowds with ease and always bring the fun.",
+    "longDescription": "From end-of-year celebrations and field days to teacher appreciation week, American Legend Ice Cream Truck is the highlight of any school event. We bring joy to the playground with a massive selection of classic novelties and premium scooped ice cream. We handle large crowds with ease and always bring the fun.",
     "icon": "GraduationCap",
     "features": [
       "Nut-free and allergy-safe options",
@@ -164,7 +164,7 @@ export const servicesData: Record<string, ServiceData> = {
     "slug": "sports-occasions",
     "name": "Sports Occasions",
     "shortDescription": "Celebrate the big win or treat the whole league.",
-    "longDescription": "Whether it's opening day, a championship tournament, or the end-of-season banquet, athletes love ice cream. Boston Legend Ice Cream Truck is the perfect addition to any youth or adult sports event, providing a refreshing treat after a hard-played game.",
+    "longDescription": "Whether it's opening day, a championship tournament, or the end-of-season banquet, athletes love ice cream. American Legend Ice Cream Truck is the perfect addition to any youth or adult sports event, providing a refreshing treat after a hard-played game.",
     "icon": "Trophy",
     "features": [
       "Fast service for tournaments",

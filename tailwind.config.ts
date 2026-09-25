@@ -93,6 +93,14 @@ const config: Config = {
           "0%":   { transform: "translateX(0%)" },
           "100%": { transform: "translateX(-33.33%)" },
         },
+        "marquee-up": {
+          "0%":   { transform: "translateY(0%)" },
+          "100%": { transform: "translateY(-50%)" },
+        },
+        "marquee-down": {
+          "0%":   { transform: "translateY(-50%)" },
+          "100%": { transform: "translateY(0%)" },
+        },
         blob: {
           "0%":   { transform: "translate(0,0) scale(1)",     borderRadius: "40% 60% 70% 30% / 40% 50% 60% 50%" },
           "33%":  { transform: "translate(30px,-50px) scale(1.1)", borderRadius: "70% 30% 50% 50% / 30% 30% 70% 70%" },
@@ -123,6 +131,8 @@ const config: Config = {
 
       animation: {
         marquee:   "marquee 30s linear infinite",
+        "marquee-up": "marquee-up 40s linear infinite",
+        "marquee-down": "marquee-down 40s linear infinite",
         blob:      "blob 20s infinite ease-in-out alternate",
         float:     "float 4s ease-in-out infinite",
         dripFlow:  "dripFlow 6s ease-in-out infinite",

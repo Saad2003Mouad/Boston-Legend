@@ -95,17 +95,17 @@ export default function RegisterPage() {
             </Link>
           </div>
           <h1 className="font-display font-black text-3xl text-navy mb-2">Create an Account</h1>
-          <p className="text-gray-500 font-medium">Join Boston Legend Ice Cream Truck to manage your bookings</p>
+          <p className="text-gray-500 font-medium">Join American Legend Ice Cream Truck to manage your bookings</p>
         </div>
 
         {success ? (
-          <div className="bg-white p-8 rounded-[2rem] shadow-xl text-center space-y-4">
+          <div className="bg-[#FFFDF8] p-8 rounded-[2rem] shadow-xl text-center space-y-4">
             <CheckCircle2 className="mx-auto text-green-500" size={64} />
             <h2 className="text-2xl font-black text-navy">Account Created!</h2>
             <p className="text-gray-500 font-medium">Your account has been verified. Redirecting to login...</p>
           </div>
         ) : (
-          <div className="bg-white p-8 rounded-[2rem] shadow-xl shadow-navy/5 border border-navy/5">
+          <div className="bg-[#FFFDF8] p-8 rounded-[2rem] shadow-xl shadow-navy/5 border border-navy/5">
             {error && (
               <div className="p-4 mb-6 bg-red-50 text-red-600 rounded-xl text-sm font-bold text-center border border-red-100">
                 {error}

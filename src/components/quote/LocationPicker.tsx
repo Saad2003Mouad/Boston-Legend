@@ -368,15 +368,16 @@ export default function LocationPicker({
 
     setIsSearching(true);
     try {
-      const res = await fetch(`/api/geocode?action=search&q=${encodeURIComponent(searchQuery + ", Massachusetts, USA")}`);
+      const res = await fetch(`/api/geocode?action=search&q=${encodeURIComponent(searchQuery + ", USA")}`);
       if (!res.ok) throw new Error("Fetch failed");
       const data: NominatimResult[] = await res.json();
 
-      // Filter to Massachusetts only
-      const maResults = data.filter(
-        (r) => r.address?.state === "Massachusetts"
+      // Filter to New England states
+      const newEnglandStates = ["Massachusetts", "Connecticut", "Rhode Island", "New Hampshire", "Vermont", "Maine"];
+      const neResults = data.filter(
+        (r) => r.address?.state && newEnglandStates.includes(r.address.state)
       );
-      setSuggestions(maResults.length > 0 ? maResults : data.slice(0, 5));
+      setSuggestions(neResults.length > 0 ? neResults : data.slice(0, 5));
       setShowSuggestions(true);
     } catch (err) {
       console.error("Search failed:", err);
@@ -549,7 +550,7 @@ export default function LocationPicker({
             value={query}
             onChange={(e) => handleInputChange(e.target.value)}
             onFocus={() => suggestions.length > 0 && setShowSuggestions(true)}
-            placeholder="Start typing an address in Massachusetts..."
+            placeholder="Start typing an address in New England..."
             className="w-full pl-12 pr-12 py-4 bg-gray-50 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-coral/20 focus:border-coral/40 outline-none transition-all font-medium"
           />
           {isSearching && (

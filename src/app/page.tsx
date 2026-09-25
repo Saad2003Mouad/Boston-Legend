@@ -16,8 +16,7 @@ import FinalCTA from "@/components/home/FinalCTA";
 import { prisma } from "@/lib/prisma";
 
 export const metadata: Metadata = constructMetadata({
-  title: "Boston Legend Ice Cream Truck | Premier Rental & Catering in Massachusetts",
-  description: "Massachusetts' premier ice cream truck catering service. Bringing iconic frozen treats, artisan novelties, and legendary sweet celebrations to birthdays, corporate events, and weddings across all of MA.",
+  description: "New England's premier ice cream truck catering service. Bringing iconic frozen treats, artisan novelties, and legendary sweet celebrations to birthdays, corporate events, and weddings across all 6 states.",
 });
 
 export const dynamic = "force-dynamic";

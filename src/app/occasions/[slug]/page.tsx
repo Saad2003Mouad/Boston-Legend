@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
   }
 
   return constructMetadata({
-    title: `${service.name} Ice Cream Catering MA | Boston Legend Ice Cream Truck`,
+    title: `${service.name} Ice Cream Catering MA | American Legend Ice Cream Truck`,
     description: service.shortDescription,
     url: `/occasions/${service.slug}`,
   });
@@ -161,7 +161,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
             <AnimatedSection variants={fadeUp} className="relative w-full h-full min-h-[400px] lg:min-h-[500px] flex items-center justify-center">
               <Image 
                 src={service.imagePath} 
-                alt={`${service.name} catering by Boston Legend Ice Cream Truck`}
+                alt={`${service.name} catering by American Legend Ice Cream Truck`}
                 fill
                 className="object-contain drop-shadow-2xl"
                 sizes="(max-width: 1024px) 100vw, 50vw"

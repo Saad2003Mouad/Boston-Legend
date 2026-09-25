@@ -85,7 +85,7 @@ export default function AiAdminPage() {
       setMessages([{
         id: "welcome",
         role: "assistant",
-        content: `Hello, ${session?.user?.name?.split(" ")[0] || "Admin"}! 👋 I'm your Boston Legend Ice Cream Truck AI Operations Assistant. I have live access to your database and can help you with:\n\n• 📋 **Booking queries** — search, filter, status\n• 👥 **Customer lookups** — name, email, history\n• 📦 **Package details** — pricing, availability\n• 📊 **Analytics** — revenue trends, booking stats\n\nWhat would you like to know?`,
+        content: `Hello, ${session?.user?.name?.split(" ")[0] || "Admin"}! 👋 I'm your American Legend Ice Cream Truck AI Operations Assistant. I have live access to your database and can help you with:\n\n• 📋 **Booking queries** — search, filter, status\n• 👥 **Customer lookups** — name, email, history\n• 📦 **Package details** — pricing, availability\n• 📊 **Analytics** — revenue trends, booking stats\n\nWhat would you like to know?`,
       }]);
       setError(null);
     } catch {}

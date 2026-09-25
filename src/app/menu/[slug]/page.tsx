@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   ];
 
   return constructMetadata({
-    title: `${item.name} | Boston Legend Ice Cream Truck Menu`,
+    title: `${item.name} | American Legend Ice Cream Truck Menu`,
     description: item.description,
     url: `/menu/${item.slug}`,
     image: item.image,
@@ -136,7 +136,7 @@ export default async function MenuItemPage({ params }: PageProps) {
           name: "Sarah M.",
         },
         reviewBody:
-          "Having the Boston Legend Ice Cream Truck at our wedding was the highlight of the night! The ice cream was premium and the staff was so professional.",
+          "Having the American Legend Ice Cream Truck at our wedding was the highlight of the night! The ice cream was premium and the staff was so professional.",
       },
     ],
     offers: {
@@ -149,7 +149,7 @@ export default async function MenuItemPage({ params }: PageProps) {
       url: `https://www.bostonlegendicecream.com/menu/${item.slug}`,
       seller: {
         "@type": "Organization",
-        name: "Boston Legend Ice Cream Truck",
+        name: "American Legend Ice Cream Truck",
       },
     },
   };
@@ -328,7 +328,7 @@ export default async function MenuItemPage({ params }: PageProps) {
                 const imageSrc = post.featuredImage || "/images/hero-cinematic.jpg";
                 
                 return (
-                  <Link key={post.id} href={`/blog/${post.slug}`} className="group block bg-white rounded-[2rem] border border-navy/5 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                  <Link key={post.id} href={`/blog/${post.slug}`} className="group block bg-[#FFFDF8] rounded-[2rem] border border-navy/5 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                     <div className="relative aspect-[4/3] bg-navy/5 overflow-hidden">
                       <Image 
                         src={imageSrc} 

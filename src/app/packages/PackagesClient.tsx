@@ -54,7 +54,7 @@ export default function PackagesClient({
 
           {/* Tab switcher */}
           <motion.div initial="hidden" animate="show" variants={fadeUp} custom={3}
-            className="inline-flex items-center bg-white rounded-full border border-gray-200 shadow-sm p-1 gap-1 max-w-full">
+            className="inline-flex items-center bg-[#FFFDF8] rounded-full border border-gray-200 shadow-sm p-1 gap-1 max-w-full">
             <button
               onClick={() => setActiveTab("truck")}
               className={`flex items-center gap-1.5 sm:gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-full font-black text-xs sm:text-sm transition-all ${activeTab === "truck" ? "bg-coral text-white shadow-lg shadow-coral/20" : "text-gray-500 hover:text-navy"}`}>
@@ -185,7 +185,7 @@ export default function PackagesClient({
                 {/* Main Content */}
                 <Image
                   src={pkg.imageUrl || "/images/van_packages/custom_event.jpg"}
-                  alt={`${pkg.name} - Custom large ice cream truck catering event in Massachusetts`}
+                  alt={`${pkg.name} - Custom large ice cream truck catering event in New England`}
                   title={`Book a custom ${pkg.name} ice cream truck experience in MA`}
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -230,8 +230,8 @@ function PackageGrid({ packages, accentColor }: { packages: any[]; accentColor: 
             variants={fadeUp}
             className={`relative flex flex-col rounded-[2rem] border transition-all duration-300 overflow-hidden group ${
               isHighlight
-                ? "border-coral shadow-2xl shadow-coral/15 bg-white"
-                : "border-gray-100 shadow-lg shadow-gray-100/80 bg-white hover:shadow-xl hover:border-gray-200"
+                ? "border-coral shadow-2xl shadow-coral/15 bg-[#FFFDF8]"
+                : "border-gray-100 shadow-lg shadow-gray-100/80 bg-[#FFFDF8] hover:shadow-xl hover:border-gray-200"
             }`}
           >
             {/* Popular ribbon */}
@@ -259,7 +259,7 @@ function PackageGrid({ packages, accentColor }: { packages: any[]; accentColor: 
                 {/* Main Content */}
                 <Image 
                   src={pkg.imageUrl} 
-                  alt={`${pkg.name} - Premium ice cream truck catering package in Massachusetts`} 
+                  alt={`${pkg.name} - Premium ice cream truck catering package in New England`} 
                   title={`Reserve our ${pkg.name} for your event in MA`}
                   fill 
                   className="object-contain p-4 transition-transform duration-700 group-hover:scale-105 drop-shadow-md"
@@ -271,7 +271,7 @@ function PackageGrid({ packages, accentColor }: { packages: any[]; accentColor: 
             )}
 
             {/* Card Header */}
-            <div className={`relative z-20 px-5 sm:px-8 pb-6 sm:pb-8 pt-5 sm:pt-6 border-b ${isHighlight ? "bg-navy border-navy/5" : "bg-white border-gray-50"}`}>
+            <div className={`relative z-20 px-5 sm:px-8 pb-6 sm:pb-8 pt-5 sm:pt-6 border-b ${isHighlight ? "bg-navy border-navy/5" : "bg-[#FFFDF8] border-gray-50"}`}>
               <div className={`text-[11px] sm:text-xs font-black uppercase tracking-widest mb-2 sm:mb-3 ${isHighlight ? "text-coral" : "text-coral"}`}>
                 {pkg.durationLabel} · {pkg.servings} Servings
               </div>
@@ -292,7 +292,7 @@ function PackageGrid({ packages, accentColor }: { packages: any[]; accentColor: 
             </div>
 
             {/* Card Body */}
-            <div className="p-5 sm:p-8 flex flex-col flex-grow bg-white">
+            <div className="p-5 sm:p-8 flex flex-col flex-grow bg-[#FFFDF8]">
               {/* Top 2 features always visible */}
               <ul className="space-y-3 mb-4 flex-grow">
                 {pkg.features.slice(0, 2).map((f: string, fi: number) => (

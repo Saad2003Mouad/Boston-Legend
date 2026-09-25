@@ -2,30 +2,30 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { getTopCities, MASSACHUSETTS_CITIES } from "@/lib/cities-data";
+import { getTopCities, MASSACHUSETTS_CITIES, NEW_ENGLAND_CITIES } from "@/lib/cities-data";
 import { MapPin, Navigation, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 import MeltingDrip from "@/components/shared/MeltingDrip";
 
-// Bounding box for Massachusetts
-const MA_BOUNDS = {
-  minLng: -73.5,
-  maxLng: -69.9,
-  minLat: 41.2,
-  maxLat: 42.9,
+// Bounding box for New England
+const NE_BOUNDS = {
+  minLng: -73.7,
+  maxLng: -66.9,
+  minLat: 41.0,
+  maxLat: 47.5,
 };
 
 function getMapCoords(lat: number, lng: number) {
-  const x = ((lng - MA_BOUNDS.minLng) / (MA_BOUNDS.maxLng - MA_BOUNDS.minLng)) * 100;
-  const y = 100 - ((lat - MA_BOUNDS.minLat) / (MA_BOUNDS.maxLat - MA_BOUNDS.minLat)) * 100;
+  const x = ((lng - NE_BOUNDS.minLng) / (NE_BOUNDS.maxLng - NE_BOUNDS.minLng)) * 100;
+  const y = 100 - ((lat - NE_BOUNDS.minLat) / (NE_BOUNDS.maxLat - NE_BOUNDS.minLat)) * 100;
   return { x, y };
 }
 
 export default function CityMapSection() {
   const [hoveredCity, setHoveredCity] = useState<string | null>(null);
 
-  const allCities = MASSACHUSETTS_CITIES;
-  const topCities = getTopCities();
+  const allCities = [...MASSACHUSETTS_CITIES, ...NEW_ENGLAND_CITIES];
+  const topCities = [...getTopCities(), ...NEW_ENGLAND_CITIES.filter(c => c.isTopCity)];
   const boston = allCities.find(c => c.slug === "boston");
 
   return (
@@ -47,10 +47,10 @@ export default function CityMapSection() {
             </div>
             <h2 className="font-display font-black text-[clamp(2rem,5.5vw,4.5rem)] leading-[1.05] text-[#071B3A] mb-4 sm:mb-6 tracking-tight">
               Serving All of<br />
-              <span className="italic font-serif" style={{ color: "#C9232D" }}>Massachusetts</span>
+              <span className="italic font-serif" style={{ color: "#C9232D" }}>New England</span>
             </h2>
             <p className="font-sans text-[clamp(0.95rem,1.4vw,1.25rem)] leading-relaxed" style={{ color: "rgba(26,16,9,0.7)" }}>
-              From downtown Boston and Cambridge to Cape Cod, Worcester, and the North Shore. We bring the legendary celebration to your doorstep.
+              From downtown Boston and Cambridge to Cape Cod, Worcester, the North Shore, and across all New England states. We bring the legendary celebration to your doorstep.
             </p>
           </div>
           <Link

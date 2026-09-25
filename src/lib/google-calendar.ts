@@ -73,7 +73,7 @@ export const googleCalendarService = {
       endDateTime.setMinutes(endDateTime.getMinutes() + (booking.durationMins || 60));
 
       const eventBody: calendar_v3.Schema$Event = {
-        summary: `Boston Legend Ice Cream Truck - ${booking.customer.firstName} ${booking.customer.lastName}`,
+        summary: `American Legend Ice Cream Truck - ${booking.customer.firstName} ${booking.customer.lastName}`,
         location: `${booking.address}, ${booking.city}, MA ${booking.zip}`,
         description: `Internal Booking ID: ${booking.bookingNumber || booking.id}\nCustomer: ${booking.customer.firstName} ${booking.customer.lastName}\nPhone: ${booking.customer.phone}\nEmail: ${booking.customer.email}\nPackage: ${booking.package?.name || "Custom"}\nEvent Type: ${booking.eventType || "N/A"}\nGuest Count: ${booking.guests || 0}\nCustomer Notes: ${booking.notes || "None"}`,
         start: {
@@ -128,7 +128,7 @@ export const googleCalendarService = {
       endDateTime.setMinutes(endDateTime.getMinutes() + (booking.durationMins || 60));
 
       const eventBody: calendar_v3.Schema$Event = {
-        summary: `Boston Legend Ice Cream Truck - ${booking.customer.firstName} ${booking.customer.lastName}`,
+        summary: `American Legend Ice Cream Truck - ${booking.customer.firstName} ${booking.customer.lastName}`,
         location: `${booking.address}, ${booking.city}, MA ${booking.zip}`,
         description: `Internal Booking ID: ${booking.bookingNumber || booking.id}\nCustomer: ${booking.customer.firstName} ${booking.customer.lastName}\nPhone: ${booking.customer.phone}\nEmail: ${booking.customer.email}\nPackage: ${booking.package?.name || "Custom"}\nEvent Type: ${booking.eventType || "N/A"}\nGuest Count: ${booking.guests || 0}\nCustomer Notes: ${booking.notes || "None"}`,
         start: {

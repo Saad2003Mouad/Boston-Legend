@@ -314,7 +314,7 @@ Role: ${(session.user as any).role}.`;
       `${index + 1}. **${pkg.name}** (ID: ${pkg.slug || pkg.id}) — $${pkg.price}. Up to ${pkg.servings} guests, ${pkg.durationMins} min service. ${pkg.description || ""}`
     ).join("\n");
 
-    const SYSTEM_PROMPT = `You are the Boston Legend Ice Cream Truck AI Concierge — a helpful, warm, and professional assistant for ${BUSINESS_CONFIG.name}.
+    const SYSTEM_PROMPT = `You are the American Legend Ice Cream Truck AI Concierge — a helpful, warm, and professional assistant for ${BUSINESS_CONFIG.name}.
 
 Your role is to help customers learn about our services, packages, and pricing, and to guide them toward booking an ice cream truck.
 

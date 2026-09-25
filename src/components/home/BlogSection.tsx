@@ -27,7 +27,7 @@ export default function BlogSection({ posts = [] }: { posts?: any[] }) {
               Real Events. <span className="text-coral italic font-light">Real Smiles.</span>
             </h3>
             <p className="text-lg text-gray-500">
-              Don't just take our word for it. Explore our recent events and see the joy we bring to celebrations across Massachusetts.
+              Don't just take our word for it. Explore our recent events and see the joy we bring to celebrations across New England.
             </p>
           </motion.div>
         </div>
@@ -40,18 +40,18 @@ export default function BlogSection({ posts = [] }: { posts?: any[] }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.15 }}
-              className="group bg-white/60 backdrop-blur-md rounded-3xl border border-gray-100 shadow-xl shadow-navy/5 overflow-hidden hover:shadow-2xl hover:shadow-coral/10 hover:border-coral/20 transition-all duration-300 flex flex-col"
+              className="group bg-[#FFFDF8]/60 backdrop-blur-md rounded-3xl border border-gray-100 shadow-xl shadow-navy/5 overflow-hidden hover:shadow-2xl hover:shadow-coral/10 hover:border-coral/20 transition-all duration-300 flex flex-col"
             >
               <div className="relative h-64 overflow-hidden">
                 <Image
                   src={post.featuredImage || "/images/blog/68f61f1bb2531f6cb5a40346_corporate_party_with_ice_cream_truck.jpg"}
-                  alt={`${post.title} - American Legend Ice Cream Truck Massachusetts Blog`}
+                  alt={`${post.title} - American Legend Ice Cream Truck New England Blog`}
                   title={post.title}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
-                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-navy shadow-sm">
+                <div className="absolute top-4 left-4 bg-[#FFFDF8]/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-navy shadow-sm">
                   {post.category?.name || "Event"}
                 </div>
               </div>

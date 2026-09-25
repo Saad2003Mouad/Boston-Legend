@@ -141,7 +141,7 @@ export default function LoginPage() {
           <div className="w-32 h-32 mb-10">
             <Image
               src="/images/logo.png"
-              alt="Boston Legend Ice Cream Truck"
+              alt="American Legend Ice Cream Truck"
               width={128}
               height={128}
               className="w-full h-full object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
@@ -155,7 +155,7 @@ export default function LoginPage() {
             <span className="text-coral font-black not-italic">Sweet Events</span>
           </h1>
           <p className="text-white/60 font-sans text-base leading-relaxed max-w-sm mb-12">
-            Access your dashboard to review bookings, manage occasions, and orchestrate memorable experiences across Massachusetts.
+            Access your dashboard to review bookings, manage occasions, and orchestrate memorable experiences across New England.
           </p>
 
           {/* Feature pills */}
@@ -173,10 +173,10 @@ export default function LoginPage() {
       <div className="w-full lg:flex-1 flex flex-col items-center justify-center p-6 sm:p-10 bg-slate-50 relative flex-grow">
         {/* Mobile logo */}
         <div className="lg:hidden flex flex-col items-center mb-8">
-          <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-navy/10 shadow-lg mb-3 p-2 bg-white">
+          <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-navy/10 shadow-lg mb-3 p-2 bg-[#FFFDF8]">
             <Image
               src="/images/logo.png"
-              alt="Boston Legend Ice Cream Truck"
+              alt="American Legend Ice Cream Truck"
               width={80}
               height={80}
               className="w-full h-full object-contain"
@@ -194,14 +194,14 @@ export default function LoginPage() {
           </div>
 
           {/* Card */}
-          <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
+          <div className="bg-[#FFFDF8] rounded-2xl shadow-sm border border-slate-100 p-6">
             <Suspense fallback={<div className="flex justify-center p-6"><Loader2 className="animate-spin text-coral" size={28} /></div>}>
               <LoginForm />
             </Suspense>
           </div>
 
           <p className="text-center text-xs text-slate-400 mt-6">
-            &copy; {new Date().getFullYear()} Boston Legend Ice Cream Truck LLC. All rights reserved.
+            &copy; {new Date().getFullYear()} American Legend Ice Cream Truck LLC. All rights reserved.
           </p>
         </div>
       </div>

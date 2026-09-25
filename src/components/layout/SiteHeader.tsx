@@ -82,7 +82,7 @@ export default function SiteHeader() {
       className={cn(
         "fixed top-0 left-0 right-0 z-[100] transition-all duration-500",
         isScrolled || mobileMenuOpen
-          ? "bg-cream/95 backdrop-blur-xl shadow-sm py-3"
+          ? "bg-cream/50 backdrop-blur-xl shadow-sm py-3 border-b border-white/20"
           : "bg-transparent py-5 md:py-6 pointer-events-none"
       )}
     >
