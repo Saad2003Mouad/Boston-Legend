@@ -30,18 +30,18 @@ export default async function ServicesHubPage() {
 
   return (
     <div className="min-h-screen">
-      <section className="pt-36 pb-20 text-center px-4" style={{ background: "linear-gradient(135deg, #FFFBF5 0%, #FFF0F4 50%, #FFE1E8 100%)" }}>
+      <section className="pt-36 pb-20 text-center px-4 bg-navy">
         <AnimatedSection className="max-w-3xl mx-auto">
           <div
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest mb-6"
-            style={{ background: "rgba(255,78,116,0.15)", color: "#FF4E74" }}
+            className="inline-flex items-center gap-2 px-5 py-2 rounded-full text-xs font-black uppercase tracking-widest mb-6"
+            style={{ background: "rgba(255,255,255,0.1)", color: "#FFF4D6" }}
           >
             🍦 All Occasions
           </div>
-          <h1 className="text-5xl md:text-6xl font-display font-bold text-navy mb-6">
-            Services for <span className="text-coral italic font-light">Every</span> Occasion.
+          <h1 className="text-[clamp(3rem,5vw,4.5rem)] md:text-6xl font-display font-light text-white mb-6 leading-tight tracking-tight">
+            Services for <span className="text-coral italic font-medium">Every</span> Occasion.
           </h1>
-          <p className="text-xl text-charcoal/70 mb-8">
+          <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto font-medium">
             Whether it&apos;s an intimate backyard birthday or a 2,000-person corporate campus event, we have the fleet, the experience, and the premium ice cream to make it perfect.
           </p>
         </AnimatedSection>
@@ -50,8 +50,8 @@ export default async function ServicesHubPage() {
       {/* All Services List */}
       <ServicesMarquee theme="light" />
 
-      {/* Brand Carousel — white/neutral variant */}
-      <BrandCarousel variant="white" topDripColor="#FFE1E8" />
+      {/* Brand Carousel — default variant with cream drip */}
+      <BrandCarousel topDripColor="#FFF4D6" />
 
       {/* Our Stories Blog */}
       <BlogSection posts={recentPosts} />

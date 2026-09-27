@@ -7,12 +7,12 @@ const globalForPrisma = globalThis as unknown as {
 };
 
 function createPrismaClient(): PrismaClient {
-  // Use DIRECT_URL (session pooler, port 5432) for runtime queries.
-  // DATABASE_URL (transaction pooler, port 6543) is for migrations only.
-  const connectionString = process.env.DIRECT_URL || process.env.DATABASE_URL;
+  // Use DATABASE_URL (transaction pooler, port 6543) for runtime — it handles
+  // connection limits automatically. DIRECT_URL (session pooler) is for migrations only.
+  const connectionString = process.env.DATABASE_URL;
 
   if (!connectionString) {
-    throw new Error("No DATABASE_URL or DIRECT_URL env variable set.");
+    throw new Error("No DATABASE_URL env variable set.");
   }
 
   const isLocal =
@@ -21,20 +21,20 @@ function createPrismaClient(): PrismaClient {
 
   const pool = new Pool({
     connectionString,
-    max: 3,
-    idleTimeoutMillis: 30000,
+    // Keep the pool very small — Supabase free tier limits concurrent connections.
+    // In dev, HMR creates many short-lived processes so 1 is safest.
+    max: process.env.NODE_ENV === "production" ? 5 : 1,
+    idleTimeoutMillis: 10000,
     connectionTimeoutMillis: 30000,
-    allowExitOnIdle: false,
-    // Supabase uses self-signed certificates behind Cloudflare.
-    // rejectUnauthorized: false accepts the Supabase certificate chain.
+    allowExitOnIdle: true,
     ssl: isLocal
       ? false
       : {
           rejectUnauthorized: false,
-          // Force TLS — Supabase requires encrypted connections
           checkServerIdentity: () => undefined,
         },
   });
+
 
   pool.on("error", (err) => {
     console.error("[Prisma PG Pool] Error:", err.message);

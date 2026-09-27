@@ -157,7 +157,7 @@ export default async function MenuItemPage({ params }: PageProps) {
   const themeColor = getThemeColor(item.slug);
 
   return (
-    <div className="min-h-screen pt-24 pb-0">
+    <div className="min-h-screen pt-24 pb-0 bg-cream">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -301,7 +301,7 @@ export default async function MenuItemPage({ params }: PageProps) {
         </div>
       </div>
 
-      <BrandCarousel variant="white" themeColor={themeColor} topDripColor="#FFFBF5" />
+      <BrandCarousel variant="white" themeColor={themeColor} topDripColor="#FFF4D6" />
 
       {/* Blog Posts Section */}
       {recentPosts.length > 0 && (
@@ -367,7 +367,7 @@ export default async function MenuItemPage({ params }: PageProps) {
 
       {/* Final CTA */}
       <div className="border-t border-navy/5">
-        <FinalCTA themeColor={themeColor} />
+        <FinalCTA />
       </div>
     </div>
   );

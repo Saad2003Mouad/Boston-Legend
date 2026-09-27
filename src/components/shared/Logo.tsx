@@ -22,7 +22,7 @@ export default function Logo({
       <div className="relative h-12 md:h-16 lg:h-20 w-auto flex items-center justify-center">
         {/* Full Logo - hidden on mobile if iconOnlyOnMobile is true */}
         <Image
-          src="/images/logo.png"
+          src="/images/logo_new.png"
           alt="American Legend Ice Cream Truck"
           width={240}
           height={85}

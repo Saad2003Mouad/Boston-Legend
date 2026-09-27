@@ -23,7 +23,7 @@ export const servicesData: Record<string, ServiceData> = {
       "Allergen-friendly options available"
     ],
     "ctaText": "Book Your Birthday Surprise",
-    "imagePath": "/images/Ocassion image/birthday.png"
+    "imagePath": "/images/Birthday_Parties.png"
   },
   "block-parties": {
     "slug": "block-parties",
@@ -38,7 +38,7 @@ export const servicesData: Record<string, ServiceData> = {
       "Perfect for summer evenings"
     ],
     "ctaText": "Schedule a Block Party",
-    "imagePath": "/images/Ocassion image/block-parties.png"
+    "imagePath": "/images/block_parties.png"
   },
   "corporate-events": {
     "slug": "corporate-events",
@@ -53,7 +53,7 @@ export const servicesData: Record<string, ServiceData> = {
       "Professional, uniformed staff"
     ],
     "ctaText": "Plan Your Corporate Event",
-    "imagePath": "/images/Ocassion image/corporate-events.png"
+    "imagePath": "/images/Corporate_Parties.png"
   },
   "fundraisers": {
     "slug": "fundraisers",
@@ -68,7 +68,7 @@ export const servicesData: Record<string, ServiceData> = {
       "Zero hassle for organizers"
     ],
     "ctaText": "Start Fundraising",
-    "imagePath": "/images/Ocassion image/fundraisers.png"
+    "imagePath": "/images/Fundraisers.png"
   },
   "launch-parties": {
     "slug": "launch-parties",
@@ -83,7 +83,7 @@ export const servicesData: Record<string, ServiceData> = {
       "Premium VIP experience"
     ],
     "ctaText": "Elevate Your Launch",
-    "imagePath": "/images/Ocassion image/launch-parties.png"
+    "imagePath": "/images/Launch_Parties.png"
   },
   "marketing-events": {
     "slug": "marketing-events",
@@ -98,7 +98,7 @@ export const servicesData: Record<string, ServiceData> = {
       "High ROI for marketing activations"
     ],
     "ctaText": "Attract Your Crowd",
-    "imagePath": "/images/Ocassion image/marketing-events.png"
+    "imagePath": "/images/Marketing_Events.png"
   },
   "movie-rental": {
     "slug": "movie-rental",
@@ -113,7 +113,7 @@ export const servicesData: Record<string, ServiceData> = {
       "Experienced onset staff"
     ],
     "ctaText": "Book for Your Production",
-    "imagePath": "/images/Movie rental.png"
+    "imagePath": "/images/Movie_Rental.png"
   },
   "photo-sessions": {
     "slug": "photo-sessions",
@@ -128,7 +128,7 @@ export const servicesData: Record<string, ServiceData> = {
       "Props and ice cream included"
     ],
     "ctaText": "Schedule a Shoot",
-    "imagePath": "/images/photo sessions.png"
+    "imagePath": "/images/Photo_Sessions.png"
   },
   "reunions": {
     "slug": "reunions",
@@ -143,7 +143,7 @@ export const servicesData: Record<string, ServiceData> = {
       "Memorable family experience"
     ],
     "ctaText": "Plan Your Reunion",
-    "imagePath": "/images/reunions.png"
+    "imagePath": "/images/Reunion.png"
   },
   "school-occasions": {
     "slug": "school-occasions",
@@ -158,7 +158,7 @@ export const servicesData: Record<string, ServiceData> = {
       "Fun, upbeat atmosphere"
     ],
     "ctaText": "Book for Your School",
-    "imagePath": "/images/school occasions.png"
+    "imagePath": "/images/School_Occasions.png"
   },
   "sports-occasions": {
     "slug": "sports-occasions",
@@ -173,7 +173,7 @@ export const servicesData: Record<string, ServiceData> = {
       "Custom team packages"
     ],
     "ctaText": "Treat the Team",
-    "imagePath": "/images/sports occasions.png"
+    "imagePath": "/images/Sports_Occasions.png"
   },
   "wedding-receptions": {
     "slug": "wedding-receptions",
@@ -188,7 +188,7 @@ export const servicesData: Record<string, ServiceData> = {
       "Beautiful golden hour/night illumination"
     ],
     "ctaText": "Reserve for Your Wedding",
-    "imagePath": "/images/wedding receptions.png"
+    "imagePath": "/images/Wedding_Receptions.png"
   }
 };
 

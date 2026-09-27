@@ -215,7 +215,7 @@ function PackageGrid({ packages, accentColor }: { packages: any[]; accentColor: 
     : "bg-navy/10 text-navy";
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-8">
       {packages.map((pkg, i) => {
         const isOpen = expanded === pkg.id;
         const isHighlight = pkg.isPopular;
@@ -228,10 +228,12 @@ function PackageGrid({ packages, accentColor }: { packages: any[]; accentColor: 
             whileInView="show"
             viewport={{ once: true, margin: "-60px" }}
             variants={fadeUp}
-            className={`relative flex flex-col rounded-[2rem] border transition-all duration-300 overflow-hidden group ${
+            className={`relative flex flex-col rounded-[2.5rem] border transition-all duration-500 overflow-hidden group ${
               isHighlight
                 ? "border-coral shadow-2xl shadow-coral/15 bg-[#FFFDF8]"
                 : "border-gray-100 shadow-lg shadow-gray-100/80 bg-[#FFFDF8] hover:shadow-xl hover:border-gray-200"
+            } ${packages.length % 3 === 1 && i === packages.length - 1 ? 'xl:col-start-2' : ''} ${
+              packages.length % 2 === 1 && i === packages.length - 1 ? 'sm:col-span-2 xl:col-span-1' : ''
             }`}
           >
             {/* Popular ribbon */}
@@ -253,8 +255,10 @@ function PackageGrid({ packages, accentColor }: { packages: any[]; accentColor: 
 
             {/* Card Image */}
             {pkg.imageUrl && (
-              <div className="relative w-full shrink-0 overflow-hidden aspect-square bg-gray-50 flex items-center justify-center p-4">
-                <div className="absolute inset-0 bg-navy/5 z-10 group-hover:bg-transparent transition-colors duration-500 pointer-events-none" />
+              <div className={`relative w-full shrink-0 overflow-hidden aspect-[4/3] flex items-center justify-center p-6 ${
+                isHighlight ? 'bg-gradient-to-br from-navy-light to-navy' : 'bg-gradient-to-br from-cream to-[#FFFDF8]'
+              }`}>
+                <div className="absolute inset-0 bg-navy/5 z-10 group-hover:bg-transparent transition-colors duration-500 pointer-events-none opacity-50" />
                 
                 {/* Main Content */}
                 <Image 
@@ -262,11 +266,11 @@ function PackageGrid({ packages, accentColor }: { packages: any[]; accentColor: 
                   alt={`${pkg.name} - Premium ice cream truck catering package in New England`} 
                   title={`Reserve our ${pkg.name} for your event in MA`}
                   fill 
-                  className="object-contain p-4 transition-transform duration-700 group-hover:scale-105 drop-shadow-md"
+                  className="object-contain p-6 transition-transform duration-700 group-hover:scale-110 drop-shadow-2xl"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
                 {/* Smooth gradient blending into the header */}
-                <div className={`absolute bottom-0 left-0 w-full h-1/4 z-10 bg-gradient-to-t ${isHighlight ? "from-navy" : "from-white"} to-transparent pointer-events-none`} />
+                <div className={`absolute bottom-0 left-0 w-full h-1/3 z-10 bg-gradient-to-t ${isHighlight ? "from-navy" : "from-[#FFFDF8]"} to-transparent pointer-events-none`} />
               </div>
             )}
 

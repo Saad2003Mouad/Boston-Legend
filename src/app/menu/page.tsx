@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import FAQSection from "@/components/shared/FAQSection";
 import BrandCarousel from "@/components/shared/BrandCarousel";
-import MemoryWall from "@/components/shared/MemoryWall";
 import { menuItems } from "@/data/menu";
 
 export const metadata: Metadata = constructMetadata({
@@ -34,10 +33,9 @@ const faqs = [
 
 export default function MenuPage() {
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <div className="relative min-h-screen overflow-hidden bg-cream">
       {/* Hero Section */}
-      <section className="relative pt-24 pb-16 md:pt-32 md:pb-32 overflow-hidden bg-cream">
-        <MemoryWall />
+      <section className="relative pt-24 pb-16 md:pt-32 md:pb-32 overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 relative z-10 text-center">
           <span className="inline-block py-1.5 px-4 bg-coral/10 text-coral font-bold text-xs sm:text-sm tracking-widest uppercase rounded-full mb-6 border border-coral/20">
             🍦 American Legend Menu

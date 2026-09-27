@@ -82,15 +82,10 @@ export default function SiteHeader() {
       className={cn(
         "fixed top-0 left-0 right-0 z-[100] transition-all duration-500",
         isScrolled || mobileMenuOpen
-          ? "bg-cream/50 backdrop-blur-xl shadow-sm py-3 border-b border-white/20"
+          ? "bg-white/80 backdrop-blur-xl shadow-sm py-3 border-b border-black/5"
           : "bg-transparent py-5 md:py-6 pointer-events-none"
       )}
     >
-      {isScrolled && (
-        <div className="absolute top-full left-0 right-0 pointer-events-none opacity-95">
-          <MeltingDrip color="#FFF4D6" height={14} variant="random" />
-        </div>
-      )}
       <div suppressHydrationWarning className="container mx-auto px-4 md:px-6 flex items-center justify-between pointer-events-auto">
         {/* Logo */}
         <Link href="/" className="z-50">

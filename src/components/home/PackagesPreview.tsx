@@ -6,7 +6,9 @@ import { ArrowRight, Check, Sparkles } from "lucide-react";
 import { motion, Variants } from "framer-motion";
 import MeltingDrip from "@/components/shared/MeltingDrip";
 
-export default function PackagesPreview({ featuredPackages }: { featuredPackages: any[] }) {
+export default function PackagesPreview({ featuredPackages, themeColor, themeBg }: { featuredPackages: any[], themeColor?: string, themeBg?: string }) {
+  const accent = themeColor || "#C9232D";
+  const sectionBg = themeBg || "#FFF4D6";
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -24,11 +26,11 @@ export default function PackagesPreview({ featuredPackages }: { featuredPackages
   };
 
   return (
-    <section className="relative py-16 md:py-32 overflow-hidden bg-cream">
-      {/* Elegant animated wave from BlogSection above */}
+    <section className="relative py-16 md:py-32 overflow-hidden" style={{ backgroundColor: sectionBg }}>
+      {/* Drip from section above */}
       <div className="absolute top-0 left-0 right-0 z-0">
         <MeltingDrip
-          color="#FFF4D6"
+          color={sectionBg}
           height={120}
         />
       </div>
@@ -36,7 +38,10 @@ export default function PackagesPreview({ featuredPackages }: { featuredPackages
       <div className="container mx-auto px-5 md:px-12 lg:px-24 relative z-10 pt-10 md:pt-20">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16 md:mb-24 text-center lg:text-left">
           <div className="max-w-2xl mx-auto lg:mx-0">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-coral/10 text-coral text-xs font-black uppercase tracking-widest mb-4 border border-coral/20">
+            <div
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest mb-4 border"
+              style={{ backgroundColor: `${accent}18`, color: accent, borderColor: `${accent}30` }}
+            >
               <Sparkles className="w-3.5 h-3.5" /> All-Inclusive Catering
             </div>
             <motion.h2
@@ -45,7 +50,7 @@ export default function PackagesPreview({ featuredPackages }: { featuredPackages
               viewport={{ once: true }}
               className="font-display italic font-bold text-[clamp(2.5rem,5vw,4.25rem)] leading-tight text-charcoal mb-4"
             >
-              Legendary <span className="text-coral">Ice Cream Packages</span>
+              Legendary <span style={{ color: accent }}>Ice Cream Packages</span>
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -65,9 +70,12 @@ export default function PackagesPreview({ featuredPackages }: { featuredPackages
           >
             <Link
               href="/packages"
-              className="group inline-flex items-center gap-3 font-sans font-bold text-charcoal uppercase tracking-widest text-sm bg-[#FFFDF8] px-8 py-4 rounded-full border-2 border-charcoal/10 hover:border-coral hover:text-coral transition-all shadow-soft hover:shadow-md"
+              className="group inline-flex items-center gap-3 font-sans font-bold text-charcoal uppercase tracking-widest text-sm bg-white/60 px-8 py-4 rounded-full border-2 border-charcoal/10 transition-all shadow-soft hover:shadow-md"
+              style={{ '--hover-color': accent } as any}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.borderColor = accent; (e.currentTarget as HTMLElement).style.color = accent; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.borderColor = 'rgba(0,0,0,0.1)'; (e.currentTarget as HTMLElement).style.color = '#171717'; }}
             >
-              View All 5 Packages
+              View All Packages
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </Link>
           </motion.div>
@@ -86,12 +94,14 @@ export default function PackagesPreview({ featuredPackages }: { featuredPackages
               key={pkg.id}
               variants={itemVariants}
               whileHover={{ y: -8 }}
-              className={`group flex flex-col bg-[#FFFDF8] rounded-[2.5rem] overflow-hidden border transition-all duration-300 shadow-xl ${
-                pkg.isPopular ? "border-coral shadow-coral/20 relative" : "border-navy/5 shadow-soft"
-              }`}
+              className="group flex flex-col bg-white/70 rounded-[2.5rem] overflow-hidden border transition-all duration-300 shadow-xl"
+              style={pkg.isPopular ? { borderColor: accent, boxShadow: `0 20px 60px ${accent}25` } : { borderColor: 'rgba(7,27,58,0.06)' }}
             >
               {pkg.isPopular && (
-                <div className="absolute top-0 right-8 bg-coral text-white text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-b-xl shadow-lg z-30">
+                <div
+                  className="absolute top-0 right-8 text-white text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-b-xl shadow-lg z-30"
+                  style={{ backgroundColor: accent }}
+                >
                   Most Popular Choice
                 </div>
               )}
@@ -114,12 +124,17 @@ export default function PackagesPreview({ featuredPackages }: { featuredPackages
               )}
 
               {/* Card Header */}
-              <div className={`relative z-20 px-5 md:px-10 pb-6 md:pb-10 pt-4 border-b ${
-                pkg.isPopular ? "bg-coral text-white border-white/10" : "bg-[#FFFDF8] text-charcoal border-navy/5"
-              }`}>
-                <div className={`text-xs font-black uppercase tracking-widest mb-3 ${
-                  pkg.isPopular ? "text-white/80" : "text-coral"
-                }`}>
+              <div
+                className="relative z-20 px-5 md:px-10 pb-6 md:pb-10 pt-4 border-b"
+                style={pkg.isPopular
+                  ? { backgroundColor: accent, color: '#fff', borderColor: 'rgba(255,255,255,0.1)' }
+                  : { backgroundColor: 'rgba(255,255,255,0.7)', borderColor: 'rgba(7,27,58,0.06)' }
+                }
+              >
+                <div
+                  className="text-xs font-black uppercase tracking-widest mb-3"
+                  style={{ color: pkg.isPopular ? 'rgba(255,255,255,0.8)' : accent }}
+                >
                   {pkg.durationLabel} · {pkg.servings} Servings Included
                 </div>
                 <h3 className={`font-display italic font-black text-2xl md:text-4xl mb-2 ${
@@ -151,8 +166,8 @@ export default function PackagesPreview({ featuredPackages }: { featuredPackages
                 <ul className="flex flex-col gap-3 md:gap-4 mb-6 md:mb-10 flex-1">
                   {pkg.features.slice(0, 4).map((feature: string, idx: number) => (
                     <li key={idx} className="flex items-start gap-3.5">
-                      <div className="bg-coral/10 p-1.5 rounded-full shrink-0 mt-0.5">
-                        <Check className="w-4 h-4 text-coral" strokeWidth={3} />
+                      <div className="p-1.5 rounded-full shrink-0 mt-0.5" style={{ backgroundColor: `${accent}18` }}>
+                        <Check className="w-4 h-4" strokeWidth={3} style={{ color: accent }} />
                       </div>
                       <span className="font-sans text-charcoal/85 font-semibold text-[0.95rem]">{feature}</span>
                     </li>
@@ -161,11 +176,13 @@ export default function PackagesPreview({ featuredPackages }: { featuredPackages
 
                 <Link
                   href={`/book?package=${pkg.slug}`}
-                  className={`w-full py-4 rounded-full text-center font-sans font-black text-[0.9rem] tracking-widest uppercase transition-all duration-300 transform active:scale-95 ${
-                    pkg.isPopular
-                      ? "bg-coral text-white hover:bg-coral/90"
-                      : "bg-cream border border-coral text-coral hover:bg-coral hover:text-white"
-                  }`}
+                  className="w-full py-4 rounded-full text-center font-sans font-black text-[0.9rem] tracking-widest uppercase transition-all duration-300 transform active:scale-95"
+                  style={pkg.isPopular
+                    ? { backgroundColor: accent, color: '#fff' }
+                    : { backgroundColor: 'transparent', border: `1.5px solid ${accent}`, color: accent }
+                  }
+                  onMouseEnter={e => { if (!pkg.isPopular) { (e.currentTarget as HTMLElement).style.backgroundColor = accent; (e.currentTarget as HTMLElement).style.color = '#fff'; }}}
+                  onMouseLeave={e => { if (!pkg.isPopular) { (e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'; (e.currentTarget as HTMLElement).style.color = accent; }}}
                 >
                   Request This Package
                 </Link>

@@ -34,7 +34,7 @@ interface BookingRequest {
 const WELCOME_MESSAGE: Message = {
   id: "welcome",
   role: "assistant",
-  content: "Hey there! 👋 I'm your American Legend Concierge.\n\nI can help you explore our packages, check pricing, and book your event directly here.\n\nHow can I sweeten your day?",
+  content: "### Welcome to American Legend! 🍦\n\nHi there! I'm your digital concierge. I can help you with:\n\n- 📦 **Exploring our packages**\n- 💰 **Checking pricing**\n- 📅 **Booking your event directly**\n\n*How can I sweeten your day?*",
 };
 
 const QUICK_REPLIES = [
@@ -270,18 +270,18 @@ export default function AIChatWidget() {
             <div className="absolute inset-0 rounded-full bg-coral/30 animate-ping group-hover:bg-coral/40 transition-colors" style={{ animationDuration: "3s" }} />
             
             {/* Core Button */}
-            <div className="relative flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/70 backdrop-blur-xl border border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.12),0_0_0_1px_rgba(255,255,255,0.4)_inset] overflow-hidden">
+             <div className="relative flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/70 backdrop-blur-xl border border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.12),0_0_0_1px_rgba(255,255,255,0.4)_inset] overflow-hidden">
                {/* Animated gradient background on hover */}
-             {/* Animated gradient background on hover */}
                <div className="absolute inset-0 bg-gradient-to-tr from-coral/10 via-transparent to-navy/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                <Image
                  src="/images/icon.png"
                  alt="Assistant"
                  fill
-                 className="object-contain relative z-10 transition-transform duration-500 group-hover:scale-110"
+                 className="object-cover relative z-10 transition-transform duration-500 group-hover:scale-110"
                  sizes="80px"
                />
-            </div>
+
+             </div>
             
             {/* Online Indicator */}
             <div className="absolute top-1 right-1 w-4 h-4 sm:w-5 sm:h-5 bg-green-500 rounded-full border-[2.5px] border-white shadow-sm flex items-center justify-center z-20">
@@ -304,9 +304,9 @@ export default function AIChatWidget() {
               // Ultra-premium Glassmorphism
               "bg-white/60 backdrop-blur-[40px] shadow-[0_20px_60px_-15px_rgba(10,17,40,0.2),0_0_0_1px_rgba(255,255,255,0.5)_inset]",
               // Positioning & sizing for all devices (floating card)
-              "bottom-4 right-2 left-2 sm:left-auto sm:bottom-8 sm:right-8 md:bottom-10 md:right-10",
+              "bottom-4 right-4 left-4 sm:left-auto sm:bottom-8 sm:right-8 md:bottom-10 md:right-10",
               "sm:w-[420px] md:w-[440px]",
-              "h-[calc(100dvh-32px)] max-h-[750px] sm:h-[680px] md:h-[720px] sm:max-h-[85vh]",
+              "h-[500px] max-h-[80vh] sm:h-[680px] md:h-[720px] sm:max-h-[85vh]",
               "rounded-[2.5rem] border border-white/60"
             )}
           >
@@ -319,7 +319,7 @@ export default function AIChatWidget() {
             {/* ── Header ── */}
             <div className="relative px-6 py-5 flex items-center gap-4 shrink-0 bg-white/40 border-b border-white/40 z-20 shadow-[0_4px_20px_rgba(0,0,0,0.02)]">
               <div className="relative w-12 h-12 rounded-full overflow-hidden shrink-0 shadow-lg border border-white/60 bg-white">
-                <Image src="/images/icon.png" alt="Assistant" fill className="object-contain p-1" sizes="48px" />
+                <Image src="/images/icon.png" alt="Assistant" fill className="object-cover" sizes="48px" />
                 <div className="absolute bottom-0 right-0 w-3.5 h-3.5 bg-green-500 border-2 border-white rounded-full z-10" />
               </div>
               <div className="flex-1 min-w-0 pt-1">
@@ -349,13 +349,13 @@ export default function AIChatWidget() {
                   initial={{ opacity: 0, y: 10 }} 
                   animate={{ opacity: 1, y: 0 }} 
                   transition={{ delay: 0.4 }}
-                  className="flex flex-nowrap overflow-x-auto pb-4 pt-2 -mx-5 px-5 sm:flex-wrap gap-2 scrollbar-hide"
+                  className="flex flex-col items-start gap-2.5 pb-4 pt-2 -mx-5 px-5"
                 >
                   {QUICK_REPLIES.map((q) => (
                     <button
                       key={q}
                       onClick={() => handleSend(undefined, q)}
-                      className="shrink-0 px-4 py-2.5 text-[13px] font-bold rounded-full bg-white/60 backdrop-blur-md border border-white/80 text-navy hover:bg-white hover:shadow-md transition-all whitespace-nowrap"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 text-[13px] font-bold rounded-full bg-white/80 backdrop-blur-md border border-navy/10 text-navy hover:bg-navy hover:text-white hover:border-navy transition-all shadow-sm"
                     >
                       {q}
                     </button>

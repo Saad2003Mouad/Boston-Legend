@@ -75,8 +75,10 @@ const INTRO_TEMPLATES = [
 // --- THEME DEFINITIONS ---
 const THEMES = [
   {
-    flavor: "Strawberry",
-    image: "/images/cities/strawberry.png",
+    flavor: "Strawberry Bar",
+    image: "/images/cities/strawberry-bar.jpg",
+    hexColor: "#E8526A",
+    heroBgHex: "#FFF0F4",
     heroBgClass: "bg-[#FFF0F4]",
     textDarkClass: "text-[#8A1A3A]",
     primaryColorClass: "text-coral",
@@ -85,18 +87,22 @@ const THEMES = [
     badgeClass: "bg-coral/10 border-coral/20 text-coral",
   },
   {
-    flavor: "Mint",
-    image: "/images/cities/mint.png",
-    heroBgClass: "bg-[#F0FFF4]",
-    textDarkClass: "text-[#1A5336]",
-    primaryColorClass: "text-mint",
-    bgGlowClass: "bg-mint/20",
-    buttonClass: "bg-mint text-navy shadow-mint/30 hover:bg-white hover:text-mint",
-    badgeClass: "bg-mint/10 border-mint/20 text-mint",
+    flavor: "Chocolate Fudge Bar",
+    image: "/images/cities/chocolate-bar.jpg",
+    hexColor: "#92400E",
+    heroBgHex: "#FFF5EE",
+    heroBgClass: "bg-[#FFF5EE]",
+    textDarkClass: "text-[#5C2E16]",
+    primaryColorClass: "text-amber-800",
+    bgGlowClass: "bg-amber-800/20",
+    buttonClass: "bg-amber-800 text-white shadow-amber-800/30 hover:bg-white hover:text-amber-800",
+    badgeClass: "bg-amber-800/10 border-amber-800/20 text-amber-800",
   },
   {
-    flavor: "Vanilla",
-    image: "/images/cities/vanilla.png",
+    flavor: "Vanilla Sandwich",
+    image: "/images/cities/vanilla-sandwich.jpg",
+    hexColor: "#C99A3D",
+    heroBgHex: "#FFFDF0",
     heroBgClass: "bg-[#FFFDF0]",
     textDarkClass: "text-[#6B5A1A]",
     primaryColorClass: "text-gold",
@@ -105,20 +111,84 @@ const THEMES = [
     badgeClass: "bg-gold/10 border-gold/20 text-gold",
   },
   {
-    flavor: "Blueberry",
-    image: "/images/cities/blueberry.png",
-    heroBgClass: "bg-[#F0F4FF]",
-    textDarkClass: "text-[#1A337A]",
-    primaryColorClass: "text-blue-500",
-    bgGlowClass: "bg-blue-500/20",
-    buttonClass: "bg-blue-500 text-white shadow-blue-500/30 hover:bg-white hover:text-blue-500",
-    badgeClass: "bg-blue-500/10 border-blue-500/20 text-blue-500",
+    flavor: "Orange Dream Pop",
+    image: "/images/cities/orange-pop.jpg",
+    hexColor: "#F97316",
+    heroBgHex: "#FFF8EE",
+    heroBgClass: "bg-[#FFF8EE]",
+    textDarkClass: "text-[#8A4A00]",
+    primaryColorClass: "text-orange-500",
+    bgGlowClass: "bg-orange-500/20",
+    buttonClass: "bg-orange-500 text-white shadow-orange-500/30 hover:bg-white hover:text-orange-500",
+    badgeClass: "bg-orange-500/10 border-orange-500/20 text-orange-500",
   },
   {
-    flavor: "Chocolate",
+    flavor: "Mint Chip Bar",
+    image: "/images/cities/mint-bar.jpg",
+    hexColor: "#059669",
+    heroBgHex: "#F0FFF4",
+    heroBgClass: "bg-[#F0FFF4]",
+    textDarkClass: "text-[#1A5336]",
+    primaryColorClass: "text-emerald-600",
+    bgGlowClass: "bg-emerald-600/20",
+    buttonClass: "bg-emerald-600 text-white shadow-emerald-600/30 hover:bg-white hover:text-emerald-600",
+    badgeClass: "bg-emerald-600/10 border-emerald-600/20 text-emerald-600",
+  },
+  {
+    flavor: "Cherry Pop",
+    image: "/images/cities/cherry-pop.jpg",
+    hexColor: "#E11D48",
+    heroBgHex: "#FFF0F4",
+    heroBgClass: "bg-[#FFF0F4]",
+    textDarkClass: "text-[#7A1030]",
+    primaryColorClass: "text-rose-600",
+    bgGlowClass: "bg-rose-600/20",
+    buttonClass: "bg-rose-600 text-white shadow-rose-600/30 hover:bg-white hover:text-rose-600",
+    badgeClass: "bg-rose-600/10 border-rose-600/20 text-rose-600",
+  },
+  {
+    flavor: "Strawberry Classic",
+    image: "/images/cities/strawberry.png",
+    hexColor: "#E8526A",
+    heroBgHex: "#FFF2F5",
+    heroBgClass: "bg-[#FFF2F5]",
+    textDarkClass: "text-[#8A1A3A]",
+    primaryColorClass: "text-pink-600",
+    bgGlowClass: "bg-pink-600/20",
+    buttonClass: "bg-pink-600 text-white shadow-pink-600/30 hover:bg-white hover:text-pink-600",
+    badgeClass: "bg-pink-600/10 border-pink-600/20 text-pink-600",
+  },
+  {
+    flavor: "Mint Classic",
+    image: "/images/cities/mint.png",
+    hexColor: "#10B981",
+    heroBgHex: "#F0FEF9",
+    heroBgClass: "bg-[#F0FEF9]",
+    textDarkClass: "text-[#1A5336]",
+    primaryColorClass: "text-mint",
+    bgGlowClass: "bg-mint/20",
+    buttonClass: "bg-mint text-navy shadow-mint/30 hover:bg-white hover:text-mint",
+    badgeClass: "bg-mint/10 border-mint/20 text-mint",
+  },
+  {
+    flavor: "Blueberry Classic",
+    image: "/images/cities/blueberry.png",
+    hexColor: "#4F46E5",
+    heroBgHex: "#F0F4FF",
+    heroBgClass: "bg-[#F0F4FF]",
+    textDarkClass: "text-[#1A337A]",
+    primaryColorClass: "text-indigo-600",
+    bgGlowClass: "bg-indigo-600/20",
+    buttonClass: "bg-indigo-600 text-white shadow-indigo-600/30 hover:bg-white hover:text-indigo-600",
+    badgeClass: "bg-indigo-600/10 border-indigo-600/20 text-indigo-600",
+  },
+  {
+    flavor: "Chocolate Classic",
     image: "/images/cities/chocolate.png",
-    heroBgClass: "bg-[#FFF5F0]",
-    textDarkClass: "text-[#5C2E16]",
+    hexColor: "#B45309",
+    heroBgHex: "#FFF3EE",
+    heroBgClass: "bg-[#FFF3EE]",
+    textDarkClass: "text-[#4A2010]",
     primaryColorClass: "text-amber-700",
     bgGlowClass: "bg-amber-700/20",
     buttonClass: "bg-amber-700 text-white shadow-amber-700/30 hover:bg-white hover:text-amber-700",
@@ -273,7 +343,7 @@ export default async function CityPage({ params }: Props) {
   const faqSchema = getFAQSchema(faqs);
 
   return (
-    <div className={`min-h-screen overflow-hidden ${theme.heroBgClass}`}>
+    <div style={{ backgroundColor: theme.heroBgHex }} className="min-h-screen overflow-hidden">
       {/* Inject JSON-LD */}
       <script
         type="application/ld+json"
@@ -449,14 +519,16 @@ export default async function CityPage({ params }: Props) {
       </section>
 
       {/* ── BRAND CAROUSEL ─────────────────────────────────────────── */}
-      <BrandCarousel />
+      <BrandCarousel themeColor={theme.hexColor} topDripColor={theme.heroBgHex} />
 
       {/* ── PACKAGES ─────────────────────────────────────────────── */}
-      <PackagesPreview featuredPackages={featuredPackages} />
+      <div style={{ backgroundColor: theme.heroBgHex }}>
+        <PackagesPreview featuredPackages={featuredPackages} themeColor={theme.hexColor} themeBg={theme.heroBgHex} />
+      </div>
 
       {/* ── NEARBY AREAS ─────────────────────────────────────────── */}
       {nearbyAreas.length > 0 && (
-        <section className="py-20 relative">
+        <section className="py-20 relative" style={{ backgroundColor: theme.heroBgHex }}>
           <div className="container mx-auto px-6 md:px-12 max-w-6xl">
             <h2 className="font-display font-light text-[clamp(2rem,3.5vw,3rem)] text-navy tracking-tighter mb-10">
               Also Serving <span className={`italic ${theme.primaryColorClass}`}>Nearby Areas</span>
@@ -481,17 +553,19 @@ export default async function CityPage({ params }: Props) {
       )}
 
       {/* ── TESTIMONIALS ─────────────────────────────────────────── */}
-      <TestimonialsCarousel />
+      <TestimonialsCarousel themeColor={theme.hexColor} />
 
       {/* ── FAQ ──────────────────────────────────────────────────── */}
       <FAQSection
         title={`FAQ — ${city.name}, MA`}
         subtitle={`Common questions about our ice cream truck service in ${city.name}.`}
         items={faqs}
+        themeColor={theme.hexColor}
+        themeBg={theme.heroBgHex}
       />
 
       {/* ── FINAL CTA ────────────────────────────────────────────── */}
-      <FinalCTA />
+      <FinalCTA themeColor={theme.hexColor} topColor={theme.heroBgHex} />
     </div>
   );
 }

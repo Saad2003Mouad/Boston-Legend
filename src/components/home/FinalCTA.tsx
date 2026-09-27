@@ -12,18 +12,22 @@ const PERKS = [
 
 interface FinalCTAProps {
   themeColor?: string;
+  topColor?: string;
 }
 
-export default function FinalCTA({ themeColor }: FinalCTAProps = {}) {
+export default function FinalCTA({ themeColor, topColor }: FinalCTAProps = {}) {
   const bgColor = themeColor || "#C9232D";
-  const gradient = themeColor ? `linear-gradient(135deg, ${themeColor} 0%, ${themeColor}dd 100%)` : "linear-gradient(135deg, #C9232D 0%, #A31B24 100%)";
+  const gradient = themeColor
+    ? `linear-gradient(135deg, ${themeColor} 0%, ${themeColor}cc 100%)`
+    : "linear-gradient(135deg, #C9232D 0%, #A31B24 100%)";
+  const dripColor = topColor || "#071B3A";
 
   return (
     <div className="relative w-full overflow-hidden" style={{ backgroundColor: bgColor }}>
       {/* Elegant animated wave from the section above */}
       <div className="absolute top-0 left-0 right-0 z-0">
         <MeltingDrip
-          color="#071B3A"
+          color={dripColor}
           height={140}
         />
       </div>
@@ -84,7 +88,8 @@ export default function FinalCTA({ themeColor }: FinalCTAProps = {}) {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-5 w-full sm:w-auto mb-12">
               <Link
                 href="/book"
-                className="group relative flex items-center justify-center gap-3 w-full sm:w-auto px-10 py-5 rounded-full font-black text-sm tracking-[0.15em] uppercase transition-all duration-300 transform hover:scale-[1.02] shadow-xl hover:shadow-2xl bg-[#FFF4D6] text-[#C9232D]"
+                className="group relative flex items-center justify-center gap-3 w-full sm:w-auto px-10 py-5 rounded-full font-black text-sm tracking-[0.15em] uppercase transition-all duration-300 transform hover:scale-[1.02] shadow-xl hover:shadow-2xl bg-[#FFF4D6]"
+                style={{ color: bgColor }}
               >
                 Book Your Truck Now
                 <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />

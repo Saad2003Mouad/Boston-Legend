@@ -65,18 +65,24 @@ const testimonials = [
   },
 ];
 
-export default function TestimonialsCarousel() {
+export default function TestimonialsCarousel({ themeColor }: { themeColor?: string } = {}) {
   const doubled = [...testimonials, ...testimonials];
+  const accentColor = themeColor || "#C9232D";
+  const bgFrom = themeColor ? `${themeColor}22` : "#071B3A";
+  const bgTo = themeColor ? `${themeColor}11` : "#0A2348";
+  const isDark = !themeColor;
 
   return (
     <section
       className="relative w-full overflow-hidden py-16 md:py-32"
-      style={{ background: "linear-gradient(180deg, #071B3A 0%, #0A2348 100%)" }}
+      style={{ background: isDark
+        ? "linear-gradient(180deg, #071B3A 0%, #0A2348 100%)"
+        : `linear-gradient(180deg, ${bgFrom} 0%, ${bgTo} 100%)` }}
     >
       {/* Elegant animated wave from the Packages section */}
       <div className="absolute top-0 left-0 right-0 z-0">
         <MeltingDrip
-          color="#FFF4D6"
+          color={themeColor || "#FFF4D6"}
           height={140}
         />
       </div>
@@ -97,7 +103,7 @@ export default function TestimonialsCarousel() {
             </span>
             <h2
               className="font-display font-black tracking-tight leading-[1.06]"
-              style={{ fontSize: "clamp(2.2rem, 4.5vw, 3.5rem)", color: "#ffffff" }}
+              style={{ fontSize: "clamp(2.2rem, 4.5vw, 3.5rem)", color: isDark ? "#ffffff" : "#071B3A" }}
             >
               What Our Clients{" "}
               <span
@@ -121,7 +127,7 @@ export default function TestimonialsCarousel() {
               ))}
             </div>
             <div className="text-left">
-              <p className="font-black text-lg" style={{ color: "#ffffff" }}>
+              <p className="font-black text-lg" style={{ color: isDark ? "#ffffff" : "#071B3A" }}>
                 {BUSINESS_CONFIG.stats.rating}
                 <span className="text-sm font-medium" style={{ color: "rgba(255,255,255,0.5)" }}>/5.0</span>
               </p>
@@ -135,9 +141,13 @@ export default function TestimonialsCarousel() {
 
       {/* Fade edges */}
       <div className="absolute left-0 top-0 bottom-0 w-20 md:w-32 pointer-events-none z-10"
-        style={{ background: "linear-gradient(90deg, #071B3A, transparent)" }} />
+        style={{ background: isDark
+          ? "linear-gradient(90deg, #071B3A, transparent)"
+          : `linear-gradient(90deg, ${bgFrom.replace('22','dd')}, transparent)` }} />
       <div className="absolute right-0 top-0 bottom-0 w-20 md:w-32 pointer-events-none z-10"
-        style={{ background: "linear-gradient(-90deg, #0A2348, transparent)" }} />
+        style={{ background: isDark
+          ? "linear-gradient(-90deg, #0A2348, transparent)"
+          : `linear-gradient(-90deg, ${bgTo.replace('11','cc')}, transparent)` }} />
 
       {/* Scrolling cards */}
       <div className="flex w-full overflow-hidden">
