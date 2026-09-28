@@ -19,7 +19,7 @@ export async function POST(req: NextRequest) {
     try {
       await prisma.serviceZipCode.upsert({
         where: { zip: area.zip },
-        create: { zip: area.zip, city: area.city, state: "MA", isActive: true },
+        create: { zip: area.zip, city: area.city, isActive: true },
         update: {},
       });
       created++;

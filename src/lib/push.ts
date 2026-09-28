@@ -1,15 +1,30 @@
 import webpush from "web-push";
 import { prisma } from "./prisma";
 
-// Configure web-push
-webpush.setVapidDetails(
-  "mailto:info@americanlegendicecreamtruck.com",
-  process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY || "",
-  process.env.VAPID_PRIVATE_KEY || ""
-);
+// Lazy VAPID init — only configure when actually sending,
+// so the module can be imported at build time without crashing.
+let vapidConfigured = false;
+function ensureVapid() {
+  if (vapidConfigured) return;
+  const pub  = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY;
+  const priv = process.env.VAPID_PRIVATE_KEY;
+  if (!pub || !priv) {
+    // No VAPID keys in env — push notifications simply won't fire.
+    return;
+  }
+  webpush.setVapidDetails(
+    "mailto:info@americanlegendicecreamtruck.com",
+    pub,
+    priv
+  );
+  vapidConfigured = true;
+}
 
 export async function sendPushNotification(userId: string, title: string, body: string, url?: string) {
   try {
+    ensureVapid();
+    if (!vapidConfigured) return false;
+
     const subscriptions = await prisma.pushSubscription.findMany({
       where: { userId }
     });
@@ -20,7 +35,7 @@ export async function sendPushNotification(userId: string, title: string, body: 
       title,
       body,
       url: url || "/admin",
-      icon: "/images/icon.png", // make sure this icon exists
+      icon: "/images/icon.png",
     });
 
     const sendPromises = subscriptions.map(async (sub) => {
@@ -55,13 +70,16 @@ export async function sendPushNotification(userId: string, title: string, body: 
 
 export async function sendPushToRole(role: string, title: string, body: string, url?: string) {
   try {
+    ensureVapid();
+    if (!vapidConfigured) return false;
+
     const users = await prisma.user.findMany({
       where: { role, active: true },
       select: { id: true }
     });
-    
+
     if (!users.length) return false;
-    
+
     const sendPromises = users.map(u => sendPushNotification(u.id, title, body, url));
     await Promise.all(sendPromises);
     return true;
