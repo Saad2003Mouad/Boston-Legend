@@ -14,6 +14,7 @@ export async function PATCH(
     return NextResponse.json({ error: auth.error }, { status: auth.status });
   }
 
+  const body = await req.json();
   const { city, county, state, isActive, notes } = body;
 
   try {

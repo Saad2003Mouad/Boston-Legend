@@ -43,7 +43,7 @@ function AddZipModal({ onAdd, onClose }: { onAdd: (zip: string, city: string, co
     if (!/^\d{5}$/.test(zip)) { setErr("ZIP must be exactly 5 digits"); return; }
     if (!city.trim()) { setErr("City is required"); return; }
     setSaving(true); setErr("");
-    try { await onAdd(zip, city, county, state, notes); onClose(); }
+    try { await onAdd(zip, city, county, notes); onClose(); }
     catch (e: any) { setErr(e.message || "Failed to add ZIP"); }
     finally { setSaving(false); }
   };
