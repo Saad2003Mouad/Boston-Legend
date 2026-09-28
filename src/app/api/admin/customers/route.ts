@@ -28,7 +28,8 @@ export async function GET(req: Request) {
       lastName: c.lastName,
       email: c.email,
       phone: c.phone,
-      company: c.company,
+      referralSource: c.referralSource || "Direct",
+      notes: c.notes,
       createdAt: c.createdAt,
       bookingsCount: c._count.bookings,
       totalSpent: c.bookings.reduce((sum: number, b: any) => sum + (b.quote?.totalAmount ?? 0), 0)

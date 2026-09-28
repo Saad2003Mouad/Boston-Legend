@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
+import { sendPushToRole } from "@/lib/push";
 import { BookingSchema } from "@/lib/validations";
 import { 
   sendBookingPendingEmail, 
@@ -210,6 +211,23 @@ export async function POST(req: Request) {
       }
     } catch (ownerEmailError) {
       console.error("[BOOKING] Owner notification email failed:", ownerEmailError);
+    }
+
+    try {
+      await sendPushToRole(
+        "OWNER", 
+        "New Booking Request", 
+        `Booking ${bookingNumber} - ${firstName} in ${city}`, 
+        `/admin/bookings/${booking.id}`
+      );
+      await sendPushToRole(
+        "ADMIN", 
+        "New Booking Request", 
+        `Booking ${bookingNumber} - ${firstName} in ${city}`, 
+        `/admin/bookings/${booking.id}`
+      );
+    } catch (pushError) {
+      console.error("[BOOKING] Owner push notification failed:", pushError);
     }
 
     return NextResponse.json({ success: true, bookingNumber, status });

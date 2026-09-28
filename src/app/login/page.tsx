@@ -124,20 +124,16 @@ function LoginForm() {
 export default function LoginPage() {
   return (
     <div className="min-h-screen flex flex-col lg:flex-row font-sans">
-      {/* ── Left Panel: Professional Branded Background ── */}
+      {/* ── Left Panel: Desktop Only ── */}
       <div className="hidden lg:flex lg:w-[52%] relative flex-col items-center justify-center overflow-hidden p-12 bg-navy">
-        {/* Subtle dot pattern background */}
         <div 
           className="absolute inset-0 opacity-10 pointer-events-none" 
           style={{ backgroundImage: 'radial-gradient(circle, #ffffff 1px, transparent 1px)', backgroundSize: '32px 32px' }}
         />
-        
-        {/* Abstract glowing accent */}
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-coral/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3 pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gold/10 rounded-full blur-[80px] translate-y-1/3 -translate-x-1/4 pointer-events-none" />
 
         <div className="relative z-10 flex flex-col items-center text-center max-w-md">
-          {/* Logo */}
           <div className="w-32 h-32 mb-10">
             <Image
               src="/images/logo.png"
@@ -158,7 +154,6 @@ export default function LoginPage() {
             Access your dashboard to review bookings, manage occasions, and orchestrate memorable experiences across New England.
           </p>
 
-          {/* Feature pills */}
           <div className="flex flex-wrap gap-3 justify-center">
             {["🍦 Premium Fleet", "📍 Greater Boston", "⚡ Fast Booking"].map(f => (
               <span key={f} className="px-4 py-2 bg-white/5 backdrop-blur-md rounded-full text-white/80 text-xs font-semibold border border-white/10 hover:bg-white/10 transition-colors">
@@ -170,10 +165,14 @@ export default function LoginPage() {
       </div>
 
       {/* ── Right Panel: Form ── */}
-      <div className="w-full lg:flex-1 flex flex-col items-center justify-center p-6 sm:p-10 bg-slate-50 relative flex-grow">
-        {/* Mobile logo */}
-        <div className="lg:hidden flex flex-col items-center mb-8">
-          <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-navy/10 shadow-lg mb-3 p-2 bg-[#FFFDF8]">
+      <div className="w-full lg:flex-1 flex flex-col items-center justify-center min-h-screen px-4 py-10 sm:px-8 bg-slate-50 relative">
+        {/* Mobile: top gradient background */}
+        <div className="lg:hidden absolute top-0 left-0 right-0 h-48 bg-navy pointer-events-none" />
+        <div className="lg:hidden absolute top-0 right-0 w-64 h-64 bg-coral/10 rounded-full blur-3xl pointer-events-none" />
+
+        {/* Mobile logo — shown above card */}
+        <div className="lg:hidden relative z-10 flex flex-col items-center mb-6 mt-2">
+          <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-white/20 shadow-2xl mb-3 p-2 bg-white/10 backdrop-blur-sm">
             <Image
               src="/images/logo.png"
               alt="American Legend Ice Cream Truck"
@@ -182,19 +181,19 @@ export default function LoginPage() {
               className="w-full h-full object-contain"
             />
           </div>
-          <p className="font-display font-black text-xl text-navy">Boston <span className="text-coral">Legend</span></p>
-          <p className="text-sm text-gray-500 font-medium">Ice Cream Truck</p>
+          <p className="font-display font-black text-xl text-white">American <span className="text-coral">Legend</span></p>
+          <p className="text-sm text-white/70 font-medium">Ice Cream Truck</p>
         </div>
 
-        <div className="w-full max-w-sm">
+        <div className="w-full max-w-sm relative z-10">
           {/* Form header */}
-          <div className="mb-8">
+          <div className="mb-6">
             <h2 className="text-2xl font-black text-navy tracking-tight">Sign in to your account</h2>
             <p className="text-slate-500 font-medium text-sm mt-1">Enter your credentials to continue</p>
           </div>
 
           {/* Card */}
-          <div className="bg-[#FFFDF8] rounded-2xl shadow-sm border border-slate-100 p-6">
+          <div className="bg-white rounded-2xl shadow-xl shadow-navy/10 border border-slate-100 p-6">
             <Suspense fallback={<div className="flex justify-center p-6"><Loader2 className="animate-spin text-coral" size={28} /></div>}>
               <LoginForm />
             </Suspense>

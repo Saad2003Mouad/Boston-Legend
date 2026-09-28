@@ -6,8 +6,8 @@ import { Search, RefreshCw, ChevronRight, Mail, Phone, Calendar, Loader2, Users 
 type Customer = {
   id: string; firstName: string; lastName: string;
   email: string; phone: string; createdAt: string;
-  bookingsCount?: number;
-  bookings?: { quote?: { totalAmount: number } }[];
+  referralSource?: string; notes?: string;
+  bookingsCount?: number; totalSpent?: number;
 };
 
 export default function CustomersPage() {
@@ -75,8 +75,8 @@ export default function CustomersPage() {
             <table className="w-full min-w-[600px]">
               <thead>
                 <tr className="border-b border-gray-100/80 bg-white/50">
-                  {["Customer", "Contact", "Bookings", "Joined", ""].map((h, i) => (
-                    <th key={i} className={`px-6 md:px-8 py-5 text-[11px] font-black uppercase tracking-wider text-gray-400 ${i === 4 ? "text-right" : "text-left"}`}>{h}</th>
+                  {["Customer", "Contact", "Source", "Bookings", "Joined", ""].map((h, i) => (
+                    <th key={i} className={`px-6 md:px-8 py-5 text-[11px] font-black uppercase tracking-wider text-gray-400 ${i === 5 ? "text-right" : "text-left"}`}>{h}</th>
                   ))}
                 </tr>
               </thead>
@@ -102,8 +102,19 @@ export default function CustomersPage() {
                       </div>
                     </td>
                     <td className="px-6 md:px-8 py-4">
+                      <div className="flex flex-col gap-1">
+                        <span className="text-xs font-bold text-navy bg-gray-50/80 px-2 py-1 rounded-md border border-gray-100 inline-block w-fit">
+                          {c.referralSource || "Direct"}
+                        </span>
+                        {c.notes && <span className="text-[10px] text-gray-400 truncate max-w-[120px]" title={c.notes}>{c.notes}</span>}
+                      </div>
+                    </td>
+                    <td className="px-6 md:px-8 py-4">
                       <span className="text-sm font-black text-navy">{c.bookingsCount ?? 0}</span>
                       <span className="text-[10px] text-gray-400 ml-1 font-black uppercase tracking-widest">bookings</span>
+                      {c.totalSpent && c.totalSpent > 0 ? (
+                        <div className="text-[11px] font-bold text-emerald-600 mt-1">${c.totalSpent.toFixed(2)}</div>
+                      ) : null}
                     </td>
                     <td className="px-6 md:px-8 py-4">
                       <span className="text-xs font-bold text-gray-500 bg-gray-50 px-2.5 py-1.5 rounded-lg border border-gray-100">

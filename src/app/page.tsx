@@ -74,11 +74,47 @@ export default async function HomePage() {
   let recentPosts: any[] = [];
   try {
     recentPosts = await prisma.post.findMany({
-      where: { status: "PUBLISHED", deletedAt: null },
-      orderBy: { publishedAt: "desc" },
-      take: 3,
+      where: {
+        status: "PUBLISHED",
+        deletedAt: null,
+        title: {
+          in: [
+            "A Refreshing Reset: Ice Cream Trucks at the Job Site",
+            "Why Ice Cream Trucks are Perfect for Family Reunions",
+            "An Ice Cream Truck Surprise That Makes the Moment Legendary"
+          ]
+        }
+      },
       include: { category: true }
     });
+    
+    // Sort them exactly as requested or fallback to whatever the db returned if not found
+    const targetOrder = [
+      "A Refreshing Reset: Ice Cream Trucks at the Job Site",
+      "Why Ice Cream Trucks are Perfect for Family Reunions",
+      "An Ice Cream Truck Surprise That Makes the Moment Legendary"
+    ];
+    
+    recentPosts.sort((a, b) => {
+      const idxA = targetOrder.indexOf(a.title);
+      const idxB = targetOrder.indexOf(b.title);
+      return idxA - idxB;
+    });
+
+    // If for some reason we didn't find all 3, pad with others
+    if (recentPosts.length < 3) {
+      const extraPosts = await prisma.post.findMany({
+        where: {
+          status: "PUBLISHED",
+          deletedAt: null,
+          id: { notIn: recentPosts.map(p => p.id) }
+        },
+        orderBy: { publishedAt: "desc" },
+        take: 3 - recentPosts.length,
+        include: { category: true }
+      });
+      recentPosts = [...recentPosts, ...extraPosts];
+    }
   } catch (err) {
     console.error("[Home] Failed to fetch posts:", err);
   }

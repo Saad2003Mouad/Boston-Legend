@@ -193,11 +193,11 @@ Total Revenue (all time): $${totalRevenue.toFixed(2)}`;
     if (process.env.GOOGLE_AI_KEY) {
       apiUrl = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions";
       apiKey = process.env.GOOGLE_AI_KEY;
-      apiModel = "gemini-3.6-flash";
+      apiModel = "gemini-1.5-flash";
     } else if (process.env.GROQ_API_KEY) {
       apiUrl = "https://api.groq.com/openai/v1/chat/completions";
       apiKey = process.env.GROQ_API_KEY;
-      apiModel = "openai/gpt-oss-20b";
+      apiModel = "llama3-70b-8192";
     } else if (process.env.OPENROUTER_API_KEY) {
       apiUrl = "https://openrouter.ai/api/v1/chat/completions";
       apiKey = process.env.OPENROUTER_API_KEY;
@@ -206,10 +206,6 @@ Total Revenue (all time): $${totalRevenue.toFixed(2)}`;
       apiUrl = "https://api.openai.com/v1/chat/completions";
       apiKey = process.env.OPENAI_API_KEY;
       apiModel = "gpt-4o-mini";
-    } else if (process.env.GROQ_API_KEY) {
-      apiUrl = "https://api.groq.com/openai/v1/chat/completions";
-      apiKey = process.env.GROQ_API_KEY;
-      apiModel = "openai/gpt-oss-20b";
     } else {
       return Response.json({ reply: "No AI service configured." });
     }

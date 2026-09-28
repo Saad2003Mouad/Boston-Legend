@@ -74,20 +74,22 @@ model Package {
 }
 
 model Customer {
-  id           String    @id @default(cuid())
-  firstName    String
-  lastName     String
-  email        String    @unique
-  passwordHash String?
-  phone        String
-  address      String?
-  city         String?
-  zip          String?
-  createdAt    DateTime  @default(now())
-  deletedAt    DateTime?
-  bookings     Booking[]
-  inquiries    Inquiry[]
-  tasks        Task[]
+  id             String    @id @default(cuid())
+  firstName      String
+  lastName       String
+  email          String    @unique
+  passwordHash   String?
+  phone          String
+  address        String?
+  city           String?
+  zip            String?
+  referralSource String?
+  notes          String?
+  createdAt      DateTime  @default(now())
+  deletedAt      DateTime?
+  bookings       Booking[]
+  inquiries      Inquiry[]
+  tasks          Task[]
 }
 
 model Booking {
@@ -310,6 +312,7 @@ model ServiceZipCode {
   id        String   @id @default(cuid())
   zip       String   @unique
   city      String
+  state     String   @default("MA")
   county    String?
   isActive  Boolean  @default(true)
   notes     String?
@@ -409,3 +412,5 @@ model PushSubscription {
   createdAt DateTime @default(now())
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
+
+

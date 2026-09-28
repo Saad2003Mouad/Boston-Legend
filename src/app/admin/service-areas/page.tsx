@@ -11,6 +11,7 @@ type ZipRecord = {
   zip: string;
   city: string;
   county: string | null;
+  state: string;
   isActive: boolean;
   notes: string | null;
   createdAt: string;
@@ -33,6 +34,7 @@ function AddZipModal({ onAdd, onClose }: { onAdd: (zip: string, city: string, co
   const [zip, setZip]       = useState("");
   const [city, setCity]     = useState("");
   const [county, setCounty] = useState("");
+  const [state, setState]   = useState("MA");
   const [notes, setNotes]   = useState("");
   const [saving, setSaving] = useState(false);
   const [err, setErr]       = useState("");
@@ -41,7 +43,7 @@ function AddZipModal({ onAdd, onClose }: { onAdd: (zip: string, city: string, co
     if (!/^\d{5}$/.test(zip)) { setErr("ZIP must be exactly 5 digits"); return; }
     if (!city.trim()) { setErr("City is required"); return; }
     setSaving(true); setErr("");
-    try { await onAdd(zip, city, county, notes); onClose(); }
+    try { await onAdd(zip, city, county, state, notes); onClose(); }
     catch (e: any) { setErr(e.message || "Failed to add ZIP"); }
     finally { setSaving(false); }
   };
@@ -75,6 +77,17 @@ function AddZipModal({ onAdd, onClose }: { onAdd: (zip: string, city: string, co
             <input value={county} onChange={e => setCounty(e.target.value)} placeholder="Suffolk" className={inCls} />
           </div>
           <div>
+            <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 block">State</label>
+            <select value={state} onChange={e => setState(e.target.value)} className={inCls}>
+              <option value="MA">Massachusetts (MA)</option>
+              <option value="CT">Connecticut (CT)</option>
+              <option value="RI">Rhode Island (RI)</option>
+              <option value="NH">New Hampshire (NH)</option>
+              <option value="VT">Vermont (VT)</option>
+              <option value="ME">Maine (ME)</option>
+            </select>
+          </div>
+          <div>
             <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 block">Notes (optional)</label>
             <input value={notes} onChange={e => setNotes(e.target.value)} placeholder="Special notes or conditions" className={inCls} />
           </div>
@@ -94,12 +107,13 @@ function AddZipModal({ onAdd, onClose }: { onAdd: (zip: string, city: string, co
 function EditModal({ record, onSave, onClose }: { record: ZipRecord; onSave: (id: string, data: Partial<ZipRecord>) => Promise<void>; onClose: () => void }) {
   const [city, setCity]     = useState(record.city);
   const [county, setCounty] = useState(record.county || "");
+  const [state, setState]   = useState(record.state || "MA");
   const [notes, setNotes]   = useState(record.notes || "");
   const [saving, setSaving] = useState(false);
 
   const handle = async () => {
     setSaving(true);
-    try { await onSave(record.id, { city, county: county || null, notes: notes || null }); onClose(); }
+    try { await onSave(record.id, { city, county: county || null, state, notes: notes || null }); onClose(); }
     finally { setSaving(false); }
   };
 
@@ -123,6 +137,17 @@ function EditModal({ record, onSave, onClose }: { record: ZipRecord; onSave: (id
           <div>
             <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 block">County</label>
             <input value={county} onChange={e => setCounty(e.target.value)} placeholder="Suffolk" className={inCls} />
+          </div>
+          <div>
+            <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 block">State</label>
+            <select value={state} onChange={e => setState(e.target.value)} className={inCls}>
+              <option value="MA">Massachusetts (MA)</option>
+              <option value="CT">Connecticut (CT)</option>
+              <option value="RI">Rhode Island (RI)</option>
+              <option value="NH">New Hampshire (NH)</option>
+              <option value="VT">Vermont (VT)</option>
+              <option value="ME">Maine (ME)</option>
+            </select>
           </div>
           <div>
             <label className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 block">Notes</label>
@@ -437,6 +462,7 @@ export default function ServiceAreasPage() {
                 <th className="px-6 py-5 text-left text-xs font-bold uppercase tracking-wider text-gray-500">ZIP</th>
                 <th className="px-6 py-5 text-left text-xs font-bold uppercase tracking-wider text-gray-500">City / Neighborhood</th>
                 <th className="px-6 py-5 text-left text-xs font-bold uppercase tracking-wider text-gray-500 hidden md:table-cell">County</th>
+                <th className="px-6 py-5 text-left text-xs font-bold uppercase tracking-wider text-gray-500 hidden sm:table-cell">State</th>
                 <th className="px-6 py-5 text-left text-xs font-bold uppercase tracking-wider text-gray-500">Status</th>
                 <th className="px-6 py-5 text-left text-xs font-bold uppercase tracking-wider text-gray-500 hidden lg:table-cell">Notes</th>
                 <th className="px-6 py-5 text-right text-xs font-bold uppercase tracking-wider text-gray-500">Actions</th>
@@ -444,10 +470,10 @@ export default function ServiceAreasPage() {
             </thead>
             <tbody className="divide-y divide-gray-50 bg-white/50">
               {loading ? (
-                <tr><td colSpan={7} className="text-center py-16"><Loader2 className="w-8 h-8 animate-spin mx-auto text-coral" /></td></tr>
+                <tr><td colSpan={8} className="text-center py-16"><Loader2 className="w-8 h-8 animate-spin mx-auto text-coral" /></td></tr>
               ) : filtered.length === 0 ? (
                 <tr>
-                  <td colSpan={7} className="text-center py-20">
+                  <td colSpan={8} className="text-center py-20">
                     <div className="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mx-auto mb-4 border border-gray-100">
                       <MapPin className="w-8 h-8 text-gray-300" />
                     </div>
@@ -469,6 +495,9 @@ export default function ServiceAreasPage() {
                   </td>
                   <td className="px-6 py-4 hidden md:table-cell">
                     <span className="text-xs font-semibold text-gray-500">{r.county || "—"}</span>
+                  </td>
+                  <td className="px-6 py-4 hidden sm:table-cell">
+                    <span className="text-xs font-bold text-gray-600 bg-gray-100 px-2 py-1 rounded-md">{r.state || "MA"}</span>
                   </td>
                   <td className="px-6 py-4">
                     <button onClick={() => handleToggle(r)} title={r.isActive ? "Click to deactivate" : "Click to activate"} className="flex items-center gap-2 group">

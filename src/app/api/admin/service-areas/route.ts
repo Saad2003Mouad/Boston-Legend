@@ -30,7 +30,7 @@ export async function POST(req: NextRequest) {
   }
 
   const body = await req.json();
-  const { zip, city, county, isActive, notes } = body;
+  const { zip, city, county, state, isActive, notes } = body;
 
   if (!zip || !city) {
     return NextResponse.json({ error: "zip and city are required" }, { status: 400 });
@@ -46,6 +46,7 @@ export async function POST(req: NextRequest) {
         zip: zip.trim(),
         city: city.trim(),
         county: county?.trim() || null,
+        state: state?.trim() || "MA",
         isActive: isActive !== false,
         notes: notes?.trim() || null,
       },

@@ -14,8 +14,7 @@ export async function PATCH(
     return NextResponse.json({ error: auth.error }, { status: auth.status });
   }
 
-  const body = await req.json();
-  const { city, county, isActive, notes } = body;
+  const { city, county, state, isActive, notes } = body;
 
   try {
     const record = await prisma.serviceZipCode.update({
@@ -23,6 +22,7 @@ export async function PATCH(
       data: {
         ...(city !== undefined && { city: city.trim() }),
         ...(county !== undefined && { county: county?.trim() || null }),
+        ...(state !== undefined && { state: state?.trim() || "MA" }),
         ...(isActive !== undefined && { isActive }),
         ...(notes !== undefined && { notes: notes?.trim() || null }),
       },
