@@ -12,24 +12,27 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: auth.error }, { status: auth.status });
   }
 
-  let created = 0;
-  let skipped = 0;
+  try {
+    const records = SERVICE_AREAS.map(area => ({
+      zip: area.zip,
+      city: area.city,
+      county: area.county || null,
+      isActive: true,
+    }));
 
-  for (const area of SERVICE_AREAS) {
-    try {
-      await prisma.serviceZipCode.upsert({
-        where: { zip: area.zip },
-        create: { zip: area.zip, city: area.city, isActive: true },
-        update: {},
-      });
-      created++;
-    } catch {
-      skipped++;
-    }
+    const result = await prisma.serviceZipCode.createMany({
+      data: records,
+      skipDuplicates: true, // Don't throw if zip already exists
+    });
+
+    return NextResponse.json({
+      message: `Seed complete. ${result.count} new ZIP codes added. (Duplicates skipped)`,
+      total: SERVICE_AREAS.length,
+    });
+  } catch (error: any) {
+    return NextResponse.json({
+      error: "Failed to seed zip codes",
+      details: error.message
+    }, { status: 500 });
   }
-
-  return NextResponse.json({
-    message: `Seed complete. ${created} ZIP codes upserted, ${skipped} errors.`,
-    total: SERVICE_AREAS.length,
-  });
 }

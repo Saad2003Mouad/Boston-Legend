@@ -24,6 +24,7 @@ export default function robots(): MetadataRoute.Robots {
     sitemap: [
       `${BUSINESS_CONFIG.domain}/sitemap.xml`,
       `${BUSINESS_CONFIG.domain}/image-sitemap.xml`,
+      `${BUSINESS_CONFIG.domain}/llms.txt`,
     ],
   };
 }

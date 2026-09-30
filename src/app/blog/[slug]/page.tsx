@@ -9,7 +9,7 @@ import { Metadata } from "next";
 import MeltingDrip from "@/components/shared/MeltingDrip";
 import FinalCTA from "@/components/home/FinalCTA";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;

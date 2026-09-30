@@ -56,7 +56,7 @@ function AddZipModal({ onAdd, onClose }: { onAdd: (zip: string, city: string, co
         <div className="px-6 py-5 border-b border-gray-100 flex items-center justify-between">
           <div>
             <h2 className="text-xl font-black text-navy">Add ZIP Code</h2>
-            <p className="text-xs font-semibold text-gray-400 mt-1 uppercase tracking-wider">Add a Massachusetts service area ZIP</p>
+            <p className="text-xs font-semibold text-gray-400 mt-1 uppercase tracking-wider">Add a New England service area ZIP</p>
           </div>
           <button onClick={onClose} className="p-2 rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors">
             <X className="w-4 h-4 text-gray-400" />
@@ -319,7 +319,7 @@ export default function ServiceAreasPage() {
   };
 
   const handleSeed = async () => {
-    if (!confirm("This will import all ZIP codes from the default Massachusetts list. Existing ZIPs will not be overwritten. Continue?")) return;
+    if (!confirm("This will import all ZIP codes from the default New England list. Existing ZIPs will not be overwritten. Continue?")) return;
     setSeeding(true);
     try {
       const res = await fetch("/api/admin/service-areas/seed", { method: "POST" });
@@ -367,12 +367,12 @@ export default function ServiceAreasPage() {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-6 bg-white/70 backdrop-blur-xl rounded-3xl border border-gray-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
         <div>
           <h1 className="text-3xl font-black text-navy tracking-tight">Service Areas</h1>
-          <p className="text-sm font-semibold text-gray-400 mt-1 uppercase tracking-wider">Manage Massachusetts ZIP codes</p>
+          <p className="text-sm font-semibold text-gray-400 mt-1 uppercase tracking-wider">Manage New England ZIP codes</p>
         </div>
         <div className="flex items-center gap-3 flex-wrap">
           <button onClick={handleSeed} disabled={seeding} className="flex items-center gap-2 p-3 bg-white border border-gray-100 rounded-xl text-gray-500 hover:text-navy hover:border-gray-200 shadow-sm transition-all hover:-translate-y-0.5 disabled:opacity-50">
             {seeding ? <Loader2 className="w-4 h-4 animate-spin" /> : <Upload className="w-4 h-4" />}
-            {seeding ? "Seeding…" : "Seed MA Defaults"}
+            {seeding ? "Seeding…" : "Seed New England Defaults"}
           </button>
           <button onClick={exportCsv} className="flex items-center gap-2 p-3 bg-white border border-gray-100 rounded-xl text-gray-500 hover:text-navy hover:border-gray-200 shadow-sm transition-all hover:-translate-y-0.5">
             <Download className="w-4 h-4" /> Export CSV
@@ -478,7 +478,7 @@ export default function ServiceAreasPage() {
                       <MapPin className="w-8 h-8 text-gray-300" />
                     </div>
                     <p className="font-black text-gray-500 text-lg">No ZIP codes found</p>
-                    <p className="text-sm text-gray-400 font-medium mt-1">Click "Seed MA Defaults" to import the default Massachusetts list</p>
+                    <p className="text-sm text-gray-400 font-medium mt-1">Click "Seed New England Defaults" to import the default New England list</p>
                   </td>
                 </tr>
               ) : filtered.map(r => (
@@ -557,7 +557,7 @@ export default function ServiceAreasPage() {
           <div>
             <p className="text-sm font-black text-blue-900">Coverage Note</p>
             <p className="text-xs font-medium text-blue-700 mt-1 leading-relaxed">
-              Default seed covers <strong>Greater Boston + surrounding MA cities</strong> (~120 ZIPs). Add more manually or import a full MA list.
+              Default seed covers <strong>All New England ZIPs</strong> (2313 ZIPs). Add more manually if needed.
             </p>
           </div>
         </div>

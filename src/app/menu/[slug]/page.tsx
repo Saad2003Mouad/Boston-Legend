@@ -8,7 +8,7 @@ import FinalCTA from "@/components/home/FinalCTA";
 import BrandCarousel from "@/components/shared/BrandCarousel";
 import { prisma } from "@/lib/prisma";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
 interface PageProps {
   params: Promise<{

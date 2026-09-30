@@ -35,8 +35,9 @@ export async function GET(req: Request) {
       totalSpent: c.bookings.reduce((sum: number, b: any) => sum + (b.quote?.totalAmount ?? 0), 0)
     }));
 
-    return NextResponse.json(formatted);
+    return NextResponse.json({ success: true, data: formatted });
   } catch (error) {
-    return NextResponse.json({ error: "Failed to fetch customers" }, { status: 500 });
+    console.error("[customers GET]", error);
+    return NextResponse.json({ success: false, error: "Failed to fetch customers" }, { status: 500 });
   }
 }

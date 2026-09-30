@@ -223,7 +223,7 @@ Our pricing and details are dynamic from the database, but for your general know
    - Dynasty: 200 servings, 90 Min duration, base price $950. Extra guests $5/person.
 
 2. Premium Sprinter Vans (Sprinter/Dodge Van):
-   - Starter Party: 30 servings, 40 Min duration, base price $190. Extra guests $5/person.
+   - Starter Party: 30 servings, 40 Min duration, base price $250. Extra guests $5/person.
    - Family Event: 50 servings, 40 Min duration, base price $275. Extra guests $5/person.
    - Celebration Pack: 75 servings, 40 Min duration, base price $365. Extra guests $5/person.
    - Silver Special: 100 servings, 40 Min duration, base price $450. Extra guests $5/person.

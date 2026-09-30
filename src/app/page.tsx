@@ -19,7 +19,7 @@ export const metadata: Metadata = constructMetadata({
   description: "New England's premier ice cream truck catering service. Bringing iconic frozen treats, artisan novelties, and legendary sweet celebrations to birthdays, corporate events, and weddings across all 6 states.",
 });
 
-export const dynamic = "force-dynamic";
+export const revalidate = 3600; // Cache page for 1 hour for lightning fast loads
 
 export default async function HomePage() {
   let dbPackages: any[] = [];
