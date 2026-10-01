@@ -29,8 +29,8 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-export function getAdminRecipients() {
-  const recipients = new Set([SENDER_EMAIL]);
+export function getAdminRecipients(): string[] {
+  const recipients = new Set<string>([SENDER_EMAIL]);
   if (process.env.ADMIN_EMAIL) {
     recipients.add(process.env.ADMIN_EMAIL);
   }
@@ -589,25 +589,6 @@ export async function sendOwnerEventReminderEmail(booking: any) {
   return sendEmail({ to, subject: `Upcoming Event Tomorrow: ${booking.customer?.firstName} ${booking.customer?.lastName}`, html });
 }
 
-// ─── 15. AI CONCIERGE / HUMAN SUPPORT ESCALATION ─────────────────
-export async function sendChatEscalationOwnerEmail(inquiry: { id: string; name: string; email: string; phone?: string | null; notes?: string | null; pageUrl?: string | null; createdAt?: Date | string; }) {
-  const inquiryUrl = `${SITE_URL}/admin/inquiries`;
-
-  const html = `
-    <h2 style="color:${BRAND_PRIMARY};margin:0 0 12px;font-size:20px;font-weight:700;">Live Support Request</h2>
-    <p style="color:${BRAND_TEXT_MUTED};font-size:14px;margin:0 0 16px;">A visitor requested human support via the website chat widget:</p>
-    <table width="100%" cellpadding="8" cellspacing="0" style="font-size:14px;border-collapse:collapse;border:1px solid ${BRAND_BORDER};background:#F8FAFC;margin-bottom:16px;">
-      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;width:35%;border-bottom:1px solid ${BRAND_BORDER};">Name</td><td style="border-bottom:1px solid ${BRAND_BORDER};font-weight:700;">${inquiry.name}</td></tr>
-      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;border-bottom:1px solid ${BRAND_BORDER};">Email</td><td style="border-bottom:1px solid ${BRAND_BORDER};"><a href="mailto:${inquiry.email}">${inquiry.email}</a></td></tr>
-      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;border-bottom:1px solid ${BRAND_BORDER};">Phone</td><td style="border-bottom:1px solid ${BRAND_BORDER};">${inquiry.phone || 'Not provided'}</td></tr>
-    </table>
-    ${inquiry.notes ? `<div style="background:#FAFBFD;border:1px solid ${BRAND_BORDER};border-radius:6px;padding:12px 14px;margin-bottom:16px;"><p style="margin:0 0 4px;font-size:11px;font-weight:700;text-transform:uppercase;color:${BRAND_TEXT_MUTED};">Chat Excerpt</p><p style="margin:0;font-size:13px;color:${BRAND_PRIMARY};white-space:pre-wrap;">${inquiry.notes}</p></div>` : ''}
-    <div style="text-align:center;">
-      <a href="${inquiryUrl}" class="btn" style="display:inline-block;background:${BRAND_PRIMARY};color:#FFFFFF;padding:12px 28px;border-radius:6px;text-decoration:none;font-weight:600;font-size:13px;">Open Admin Inbox &rarr;</a>
-    </div>
-  `;
-  return sendEmail({ to: SENDER_EMAIL, subject: `Customer Support Request: ${inquiry.name}`, html, title: "Support Requested", replyTo: inquiry.email });
-}
 
 // ─── 16. GOOGLE REVIEW REQUEST ───────────────────────────────────
 const GOOGLE_REVIEW_URL = "https://g.page/r/CWDhxc3sMbFAEAI/review";
