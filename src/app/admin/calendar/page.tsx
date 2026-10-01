@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight, Loader2, Plus, X, Calendar as CalendarIcon, 
 import Link from "next/link";
 import { getOutlookWebCalendarUrl } from "@/lib/ics";
 
-export type CalEvent = {
+type CalEvent = {
   id: string;
   bookingNumber: string;
   startTime: string;
@@ -21,9 +21,9 @@ export type CalEvent = {
   totalAmount?: number;
 };
 
-export type DisplayStatus = "CONFIRMED" | "PENDING_REVIEW" | "CANCELLED" | "MODIFIED" | "COMPLETED";
+type DisplayStatus = "CONFIRMED" | "PENDING_REVIEW" | "CANCELLED" | "MODIFIED" | "COMPLETED";
 
-export function getEffectiveStatus(ev: CalEvent): DisplayStatus {
+function getEffectiveStatus(ev: CalEvent): DisplayStatus {
   // 1. Cancelled or Rejected -> Red
   if (ev.status === "CANCELLED" || ev.status === "REJECTED") {
     return "CANCELLED";
