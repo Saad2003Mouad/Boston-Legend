@@ -62,7 +62,7 @@ export async function POST(req: NextRequest, { params }: { params: Promise<{ id:
         metadataJson: JSON.stringify({
           sentAt: new Date().toISOString(),
           customerEmail: booking.customer.email,
-          triggeredBy: user.name || user.email,
+          triggeredBy: user.email,
         }),
         actorId: user.id,
       },
