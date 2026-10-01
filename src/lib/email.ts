@@ -2,21 +2,26 @@ import nodemailer from 'nodemailer';
 import { prisma } from "./prisma";
 import { BUSINESS_CONFIG } from "./config";
 
-const BRAND_NAVY  = "#1A1009";
-const BRAND_CORAL = "#FF6B6B";
-// Hardcode the site URL to the domain so the logo always loads in emails
-const SITE_URL    = "https://bostonlegendicecream.com";
-const LOGO_URL    = `${SITE_URL}/images/logo.png`; 
+// ─── BRAND CONSTANTS & DESIGN SYSTEM ──────────────────────────────
+const BRAND_PRIMARY   = "#1E293B"; // Slate navy - calm, professional
+const BRAND_ACCENT    = "#EA580C"; // Warm terracotta / burnt orange - subtle & premium
+const BRAND_BG        = "#F8FAFC"; // Soft neutral slate background
+const BRAND_CARD_BG   = "#FFFFFF";
+const BRAND_BORDER    = "#E2E8F0";
+const BRAND_TEXT_MAIN = "#0F172A";
+const BRAND_TEXT_MUTED= "#64748B";
 
-const SENDER_EMAIL = 'info@bostonlegendicecream.com';
-const ADMIN_EMAIL  = process.env.ADMIN_EMAIL || 'info@bostonlegendicecream.com';
-const REPLY_TO     = 'info@bostonlegendicecream.com';
+const SITE_URL    = BUSINESS_CONFIG.domain || "https://americanlegendicecreamtruck.com";
+const LOGO_URL    = `${SITE_URL}/images/logo_new.png`; 
+const SENDER_EMAIL = BUSINESS_CONFIG.contact.email || 'info@americanlegendicecreamtruck.com';
+const ADMIN_EMAIL  = process.env.ADMIN_EMAIL || SENDER_EMAIL;
+const REPLY_TO     = SENDER_EMAIL;
 
 const smtpPort = parseInt(process.env.SMTP_PORT || "587", 10);
 const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST || "smtp-relay.gmail.com",
+  host: process.env.SMTP_HOST || "smtp.office365.com",
   port: smtpPort,
-  secure: false, // STARTTLS (works for port 587)
+  secure: false, // STARTTLS for port 587
   requireTLS: true,
   auth: {
     user: process.env.SMTP_USER,
@@ -25,14 +30,14 @@ const transporter = nodemailer.createTransport({
 });
 
 export function getAdminRecipients() {
-  const recipients = new Set(['info@bostonlegendicecream.com']);
+  const recipients = new Set([SENDER_EMAIL]);
   if (process.env.ADMIN_EMAIL) {
     recipients.add(process.env.ADMIN_EMAIL);
   }
   return Array.from(recipients);
 }
 
-// ─── BASE TEMPLATE ───────────────────────────────────────────────
+// ─── REFINED, CALM BASE TEMPLATE (NO CLUTTER) ───────────────────────
 function baseTemplate(content: string, title: string) {
   return `<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -48,46 +53,53 @@ function baseTemplate(content: string, title: string) {
     a { color: inherit; }
     @media only screen and (max-width: 600px) {
       .wrapper  { padding: 12px 8px !important; }
-      .card     { border-radius: 16px !important; }
+      .card     { border-radius: 12px !important; }
       .hdr      { padding: 24px 16px !important; }
       .body     { padding: 20px 16px !important; }
-      .ftr      { padding: 16px !important; }
+      .ftr      { padding: 20px 16px !important; }
       h2.title  { font-size: 20px !important; }
       .otp-code { font-size: 28px !important; letter-spacing: 6px !important; }
       .btn      { padding: 14px 20px !important; font-size: 14px !important; }
       .data-table td { font-size: 13px !important; padding: 8px 6px !important; }
-      .total-row td  { font-size: 16px !important; }
     }
   </style>
 </head>
-<body style="margin:0;padding:0;background:#F4F2EE;">
-  <table role="presentation" cellpadding="0" cellspacing="0" width="100%" class="wrapper" style="padding:24px 12px;background:#F4F2EE;">
+<body style="margin:0;padding:0;background:${BRAND_BG};-webkit-font-smoothing:antialiased;">
+  <table role="presentation" cellpadding="0" cellspacing="0" width="100%" class="wrapper" style="padding:32px 16px;background:${BRAND_BG};">
     <tr><td align="center">
 
-      <!-- Card -->
-      <table role="presentation" cellpadding="0" cellspacing="0" width="100%" class="card" style="max-width:580px;width:100%;background:#ffffff;border-radius:20px;overflow:hidden;box-shadow:0 2px 16px rgba(10,17,40,0.08);">
+      <!-- Card Container -->
+      <table role="presentation" cellpadding="0" cellspacing="0" width="100%" class="card" style="max-width:560px;width:100%;background:${BRAND_CARD_BG};border-radius:16px;border:1px solid ${BRAND_BORDER};overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.04);">
 
         <!-- Header -->
         <tr>
-          <td class="hdr" style="background:#ffffff;padding:32px 24px 24px;text-align:center;border-bottom:3px solid ${BRAND_CORAL};">
-            <img src="${LOGO_URL}" alt="American Legend Ice Cream Truck" width="80" height="80" style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin:0 auto 12px;border:3px solid #F4F2EE;"/>
-            <p style="margin:0;font-size:13px;font-weight:700;color:#9CA3AF;letter-spacing:2px;text-transform:uppercase;">American Legend Ice Cream Truck</p>
+          <td class="hdr" style="padding:28px 32px 20px;text-align:center;border-bottom:1px solid ${BRAND_BORDER};">
+            <a href="${SITE_URL}" target="_blank" style="text-decoration:none;display:inline-block;">
+              <img src="${LOGO_URL}" alt="${BUSINESS_CONFIG.name}" width="64" height="64" style="width:64px;height:64px;border-radius:50%;object-fit:cover;margin:0 auto 10px;border:1px solid ${BRAND_BORDER};"/>
+              <p style="margin:0;font-size:12px;font-weight:700;color:${BRAND_TEXT_MUTED};letter-spacing:1.5px;text-transform:uppercase;">${BUSINESS_CONFIG.name}</p>
+            </a>
           </td>
         </tr>
 
-        <!-- Body -->
+        <!-- Main Body -->
         <tr>
-          <td class="body" style="padding:28px 28px 20px;">
+          <td class="body" style="padding:32px 32px 24px;color:${BRAND_TEXT_MAIN};font-size:15px;line-height:1.6;">
             ${content}
           </td>
         </tr>
 
         <!-- Footer -->
         <tr>
-          <td class="ftr" style="background:#F8F7F5;padding:20px 28px;text-align:center;border-top:1px solid #EDE9E4;">
-            <p style="margin:0 0 4px;font-size:13px;font-weight:700;color:${BRAND_NAVY};">American Legend Ice Cream Truck</p>
-            <p style="margin:0 0 4px;font-size:12px;color:#9CA3AF;">Greater Boston, MA &middot; <a href="tel:617-999-3803" style="color:${BRAND_CORAL};font-weight:600;text-decoration:none;">617-999-3803</a></p>
-            <p style="margin:0;font-size:11px;color:#C4BFB8;">&copy; ${new Date().getFullYear()} American Legend Ice Cream Truck LLC. All rights reserved.</p>
+          <td class="ftr" style="background:#FAFBFD;padding:24px 32px;text-align:center;border-top:1px solid ${BRAND_BORDER};">
+            <p style="margin:0 0 6px;font-size:13px;font-weight:700;color:${BRAND_PRIMARY};">${BUSINESS_CONFIG.legalName}</p>
+            <p style="margin:0 0 6px;font-size:12px;color:${BRAND_TEXT_MUTED};">
+              ${BUSINESS_CONFIG.description.split('.')[0]}. &middot; 
+              <a href="tel:${BUSINESS_CONFIG.contact.phone1Formatted}" style="color:${BRAND_ACCENT};font-weight:600;text-decoration:none;">${BUSINESS_CONFIG.contact.phone1}</a>
+            </p>
+            <p style="margin:0 0 8px;font-size:12px;color:${BRAND_TEXT_MUTED};">
+              ${BUSINESS_CONFIG.address.display}
+            </p>
+            <p style="margin:0;font-size:11px;color:#94A3B8;">&copy; ${new Date().getFullYear()} ${BUSINESS_CONFIG.legalName}. All rights reserved.</p>
           </td>
         </tr>
 
@@ -114,7 +126,7 @@ export async function sendEmail({ to, subject, html, title, replyTo }: { to: str
   for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
     try {
       const info = await transporter.sendMail({
-        from: `"American Legend Ice Cream Truck" <${SENDER_EMAIL}>`,
+        from: `"${BUSINESS_CONFIG.name}" <${SENDER_EMAIL}>`,
         replyTo: replyTo || REPLY_TO,
         to: recipients,
         subject: subject,
@@ -134,9 +146,7 @@ export async function sendEmail({ to, subject, html, title, replyTo }: { to: str
   return false;
 }
 
-// ─── OTP EMAIL ───────────────────────────────────────────────────
-// Unified OTP email — used by booking, portal login, forgot password,
-// staff invite, and sensitive action flows. Previously duplicated in otp.ts.
+// ─── 1. OTP VERIFICATION EMAIL ──────────────────────────────────
 export async function sendOtpEmail(
   to: string,
   otp: string,
@@ -148,7 +158,7 @@ export async function sendOtpEmail(
     PORTAL: "Booking Portal Access",
     PASSWORD_RESET: "Password Reset",
     EMAIL_CHANGE: "Email Change Verification",
-    SETTINGS: "Sensitive Action Verification",
+    SETTINGS: "Security Verification",
     STAFF_INVITE: "Staff Account Setup",
     GENERAL: "Verification",
   };
@@ -156,132 +166,141 @@ export async function sendOtpEmail(
   const TTL = 10;
 
   const html = `
-    <h2 style="margin:0 0 16px;color:${BRAND_NAVY};font-size:26px;font-weight:900;">Hey ${firstName ?? "there"}! 👋</h2>
-    <p style="margin:0 0 32px;color:#4B5563;font-size:16px;line-height:1.6;font-weight:600;">
-      Use the code below to complete your <strong>${label}</strong>.
+    <h2 style="margin:0 0 12px;color:${BRAND_PRIMARY};font-size:22px;font-weight:700;">Hello ${firstName ?? "there"},</h2>
+    <p style="margin:0 0 24px;color:${BRAND_TEXT_MUTED};font-size:15px;line-height:1.5;">
+      Please use the single-use verification code below to complete your <strong>${label}</strong>:
     </p>
 
-    <div style="background:#F9FAFB;border:1px solid #E5E7EB;border-radius:20px;padding:24px;text-align:center;margin-bottom:32px;">
-      <p style="margin:0 0 8px;color:#9CA3AF;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:2px;">${label} Code</p>
-      <p style="margin:0 0 8px;font-size:32px;font-weight:900;letter-spacing:12px;color:${BRAND_NAVY};font-family:monospace;">${otp}</p>
-      <p style="margin:0;color:#9CA3AF;font-size:12px;font-weight:700;">⏱ Expires in ${TTL} minutes</p>
+    <div style="background:#F8FAFC;border:1px solid ${BRAND_BORDER};border-radius:12px;padding:24px;text-align:center;margin-bottom:24px;">
+      <p style="margin:0 0 6px;color:${BRAND_TEXT_MUTED};font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;">${label} Code</p>
+      <p style="margin:0 0 6px;font-size:32px;font-weight:800;letter-spacing:10px;color:${BRAND_PRIMARY};font-family:ui-monospace,SFMono-Regular,Consolas,monospace;">${otp}</p>
+      <p style="margin:0;color:#94A3B8;font-size:12px;">Expires in ${TTL} minutes</p>
     </div>
 
-    <div style="background:#F8F9FC;border-radius:12px;padding:20px;">
-      <p style="margin:0;color:#9CA3AF;font-size:13px;line-height:1.6;font-weight:500;">
-        🔒 <strong>Security notice:</strong> We will never ask for this code by phone or chat. If you didn't request this, you can safely ignore this email.
+    <div style="background:#FAFBFD;border-left:3px solid #CBD5E1;border-radius:4px;padding:12px 16px;">
+      <p style="margin:0;color:${BRAND_TEXT_MUTED};font-size:13px;line-height:1.5;">
+        <strong>Security note:</strong> American Legend will never ask for this code by phone or social media. If you did not make this request, you can safely ignore this email.
       </p>
     </div>
   `;
 
   return sendEmail({
     to,
-    subject: `${otp} — Your American Legend Ice Cream Truck ${label} Code`,
+    subject: `${otp} — Your ${label} Code | ${BUSINESS_CONFIG.name}`,
     html,
-    title: `American Legend Ice Cream Truck ${label}`,
+    title: `${label} Code`,
   });
 }
 
-// ─── WELCOME EMAIL ────────────────────────────────────────────
+// ─── 2. WELCOME EMAIL ───────────────────────────────────────────
 export async function sendWelcomeEmail(to: string, firstName: string) {
   const html = `
-    <h2 class="title" style="margin:0 0 8px;color:${BRAND_NAVY};font-size:24px;font-weight:900;">Welcome, ${firstName}! 🍦</h2>
-    <p style="margin:0 0 20px;color:#6B7280;font-size:15px;line-height:1.6;">Greater Boston's premium ice cream truck service.</p>
-
-    <div style="background:#F9FAFB;border-radius:12px;padding:16px 20px;margin:0 0 20px;">
-      <p style="margin:0;color:${BRAND_NAVY};font-size:14px;font-weight:700;">✅ Your email is verified. Your account is now active.</p>
-    </div>
-
-    <p style="color:#6B7280;font-size:14px;line-height:1.7;margin:0 0 24px;">
-      Thank you for joining American Legend Ice Cream Truck! Browse our packages and book your sweet event today.
+    <h2 style="margin:0 0 12px;color:${BRAND_PRIMARY};font-size:22px;font-weight:700;">Welcome, ${firstName}</h2>
+    <p style="margin:0 0 20px;color:${BRAND_TEXT_MUTED};font-size:15px;line-height:1.6;">
+      Thank you for registering with <strong>${BUSINESS_CONFIG.name}</strong>. Your account is verified and ready.
     </p>
 
-    <table cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:20px;">
-      <tr><td align="center">
-        <a href="${SITE_URL}/packages" class="btn" style="display:inline-block;background:${BRAND_CORAL};color:#ffffff;padding:16px 36px;border-radius:50px;text-decoration:none;font-weight:800;font-size:15px;">Browse Our Packages →</a>
-      </td></tr>
-    </table>
+    <div style="background:#F0FDF4;border:1px solid #BBF7D0;border-radius:8px;padding:14px 18px;margin-bottom:24px;">
+      <p style="margin:0;color:#166534;font-size:14px;font-weight:600;">✓ Email successfully confirmed. You can now manage your bookings online.</p>
+    </div>
 
-    <p style="text-align:center;font-size:13px;color:#9CA3AF;margin:0;">Questions? <a href="tel:617-999-3803" style="color:${BRAND_CORAL};font-weight:700;text-decoration:none;">617-999-3803</a></p>
+    <p style="color:${BRAND_TEXT_MUTED};font-size:14px;line-height:1.6;margin:0 0 24px;">
+      Planning an upcoming party, corporate event, or family celebration? View our packages and reserve your ice cream truck in just a few minutes.
+    </p>
+
+    <div style="text-align:center;margin-bottom:28px;">
+      <a href="${SITE_URL}/packages" class="btn" style="display:inline-block;background:${BRAND_PRIMARY};color:#FFFFFF;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;">Browse Packages &rarr;</a>
+    </div>
+
+    <p style="text-align:center;font-size:13px;color:${BRAND_TEXT_MUTED};margin:0;">
+      Questions or custom inquiries? Call <a href="tel:${BUSINESS_CONFIG.contact.phone1Formatted}" style="color:${BRAND_ACCENT};font-weight:600;text-decoration:none;">${BUSINESS_CONFIG.contact.phone1}</a>.
+    </p>
   `;
-  return sendEmail({ to, subject: "Welcome to American Legend Ice Cream Truck! 🍦", html, title: "Welcome to American Legend Ice Cream Truck" });
+  return sendEmail({ to, subject: `Welcome to ${BUSINESS_CONFIG.name}`, html, title: "Welcome" });
 }
 
-// ─── FORGOT PASSWORD EMAIL ────────────────────────────────────
+// ─── 3. PASSWORD RESET EMAIL ───────────────────────────────────
 export async function sendForgotPasswordEmail(to: string, otp: string, firstName?: string) {
   const TTL = 10;
   const html = `
-    <div style="text-align:center;padding:24px 0 20px;">
-      <div style="font-size:32px;line-height:1;margin-bottom:16px;">🔐</div>
-      <h2 style="margin:0 0 8px;color:${BRAND_NAVY};font-size:26px;font-weight:900;">Password Reset Request</h2>
-      <p style="margin:0;color:#6B7280;font-size:15px;font-weight:600;">Hi ${firstName ?? "there"} — we received a request to reset your password.</p>
+    <h2 style="margin:0 0 12px;color:${BRAND_PRIMARY};font-size:22px;font-weight:700;">Password Reset Request</h2>
+    <p style="margin:0 0 20px;color:${BRAND_TEXT_MUTED};font-size:15px;line-height:1.5;">
+      Hello ${firstName ?? "there"}, we received a request to reset your password. Use the verification code below:
+    </p>
+
+    <div style="background:#F8FAFC;border:1px solid ${BRAND_BORDER};border-radius:12px;padding:24px;text-align:center;margin:20px 0;">
+      <p style="margin:0 0 6px;color:${BRAND_TEXT_MUTED};font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;">Reset Code</p>
+      <p style="margin:0 0 6px;font-size:32px;font-weight:800;letter-spacing:10px;color:${BRAND_PRIMARY};font-family:ui-monospace,SFMono-Regular,Consolas,monospace;">${otp}</p>
+      <p style="margin:0;color:#94A3B8;font-size:12px;">Expires in ${TTL} minutes</p>
     </div>
 
-    <div style="background:#F9FAFB;border:1px solid #E5E7EB;border-radius:20px;padding:24px;text-align:center;margin:24px 0;">
-      <p style="margin:0 0 8px;color:#9CA3AF;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:2px;">Reset Code</p>
-      <p style="margin:0 0 8px;font-size:32px;font-weight:900;letter-spacing:12px;color:${BRAND_NAVY};font-family:monospace;">${otp}</p>
-      <p style="margin:0;color:#9CA3AF;font-size:12px;font-weight:700;">⏱ Expires in ${TTL} minutes</p>
-    </div>
-
-    <div style="background:#FFF5F5;border:1px solid #FFBABA;border-radius:12px;padding:16px 20px;margin-bottom:24px;">
-      <p style="margin:0;color:${BRAND_CORAL};font-size:13px;font-weight:700;">
-        🔒 If you did NOT request a password reset, ignore this email. Your password will not change.
+    <div style="background:#FEF2F2;border:1px solid #FECACA;border-radius:8px;padding:12px 16px;margin-bottom:20px;">
+      <p style="margin:0;color:#991B1B;font-size:13px;line-height:1.5;">
+        If you did not request this reset, your account is secure and you can safely ignore this email.
       </p>
     </div>
 
-    <p style="color:#6B7280;font-size:13px;font-weight:600;text-align:center;">
-      Need help? Call us at <a href="tel:617-999-3803" style="color:${BRAND_NAVY};font-weight:800;">617-999-3803</a>
+    <p style="color:${BRAND_TEXT_MUTED};font-size:13px;text-align:center;margin:0;">
+      Need assistance? Contact our team at <a href="tel:${BUSINESS_CONFIG.contact.phone1Formatted}" style="color:${BRAND_PRIMARY};font-weight:600;">${BUSINESS_CONFIG.contact.phone1}</a>.
     </p>
   `;
-  return sendEmail({ to, subject: `${otp} — American Legend Ice Cream Truck Password Reset Code`, html, title: "Password Reset" });
+  return sendEmail({ to, subject: `${otp} — Password Reset Code | ${BUSINESS_CONFIG.name}`, html, title: "Password Reset" });
 }
 
-// ─── STAFF INVITE EMAIL ──────────────────────────────────────
+// ─── 4. STAFF INVITATION EMAIL ─────────────────────────────────
 export async function sendStaffInviteEmail(to: string, inviterName: string, inviteToken: string, role: string) {
   const acceptUrl = `${SITE_URL}/admin/accept-invite?token=${inviteToken}`;
-  const EXPIRES_HOURS = 48;
 
   const html = `
-      <p style="margin:0;color:#9CA3AF;font-size:12px;font-weight:600;">
-        If the button doesn't work, copy and paste this link: <br/>
-        <span style="color:${BRAND_NAVY};word-break:break-all;">${acceptUrl}</span>
+    <h2 style="margin:0 0 12px;color:${BRAND_PRIMARY};font-size:22px;font-weight:700;">Team Invitation</h2>
+    <p style="margin:0 0 20px;color:${BRAND_TEXT_MUTED};font-size:15px;line-height:1.6;">
+      <strong>${inviterName}</strong> has invited you to join the <strong>${BUSINESS_CONFIG.name}</strong> administration portal as <strong>${role}</strong>.
+    </p>
+
+    <div style="text-align:center;margin:28px 0;">
+      <a href="${acceptUrl}" class="btn" style="display:inline-block;background:${BRAND_PRIMARY};color:#FFFFFF;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;">Accept Invitation &rarr;</a>
+    </div>
+
+    <div style="background:#F8FAFC;border:1px solid ${BRAND_BORDER};border-radius:8px;padding:14px 16px;">
+      <p style="margin:0;color:${BRAND_TEXT_MUTED};font-size:12px;line-height:1.5;">
+        If the button does not work, copy and paste this link in your browser:<br/>
+        <span style="color:${BRAND_PRIMARY};word-break:break-all;">${acceptUrl}</span>
       </p>
     </div>
   `;
-  return sendEmail({ to, subject: `You've been invited to join American Legend Ice Cream Truck Staff`, html, title: "Staff Invitation" });
+  return sendEmail({ to, subject: `You've been invited to join ${BUSINESS_CONFIG.name} Staff`, html, title: "Staff Invitation" });
 }
 
-// ─── SENSITIVE ACTION OTP EMAIL ──────────────────────────────
+// ─── 5. SENSITIVE ACTION OTP EMAIL ─────────────────────────────
 export async function sendSensitiveActionOtpEmail(to: string, otp: string, action: string, userName?: string) {
   const TTL = 5;
   const html = `
-    <div style="text-align:center;padding:24px 0 20px;">
-      <div style="font-size:32px;line-height:1;margin-bottom:16px;">🛡️</div>
-      <h2 style="margin:0 0 8px;color:${BRAND_NAVY};font-size:26px;font-weight:900;">Security Verification Required</h2>
-      <p style="margin:0;color:#6B7280;font-size:15px;font-weight:600;">Hi ${userName ?? "Admin"} — a sensitive action requires your verification.</p>
+    <h2 style="margin:0 0 12px;color:${BRAND_PRIMARY};font-size:22px;font-weight:700;">Security Verification Required</h2>
+    <p style="margin:0 0 20px;color:${BRAND_TEXT_MUTED};font-size:15px;line-height:1.5;">
+      Hello ${userName ?? "Admin"}, a sensitive administrative action requires your verification:
+    </p>
+
+    <div style="background:#F8FAFC;border:1px solid ${BRAND_BORDER};border-radius:8px;padding:14px 18px;margin-bottom:20px;">
+      <p style="margin:0 0 4px;font-size:11px;font-weight:700;text-transform:uppercase;color:${BRAND_TEXT_MUTED};">Action</p>
+      <p style="margin:0;color:${BRAND_PRIMARY};font-size:14px;font-weight:600;">${action}</p>
     </div>
 
-    <div style="background:#F9FAFB;border:1px solid #E5E7EB;border-radius:16px;padding:16px 20px;margin:20px 0;">
-      <p style="margin:0 0 4px;font-size:12px;font-weight:900;text-transform:uppercase;color:#6B7280;">Action Requested</p>
-      <p style="margin:0;color:\${BRAND_NAVY};font-size:15px;font-weight:700;">${action}</p>
+    <div style="background:#F8FAFC;border:1px solid ${BRAND_BORDER};border-radius:12px;padding:20px;text-align:center;margin-bottom:20px;">
+      <p style="margin:0 0 6px;color:${BRAND_TEXT_MUTED};font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;">Verification Code</p>
+      <p style="margin:0 0 6px;font-size:32px;font-weight:800;letter-spacing:10px;color:${BRAND_PRIMARY};font-family:ui-monospace,SFMono-Regular,Consolas,monospace;">${otp}</p>
+      <p style="margin:0;color:#94A3B8;font-size:12px;">Expires in ${TTL} minutes &middot; Single use</p>
     </div>
 
-    <div style="background:#F9FAFB;border:1px solid #E5E7EB;border-radius:20px;padding:24px;text-align:center;margin:24px 0;">
-      <p style="margin:0 0 8px;color:#9CA3AF;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:2px;">Verification Code</p>
-      <p style="margin:0 0 8px;font-size:32px;font-weight:900;letter-spacing:12px;color:${BRAND_NAVY};font-family:monospace;">${otp}</p>
-      <p style="margin:0;color:#9CA3AF;font-size:12px;font-weight:700;">⏱ Expires in ${TTL} minutes — single use only</p>
-    </div>
-
-    <div style="background:#FFF5F5;border:1px solid #FFBABA;border-radius:12px;padding:16px 20px;">
-      <p style="margin:0;color:\${BRAND_CORAL};font-size:13px;font-weight:700;">
-        🚨 If you did NOT initiate this action, your account may be compromised. Contact support immediately.
+    <div style="background:#FEF2F2;border:1px solid #FECACA;border-radius:8px;padding:12px 16px;">
+      <p style="margin:0;color:#991B1B;font-size:12px;line-height:1.5;">
+        If you did not initiate this action, please secure your account immediately.
       </p>
     </div>
   `;
-  return sendEmail({ to, subject: `${otp} — American Legend Ice Cream Truck Admin Security Code`, html, title: "Security Verification" });
+  return sendEmail({ to, subject: `${otp} — Security Code | ${BUSINESS_CONFIG.name}`, html, title: "Security Verification" });
 }
 
-// ─── BOOKING DETAIL FORMATTER ─────────────────────────────────
+// ─── BOOKING DETAIL FORMATTER (CLEAN & MINIMAL) ─────────────────
 function formatBookingDetailsHtml(booking: any) {
   if (!booking) return "";
   
@@ -289,7 +308,7 @@ function formatBookingDetailsHtml(booking: any) {
     if (!d) return "";
     try {
       const dateObj = new Date(d);
-      return dateObj.toLocaleDateString("en-US", { year: 'numeric', month: '2-digit', day: '2-digit' });
+      return dateObj.toLocaleDateString("en-US", { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' });
     } catch { return String(d); }
   };
 
@@ -316,116 +335,74 @@ function formatBookingDetailsHtml(booking: any) {
   const extraServiceFee = breakdown.additionalServiceFee ?? (quote?.additionalServiceFee ?? (booking.extraServiceFee || 0));
   const extraServiceMins = breakdown.additionalServiceMins ?? (quote?.extraServiceMins ?? (booking.extraServiceMins || 0));
   const basePrice = breakdown.packagePrice ?? (quote?.basePrice ?? (booking.totalAmount - travelFee - overtimeFee - extraServiceFee - extraGuestsFee));
-  const billableMiles = breakdown.billableMiles ?? Math.max(0, distanceMiles - 10);
-  const additionalStopsCount = breakdown.additionalStopsCount ?? (booking.additionalStops || 0);
   const additionalStopsFee = breakdown.additionalStopsFee ?? (booking.additionalStopsFee || 0);
   const estimatedTotal = breakdown.estimatedTotal ?? booking.totalAmount;
   const additionalVehicleSetupFee = breakdown.additionalVehicleSetupFee ?? 0;
   const weekendFee = breakdown.weekendFee ?? 0;
 
   return `
-    <!-- Event Summary -->
-    <h3 style="margin:24px 0 12px;color:${BRAND_NAVY};font-size:20px;font-weight:900;border-bottom:2px solid #F3F4F6;padding-bottom:8px;">Event Summary</h3>
-    <table width="100%" cellpadding="10" cellspacing="0" style="margin-bottom:24px;font-size:16px;color:#4B5563;">
-      <tr><td width="40%" style="font-weight:800;color:${BRAND_NAVY};border-bottom:1px solid #F3F4F6;">Event Type</td><td style="border-bottom:1px solid #F3F4F6;font-weight:600;">${booking.eventType}</td></tr>
-      <tr><td style="font-weight:800;color:${BRAND_NAVY};border-bottom:1px solid #F3F4F6;">Package</td><td style="border-bottom:1px solid #F3F4F6;font-weight:600;">${pkg?.name || 'Custom Package'}</td></tr>
-      <tr><td style="font-weight:800;color:${BRAND_NAVY};border-bottom:1px solid #F3F4F6;">Date &amp; Time</td><td style="border-bottom:1px solid #F3F4F6;font-weight:600;">${formatEnDate(booking.eventDate)} at ${booking.startTime}</td></tr>
-      <tr><td style="font-weight:800;color:${BRAND_NAVY};border-bottom:1px solid #F3F4F6;">Included Service Time</td><td style="border-bottom:1px solid #F3F4F6;font-weight:600;">${pkgDurationMins} minutes</td></tr>
-      ${extraServiceMins > 0 ? `<tr><td style="font-weight:800;color:${BRAND_NAVY};border-bottom:1px solid #F3F4F6;">Additional Service Time</td><td style="border-bottom:1px solid #F3F4F6;font-weight:600;">+${extraServiceMins} minutes</td></tr>` : ''}
-      <tr><td style="font-weight:800;color:${BRAND_NAVY};border-bottom:1px solid #F3F4F6;">Included Guests</td><td style="border-bottom:1px solid #F3F4F6;font-weight:600;">${pkgServings} guests</td></tr>
+    <!-- Event Details Table -->
+    <table width="100%" cellpadding="10" cellspacing="0" style="margin:20px 0;font-size:14px;border-collapse:collapse;background:#F8FAFC;border:1px solid ${BRAND_BORDER};border-radius:8px;">
       <tr>
-        <td style="font-weight:800;color:${BRAND_NAVY};border-bottom:1px solid #F3F4F6;">Location</td>
-        <td style="border-bottom:1px solid #F3F4F6;font-weight:600;">
-          ${booking.address}, ${booking.city} ${booking.zip}
-          ${booking.stops && booking.stops.length > 0 ? `<br/><br/>
-            <strong style="color:${BRAND_CORAL}">Additional Stops:</strong><br/>
-            ${booking.stops.map((s: any, i: number) => `Stop ${i+1}: ${s.street}, ${s.city} ${s.state} ${s.zipCode}`).join('<br/>')}
-          ` : ''}
-        </td>
+        <td style="color:${BRAND_TEXT_MUTED};border-bottom:1px solid ${BRAND_BORDER};font-weight:600;width:38%;">Event Date &amp; Time</td>
+        <td style="color:${BRAND_PRIMARY};border-bottom:1px solid ${BRAND_BORDER};font-weight:700;">${formatEnDate(booking.eventDate)} at ${booking.startTime}</td>
       </tr>
-      <tr><td style="font-weight:800;color:${BRAND_NAVY};border-bottom:1px solid #F3F4F6;">Dispatch Origin</td><td style="border-bottom:1px solid #F3F4F6;font-weight:600;">Boston, MA (ZIP 02108)</td></tr>
-      <tr><td style="font-weight:800;color:${BRAND_NAVY};border-bottom:1px solid #F3F4F6;">Total Distance</td><td style="border-bottom:1px solid #F3F4F6;font-weight:600;">${distanceMiles.toFixed(1)} miles</td></tr>
+      <tr>
+        <td style="color:${BRAND_TEXT_MUTED};border-bottom:1px solid ${BRAND_BORDER};font-weight:600;">Package</td>
+        <td style="color:${BRAND_PRIMARY};border-bottom:1px solid ${BRAND_BORDER};font-weight:700;">${pkg?.name || 'Custom Package'}</td>
+      </tr>
+      <tr>
+        <td style="color:${BRAND_TEXT_MUTED};border-bottom:1px solid ${BRAND_BORDER};font-weight:600;">Included Guests / Time</td>
+        <td style="color:${BRAND_PRIMARY};border-bottom:1px solid ${BRAND_BORDER};font-weight:600;">${pkgServings} guests &middot; ${pkgDurationMins} minutes</td>
+      </tr>
+      <tr>
+        <td style="color:${BRAND_TEXT_MUTED};border-bottom:1px solid ${BRAND_BORDER};font-weight:600;">Location</td>
+        <td style="color:${BRAND_PRIMARY};border-bottom:1px solid ${BRAND_BORDER};font-weight:600;">${booking.address}, ${booking.city} ${booking.zip}</td>
+      </tr>
+      <tr>
+        <td style="color:${BRAND_TEXT_MUTED};font-weight:600;">Estimated Total</td>
+        <td style="color:${BRAND_PRIMARY};font-weight:800;font-size:16px;">$${Number(estimatedTotal).toFixed(2)}</td>
+      </tr>
     </table>
 
-    <!-- Pricing Breakdown -->
-    <h3 style="margin:0 0 12px;color:${BRAND_NAVY};font-size:20px;font-weight:900;border-bottom:2px solid #F3F4F6;padding-bottom:8px;">Pricing &amp; Travel Fee</h3>
-    ${(booking.package?.slug === "custom-event-package" || booking.packageId === "custom-event-package" || booking.package?.name === "Custom Event Package") ? `
-    <div style="background:#FFF9F0;border:1px dashed #FFA000;border-radius:12px;padding:16px 20px;margin-bottom:24px;font-size:16px;color:\${BRAND_NAVY};font-weight:700;">
-      Custom Quote Pending — our team will review your guest count, vehicle needs, route, timing, and event details before preparing your final quote.
-    </div>
-    ` : `
-    <table width="100%" cellpadding="10" cellspacing="0" style="margin-bottom:24px;font-size:16px;color:#4B5563;background:#F8F9FC;border-radius:12px;">
-      <tr><td width="65%" style="font-weight:600;">Base Package Price</td><td width="35%" align="right" style="font-weight:800;color:${BRAND_NAVY};">$${basePrice.toFixed(2)}</td></tr>
-      <tr><td style="font-weight:600;color:#6B7280;font-size:14px;">Included: ${pkgServings} guests, ${pkgDurationMins} min</td><td></td></tr>
-      ${extraGuestsFee > 0 ? `<tr><td style="font-weight:600;">Extra Guests Fee (${extraGuestsCount} × $${extraPiecePrice})</td><td align="right" style="font-weight:800;color:${BRAND_NAVY};">+$${extraGuestsFee.toFixed(2)}</td></tr>` : ''}
-      ${breakdown.extraTimeFee > 0 ? `<tr><td style="font-weight:600;">Extra Service Time (+${(breakdown.extraTimeFee / 35) * 30} mins)</td><td align="right" style="font-weight:800;color:${BRAND_NAVY};">+$${Number(breakdown.extraTimeFee).toFixed(2)}</td></tr>` : ''}
-      ${additionalStopsFee > 0 ? `<tr><td style="font-weight:600;">Multi-Location Fee (${breakdown.routingMode ?? 'SEQUENTIAL'})</td><td align="right" style="font-weight:800;color:${BRAND_NAVY};">+$${additionalStopsFee.toFixed(2)}</td></tr>` : ''}
-      ${breakdown.distanceFee2 > 0 ? `<tr><td style="font-weight:600;">Second Stop Travel Fee</td><td align="right" style="font-weight:800;color:${BRAND_NAVY};">+$${Number(breakdown.distanceFee2).toFixed(2)}</td></tr>` : ''}
-      ${extraServiceFee > 0 ? `<tr><td style="font-weight:600;">Additional Service Time (${extraServiceMins} min)</td><td align="right" style="font-weight:800;color:${BRAND_NAVY};">+$${extraServiceFee.toFixed(2)}</td></tr>` : ''}
-      ${overtimeFee > 0 ? `<tr><td style="font-weight:600;">Overtime Fee</td><td align="right" style="font-weight:800;color:${BRAND_NAVY};">+$${overtimeFee.toFixed(2)}</td></tr>` : ''}
-      ${travelFee > 0 ? `<tr><td style="font-weight:600;">Travel Fee</td><td align="right" style="font-weight:800;color:${BRAND_NAVY};">+$${travelFee.toFixed(2)}</td></tr>` : ''}
-      ${additionalVehicleSetupFee > 0 ? `<tr><td style="font-weight:600;">Additional Vehicle Setup Fee</td><td align="right" style="font-weight:800;color:${BRAND_NAVY};">+$${additionalVehicleSetupFee.toFixed(2)}</td></tr>` : ''}
-      ${weekendFee > 0 ? `<tr><td style="font-weight:600;">Weekend Event Fee</td><td align="right" style="font-weight:800;color:${BRAND_NAVY};">+$${weekendFee.toFixed(2)}</td></tr>` : ''}
-      <tr><td style="font-weight:900;color:${BRAND_NAVY};border-top:2px solid #E5E7EB;padding-top:16px;">Total Estimated Price</td><td align="right" style="font-weight:900;color:${BRAND_CORAL};font-size:22px;border-top:2px solid #E5E7EB;padding-top:16px;">$${estimatedTotal.toFixed(2)}</td></tr>
-    </table>
-    `}
-
-    ${additionalVehicleSetupFee > 0 ? `
-    <div style="background:#F9FAFB;border:1px solid #E5E7EB;border-radius:12px;padding:12px 16px;margin-bottom:20px;font-size:13px;color:\${BRAND_NAVY};font-weight:600;">
-      🚚 Additional Vehicle Setup Fee: If your event requires another truck/van for the same package at the same time, each additional vehicle includes a $200 setup and dispatch fee.
-    </div>
-    ` : ''}
-
-    ${weekendFee > 0 ? `
-    <div style="background:#F9FAFB;border:1px solid #E5E7EB;border-radius:12px;padding:12px 16px;margin-bottom:20px;font-size:13px;color:\${BRAND_NAVY};font-weight:600;">
-      📅 Weekend Event Fee: Saturday and Sunday bookings include an additional $25 weekend event fee.
-    </div>
-    ` : ''}
-
-    <!-- Payment Policy -->
-    <div style="background:#F0FDF4;border:1px solid #86EFAC;border-radius:12px;padding:16px 20px;margin-bottom:20px;">
-      <p style="margin:0;color:#166534;font-size:14px;font-weight:700;">💳 Payment Policy: Payment is collected after the service. We accept multiple payment methods.</p>
+    <div style="background:#F0FDF4;border:1px solid #BBF7D0;border-radius:8px;padding:12px 16px;margin-bottom:20px;">
+      <p style="margin:0;color:#166534;font-size:13px;font-weight:600;">Payment Policy: Payment is collected on the day of the event after service. No prepayment required.</p>
     </div>
   `;
 }
 
-// ─── BOOKING APPROVED ─────────────────────────────────────────
+// ─── 6. BOOKING APPROVED EMAIL ──────────────────────────────────
 export async function sendBookingApprovedEmail(to: string, firstName: string, bookingNumber: string, paymentUrl: string, amount: string, bookingId: string) {
-  const portalUrl = `${process.env.NEXT_PUBLIC_SITE_URL || 'https://www.bostonlegendicecream.com'}/portal/booking/${bookingId}`;
+  const portalUrl = `${SITE_URL}/portal/booking/${bookingId}`;
   let bookingDetailsHtml = "";
-  let isCustom = false;
   try {
     const booking = await prisma.booking.findUnique({ where: { id: bookingId }, include: { customer: true, package: true, quote: true, stops: { orderBy: { stopOrder: 'asc' } } } });
     bookingDetailsHtml = formatBookingDetailsHtml(booking);
-    if (booking?.package?.slug === "custom-event-package" || booking?.packageId === "custom-event-package" || booking?.package?.name === "Custom Event Package") isCustom = true;
   } catch (e) { console.error("Error formatting booking details for approved email:", e); }
 
-  const subject = isCustom ? `Approved: Your American Legend Ice Cream Truck Custom Quote #${bookingNumber}` : `Approved: Your American Legend Ice Cream Truck Booking #${bookingNumber}`;
-  const headerText = isCustom ? `Your Custom Quote is Approved! 🎉` : `Legendary News, ${firstName}! 🎉`;
-  const bodyText = isCustom
-    ? `Your custom quote request **#${bookingNumber}** has been approved with a finalized price.`
-    : `Your reservation **#${bookingNumber}** has been officially **APPROVED**. We can't wait to sweeten your event!`;
-
   const html = `
-    <h2 style="margin:0 0 16px;color:${BRAND_NAVY};font-size:28px;font-weight:900;">${headerText}</h2>
-    <p style="margin:0 0 24px;color:#4B5563;font-size:16px;line-height:1.6;font-weight:600;">${bodyText}</p>
-    <div style="background:#F9FAFB;border:2px solid #E5E7EB;border-radius:16px;padding:24px;margin-bottom:32px;text-align:center;">
-      <p style="margin:0 0 4px;color:\${BRAND_NAVY};font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1px;">Approved Price Total</p>
-      <p style="margin:0 0 10px;color:${BRAND_NAVY};font-size:36px;font-weight:900;">$${amount}</p>
-      <p style="margin:0;color:#047857;font-size:14px;font-weight:700;">Payment is collected after the service. We accept multiple payment methods.</p>
+    <h2 style="margin:0 0 12px;color:${BRAND_PRIMARY};font-size:22px;font-weight:700;">Booking Approved — #${bookingNumber}</h2>
+    <p style="margin:0 0 20px;color:${BRAND_TEXT_MUTED};font-size:15px;line-height:1.6;">
+      Hello ${firstName}, your reservation has been officially <strong>approved</strong>. We look forward to serving your event!
+    </p>
+
+    <div style="background:#F8FAFC;border:1px solid ${BRAND_BORDER};border-radius:12px;padding:20px;text-align:center;margin-bottom:24px;">
+      <p style="margin:0 0 4px;color:${BRAND_TEXT_MUTED};font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;">Approved Total</p>
+      <p style="margin:0;color:${BRAND_PRIMARY};font-size:28px;font-weight:800;">$${amount}</p>
     </div>
+
     ${bookingDetailsHtml}
-    <div style="text-align:center;margin-top:24px;padding:24px 16px;background:#F8F9FC;border-radius:16px;">
-      <p style="margin:0 0 16px;font-size:16px;font-weight:800;color:${BRAND_NAVY};">Need to check details or manage your booking?</p>
-      <a href="${portalUrl}" style="display:block;width:100%;box-sizing:border-box;background:${BRAND_NAVY};color:${BRAND_CORAL};padding:18px 24px;border-radius:12px;text-decoration:none;font-weight:900;font-size:16px;text-transform:uppercase;">Access Booking Portal</a>
+
+    <div style="text-align:center;margin:28px 0 16px;">
+      <a href="${portalUrl}" class="btn" style="display:inline-block;background:${BRAND_PRIMARY};color:#FFFFFF;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;">Access Booking Portal &rarr;</a>
     </div>
   `;
-  return sendEmail({ to, subject, html });
+  return sendEmail({ to, subject: `Approved: Your Booking #${bookingNumber} | ${BUSINESS_CONFIG.name}`, html, title: "Booking Approved" });
 }
 
-// ─── BOOKING PENDING ──────────────────────────────────────────
+// ─── 7. BOOKING PENDING / CONFIRMED EMAIL ───────────────────────
 export async function sendBookingPendingEmail(to: string, firstName: string, bookingNumber: string, details: any, bookingId: string) {
-  const portalUrl = `${process.env.NEXT_PUBLIC_SITE_URL || 'https://www.bostonlegendicecream.com'}/portal/booking/${bookingId}`;
+  const portalUrl = `${SITE_URL}/portal/booking/${bookingId}`;
   let bookingDetailsHtml = "";
   try {
     const booking = await prisma.booking.findUnique({ where: { id: bookingId }, include: { customer: true, package: true, quote: true, stops: { orderBy: { stopOrder: 'asc' } } } });
@@ -433,310 +410,267 @@ export async function sendBookingPendingEmail(to: string, firstName: string, boo
   } catch (e) { console.error("Error formatting booking details for pending email:", e); }
 
   const html = `
-    <h2 style="margin:0 0 16px;color:${BRAND_NAVY};font-size:24px;font-weight:900;">🎉 Booking Confirmed!</h2>
-    <p style="margin:0 0 24px;color:#4B5563;font-size:16px;line-height:1.6;font-weight:600;">
-      Hello ${firstName},<br/><br/>
-      Your American Legend Ice Cream Truck booking has been <strong style="color:#16a34a;">confirmed</strong>! We're excited to bring the sweet celebration to your event. You'll receive a follow-up from our team with final details.
+    <h2 style="margin:0 0 12px;color:${BRAND_PRIMARY};font-size:22px;font-weight:700;">Booking Received — #${bookingNumber}</h2>
+    <p style="margin:0 0 20px;color:${BRAND_TEXT_MUTED};font-size:15px;line-height:1.6;">
+      Hello ${firstName}, we have received your booking request. Our team will review the scheduling details and confirm promptly.
     </p>
-    <div style="background:#F9FAFB;border:1px solid #E5E7EB;border-radius:12px;padding:16px;margin-bottom:24px;text-align:center;">
-      <p style="margin:0 0 4px;color:\${BRAND_NAVY};font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1px;">Booking Reference</p>
-      <p style="margin:0;color:${BRAND_NAVY};font-size:24px;font-weight:900;">#${bookingNumber}</p>
+
+    <div style="background:#F8FAFC;border:1px solid ${BRAND_BORDER};border-radius:8px;padding:14px 18px;margin-bottom:20px;text-align:center;">
+      <p style="margin:0 0 4px;color:${BRAND_TEXT_MUTED};font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;">Reference Number</p>
+      <p style="margin:0;color:${BRAND_PRIMARY};font-size:20px;font-weight:800;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;">#${bookingNumber}</p>
     </div>
+
     ${bookingDetailsHtml}
-    <div style="background:#F9FAFB;border:1px solid #E5E7EB;border-radius:12px;padding:20px;margin-bottom:24px;font-size:13px;line-height:1.6;color:\${BRAND_NAVY};text-align:left;">
-      <p style="margin:0 0 8px;font-weight:900;text-transform:uppercase;letter-spacing:1px;color:${BRAND_NAVY};">📍 Travel &amp; Distance Policy</p>
-      <p style="margin:0 0 12px;font-weight:600;">Travel is calculated at $2.00 per mile based on the actual driving distance from our Boston dispatch location (ZIP 02108) to your event location. There are no free miles — the travel fee applies from mile 1.</p>
-      <p style="margin:0 0 8px;font-weight:900;text-transform:uppercase;letter-spacing:1px;color:${BRAND_NAVY};">👥 Extra Guests Policy</p>
-      <p style="margin:0 0 12px;font-weight:600;">Extra guests beyond the included package count are calculated at $5 per person.</p>
-      <p style="margin:0 0 8px;font-weight:900;text-transform:uppercase;letter-spacing:1px;color:${BRAND_NAVY};">💳 Payment Policy</p>
-      <p style="margin:0;font-weight:600;">Payment is collected after the service. We accept multiple payment methods.</p>
-    </div>
-    <div style="text-align:center;margin-bottom:32px;">
-      <p style="margin:0 0 20px;color:#4B5563;font-size:16px;font-weight:700;">Our team will be in touch to finalize the details. We can't wait to make your event special! 🍦</p>
-      <a href="${portalUrl}" style="display:block;width:100%;box-sizing:border-box;background:${BRAND_NAVY};color:white;padding:18px 24px;border-radius:12px;text-decoration:none;font-weight:900;font-size:16px;text-transform:uppercase;">View Booking Details</a>
-    </div>
-    <div style="background:#F3F4F6;border-radius:12px;padding:20px;text-align:center;">
-      <p style="margin:0;color:#6B7280;font-size:13px;font-weight:600;">Questions? Call us directly at <a href="tel:617-999-3803" style="color:${BRAND_NAVY};text-decoration:none;font-weight:800;">617-999-3803</a>.</p>
+
+    <div style="text-align:center;margin:24px 0 16px;">
+      <a href="${portalUrl}" class="btn" style="display:inline-block;background:${BRAND_PRIMARY};color:#FFFFFF;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;">View Booking Status &rarr;</a>
     </div>
   `;
-  return sendEmail({ to, subject: `✅ Booking Confirmed — #${bookingNumber} | American Legend Ice Cream Truck`, html });
+  return sendEmail({ to, subject: `Booking Received #${bookingNumber} | ${BUSINESS_CONFIG.name}`, html, title: "Booking Received" });
 }
 
-// ─── BOOKING REJECTED ─────────────────────────────────────────
+// ─── 8. BOOKING REJECTED / UPDATE NEEDED ────────────────────────
 export async function sendBookingRejectedEmail(to: string, firstName: string, bookingNumber: string, reason: string, bookingId: string) {
-  const portalUrl = `${process.env.NEXT_PUBLIC_SITE_URL || 'https://www.bostonlegendicecream.com'}/portal/booking/${bookingId}`;
-  let bookingDetailsHtml = "";
-  try {
-    const booking = await prisma.booking.findUnique({ where: { id: bookingId }, include: { customer: true, package: true, quote: true, stops: { orderBy: { stopOrder: 'asc' } } } });
-    bookingDetailsHtml = formatBookingDetailsHtml(booking);
-  } catch (e) { console.error("Error formatting booking details for rejected email:", e); }
+  const portalUrl = `${SITE_URL}/portal/booking/${bookingId}`;
 
   const html = `
-    <div style="text-align:center;padding:24px 0 24px;">
-      <h2 style="margin:0 0 8px;color:${BRAND_NAVY};font-size:26px;font-weight:900;">Update Needed for Your Request</h2>
-      <p style="margin:0;color:#6B7280;font-size:15px;font-weight:600;">Hi ${firstName}, your request needs a quick adjustment before we can confirm it.</p>
+    <h2 style="margin:0 0 12px;color:${BRAND_PRIMARY};font-size:22px;font-weight:700;">Update Needed — Request #${bookingNumber}</h2>
+    <p style="margin:0 0 20px;color:${BRAND_TEXT_MUTED};font-size:15px;line-height:1.6;">
+      Hello ${firstName}, we reviewed your booking request and need a minor adjustment before finalizing confirmation:
+    </p>
+
+    <div style="background:#FFFBEB;border:1px solid #FDE68A;border-radius:8px;padding:16px 18px;margin-bottom:24px;">
+      <p style="margin:0 0 4px;font-size:11px;font-weight:700;text-transform:uppercase;color:#92400E;">Reason / Notes</p>
+      <p style="margin:0;color:${BRAND_PRIMARY};font-size:14px;font-weight:600;line-height:1.5;">${reason}</p>
     </div>
-    <div style="background:#F3F4F6;border-radius:16px;padding:20px 24px;margin-bottom:24px;">
-      <p style="margin:0 0 6px;font-size:12px;font-weight:900;text-transform:uppercase;color:#9CA3AF;">Booking Reference</p>
-      <p style="margin:0;font-family:monospace;font-size:20px;font-weight:900;color:${BRAND_NAVY};">#${bookingNumber}</p>
-    </div>
-    <div style="background:#F9FAFB;border-radius:16px;padding:20px 24px;margin-bottom:24px;">
-      <p style="margin:0 0 8px;font-size:13px;font-weight:900;text-transform:uppercase;color:#6B7280;">Details / Reason</p>
-      <p style="margin:0;color:\${BRAND_NAVY};font-size:15px;font-weight:600;">${reason}</p>
-    </div>
-    ${bookingDetailsHtml}
-    <div style="text-align:center;margin-bottom:32px;">
-      <a href="${portalUrl}" style="display:block;width:100%;box-sizing:border-box;background:${BRAND_NAVY};color:${BRAND_CORAL};padding:18px 24px;border-radius:12px;text-decoration:none;font-weight:900;font-size:16px;text-transform:uppercase;">Update My Booking Request</a>
+
+    <div style="text-align:center;margin:28px 0;">
+      <a href="${portalUrl}" class="btn" style="display:inline-block;background:${BRAND_PRIMARY};color:#FFFFFF;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;">Update Booking Details &rarr;</a>
     </div>
   `;
-  return sendEmail({ to, subject: `Update Needed: Your American Legend Ice Cream Truck Booking Request #${bookingNumber}`, html });
+  return sendEmail({ to, subject: `Update Needed: Booking Request #${bookingNumber} | ${BUSINESS_CONFIG.name}`, html, title: "Update Needed" });
 }
 
-// ─── BOOKING PENDING REVIEW ───────────────────────────────────
+// ─── 9. BOOKING PENDING REVIEW ──────────────────────────────────
 export async function sendBookingPendingReviewEmail(to: string, firstName: string, bookingNumber: string, reason: string, bookingId: string) {
-  const portalUrl = `${process.env.NEXT_PUBLIC_SITE_URL || 'https://www.bostonlegendicecream.com'}/portal/booking/${bookingId}`;
-  let bookingDetailsHtml = "";
-  try {
-    const booking = await prisma.booking.findUnique({ where: { id: bookingId }, include: { customer: true, package: true, quote: true, stops: { orderBy: { stopOrder: 'asc' } } } });
-    bookingDetailsHtml = formatBookingDetailsHtml(booking);
-  } catch (e) { console.error("Error formatting booking details for pending review email:", e); }
+  const portalUrl = `${SITE_URL}/portal/booking/${bookingId}`;
 
   const html = `
-    <div style="text-align:center;padding:24px 0 24px;">
-      <h2 style="margin:0 0 8px;color:${BRAND_NAVY};font-size:26px;font-weight:900;">Booking Under Review</h2>
-      <p style="margin:0;color:#6B7280;font-size:15px;font-weight:600;">Hi ${firstName}, your booking request is currently under review by our team.</p>
+    <h2 style="margin:0 0 12px;color:${BRAND_PRIMARY};font-size:22px;font-weight:700;">Booking Under Review — #${bookingNumber}</h2>
+    <p style="margin:0 0 20px;color:${BRAND_TEXT_MUTED};font-size:15px;line-height:1.6;">
+      Hello ${firstName}, your booking request is currently under review by our dispatch and catering team:
+    </p>
+
+    <div style="background:#F8FAFC;border:1px solid ${BRAND_BORDER};border-radius:8px;padding:14px 18px;margin-bottom:24px;">
+      <p style="margin:0 0 4px;font-size:11px;font-weight:700;text-transform:uppercase;color:${BRAND_TEXT_MUTED};">Review Details</p>
+      <p style="margin:0;color:${BRAND_PRIMARY};font-size:14px;font-weight:600;line-height:1.5;">${reason}</p>
     </div>
-    <div style="background:#F3F4F6;border-radius:16px;padding:20px 24px;margin-bottom:24px;">
-      <p style="margin:0 0 6px;font-size:12px;font-weight:900;text-transform:uppercase;color:#9CA3AF;">Booking Reference</p>
-      <p style="margin:0;font-family:monospace;font-size:20px;font-weight:900;color:${BRAND_NAVY};">#${bookingNumber}</p>
-    </div>
-    <div style="background:#F9FAFB;border-radius:16px;padding:20px 24px;margin-bottom:24px;">
-      <p style="margin:0 0 8px;font-size:13px;font-weight:900;text-transform:uppercase;color:#6B7280;">Review Reason</p>
-      <p style="margin:0;color:\${BRAND_NAVY};font-size:15px;font-weight:600;">${reason}</p>
-    </div>
-    ${bookingDetailsHtml}
-    <div style="text-align:center;margin-bottom:32px;">
-      <a href="${portalUrl}" style="display:block;width:100%;box-sizing:border-box;background:${BRAND_NAVY};color:${BRAND_CORAL};padding:18px 24px;border-radius:12px;text-decoration:none;font-weight:900;font-size:16px;text-transform:uppercase;">View or Manage Your Booking</a>
+
+    <div style="text-align:center;margin:24px 0;">
+      <a href="${portalUrl}" class="btn" style="display:inline-block;background:${BRAND_PRIMARY};color:#FFFFFF;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;">View Booking &rarr;</a>
     </div>
   `;
-  return sendEmail({ to, subject: `Booking Under Review: Your American Legend Ice Cream Truck Request #${bookingNumber}`, html });
+  return sendEmail({ to, subject: `Booking Under Review #${bookingNumber} | ${BUSINESS_CONFIG.name}`, html, title: "Under Review" });
 }
 
-// ─── CUSTOM QUOTE ─────────────────────────────────────────────
+// ─── 10. CUSTOM QUOTE RECEIVED ──────────────────────────────────
 export async function sendCustomQuoteEmail(to: string, firstName: string, bookingNumber: string, bookingId: string) {
-  const portalUrl = `${process.env.NEXT_PUBLIC_SITE_URL || 'https://www.bostonlegendicecream.com'}/portal/booking/${bookingId}`;
-  let bookingDetailsHtml = "";
-  let bookingDateStr = "";
-  let bookingStartTime = "";
-  let bookingGuests = "200+";
-  try {
-    const booking = await prisma.booking.findUnique({ where: { id: bookingId }, include: { customer: true, package: true, quote: true, stops: { orderBy: { stopOrder: 'asc' } } } });
-    bookingDetailsHtml = formatBookingDetailsHtml(booking);
-    if (booking) { bookingDateStr = booking.eventDate ? new Date(booking.eventDate).toLocaleDateString("en-US") : ""; bookingStartTime = booking.startTime || ""; bookingGuests = String(booking.guests); }
-  } catch (e) { console.error("Error formatting booking details for custom quote email:", e); }
-
-  const getWaLink = (waNumber: string) => {
-    const msg = `Hello! I just submitted a Custom Quote request (Ref: #${bookingNumber}) for my event on ${bookingDateStr} at ${bookingStartTime} with ${bookingGuests} guests. Please review and provide the custom quote.`;
-    return `https://wa.me/${waNumber}?text=${encodeURIComponent(msg)}`;
-  };
+  const portalUrl = `${SITE_URL}/portal/booking/${bookingId}`;
 
   const html = `
-    <div style="text-align:center;padding:24px 0 24px;">
-      <h2 style="margin:0 0 8px;color:${BRAND_NAVY};font-size:26px;font-weight:900;">Custom Quote Request Received</h2>
-      <p style="margin:8px 0 0;color:#4B5563;font-size:16px;font-weight:600;line-height:1.5;">Hi ${firstName}, thank you for requesting a custom American Legend Ice Cream Truck event package. Because your event is for more than 200 guests, our team will personally review your request before preparing your final quote.</p>
+    <h2 style="margin:0 0 12px;color:${BRAND_PRIMARY};font-size:22px;font-weight:700;">Custom Quote Request Received</h2>
+    <p style="margin:0 0 20px;color:${BRAND_TEXT_MUTED};font-size:15px;line-height:1.6;">
+      Hello ${firstName}, thank you for requesting a custom event package. Due to your event scale or specific requirements, our catering team is personally preparing a tailored proposal for you.
+    </p>
+
+    <div style="background:#F8FAFC;border:1px solid ${BRAND_BORDER};border-radius:8px;padding:14px 18px;margin-bottom:24px;">
+      <p style="margin:0 0 4px;font-size:11px;font-weight:700;text-transform:uppercase;color:${BRAND_TEXT_MUTED};">Reference</p>
+      <p style="margin:0;color:${BRAND_PRIMARY};font-size:16px;font-weight:700;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;">#${bookingNumber}</p>
     </div>
-    <div style="background:#F3F4F6;border-radius:16px;padding:20px 24px;margin-bottom:24px;">
-      <p style="margin:0 0 6px;font-size:12px;font-weight:900;text-transform:uppercase;color:#9CA3AF;">Booking Reference</p>
-      <p style="margin:0;font-family:monospace;font-size:20px;font-weight:900;color:${BRAND_NAVY};">#${bookingNumber}</p>
-    </div>
-    <div style="background:#F9FAFB;border:1px solid #E5E7EB;border-radius:16px;padding:20px 24px;margin-bottom:24px;">
-      <p style="margin:0 0 8px;font-size:13px;font-weight:900;text-transform:uppercase;color:\${BRAND_NAVY};">WhatsApp Contact</p>
-      <p style="margin:0 0 16px;color:\${BRAND_NAVY};font-size:15px;font-weight:600;line-height:1.4;">We will contact you through WhatsApp: 📞 617-999-3803 · 📞 617-866-2727</p>
-      <a href="${getWaLink('16179993803')}" style="display:block;background:#25D366;color:#ffffff;padding:12px 20px;border-radius:12px;text-decoration:none;font-weight:950;font-size:15px;margin-bottom:10px;text-align:center;">WhatsApp 617-999-3803</a>
-      <a href="${getWaLink('16178662727')}" style="display:block;background:#25D366;color:#ffffff;padding:12px 20px;border-radius:12px;text-decoration:none;font-weight:950;font-size:15px;text-align:center;">WhatsApp 617-866-2727</a>
-    </div>
-    ${bookingDetailsHtml}
-    <div style="text-align:center;margin:32px 0 24px;">
-      <a href="${portalUrl}" style="display:block;width:100%;box-sizing:border-box;background:${BRAND_NAVY};color:${BRAND_CORAL};padding:18px 24px;border-radius:12px;text-decoration:none;font-weight:950;font-size:16px;text-transform:uppercase;">View or Manage Your Request</a>
+
+    <p style="color:${BRAND_TEXT_MUTED};font-size:14px;line-height:1.5;margin-bottom:24px;">
+      We will contact you via phone or email within 24 hours. For urgent questions, reach our team directly at <a href="tel:${BUSINESS_CONFIG.contact.phone1Formatted}" style="color:${BRAND_ACCENT};font-weight:600;text-decoration:none;">${BUSINESS_CONFIG.contact.phone1}</a>.
+    </p>
+
+    <div style="text-align:center;">
+      <a href="${portalUrl}" class="btn" style="display:inline-block;background:${BRAND_PRIMARY};color:#FFFFFF;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;">View Request Status &rarr;</a>
     </div>
   `;
-  return sendEmail({ to, subject: `Custom Quote Request Received — American Legend Ice Cream Truck`, html });
+  return sendEmail({ to, subject: `Custom Quote Request Received #${bookingNumber} | ${BUSINESS_CONFIG.name}`, html, title: "Custom Quote Received" });
 }
 
-// ─── OWNER NOTIFICATIONS ────────────────────────────────────────
-function formatEventDate(dateObj: Date | string | null | undefined) {
-  if (!dateObj) return "";
-  try { return new Date(dateObj).toLocaleDateString("en-US", { month: 'long', day: 'numeric', year: 'numeric' }); } catch { return String(dateObj); }
-}
-
+// ─── 11. OWNER: NEW BOOKING NOTIFICATION ────────────────────────
 export async function sendOwnerNewBookingEmail(booking: any) {
   const to = getAdminRecipients();
-  const portalUrl = `${process.env.NEXT_PUBLIC_SITE_URL || 'https://bostonlegendicecream.com'}/admin/bookings/${booking.id}`;
-  const dateStr = formatEventDate(booking.eventDate);
-  const subject = `New Booking Received – ${booking.customer?.firstName} ${booking.customer?.lastName} – ${dateStr}`;
+  const portalUrl = `${SITE_URL}/admin/bookings/${booking.id}`;
+  const dateStr = booking.eventDate ? new Date(booking.eventDate).toLocaleDateString("en-US", { month: 'short', day: 'numeric', year: 'numeric' }) : "";
+
   const html = `
-    <h2 style="color:${BRAND_NAVY};margin-top:0;">New Booking Received</h2>
-    <table width="100%" cellpadding="10" cellspacing="0" style="border-collapse:collapse;font-size:15px;color:#374151;">
-      <tr><td width="35%" style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Customer Name</td><td style="border-bottom:1px solid #E5E7EB;">${booking.customer?.firstName} ${booking.customer?.lastName}</td></tr>
-      <tr><td style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Phone Number</td><td style="border-bottom:1px solid #E5E7EB;">${booking.customer?.phone || 'N/A'}</td></tr>
-      <tr><td style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Email Address</td><td style="border-bottom:1px solid #E5E7EB;">${booking.customer?.email || 'N/A'}</td></tr>
-      <tr><td style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Event Date</td><td style="border-bottom:1px solid #E5E7EB;">${dateStr}</td></tr>
-      <tr><td style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Start Time</td><td style="border-bottom:1px solid #E5E7EB;">${booking.startTime}</td></tr>
-      <tr><td style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Package Selected</td><td style="border-bottom:1px solid #E5E7EB;">${booking.package?.name || 'Custom Package'}</td></tr>
-      <tr><td style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Location</td><td style="border-bottom:1px solid #E5E7EB;">${booking.address}, ${booking.city} ${booking.zip}</td></tr>
-      <tr><td style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Guest Count</td><td style="border-bottom:1px solid #E5E7EB;">${booking.guests}</td></tr>
-      <tr><td style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Status</td><td style="border-bottom:1px solid #E5E7EB;">${booking.status}</td></tr>
-      <tr><td style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Special Requests</td><td style="border-bottom:1px solid #E5E7EB;">${booking.notes || 'None'}</td></tr>
+    <h2 style="color:${BRAND_PRIMARY};margin:0 0 16px;font-size:20px;font-weight:700;">New Booking Notification</h2>
+    <table width="100%" cellpadding="8" cellspacing="0" style="font-size:14px;border-collapse:collapse;border:1px solid ${BRAND_BORDER};border-radius:6px;background:#F8FAFC;">
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;width:35%;border-bottom:1px solid ${BRAND_BORDER};">Customer</td><td style="color:${BRAND_PRIMARY};font-weight:700;border-bottom:1px solid ${BRAND_BORDER};">${booking.customer?.firstName} ${booking.customer?.lastName}</td></tr>
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;border-bottom:1px solid ${BRAND_BORDER};">Phone</td><td style="border-bottom:1px solid ${BRAND_BORDER};"><a href="tel:${booking.customer?.phone}">${booking.customer?.phone || 'N/A'}</a></td></tr>
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;border-bottom:1px solid ${BRAND_BORDER};">Email</td><td style="border-bottom:1px solid ${BRAND_BORDER};">${booking.customer?.email || 'N/A'}</td></tr>
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;border-bottom:1px solid ${BRAND_BORDER};">Date &amp; Time</td><td style="border-bottom:1px solid ${BRAND_BORDER};">${dateStr} at ${booking.startTime}</td></tr>
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;border-bottom:1px solid ${BRAND_BORDER};">Package</td><td style="border-bottom:1px solid ${BRAND_BORDER};">${booking.package?.name || 'Custom Package'}</td></tr>
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;border-bottom:1px solid ${BRAND_BORDER};">Location</td><td style="border-bottom:1px solid ${BRAND_BORDER};">${booking.address}, ${booking.city} ${booking.zip}</td></tr>
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;">Estimated Amount</td><td style="color:${BRAND_PRIMARY};font-weight:800;">$${Number(booking.totalAmount || 0).toFixed(2)}</td></tr>
     </table>
-    <br/>
-    <div style="text-align:center;">
-      <a href="${portalUrl}" style="display:inline-block;background:${BRAND_NAVY};color:${BRAND_CORAL};padding:14px 24px;border-radius:8px;text-decoration:none;font-weight:bold;">View Booking</a>
+    <div style="text-align:center;margin-top:24px;">
+      <a href="${portalUrl}" class="btn" style="display:inline-block;background:${BRAND_PRIMARY};color:#FFFFFF;padding:12px 28px;border-radius:6px;text-decoration:none;font-weight:600;font-size:13px;">Open in Admin Portal &rarr;</a>
     </div>
   `;
-  return sendEmail({ to, subject, html, replyTo: booking.customer?.email });
+  return sendEmail({ to, subject: `New Booking: ${booking.customer?.firstName} ${booking.customer?.lastName} (${dateStr})`, html, replyTo: booking.customer?.email });
 }
 
+// ─── 12. OWNER: APPROVAL REQUIRED ───────────────────────────────
 export async function sendOwnerRequiresApprovalEmail(booking: any) {
   const to = getAdminRecipients();
-  const portalUrl = `${process.env.NEXT_PUBLIC_SITE_URL || 'https://bostonlegendicecream.com'}/admin/bookings/${booking.id}`;
+  const portalUrl = `${SITE_URL}/admin/bookings/${booking.id}`;
+  const dateStr = booking.eventDate ? new Date(booking.eventDate).toLocaleDateString("en-US", { month: 'short', day: 'numeric', year: 'numeric' }) : "";
+
   const html = `
-    <h2 style="color:${BRAND_NAVY};margin-top:0;">Booking Awaiting Approval</h2>
-    <p>The following booking requires manual approval:</p>
-    <table width="100%" cellpadding="8" cellspacing="0" style="border-collapse:collapse;font-size:15px;color:#374151;">
-      <tr><td width="35%" style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Customer Name</td><td style="border-bottom:1px solid #E5E7EB;">${booking.customer?.firstName} ${booking.customer?.lastName}</td></tr>
-      <tr><td style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Date</td><td style="border-bottom:1px solid #E5E7EB;">${formatEventDate(booking.eventDate)}</td></tr>
-      <tr><td style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Package</td><td style="border-bottom:1px solid #E5E7EB;">${booking.package?.name || 'Custom Package'}</td></tr>
-      <tr><td style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Booking ID</td><td style="border-bottom:1px solid #E5E7EB;">${booking.bookingNumber}</td></tr>
+    <h2 style="color:${BRAND_PRIMARY};margin:0 0 12px;font-size:20px;font-weight:700;">Booking Requires Approval</h2>
+    <p style="color:${BRAND_TEXT_MUTED};font-size:14px;margin:0 0 16px;">The following booking is awaiting administrative review:</p>
+    <table width="100%" cellpadding="8" cellspacing="0" style="font-size:14px;border-collapse:collapse;border:1px solid ${BRAND_BORDER};background:#F8FAFC;">
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;width:35%;border-bottom:1px solid ${BRAND_BORDER};">Customer</td><td style="border-bottom:1px solid ${BRAND_BORDER};">${booking.customer?.firstName} ${booking.customer?.lastName}</td></tr>
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;border-bottom:1px solid ${BRAND_BORDER};">Date</td><td style="border-bottom:1px solid ${BRAND_BORDER};">${dateStr}</td></tr>
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;border-bottom:1px solid ${BRAND_BORDER};">Booking Ref</td><td style="border-bottom:1px solid ${BRAND_BORDER};font-weight:700;">#${booking.bookingNumber}</td></tr>
     </table>
-    <br/><div style="text-align:center;"><a href="${portalUrl}" style="display:inline-block;background:${BRAND_NAVY};color:${BRAND_CORAL};padding:14px 24px;border-radius:8px;text-decoration:none;font-weight:bold;">Approve Booking</a></div>
+    <div style="text-align:center;margin-top:20px;">
+      <a href="${portalUrl}" class="btn" style="display:inline-block;background:${BRAND_PRIMARY};color:#FFFFFF;padding:12px 28px;border-radius:6px;text-decoration:none;font-weight:600;font-size:13px;">Review &amp; Approve &rarr;</a>
+    </div>
   `;
-  return sendEmail({ to, subject: `Booking Awaiting Approval`, html, replyTo: booking.customer?.email });
+  return sendEmail({ to, subject: `Action Required: Booking #${booking.bookingNumber} Awaiting Approval`, html, replyTo: booking.customer?.email });
 }
 
+// ─── 13. OWNER: URGENT LAST-MINUTE ALERT ────────────────────────
 export async function sendOwnerLateBookingAlert(booking: any) {
   const to = getAdminRecipients();
-  const portalUrl = `${process.env.NEXT_PUBLIC_SITE_URL || 'https://bostonlegendicecream.com'}/admin/bookings/${booking.id}`;
+  const portalUrl = `${SITE_URL}/admin/bookings/${booking.id}`;
+  const dateStr = booking.eventDate ? new Date(booking.eventDate).toLocaleDateString("en-US", { month: 'short', day: 'numeric', year: 'numeric' }) : "";
+
   const html = `
-    <h2 style="color:${BRAND_CORAL};margin-top:0;">⚠️ URGENT – Last Minute Booking</h2>
-    <p>A booking was just created for an event starting in less than 24 hours.</p>
-    <table width="100%" cellpadding="10" cellspacing="0" style="border-collapse:collapse;font-size:15px;color:#374151;">
-      <tr><td width="35%" style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Customer Name</td><td style="border-bottom:1px solid #E5E7EB;">${booking.customer?.firstName} ${booking.customer?.lastName}</td></tr>
-      <tr><td style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Event Date</td><td style="border-bottom:1px solid #E5E7EB;">${formatEventDate(booking.eventDate)}</td></tr>
-      <tr><td style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Start Time</td><td style="border-bottom:1px solid #E5E7EB;">${booking.startTime}</td></tr>
-      <tr><td style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Location</td><td style="border-bottom:1px solid #E5E7EB;">${booking.address}, ${booking.city} ${booking.zip}</td></tr>
-      <tr><td style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Package</td><td style="border-bottom:1px solid #E5E7EB;">${booking.package?.name || 'Custom Package'}</td></tr>
+    <div style="background:#FEF2F2;border:1px solid #FECACA;border-radius:8px;padding:14px 18px;margin-bottom:16px;">
+      <p style="margin:0;color:#991B1B;font-weight:700;font-size:14px;">Urgent: Last-Minute Booking Request (&lt;24 hours)</p>
+    </div>
+    <table width="100%" cellpadding="8" cellspacing="0" style="font-size:14px;border-collapse:collapse;border:1px solid ${BRAND_BORDER};background:#F8FAFC;">
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;width:35%;border-bottom:1px solid ${BRAND_BORDER};">Customer</td><td style="border-bottom:1px solid ${BRAND_BORDER};font-weight:700;">${booking.customer?.firstName} ${booking.customer?.lastName}</td></tr>
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;border-bottom:1px solid ${BRAND_BORDER};">Phone</td><td style="border-bottom:1px solid ${BRAND_BORDER};">${booking.customer?.phone || 'N/A'}</td></tr>
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;border-bottom:1px solid ${BRAND_BORDER};">Date &amp; Time</td><td style="border-bottom:1px solid ${BRAND_BORDER};">${dateStr} at ${booking.startTime}</td></tr>
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;">Location</td><td>${booking.address}, ${booking.city}</td></tr>
     </table>
-    <br/><div style="text-align:center;"><a href="${portalUrl}" style="display:inline-block;background:\${BRAND_CORAL};color:#FFFFFF;padding:14px 24px;border-radius:8px;text-decoration:none;font-weight:bold;">View Urgent Booking</a></div>
+    <div style="text-align:center;margin-top:20px;">
+      <a href="${portalUrl}" class="btn" style="display:inline-block;background:#DC2626;color:#FFFFFF;padding:12px 28px;border-radius:6px;text-decoration:none;font-weight:600;font-size:13px;">View Urgent Request &rarr;</a>
+    </div>
   `;
-  return sendEmail({ to, subject: `URGENT – Last Minute Booking`, html, replyTo: booking.customer?.email });
+  return sendEmail({ to, subject: `URGENT: Last-Minute Booking (${dateStr})`, html, replyTo: booking.customer?.email });
 }
 
+// ─── 14. OWNER: 24-HOUR EVENT REMINDER ──────────────────────────
 export async function sendOwnerEventReminderEmail(booking: any) {
   const to = ADMIN_EMAIL;
-  const portalUrl = `${process.env.NEXT_PUBLIC_SITE_URL || 'https://www.bostonlegendicecreamtruck.com'}/admin/bookings/${booking.id}`;
+  const portalUrl = `${SITE_URL}/admin/bookings/${booking.id}`;
+  const dateStr = booking.eventDate ? new Date(booking.eventDate).toLocaleDateString("en-US", { month: 'short', day: 'numeric', year: 'numeric' }) : "";
+
   const html = `
-    <h2 style="color:${BRAND_NAVY};margin-top:0;">Upcoming Event Tomorrow</h2>
-    <p>This is a 24-hour reminder for the following upcoming event:</p>
-    <table width="100%" cellpadding="8" cellspacing="0" style="border-collapse:collapse;font-size:15px;color:#374151;">
-      <tr><td width="35%" style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Customer Name</td><td style="border-bottom:1px solid #E5E7EB;">${booking.customer?.firstName} ${booking.customer?.lastName}</td></tr>
-      <tr><td style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Date</td><td style="border-bottom:1px solid #E5E7EB;">${formatEventDate(booking.eventDate)}</td></tr>
-      <tr><td style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Time</td><td style="border-bottom:1px solid #E5E7EB;">${booking.startTime}</td></tr>
-      <tr><td style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Address</td><td style="border-bottom:1px solid #E5E7EB;">${booking.address}, ${booking.city} ${booking.zip}</td></tr>
-      <tr><td style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Package</td><td style="border-bottom:1px solid #E5E7EB;">${booking.package?.name || 'Custom Package'}</td></tr>
+    <h2 style="color:${BRAND_PRIMARY};margin:0 0 12px;font-size:20px;font-weight:700;">24-Hour Event Reminder</h2>
+    <p style="color:${BRAND_TEXT_MUTED};font-size:14px;margin:0 0 16px;">Reminder for tomorrow's scheduled event:</p>
+    <table width="100%" cellpadding="8" cellspacing="0" style="font-size:14px;border-collapse:collapse;border:1px solid ${BRAND_BORDER};background:#F8FAFC;">
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;width:35%;border-bottom:1px solid ${BRAND_BORDER};">Customer</td><td style="border-bottom:1px solid ${BRAND_BORDER};">${booking.customer?.firstName} ${booking.customer?.lastName}</td></tr>
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;border-bottom:1px solid ${BRAND_BORDER};">Date &amp; Time</td><td style="border-bottom:1px solid ${BRAND_BORDER};">${dateStr} at ${booking.startTime}</td></tr>
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;border-bottom:1px solid ${BRAND_BORDER};">Address</td><td style="border-bottom:1px solid ${BRAND_BORDER};">${booking.address}, ${booking.city} ${booking.zip}</td></tr>
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;">Package</td><td>${booking.package?.name || 'Custom Package'}</td></tr>
     </table>
-    <br/><div style="text-align:center;"><a href="${portalUrl}" style="display:inline-block;background:${BRAND_NAVY};color:${BRAND_CORAL};padding:14px 24px;border-radius:8px;text-decoration:none;font-weight:bold;">Review Booking Details</a></div>
+    <div style="text-align:center;margin-top:20px;">
+      <a href="${portalUrl}" class="btn" style="display:inline-block;background:${BRAND_PRIMARY};color:#FFFFFF;padding:12px 28px;border-radius:6px;text-decoration:none;font-weight:600;font-size:13px;">View Booking Details &rarr;</a>
+    </div>
   `;
-  return sendEmail({ to, subject: `Upcoming Event Tomorrow`, html });
+  return sendEmail({ to, subject: `Upcoming Event Tomorrow: ${booking.customer?.firstName} ${booking.customer?.lastName}`, html });
 }
 
-// ─── INQUIRY REPLY / ESCALATION ──────────────────────────────
+// ─── 15. AI CONCIERGE / HUMAN SUPPORT ESCALATION ─────────────────
 export async function sendChatEscalationOwnerEmail(inquiry: { id: string; name: string; email: string; phone?: string | null; notes?: string | null; pageUrl?: string | null; createdAt?: Date | string; }) {
-  const OWNER_EMAIL = BUSINESS_CONFIG.contact.email;
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.bostonlegendicecreamtruck.com';
-  const inquiryUrl = `${siteUrl}/admin/inquiries`;
-  const timestamp = inquiry.createdAt ? new Date(inquiry.createdAt).toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short" }) : new Date().toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short" });
+  const inquiryUrl = `${SITE_URL}/admin/inquiries`;
 
   const html = `
-    <div style="text-align:center;padding:24px 0 20px;">
-      <h2 style="margin:0 0 8px;color:${BRAND_NAVY};font-size:26px;font-weight:900;">Human Support Requested</h2>
-      <p style="margin:0;color:#6B7280;font-size:15px;font-weight:600;">A customer needs live assistance via the AI Chat Widget.</p>
-    </div>
-    <table width="100%" cellpadding="12" cellspacing="0" style="font-size:15px;color:#374151;border-collapse:collapse;margin-bottom:24px;background:#F8F9FC;border-radius:12px;">
-      <tr><td width="35%" style="font-weight:800;color:${BRAND_NAVY};border-bottom:1px solid #E5E7EB;">Customer Name</td><td style="border-bottom:1px solid #E5E7EB;font-weight:600;">${inquiry.name}</td></tr>
-      <tr><td style="font-weight:800;color:${BRAND_NAVY};border-bottom:1px solid #E5E7EB;">Email</td><td style="border-bottom:1px solid #E5E7EB;font-weight:600;"><a href="mailto:${inquiry.email}" style="color:${BRAND_NAVY};font-weight:700;">${inquiry.email}</a></td></tr>
-      <tr><td style="font-weight:800;color:${BRAND_NAVY};border-bottom:1px solid #E5E7EB;">Phone</td><td style="border-bottom:1px solid #E5E7EB;font-weight:600;">${inquiry.phone || 'Not provided'}</td></tr>
-      <tr><td style="font-weight:800;color:${BRAND_NAVY};">Timestamp</td><td style="font-weight:600;">${timestamp}</td></tr>
+    <h2 style="color:${BRAND_PRIMARY};margin:0 0 12px;font-size:20px;font-weight:700;">Live Support Request</h2>
+    <p style="color:${BRAND_TEXT_MUTED};font-size:14px;margin:0 0 16px;">A visitor requested human support via the website chat widget:</p>
+    <table width="100%" cellpadding="8" cellspacing="0" style="font-size:14px;border-collapse:collapse;border:1px solid ${BRAND_BORDER};background:#F8FAFC;margin-bottom:16px;">
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;width:35%;border-bottom:1px solid ${BRAND_BORDER};">Name</td><td style="border-bottom:1px solid ${BRAND_BORDER};font-weight:700;">${inquiry.name}</td></tr>
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;border-bottom:1px solid ${BRAND_BORDER};">Email</td><td style="border-bottom:1px solid ${BRAND_BORDER};"><a href="mailto:${inquiry.email}">${inquiry.email}</a></td></tr>
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;border-bottom:1px solid ${BRAND_BORDER};">Phone</td><td style="border-bottom:1px solid ${BRAND_BORDER};">${inquiry.phone || 'Not provided'}</td></tr>
     </table>
-    ${inquiry.notes ? `<div style="background:#F9FAFB;border:1px solid #E5E7EB;border-radius:12px;padding:16px 20px;margin-bottom:24px;"><p style="margin:0 0 8px;font-size:12px;font-weight:900;text-transform:uppercase;color:\${BRAND_NAVY};">Chat Context</p><p style="margin:0;color:#374151;font-size:14px;font-weight:600;white-space:pre-wrap;">${inquiry.notes}</p></div>` : ''}
-    <div style="text-align:center;margin-top:16px;">
-      <a href="${inquiryUrl}" style="display:block;width:100%;box-sizing:border-box;background:${BRAND_NAVY};color:${BRAND_CORAL};padding:18px 24px;border-radius:12px;text-decoration:none;font-weight:900;font-size:16px;text-transform:uppercase;">View Conversation in Admin Inbox</a>
+    ${inquiry.notes ? `<div style="background:#FAFBFD;border:1px solid ${BRAND_BORDER};border-radius:6px;padding:12px 14px;margin-bottom:16px;"><p style="margin:0 0 4px;font-size:11px;font-weight:700;text-transform:uppercase;color:${BRAND_TEXT_MUTED};">Chat Excerpt</p><p style="margin:0;font-size:13px;color:${BRAND_PRIMARY};white-space:pre-wrap;">${inquiry.notes}</p></div>` : ''}
+    <div style="text-align:center;">
+      <a href="${inquiryUrl}" class="btn" style="display:inline-block;background:${BRAND_PRIMARY};color:#FFFFFF;padding:12px 28px;border-radius:6px;text-decoration:none;font-weight:600;font-size:13px;">Open Admin Inbox &rarr;</a>
     </div>
   `;
-  return sendEmail({ to: OWNER_EMAIL, subject: `🚨 Human Support Requested — ${inquiry.name}`, html, title: "Human Support Requested", replyTo: inquiry.email });
+  return sendEmail({ to: SENDER_EMAIL, subject: `Customer Support Request: ${inquiry.name}`, html, title: "Support Requested", replyTo: inquiry.email });
 }
 
-// ─── GOOGLE REVIEW REQUEST ────────────────────────────────────
+// ─── 16. GOOGLE REVIEW REQUEST ───────────────────────────────────
 const GOOGLE_REVIEW_URL = "https://g.page/r/CWDhxc3sMbFAEAI/review";
 
 export async function sendGoogleReviewRequestEmail(booking: { id: string; bookingNumber: string; eventDate: Date; eventType: string; customer: { firstName: string; lastName: string; email: string }; package?: { name: string } | null; }) {
   const customerName = `${booking.customer.firstName}`;
   const packageName = booking.package?.name ?? "Ice Cream Truck";
-  const eventDate = new Date(booking.eventDate).toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric" });
+  const eventDate = new Date(booking.eventDate).toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", year: "numeric" });
 
   const html = `
-    <div style="text-align:center;margin-bottom:24px;">
-      <div style="font-size:40px;line-height:1;margin-bottom:16px;">🍦⭐</div>
-      <h1 style="font-size:26px;font-weight:900;color:${BRAND_NAVY};margin:0 0 8px;">Thank You, ${customerName}!</h1>
-      <p style="font-size:15px;color:#6B7280;font-weight:600;margin:0;">We hope your event was absolutely delicious.</p>
-    </div>
-    <div style="background:#F9FAFB;border:2px solid #FEF3C7;border-radius:16px;padding:24px;margin-bottom:24px;text-align:center;">
-      <p style="font-size:15px;color:\${BRAND_NAVY};font-weight:700;margin:0 0 4px;">Your recent event</p>
-      <p style="font-size:20px;font-weight:900;color:${BRAND_NAVY};margin:0;">${packageName} — ${eventDate}</p>
-    </div>
-    <p style="font-size:16px;color:#374151;font-weight:600;line-height:1.7;margin-bottom:20px;">
-      It was a pleasure serving your event! If you enjoyed your American Legend Ice Cream Truck experience, we'd be incredibly grateful if you could take 30 seconds to leave us a review on Google. It really helps other families and businesses discover us!
+    <h2 style="margin:0 0 12px;color:${BRAND_PRIMARY};font-size:22px;font-weight:700;">Thank You, ${customerName}!</h2>
+    <p style="margin:0 0 20px;color:${BRAND_TEXT_MUTED};font-size:15px;line-height:1.6;">
+      It was an absolute pleasure catering your <strong>${packageName}</strong> on ${eventDate}. We hope your guests enjoyed every sweet moment!
     </p>
-    <div style="text-align:center;margin:28px 0;">
-      <a href="${GOOGLE_REVIEW_URL}" style="display:inline-block;background:${BRAND_CORAL};color:${BRAND_NAVY};padding:18px 40px;border-radius:50px;text-decoration:none;font-weight:900;font-size:17px;box-shadow:0 8px 20px rgba(255,160,0,0.35);">⭐ Leave a Google Review</a>
+
+    <div style="background:#F8FAFC;border:1px solid ${BRAND_BORDER};border-radius:12px;padding:24px;text-align:center;margin-bottom:24px;">
+      <p style="margin:0 0 12px;font-size:14px;color:${BRAND_TEXT_MUTED};line-height:1.5;">
+        Would you take 30 seconds to share your experience on Google? As an independent business, your feedback means everything to us:
+      </p>
+      <a href="${GOOGLE_REVIEW_URL}" class="btn" style="display:inline-block;background:${BRAND_ACCENT};color:#FFFFFF;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;box-shadow:0 2px 8px rgba(234,88,12,0.2);">Leave a Google Review &rarr;</a>
     </div>
-    <p style="font-size:13px;color:#9CA3AF;font-weight:600;text-align:center;margin-top:20px;">Takes less than 30 seconds — and it means the world to our small business! 🙏</p>
-    <div style="margin-top:24px;padding:16px;background:#F9FAFB;border-radius:12px;text-align:center;">
-      <p style="font-size:13px;color:#6B7280;font-weight:600;margin:0 0 4px;">Need anything else?</p>
-      <a href="https://www.bostonlegendicecreamtruck.com/packages" style="color:${BRAND_CORAL};font-weight:800;font-size:14px;">Book your next event →</a>
-    </div>
+
+    <p style="text-align:center;font-size:13px;color:${BRAND_TEXT_MUTED};margin:0;">
+      Planning your next celebration? <a href="${SITE_URL}/packages" style="color:${BRAND_PRIMARY};font-weight:600;text-decoration:none;">Reserve again anytime &rarr;</a>
+    </p>
   `;
-  return sendEmail({ to: booking.customer.email, subject: `${customerName}, thank you for choosing American Legend Ice Cream Truck! ⭐`, html, title: "Thank You — American Legend Ice Cream Truck" });
+  return sendEmail({ to: booking.customer.email, subject: `Thank you for choosing ${BUSINESS_CONFIG.name}!`, html, title: "Thank You" });
 }
 
-// ─── CONTACT AND QUOTE REQUEST NOTIFICATIONS ──────────────────
+// ─── 17. CONTACT FORM MESSAGE NOTIFICATION ───────────────────────
 export async function sendContactMessageNotification(data: { name: string, email: string, message: string }) {
   const html = `
-    <h2 style="color:${BRAND_NAVY};margin-top:0;">New Contact Form Message</h2>
-    <table width="100%" cellpadding="10" cellspacing="0" style="border-collapse:collapse;font-size:15px;color:#374151;">
-      <tr><td width="25%" style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Name</td><td style="border-bottom:1px solid #E5E7EB;">${data.name}</td></tr>
-      <tr><td style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Email</td><td style="border-bottom:1px solid #E5E7EB;">${data.email}</td></tr>
+    <h2 style="color:${BRAND_PRIMARY};margin:0 0 14px;font-size:20px;font-weight:700;">New Contact Form Message</h2>
+    <table width="100%" cellpadding="8" cellspacing="0" style="font-size:14px;border-collapse:collapse;border:1px solid ${BRAND_BORDER};background:#F8FAFC;">
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;width:25%;border-bottom:1px solid ${BRAND_BORDER};">Name</td><td style="border-bottom:1px solid ${BRAND_BORDER};font-weight:700;">${data.name}</td></tr>
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;border-bottom:1px solid ${BRAND_BORDER};">Email</td><td style="border-bottom:1px solid ${BRAND_BORDER};"><a href="mailto:${data.email}">${data.email}</a></td></tr>
     </table>
-    <div style="margin-top:20px;padding:15px;background:#F9FAFB;border-left:4px solid ${BRAND_CORAL};">
-      <p style="margin:0;font-weight:600;white-space:pre-wrap;">${data.message}</p>
+    <div style="margin-top:16px;padding:14px 16px;background:#FAFBFD;border-left:3px solid ${BRAND_PRIMARY};border-radius:4px;">
+      <p style="margin:0;font-size:14px;color:${BRAND_PRIMARY};line-height:1.6;white-space:pre-wrap;">${data.message}</p>
     </div>
   `;
-  return sendEmail({ to: getAdminRecipients(), subject: `Contact Form Message from ${data.name}`, html, replyTo: data.email });
+  return sendEmail({ to: getAdminRecipients(), subject: `Contact Message from ${data.name}`, html, replyTo: data.email });
 }
 
+// ─── 18. QUOTE REQUEST NOTIFICATION ─────────────────────────────
 export async function sendQuoteRequestNotification(inquiry: any) {
-  const portalUrl = `${process.env.NEXT_PUBLIC_SITE_URL || 'https://www.bostonlegendicecreamtruck.com'}/admin/inquiries`;
+  const portalUrl = `${SITE_URL}/admin/inquiries`;
+  const dateStr = inquiry.eventDate ? new Date(inquiry.eventDate).toLocaleDateString() : 'N/A';
+
   const html = `
-    <h2 style="color:${BRAND_NAVY};margin-top:0;">New Custom Quote Request</h2>
-    <table width="100%" cellpadding="10" cellspacing="0" style="border-collapse:collapse;font-size:15px;color:#374151;">
-      <tr><td width="35%" style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Customer Name</td><td style="border-bottom:1px solid #E5E7EB;">${inquiry.name}</td></tr>
-      <tr><td style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Phone</td><td style="border-bottom:1px solid #E5E7EB;">${inquiry.phone || 'N/A'}</td></tr>
-      <tr><td style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Email</td><td style="border-bottom:1px solid #E5E7EB;">${inquiry.email}</td></tr>
-      <tr><td style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Event Type</td><td style="border-bottom:1px solid #E5E7EB;">${inquiry.eventType}</td></tr>
-      <tr><td style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Event Date</td><td style="border-bottom:1px solid #E5E7EB;">${inquiry.eventDate ? new Date(inquiry.eventDate).toLocaleDateString() : 'N/A'}</td></tr>
-      <tr><td style="font-weight:bold;border-bottom:1px solid #E5E7EB;">Guest Count</td><td style="border-bottom:1px solid #E5E7EB;">${inquiry.guestCount || 'N/A'}</td></tr>
+    <h2 style="color:${BRAND_PRIMARY};margin:0 0 14px;font-size:20px;font-weight:700;">New Custom Quote Request</h2>
+    <table width="100%" cellpadding="8" cellspacing="0" style="font-size:14px;border-collapse:collapse;border:1px solid ${BRAND_BORDER};background:#F8FAFC;">
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;width:35%;border-bottom:1px solid ${BRAND_BORDER};">Customer</td><td style="border-bottom:1px solid ${BRAND_BORDER};font-weight:700;">${inquiry.name}</td></tr>
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;border-bottom:1px solid ${BRAND_BORDER};">Phone</td><td style="border-bottom:1px solid ${BRAND_BORDER};">${inquiry.phone || 'N/A'}</td></tr>
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;border-bottom:1px solid ${BRAND_BORDER};">Email</td><td style="border-bottom:1px solid ${BRAND_BORDER};"><a href="mailto:${inquiry.email}">${inquiry.email}</a></td></tr>
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;border-bottom:1px solid ${BRAND_BORDER};">Event Type</td><td style="border-bottom:1px solid ${BRAND_BORDER};">${inquiry.eventType}</td></tr>
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;border-bottom:1px solid ${BRAND_BORDER};">Event Date</td><td style="border-bottom:1px solid ${BRAND_BORDER};">${dateStr}</td></tr>
+      <tr><td style="color:${BRAND_TEXT_MUTED};font-weight:600;">Guests</td><td>${inquiry.guestCount || 'N/A'}</td></tr>
     </table>
-    ${inquiry.notes ? `<div style="margin-top:20px;padding:15px;background:#F9FAFB;border-left:4px solid ${BRAND_CORAL};"><p style="margin:0;font-weight:600;white-space:pre-wrap;">${inquiry.notes}</p></div>` : ''}
-    <br/><div style="text-align:center;"><a href="${portalUrl}" style="display:inline-block;background:${BRAND_NAVY};color:${BRAND_CORAL};padding:14px 24px;border-radius:8px;text-decoration:none;font-weight:bold;">View in Admin</a></div>
+    ${inquiry.notes ? `<div style="margin-top:14px;padding:12px 14px;background:#FAFBFD;border-left:3px solid ${BRAND_PRIMARY};"><p style="margin:0;font-size:13px;white-space:pre-wrap;">${inquiry.notes}</p></div>` : ''}
+    <div style="text-align:center;margin-top:20px;">
+      <a href="${portalUrl}" class="btn" style="display:inline-block;background:${BRAND_PRIMARY};color:#FFFFFF;padding:12px 28px;border-radius:6px;text-decoration:none;font-weight:600;font-size:13px;">View in Admin &rarr;</a>
+    </div>
   `;
   return sendEmail({ to: ADMIN_EMAIL, subject: `Custom Quote Request: ${inquiry.name}`, html, replyTo: inquiry.email });
 }
