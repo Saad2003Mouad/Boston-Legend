@@ -11,7 +11,7 @@ export const BUSINESS_CONFIG = {
   tagline: "A True American Ice Cream Experience.",
   description:
     "New England' premier ice cream truck catering service. Bringing classic American frozen treats, nostalgic novelties, and legendary sweet celebrations to birthdays, corporate events, weddings, and festivals across all of New England.",
-  domain: "https://americanlegendicecreamtruck.com",
+  domain: "https://www.americanlegendicecreamtruck.com",
 
   contact: {
     phone1: "781-947-7676",
