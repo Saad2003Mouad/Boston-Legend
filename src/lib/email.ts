@@ -111,8 +111,26 @@ function baseTemplate(content: string, title: string) {
 </html>`;
 }
 
+import { generateIcsEvent } from './ics';
+
 // ─── CORE SEND WITH RETRY ──────────────────────────────────────
-export async function sendEmail({ to, subject, html, title, replyTo }: { to: string | string[]; subject: string; html: string; title?: string; replyTo?: string }) {
+export async function sendEmail({
+  to,
+  subject,
+  html,
+  title,
+  replyTo,
+  icsContent,
+  icsFilename,
+}: {
+  to: string | string[];
+  subject: string;
+  html: string;
+  title?: string;
+  replyTo?: string;
+  icsContent?: string;
+  icsFilename?: string;
+}) {
   const MAX_RETRIES = 2;
   const RETRY_DELAY_MS = 2000;
 
@@ -125,13 +143,36 @@ export async function sendEmail({ to, subject, html, title, replyTo }: { to: str
 
   for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
     try {
-      const info = await transporter.sendMail({
+      const mailOptions: any = {
         from: `"${BUSINESS_CONFIG.name}" <${SENDER_EMAIL}>`,
         replyTo: replyTo || REPLY_TO,
         to: recipients,
         subject: subject,
         html: baseTemplate(html, title || subject),
-      });
+      };
+
+      if (icsContent) {
+        mailOptions.icalEvent = {
+          filename: icsFilename || 'event.ics',
+          method: 'REQUEST',
+          content: icsContent,
+        };
+        mailOptions.alternatives = [
+          {
+            contentType: 'text/calendar; charset="utf-8"; method=REQUEST',
+            content: icsContent,
+          },
+        ];
+        mailOptions.attachments = [
+          {
+            filename: icsFilename || 'event.ics',
+            content: icsContent,
+            contentType: 'application/ics',
+          },
+        ];
+      }
+
+      const info = await transporter.sendMail(mailOptions);
 
       console.log(`[Email] ✅ Sent "${subject}" → ${to} (Message-ID: ${info.messageId})`);
       return true;
@@ -375,9 +416,21 @@ function formatBookingDetailsHtml(booking: any) {
 export async function sendBookingApprovedEmail(to: string, firstName: string, bookingNumber: string, paymentUrl: string, amount: string, bookingId: string) {
   const portalUrl = `${SITE_URL}/portal/booking/${bookingId}`;
   let bookingDetailsHtml = "";
+  let icsContent: string | undefined;
   try {
     const booking = await prisma.booking.findUnique({ where: { id: bookingId }, include: { customer: true, package: true, quote: true, stops: { orderBy: { stopOrder: 'asc' } } } });
     bookingDetailsHtml = formatBookingDetailsHtml(booking);
+    if (booking) {
+      icsContent = generateIcsEvent({
+        id: booking.id,
+        summary: `American Legend Ice Cream Truck — #${bookingNumber}`,
+        description: `Booking #${bookingNumber}\nPackage: ${booking.package?.name || 'Custom Package'}\nAddress: ${booking.address}, ${booking.city} ${booking.zip}\nGuests: ${booking.guests}`,
+        location: `${booking.address}, ${booking.city} ${booking.zip}`,
+        startDate: booking.eventDate,
+        startTime: booking.startTime,
+        durationMins: booking.durationMins || 60,
+      });
+    }
   } catch (e) { console.error("Error formatting booking details for approved email:", e); }
 
   const html = `
@@ -397,7 +450,14 @@ export async function sendBookingApprovedEmail(to: string, firstName: string, bo
       <a href="${portalUrl}" class="btn" style="display:inline-block;background:${BRAND_PRIMARY};color:#FFFFFF;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;">Access Booking Portal &rarr;</a>
     </div>
   `;
-  return sendEmail({ to, subject: `Approved: Your Booking #${bookingNumber} | ${BUSINESS_CONFIG.name}`, html, title: "Booking Approved" });
+  return sendEmail({
+    to,
+    subject: `Approved: Your Booking #${bookingNumber} | ${BUSINESS_CONFIG.name}`,
+    html,
+    title: "Booking Approved",
+    icsContent,
+    icsFilename: `AmericanLegend-${bookingNumber}.ics`
+  });
 }
 
 // ─── 7. BOOKING PENDING / CONFIRMED EMAIL ───────────────────────
@@ -505,6 +565,21 @@ export async function sendOwnerNewBookingEmail(booking: any) {
   const portalUrl = `${SITE_URL}/admin/bookings/${booking.id}`;
   const dateStr = booking.eventDate ? new Date(booking.eventDate).toLocaleDateString("en-US", { month: 'short', day: 'numeric', year: 'numeric' }) : "";
 
+  let icsContent: string | undefined;
+  try {
+    icsContent = generateIcsEvent({
+      id: booking.id,
+      summary: `Booking #${booking.bookingNumber || booking.id}: ${booking.customer?.firstName} ${booking.customer?.lastName}`,
+      description: `Customer: ${booking.customer?.firstName} ${booking.customer?.lastName}\nPhone: ${booking.customer?.phone || 'N/A'}\nPackage: ${booking.package?.name || 'Custom Package'}\nGuests: ${booking.guests}\nLocation: ${booking.address}, ${booking.city} ${booking.zip}`,
+      location: `${booking.address}, ${booking.city} ${booking.zip}`,
+      startDate: booking.eventDate,
+      startTime: booking.startTime,
+      durationMins: booking.durationMins || 60,
+    });
+  } catch (err) {
+    console.error("Error generating ICS for owner email:", err);
+  }
+
   const html = `
     <h2 style="color:${BRAND_PRIMARY};margin:0 0 16px;font-size:20px;font-weight:700;">New Booking Notification</h2>
     <table width="100%" cellpadding="8" cellspacing="0" style="font-size:14px;border-collapse:collapse;border:1px solid ${BRAND_BORDER};border-radius:6px;background:#F8FAFC;">
@@ -520,7 +595,14 @@ export async function sendOwnerNewBookingEmail(booking: any) {
       <a href="${portalUrl}" class="btn" style="display:inline-block;background:${BRAND_PRIMARY};color:#FFFFFF;padding:12px 28px;border-radius:6px;text-decoration:none;font-weight:600;font-size:13px;">Open in Admin Portal &rarr;</a>
     </div>
   `;
-  return sendEmail({ to, subject: `New Booking: ${booking.customer?.firstName} ${booking.customer?.lastName} (${dateStr})`, html, replyTo: booking.customer?.email });
+  return sendEmail({
+    to,
+    subject: `New Booking: ${booking.customer?.firstName} ${booking.customer?.lastName} (${dateStr})`,
+    html,
+    replyTo: booking.customer?.email,
+    icsContent,
+    icsFilename: `AmericanLegend-${booking.bookingNumber || booking.id}.ics`
+  });
 }
 
 // ─── 12. OWNER: APPROVAL REQUIRED ───────────────────────────────

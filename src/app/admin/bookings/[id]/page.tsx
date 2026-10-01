@@ -4,7 +4,7 @@ import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import {
   ArrowLeft, CheckCircle2, XCircle, MapPin, Users,
-  Phone, Mail, DollarSign, Calendar, Loader2, ChevronRight, AlertCircle, MessageSquare, Truck, Edit3
+  Phone, Mail, DollarSign, Calendar, Loader2, ChevronRight, AlertCircle, MessageSquare, Truck, Edit3, Star
 } from "lucide-react";
 
 const STATUS_CONFIG: Record<string, { label: string; bg: string; text: string; border: string }> = {
@@ -81,6 +81,27 @@ export default function BookingDetailPage() {
   };
 
   useEffect(() => { loadBooking(); loadResources(); }, [id]);
+
+  const [reviewLoading, setReviewLoading] = useState(false);
+
+  const sendReviewEmail = async () => {
+    setReviewLoading(true);
+    try {
+      const res = await fetch(`/api/admin/bookings/${id}/review`, {
+        method: "POST",
+      });
+      const data = await res.json();
+      if (res.ok && data.success) {
+        showToast(data.message || "Review request email sent successfully! ⭐");
+      } else {
+        showToast(data.error || "Failed to send review email", "error");
+      }
+    } catch {
+      showToast("Network error while sending review email", "error");
+    } finally {
+      setReviewLoading(false);
+    }
+  };
 
   const updateStatus = async (status: string) => {
     setActionLoading(true);
@@ -188,6 +209,15 @@ export default function BookingDetailPage() {
               Mark Completed
             </button>
           )}
+          {/* Send Google Review Email Button */}
+          {["CONFIRMED", "COMPLETED"].includes(booking.status) && (
+            <button onClick={sendReviewEmail} disabled={reviewLoading}
+              className="flex items-center gap-2 px-4 py-2 bg-amber-500 text-white rounded-xl text-sm font-bold hover:bg-amber-600 disabled:opacity-60 transition-all shadow-sm">
+              {reviewLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Star className="w-4 h-4 fill-white" />}
+              Send Review Email ⭐
+            </button>
+          )}
+
           {!["CANCELLED","REJECTED","COMPLETED"].includes(booking.status) && (
             <button onClick={() => updateStatus("CANCELLED")} disabled={actionLoading}
               className="px-4 py-2 bg-white border border-gray-200 text-gray-500 rounded-xl text-sm font-bold hover:border-red-300 hover:text-red-500 transition-all">
