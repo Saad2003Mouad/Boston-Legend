@@ -6,8 +6,7 @@ export default async function BookingSuccessPage(props: {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
   const searchParams = await props.searchParams;
-  // All bookings are now pending review initially
-  const isPending = true; // Hardcoded true now that all bookings start as PENDING_REVIEW
+  const status = (searchParams?.status as string) || "PENDING_REVIEW";
   const bookingNumber = (searchParams?.bookingNumber as string) || "";
   
   // WhatsApp Link Generation
@@ -27,20 +26,52 @@ export default async function BookingSuccessPage(props: {
         </div>
 
         <div className="relative z-10">
-          <div className={`w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 border bg-amber-50 border-amber-100`}>
-            <Clock className="w-10 h-10 text-amber-500" />
-          </div>
+          {status === "REJECTED" ? (
+            <div className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 border bg-red-50 border-red-100">
+              <div className="text-4xl">❌</div>
+            </div>
+          ) : status === "CONFIRMED" ? (
+            <div className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 border bg-green-50 border-green-100">
+              <div className="text-4xl">✅</div>
+            </div>
+          ) : (
+            <div className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 border bg-amber-50 border-amber-100">
+              <Clock className="w-10 h-10 text-amber-500" />
+            </div>
+          )}
           
           <h1 className="text-3xl font-black text-navy tracking-tight mb-3">
-            Request Received
+            {status === "REJECTED" ? "Booking Declined" : status === "CONFIRMED" ? "Booking Confirmed! 🎉" : "Request Received"}
           </h1>
           
-          <p className="text-gray-500 font-medium mb-2">
-            Thank you! Your booking request has been received and is currently <span className="font-bold text-amber-600">Pending Review</span> by our team.
-          </p>
-          <p className="text-sm text-gray-500 mb-6">
-            We will review your details and confirm the booking shortly. If you need immediate assistance, please message us on WhatsApp.
-          </p>
+          {status === "REJECTED" ? (
+            <>
+              <p className="text-gray-500 font-medium mb-2">
+                Unfortunately, your booking request was <span className="font-bold text-red-600">Declined</span> automatically by our system.
+              </p>
+              <p className="text-sm text-gray-500 mb-6">
+                This is typically because the event is too soon (less than 24 hours away). Please contact us directly if you need immediate assistance.
+              </p>
+            </>
+          ) : status === "CONFIRMED" ? (
+            <>
+              <p className="text-gray-500 font-medium mb-2">
+                Great news! Your booking has been <span className="font-bold text-green-600">Confirmed</span>.
+              </p>
+              <p className="text-sm text-gray-500 mb-6">
+                We've sent a confirmation email to you. You can also view your booking details from your inbox.
+              </p>
+            </>
+          ) : (
+            <>
+              <p className="text-gray-500 font-medium mb-2">
+                Thank you! Your booking request has been received and is currently <span className="font-bold text-amber-600">Pending Review</span> by our team.
+              </p>
+              <p className="text-sm text-gray-500 mb-6">
+                We will review your details and confirm the booking shortly. If you need immediate assistance, please message us on WhatsApp.
+              </p>
+            </>
+          )}
           
           {bookingNumber && (
             <div className="bg-navy/5 rounded-xl py-3 px-4 mb-8 inline-block">

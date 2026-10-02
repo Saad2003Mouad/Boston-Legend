@@ -287,9 +287,9 @@ export default function MultiStepQuoteForm({ dbPackages }: { dbPackages?: any[] 
 
   const canContinue = () => {
     if (step === 1) return !(!date || !time);
-    if (step === 2) return !(!address && !zip);
+    if (step === 2) return !!(address && zip && zip.length === 5);
     if (step === 3) {
-      if (routingMode !== "SINGLE" && (!address2 || !!distanceError2)) return false;
+      if (routingMode !== "SINGLE" && (!address2 || !zip2 || zip2.length !== 5 || !!distanceError2)) return false;
       if (isCustom && customGuests < 201) return false;
       return true;
     }

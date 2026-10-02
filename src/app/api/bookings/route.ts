@@ -7,8 +7,11 @@ import {
   sendBookingPendingReviewEmail,
   sendOwnerNewBookingEmail, 
   sendOwnerRequiresApprovalEmail,
-  sendCustomQuoteEmail
+  sendCustomQuoteEmail,
+  sendBookingApprovedEmail
 } from "@/lib/email";
+// @ts-ignore
+import zipcodes from "zipcodes";
 export async function POST(req: Request) {
   try {
     const body = await req.json();
@@ -109,11 +112,47 @@ export async function POST(req: Request) {
       });
     }
 
-    // ─── 4. Create Booking ────────────────────────────────────────
+    // ─── 4. Determine Booking Status ──────────────────────────────
     const bookingNumber = `BK-${Math.floor(100000 + Math.random() * 900000)}`;
     const isCustom = dbPackage?.serviceType === "CUSTOM";
-    // All bookings start as PENDING_REVIEW — admin must approve before confirmation
-    const status = "PENDING_REVIEW";
+    
+    // Find state from zip
+    let state = "MA"; // Default fallback
+    if (zip) {
+      const lookup = zipcodes.lookup(zip);
+      if (lookup && lookup.state) state = lookup.state;
+    }
+    
+    const NEW_ENGLAND_STATES = ["MA", "ME", "NH", "VT", "RI", "CT"];
+    if (!NEW_ENGLAND_STATES.includes(state)) {
+      return NextResponse.json({ error: "Sorry, we currently only serve the New England area (MA, ME, NH, VT, RI, CT)." }, { status: 400 });
+    }
+
+    const now = new Date();
+    const hoursUntilEvent = (eventDateObj.getTime() - now.getTime()) / (1000 * 60 * 60);
+
+    let status = "CONFIRMED";
+    let internalNote = "";
+
+    if (hoursUntilEvent < 24) {
+      status = "REJECTED";
+      internalNote = "System: Rejected automatically because event is less than 24 hours away.";
+    } else if (serverTotalAmount <= 500 && distance > 30) {
+      status = "PENDING_REVIEW";
+      internalNote = "System: Total is ≤ $500 and distance > 30 miles.";
+    } else if (hoursUntilEvent < 48) {
+      status = "PENDING_REVIEW";
+      internalNote = "System: Event is less than 48 hours away.";
+    } else if (["ME", "NH", "VT", "RI", "CT"].includes(state)) {
+      status = "PENDING_REVIEW";
+      internalNote = "System: Out of state booking (requires review).";
+    }
+
+    // Custom packages always need review
+    if (isCustom && status === "CONFIRMED") {
+      status = "PENDING_REVIEW";
+      internalNote = "System: Custom event requires quote.";
+    }
 
     const booking = await prisma.booking.create({
       data: {
@@ -130,6 +169,7 @@ export async function POST(req: Request) {
         guests: totalGuests,
         eventType,
         notes: `Package: ${pkgName} | Routing: ${routingMode ?? "SINGLE"}`,
+        internalNote,
         totalAmount: serverTotalAmount,
         additionalStopsFee: routingFee ?? 0
       },
@@ -175,7 +215,10 @@ export async function POST(req: Request) {
 
     // ─── 6. Send Emails (Independent try-catch for customer vs owner) ────
     try {
-      if (isCustom) {
+      if (status === "REJECTED") {
+        // Option 1: Send rejection email
+        // Or do nothing and let them just see it on the success page
+      } else if (isCustom) {
         await sendCustomQuoteEmail(
           email.toLowerCase(),
           firstName,
@@ -187,7 +230,17 @@ export async function POST(req: Request) {
           email.toLowerCase(), 
           firstName, 
           bookingNumber, 
-          "Special location distance or setup requires manual review by our team.", 
+          "Your booking is pending review by our team.", 
+          booking.id
+        );
+      } else if (status === "CONFIRMED") {
+        const portalUrl = `${process.env.NEXTAUTH_URL || 'https://bostonlegendwebflowio.vercel.app'}/customer/booking/${booking.id}`;
+        await sendBookingApprovedEmail(
+          email.toLowerCase(),
+          firstName,
+          bookingNumber,
+          portalUrl,
+          serverTotalAmount.toFixed(2),
           booking.id
         );
       } else {

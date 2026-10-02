@@ -35,9 +35,11 @@ export async function GET(request: Request) {
     const lookup = zipcodes.lookup(zip);
     const dbZip = await prisma.serviceZipCode.findUnique({ where: { zip } });
     
-    // Accept if it's in our DB or if it's a valid Massachusetts zip code
-    if (dbZip || (lookup && lookup.state === "MA")) {
-      // Auto-heal DB: If it's valid MA but missing from DB, we can add it (optional, skipped for speed)
+    // Accept if it's in our DB or if it's a valid New England zip code
+    const NEW_ENGLAND_STATES = ["MA", "ME", "NH", "VT", "RI", "CT"];
+    
+    if (dbZip || (lookup && NEW_ENGLAND_STATES.includes(lookup.state))) {
+      // Auto-heal DB: If it's valid NE but missing from DB, we can add it (optional, skipped for speed)
       if (lookup) {
         if (!destLat || !destLng) {
           destLat = lookup.latitude;
@@ -47,17 +49,16 @@ export async function GET(request: Request) {
         destState = lookup.state;
       } else if (dbZip) {
         // It's in our DB but zipcodes library doesn't have it (very rare, usually new zips).
-        // If we don't have lat/lng from frontend, we fallback to Boston center so we don't block them.
         destCity = dbZip.city;
-        destState = "MA";
+        destState = "MA"; // Default fallback
         if (!destLat || !destLng) {
           destLat = BASE_LOCATION.lat;
           destLng = BASE_LOCATION.lng;
         }
       }
     } else if (!destLat || !destLng) {
-      // If it's not in MA and not in DB, and no coordinates, we reject.
-      return NextResponse.json({ error: "Sorry, we currently only serve Massachusetts." }, { status: 400 });
+      // If it's not in NE and not in DB, and no coordinates, we reject.
+      return NextResponse.json({ error: "Sorry, we currently only serve the New England area (MA, ME, NH, VT, RI, CT)." }, { status: 400 });
     }
   }
 

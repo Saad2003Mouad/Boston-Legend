@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect, useCallback } from "react";
-import { MapPin, Search, Loader2, X, Navigation, GripVertical, LocateFixed, Edit3, Map as MapIcon, Home } from "lucide-react";
+import { MapPin, Search, Loader2, X, Navigation, GripVertical, LocateFixed, Edit3, Map as MapIcon, CheckCircle2 } from "lucide-react";
 import "leaflet/dist/leaflet.css";
 
 // Nominatim result type
@@ -54,8 +54,10 @@ export default function LocationPicker({
   const [mapReady, setMapReady] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
   const [manualMode, setManualMode] = useState(false);
+  const [manualStreet, setManualStreet] = useState("");
   const [manualZip, setManualZip] = useState("");
   const [locating, setLocating] = useState(false);
+  const [manualConfirmed, setManualConfirmed] = useState(false);
 
   const debounceRef = useRef<NodeJS.Timeout | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -102,11 +104,24 @@ export default function LocationPicker({
               return Promise.resolve((window as any).google.maps);
             }
             return new Promise((resolve, reject) => {
+              // Timeout: if Google Maps doesn't load in 8 seconds, reject
+              const timeout = setTimeout(() => reject(new Error("Google Maps load timeout")), 8000);
+
               const existing = document.getElementById("google-maps-sdk");
               if (existing) {
-                existing.addEventListener("load", () => resolve((window as any).google?.maps));
-                existing.addEventListener("error", reject);
-                if ((window as any).google?.maps) resolve((window as any).google.maps);
+                if ((window as any).google?.maps) {
+                  clearTimeout(timeout);
+                  resolve((window as any).google.maps);
+                  return;
+                }
+                existing.addEventListener("load", () => {
+                  clearTimeout(timeout);
+                  resolve((window as any).google?.maps);
+                });
+                existing.addEventListener("error", (e) => {
+                  clearTimeout(timeout);
+                  reject(e);
+                });
                 return;
               }
               const script = document.createElement("script");
@@ -114,14 +129,22 @@ export default function LocationPicker({
               script.src = `https://maps.googleapis.com/maps/api/js?key=${googleApiKey}&libraries=places,geometry`;
               script.async = true;
               script.defer = true;
-              script.onload = () => resolve((window as any).google?.maps);
-              script.onerror = reject;
+              script.onload = () => {
+                clearTimeout(timeout);
+                resolve((window as any).google?.maps);
+              };
+              script.onerror = (e) => {
+                clearTimeout(timeout);
+                reject(e);
+              };
               document.head.appendChild(script);
             });
           };
 
           const gMaps = await loadGoogle();
           if (destroyed || !mapContainerRef.current) return;
+
+          if (!gMaps) throw new Error("Google Maps SDK not available");
 
           const defaultCenter = { lat: 42.3601, lng: -71.0589 };
 
@@ -141,26 +164,21 @@ export default function LocationPicker({
             streetViewControl: false,
             fullscreenControl: false,
             styles: [
-              {
-                featureType: "poi.business",
-                stylers: [{ visibility: "off" }]
-              },
-              {
-                featureType: "transit",
-                elementType: "labels.icon",
-                stylers: [{ visibility: "off" }]
-              }
-            ]
+              { featureType: "poi.business", stylers: [{ visibility: "off" }] },
+              { featureType: "transit", elementType: "labels.icon", stylers: [{ visibility: "off" }] },
+            ],
           });
 
-          // HQ Marker for American Legend
-          const hqPosition = { lat: 42.7351, lng: -70.9856 }; // Georgetown
+          // HQ Marker
+          const hqPosition = { lat: 42.7351, lng: -70.9856 };
           new gMaps.Marker({
             position: hqPosition,
             map: gMap,
             title: "American Legend HQ (01833)",
             icon: {
-              url: "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(`
+              url:
+                "data:image/svg+xml;charset=UTF-8," +
+                encodeURIComponent(`
                 <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
                   <circle cx="22" cy="22" r="20" fill="#071B3A" stroke="#ffffff" stroke-width="3"/>
                   <text x="22" y="27" font-size="18" text-anchor="middle">🍦</text>
@@ -179,7 +197,9 @@ export default function LocationPicker({
             animation: gMaps.Animation.DROP,
             title: "Your Event Location",
             icon: {
-              url: "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(`
+              url:
+                "data:image/svg+xml;charset=UTF-8," +
+                encodeURIComponent(`
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" viewBox="0 0 40 50">
                   <defs>
                     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
@@ -196,10 +216,7 @@ export default function LocationPicker({
             },
           });
 
-          gMarker.addListener("dragstart", () => {
-            setIsDragging(true);
-          });
-
+          gMarker.addListener("dragstart", () => setIsDragging(true));
           gMarker.addListener("dragend", async (e: any) => {
             setIsDragging(false);
             const lat = e.latLng.lat();
@@ -224,7 +241,7 @@ export default function LocationPicker({
         }
       }
 
-      // 2. FALLBACK TO LEAFLET IF NO KEY OR FAILED
+      // 2. FALLBACK TO LEAFLET
       try {
         const L = (await import("leaflet")).default;
         if (destroyed || !mapContainerRef.current) return;
@@ -233,7 +250,7 @@ export default function LocationPicker({
           (container as any)._leaflet_id = null;
         }
         if (mapInstanceRef.current && !isGoogleMapRef.current) {
-          mapInstanceRef.current.remove();
+          try { mapInstanceRef.current.remove(); } catch {}
         }
 
         const defaultCenter: [number, number] = [42.3601, -71.0589];
@@ -246,32 +263,31 @@ export default function LocationPicker({
 
         L.control.zoom({ position: "bottomright" }).addTo(map);
 
-        L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
           maxZoom: 19,
-          attribution: '&copy; OpenStreetMap',
+          attribution: "&copy; OpenStreetMap",
         }).addTo(map);
 
         const markerIcon = L.divIcon({
-          className: "custom-leaflet-icon",
-          html: `<div style="background:linear-gradient(135deg,#FF6B6B,#FF8F8F);border-radius:50% 50% 50% 0;width:40px;height:40px;transform:rotate(-45deg);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(255,107,107,0.6);border:3px solid white;animation:bounce-in 0.5s ease-out;"><span style="transform:rotate(45deg);font-size:16px;">📍</span></div>`,
+          className: "",
+          html: `<div style="background:linear-gradient(135deg,#FF6B6B,#FF8F8F);border-radius:50% 50% 50% 0;width:40px;height:40px;transform:rotate(-45deg);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(255,107,107,0.6);border:3px solid white;"><span style="transform:rotate(45deg);font-size:16px;">📍</span></div>`,
           iconSize: [40, 40],
           iconAnchor: [20, 40],
         });
 
-        const homeCenter: [number, number] = [42.3588, -71.0638];
+        const homeCenter: [number, number] = [42.7351, -70.9856];
         const homeIcon = L.divIcon({
-          className: "custom-leaflet-icon",
+          className: "",
           html: `<div style="background:linear-gradient(135deg,#071B3A,#2C1A10);color:#C99A3D;border-radius:50%;width:44px;height:44px;display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 8px 24px rgba(26,16,9,0.5);border:3px solid white;">🍦</div>`,
           iconSize: [44, 44],
           iconAnchor: [22, 22],
         });
 
-        L.marker(homeCenter, { icon: homeIcon }).addTo(map).bindTooltip("American Legend (01833)", { permanent: true, direction: "right" });
+        L.marker(homeCenter, { icon: homeIcon })
+          .addTo(map)
+          .bindTooltip("American Legend HQ (01833)", { permanent: true, direction: "right" });
 
-        const marker = L.marker(defaultCenter, {
-          icon: markerIcon,
-          draggable: true,
-        }).addTo(map);
+        const marker = L.marker(defaultCenter, { icon: markerIcon, draggable: true }).addTo(map);
 
         marker.on("dragstart", () => setIsDragging(true));
         marker.on("dragend", async () => {
@@ -302,7 +318,7 @@ export default function LocationPicker({
       initializingRef.current = false;
       if (mapInstanceRef.current) {
         if (!isGoogleMapRef.current && typeof mapInstanceRef.current.remove === "function") {
-          mapInstanceRef.current.remove();
+          try { mapInstanceRef.current.remove(); } catch {}
         }
         mapInstanceRef.current = null;
         markerRef.current = null;
@@ -310,12 +326,12 @@ export default function LocationPicker({
     };
   }, []);
 
-  // Reverse geocode a lat/lng to get the address — via server proxy to avoid browser blocking
+  // Reverse geocode via server proxy
   const reverseGeocode = async (lat: number, lng: number) => {
     try {
       const res = await fetch(`/api/geocode?action=reverse&lat=${lat}&lon=${lng}`);
       if (!res.ok) throw new Error("Geocoding failed");
-      
+
       const data = await res.json();
       if (data.error) throw new Error(data.error);
 
@@ -324,59 +340,35 @@ export default function LocationPicker({
       const cityName = addr.city || addr.town || addr.village || addr.hamlet || addr.county || "";
       const zipCode = addr.postcode || "";
       const state = addr.state || "";
-      
+
       const fullAddress = streetAddress || cityName || (data.display_name?.split(",")[0] ?? "");
       const displayStr = `${fullAddress}${cityName && cityName !== fullAddress ? `, ${cityName}` : ""}${state ? `, ${state}` : ""}${zipCode ? ` ${zipCode}` : ""}`.trim();
-      
-      const finalDisplay = displayStr ? displayStr : `Selected Location (${lat.toFixed(4)}, ${lng.toFixed(4)})`;
-      
+      const finalDisplay = displayStr || `Selected Location (${lat.toFixed(4)}, ${lng.toFixed(4)})`;
+
       setQuery(finalDisplay);
       onAddressChange(finalDisplay);
       setSelectedLocation({ lat, lng, display: finalDisplay, street: streetAddress || "", city: cityName, zip: zipCode });
-      
-      onLocationSelect({
-        address: finalDisplay,
-        city: cityName,
-        zip: zipCode,
-        lat,
-        lng,
-      });
+      onLocationSelect({ address: finalDisplay, city: cityName, zip: zipCode, lat, lng });
     } catch (err) {
       console.error("[reverseGeocode] Error:", err);
-      // Show coordinates as fallback only if geocoding completely fails
-      const fallbackAddress = `Selected Location`;
-      setQuery(fallbackAddress);
-      onAddressChange(fallbackAddress);
-      setSelectedLocation({ lat, lng, display: fallbackAddress, street: "", city: "", zip: "" });
-      
-      onLocationSelect({
-        address: fallbackAddress,
-        city: "",
-        zip: "",
-        lat,
-        lng,
-      });
+      const fallback = "Selected Location";
+      setQuery(fallback);
+      onAddressChange(fallback);
+      setSelectedLocation({ lat, lng, display: fallback, street: "", city: "", zip: "" });
+      onLocationSelect({ address: fallback, city: "", zip: "", lat, lng });
     }
   };
 
   // Search for addresses
   const searchAddress = useCallback(async (searchQuery: string) => {
-    if (searchQuery.length < 3) {
-      setSuggestions([]);
-      return;
-    }
-
+    if (searchQuery.length < 3) { setSuggestions([]); return; }
     setIsSearching(true);
     try {
       const res = await fetch(`/api/geocode?action=search&q=${encodeURIComponent(searchQuery + ", USA")}`);
       if (!res.ok) throw new Error("Fetch failed");
       const data: NominatimResult[] = await res.json();
-
-      // Filter to New England states
       const newEnglandStates = ["Massachusetts", "Connecticut", "Rhode Island", "New Hampshire", "Vermont", "Maine"];
-      const neResults = data.filter(
-        (r) => r.address?.state && newEnglandStates.includes(r.address.state)
-      );
+      const neResults = data.filter((r) => r.address?.state && newEnglandStates.includes(r.address.state));
       setSuggestions(neResults.length > 0 ? neResults : data.slice(0, 5));
       setShowSuggestions(true);
     } catch (err) {
@@ -386,28 +378,20 @@ export default function LocationPicker({
     }
   }, []);
 
-  // Debounced search
   const handleInputChange = (value: string) => {
     setQuery(value);
     onAddressChange(value);
-
     if (debounceRef.current) clearTimeout(debounceRef.current);
-    debounceRef.current = setTimeout(() => {
-      searchAddress(value);
-    }, 400);
+    debounceRef.current = setTimeout(() => searchAddress(value), 400);
   };
 
-  // Select a suggestion
   const selectSuggestion = (result: NominatimResult) => {
     const addr = result.address;
-    const streetAddress = [addr?.house_number, addr?.road]
-      .filter(Boolean)
-      .join(" ");
+    const streetAddress = [addr?.house_number, addr?.road].filter(Boolean).join(" ");
     const cityName = addr?.city || addr?.town || addr?.village || "";
     const zipCode = addr?.postcode || "";
     const lat = parseFloat(result.lat);
     const lng = parseFloat(result.lon);
-
     const fullAddress = streetAddress || result.display_name.split(",")[0];
 
     setQuery(fullAddress);
@@ -415,7 +399,6 @@ export default function LocationPicker({
     setShowSuggestions(false);
     setSelectedLocation({ lat, lng, display: fullAddress, street: streetAddress || "", city: cityName, zip: zipCode });
 
-    // Move map to the selected location
     if (mapInstanceRef.current && markerRef.current) {
       if (isGoogleMapRef.current) {
         mapInstanceRef.current.panTo({ lat, lng });
@@ -426,22 +409,11 @@ export default function LocationPicker({
         markerRef.current.setLatLng([lat, lng]);
       }
     }
-
-    onLocationSelect({
-      address: fullAddress,
-      city: cityName,
-      zip: zipCode,
-      lat,
-      lng,
-    });
+    onLocationSelect({ address: fullAddress, city: cityName, zip: zipCode, lat, lng });
   };
 
-  // Locate Me
   const handleLocateMe = () => {
-    if (!navigator.geolocation) {
-      alert("Geolocation is not supported by your browser");
-      return;
-    }
+    if (!navigator.geolocation) { alert("Geolocation is not supported by your browser"); return; }
     setLocating(true);
     navigator.geolocation.getCurrentPosition(
       async (position) => {
@@ -467,228 +439,268 @@ export default function LocationPicker({
     );
   };
 
+  // Confirm manual address — ZIP is optional
+  const handleManualConfirm = () => {
+    const street = manualStreet.trim();
+    const zip = manualZip.trim();
+    if (!street && !zip) return;
+    const fullAddr = street || `ZIP: ${zip}`;
+    setManualConfirmed(true);
+    onAddressChange(fullAddr);
+    onLocationSelect({ address: fullAddr, city: "", zip, lat: 0, lng: 0 });
+  };
+
   return (
     <div className="space-y-5">
-      {/* Explicitly load Leaflet CSS in case Next.js dynamic import strips it */}
+      {/* Leaflet CSS fallback */}
       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-      
-      {/* Manual Mode UI */}
+
+      {/* ── MANUAL MODE ── */}
       {manualMode && (
         <div className="space-y-4 bg-white p-6 rounded-2xl border-2 border-gray-200 shadow-lg mb-4">
           <div className="flex justify-between items-center mb-4">
             <h3 className="text-xl font-black font-display text-navy">Manual Location Entry</h3>
-            <button 
-              onClick={() => setManualMode(false)}
-              className="px-4 py-2 bg-navy text-white text-sm font-bold rounded-xl shadow-md hover:bg-navy-light transition-all flex items-center gap-2"
+            <button
+              onClick={() => { setManualMode(false); setManualConfirmed(false); }}
+              className="px-4 py-2 bg-navy text-white text-sm font-bold rounded-xl shadow-md hover:bg-navy/80 transition-all flex items-center gap-2"
             >
               <MapIcon className="w-4 h-4" /> Use Map Instead
             </button>
           </div>
-          
-          <div>
-            <label className="text-sm font-bold text-navy ml-1">Street Address</label>
+
+          <div className="space-y-3">
+            <div>
+              <label className="text-sm font-bold text-navy ml-1">
+                Street Address <span className="text-coral">*</span>
+              </label>
+              <input
+                type="text"
+                value={manualStreet}
+                onChange={(e) => {
+                  const val = e.target.value;
+                  setManualStreet(val);
+                  setManualConfirmed(false);
+                  // Only update parent when BOTH fields are valid
+                  if (val.trim() && manualZip.length === 5) {
+                    onAddressChange(val.trim());
+                    onLocationSelect({ address: val.trim(), city: "", zip: manualZip, lat: 0, lng: 0 });
+                  }
+                }}
+                placeholder="123 Main St, Boston, MA"
+                className={`w-full mt-1 px-4 py-3 bg-white border rounded-xl focus:ring-2 focus:ring-coral/20 outline-none transition-all ${
+                  manualStreet.trim() ? "border-green-400" : "border-gray-200"
+                }`}
+              />
+              {!manualStreet.trim() && manualZip.length > 0 && (
+                <p className="text-xs text-red-500 font-semibold mt-1 ml-1">⚠️ Street address is required</p>
+              )}
+            </div>
+
+            <div>
+              <label className="text-sm font-bold text-navy ml-1">
+                ZIP Code <span className="text-coral">*</span>
+              </label>
+              <input
+                type="text"
+                inputMode="numeric"
+                value={manualZip}
+                onChange={(e) => {
+                  const val = e.target.value.replace(/[^0-9]/g, "").slice(0, 5);
+                  setManualZip(val);
+                  setManualConfirmed(false);
+                  // Only update parent when BOTH fields are valid
+                  if (manualStreet.trim() && val.length === 5) {
+                    onAddressChange(manualStreet.trim());
+                    onLocationSelect({ address: manualStreet.trim(), city: "", zip: val, lat: 0, lng: 0 });
+                  }
+                }}
+                placeholder="e.g. 02108"
+                className={`w-full mt-1 px-4 py-3 bg-white border rounded-xl focus:ring-2 focus:ring-coral/20 outline-none transition-all ${
+                  manualZip.length === 5 ? "border-green-400" : "border-gray-200"
+                }`}
+              />
+              {manualZip.length > 0 && manualZip.length < 5 && (
+                <p className="text-xs text-red-500 font-semibold mt-1 ml-1">⚠️ ZIP must be 5 digits ({5 - manualZip.length} remaining)</p>
+              )}
+              {!manualZip && manualStreet.trim().length > 0 && (
+                <p className="text-xs text-red-500 font-semibold mt-1 ml-1">⚠️ ZIP code is required</p>
+              )}
+            </div>
+
+            {/* Progress indicator */}
+            {(manualStreet.trim() || manualZip) && !(manualStreet.trim() && manualZip.length === 5) && (
+              <div className="flex items-center gap-2 p-3 bg-amber-50 border border-amber-200 rounded-xl">
+                <span className="text-amber-600 text-sm font-semibold">
+                  {!manualStreet.trim() && !manualZip ? "" :
+                   !manualStreet.trim() ? "📝 Please add your street address" :
+                   manualZip.length < 5 ? `📮 Enter ${5 - manualZip.length} more digit${5 - manualZip.length !== 1 ? "s" : ""} for ZIP` :
+                   ""}
+                </span>
+              </div>
+            )}
+
+            <button
+              onClick={handleManualConfirm}
+              disabled={!manualStreet.trim() || manualZip.length !== 5}
+              className="w-full py-3.5 bg-coral text-white font-bold rounded-xl hover:bg-coral/90 transition-all disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+            >
+              <CheckCircle2 className="w-5 h-5" />
+              Confirm This Address
+            </button>
+          </div>
+
+          {manualConfirmed && (
+            <div className="flex items-start gap-3 p-4 bg-green-50 border border-green-200 rounded-2xl">
+              <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
+              <div>
+                <p className="text-sm font-bold text-green-700">📍 Location Saved — You can continue!</p>
+                <p className="text-sm text-green-600 mt-0.5">{manualStreet || `ZIP: ${manualZip}`}</p>
+                {!manualZip && (
+                  <p className="text-xs text-amber-600 mt-1 font-medium">
+                    ⚠️ No ZIP entered — travel fee will be estimated after booking.
+                  </p>
+                )}
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* ── MAP MODE ── */}
+      <div className={manualMode ? "hidden" : "block"}>
+        {/* Top Action Buttons */}
+        <div className="flex flex-col sm:flex-row gap-3">
+          <button
+            onClick={handleLocateMe}
+            disabled={locating}
+            className="flex-1 flex items-center justify-center gap-2 px-4 py-3.5 bg-navy text-white font-bold rounded-xl shadow-md hover:bg-navy/80 transition-all disabled:opacity-50"
+          >
+            {locating ? <Loader2 className="w-5 h-5 animate-spin" /> : <LocateFixed className="w-5 h-5" />}
+            Locate Me Automatically
+          </button>
+          <button
+            onClick={() => setManualMode(true)}
+            className="flex-1 flex items-center justify-center gap-2 px-4 py-3.5 bg-coral text-white font-bold rounded-xl shadow-md hover:bg-coral/90 transition-all"
+          >
+            <Edit3 className="w-5 h-5" />
+            Enter Address Manually
+          </button>
+        </div>
+
+        {/* Search Input */}
+        <div className="space-y-2">
+          <label className="text-sm font-bold text-navy ml-1">Or Search Location</label>
+          <div className="relative">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
             <input
+              ref={inputRef}
               type="text"
               value={query}
-              onChange={(e) => {
-                setQuery(e.target.value);
-                onAddressChange(e.target.value);
-                onLocationSelect({ address: e.target.value, city: "", zip: manualZip, lat: 0, lng: 0 });
-              }}
-              placeholder="123 Main St, Boston"
-              className="w-full mt-1 px-4 py-3 bg-white border border-gray-200 rounded-xl focus:ring-2 focus:ring-coral/20 outline-none"
+              onChange={(e) => handleInputChange(e.target.value)}
+              onFocus={() => suggestions.length > 0 && setShowSuggestions(true)}
+              placeholder="Start typing an address in New England..."
+              className="w-full pl-12 pr-12 py-4 bg-gray-50 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-coral/20 focus:border-coral/40 outline-none transition-all font-medium"
             />
-          </div>
-          <div>
-            <label className="text-sm font-bold text-navy ml-1">ZIP Code (For Distance Calculation)</label>
-            <input
-              type="text"
-              value={manualZip}
-              onChange={(e) => {
-                const val = e.target.value.replace(/[^0-9]/g, "").slice(0, 5);
-                setManualZip(val);
-                onLocationSelect({ address: query, city: "", zip: val, lat: 0, lng: 0 });
-              }}
-              placeholder="e.g. 02108"
-              className="w-full mt-1 px-4 py-3 bg-white border border-gray-200 rounded-xl focus:ring-2 focus:ring-coral/20 outline-none"
-            />
-          </div>
-        </div>
-      )}
-
-      {/* Map Mode UI */}
-      <div className={manualMode ? "hidden" : "block"}>
-      {/* Top Action Buttons */}
-      <div className="flex flex-col sm:flex-row gap-3">
-        <button
-          onClick={handleLocateMe}
-          disabled={locating}
-          className="flex-1 flex items-center justify-center gap-2 px-4 py-3.5 bg-navy text-white font-bold rounded-xl shadow-md hover:bg-navy-light transition-all disabled:opacity-50"
-        >
-          {locating ? <Loader2 className="w-5 h-5 animate-spin" /> : <LocateFixed className="w-5 h-5" />}
-          Locate Me Automatically
-        </button>
-        <button
-          onClick={() => setManualMode(true)}
-          className="flex-1 flex items-center justify-center gap-2 px-4 py-3.5 bg-coral text-white font-bold rounded-xl shadow-md hover:bg-coral-dark transition-all"
-        >
-          <Edit3 className="w-5 h-5" />
-          Enter Address Manually
-        </button>
-      </div>
-
-      {/* Search Input */}
-      <div className="space-y-2">
-        <label className="text-sm font-bold text-navy ml-1">
-          Or Search Location
-        </label>
-        <div className="relative">
-          <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
-          <input
-            ref={inputRef}
-            type="text"
-            value={query}
-            onChange={(e) => handleInputChange(e.target.value)}
-            onFocus={() => suggestions.length > 0 && setShowSuggestions(true)}
-            placeholder="Start typing an address in New England..."
-            className="w-full pl-12 pr-12 py-4 bg-gray-50 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-coral/20 focus:border-coral/40 outline-none transition-all font-medium"
-          />
-          {isSearching && (
-            <Loader2 className="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 animate-spin text-coral" />
-          )}
-          {query && !isSearching && (
-            <button
-              onClick={() => {
-                setQuery("");
-                onAddressChange("");
-                setSuggestions([]);
-              }}
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors bg-white rounded-full p-1 shadow-sm"
-            >
-              <X className="w-5 h-5" />
-            </button>
-          )}
-
-          {/* Suggestions Dropdown */}
-          {showSuggestions && suggestions.length > 0 && (
-            <div
-              ref={suggestionsRef}
-              className="absolute z-50 w-full mt-2 bg-white border border-gray-200 rounded-2xl shadow-2xl shadow-navy/10 overflow-hidden"
-            >
-              {suggestions.map((result) => {
-                const addr = result.address;
-                const primary = [addr?.house_number, addr?.road]
-                  .filter(Boolean)
-                  .join(" ");
-                const secondary = [
-                  addr?.city || addr?.town || addr?.village,
-                  addr?.state,
-                  addr?.postcode,
-                ]
-                  .filter(Boolean)
-                  .join(", ");
-
-                return (
-                  <button
-                    key={result.place_id}
-                    onClick={() => selectSuggestion(result)}
-                    className="w-full text-left px-5 py-3.5 hover:bg-coral/5 transition-colors flex items-start gap-3 border-b border-gray-50 last:border-b-0"
-                  >
-                    <MapPin className="w-4 h-4 text-coral mt-0.5 shrink-0" />
-                    <div className="min-w-0">
-                      <p className="font-semibold text-navy text-sm truncate">
-                        {primary || result.display_name.split(",")[0]}
-                      </p>
-                      <p className="text-xs text-gray-500 truncate">
-                        {secondary || result.display_name}
-                      </p>
-                    </div>
-                  </button>
-                );
-              })}
-            </div>
-          )}
-        </div>
-      </div>
-
-      {/* Map */}
-      <div className="relative rounded-2xl border-2 border-gray-200 bg-gray-100 shadow-inner" style={{ overflow: 'hidden' }}>
-        <div
-          ref={mapContainerRef}
-          className={`w-full h-full rounded-2xl md:rounded-3xl shadow-inner bg-[#f8f9fc] ${
-            isDragging ? "cursor-grabbing" : "cursor-crosshair"
-          }`}
-          style={{ minHeight: "400px", position: "relative", zIndex: 1 }}
-        >
-          {/* Global styles for Leaflet overrides */}
-          <style>{`
-            .leaflet-container { background: #f8f9fc; font-family: 'Inter', sans-serif; }
-            .leaflet-control-zoom { border: none !important; box-shadow: 0 8px 24px rgba(0,0,0,0.12) !important; border-radius: 12px !important; overflow: hidden; margin: 16px !important; }
-            .leaflet-control-zoom a { background: rgba(255,255,255,0.9) !important; backdrop-filter: blur(12px); color: #071B3A !important; width: 36px !important; height: 36px !important; line-height: 36px !important; transition: all 0.2s !important; border-bottom: 1px solid rgba(0,0,0,0.05) !important; }
-            .leaflet-control-zoom a:hover { background: #071B3A !important; color: #C9232D !important; }
-            .leaflet-control-attribution { background: rgba(255,255,255,0.7) !important; backdrop-filter: blur(4px); border-radius: 4px 0 0 0; font-size: 9px !important; color: #9CA3AF !important; }
-            .leaflet-control-attribution a { color: #071B3A !important; }
-            @keyframes bounce-in { 0% { transform: scale(0.3) translateY(20px); opacity: 0; } 50% { transform: scale(1.1) translateY(-5px); } 100% { transform: scale(1) translateY(0); opacity: 1; } }
-          `}</style>
-        </div>
-        {!mapReady && (
-          <div className="absolute inset-0 flex items-center justify-center bg-gray-100 z-10">
-            <div className="text-center">
-              <Loader2 className="w-8 h-8 animate-spin text-coral mx-auto mb-3" />
-              <p className="text-sm text-gray-500 font-medium">
-                Loading map...
-              </p>
-            </div>
-          </div>
-        )}
-
-        {/* Dragging indicator */}
-        {isDragging && (
-          <div className="absolute top-4 left-1/2 -translate-x-1/2 z-20 px-4 py-2 bg-navy/90 backdrop-blur text-white text-xs font-bold rounded-full shadow-lg">
-            Release to set location
-          </div>
-        )}
-
-        {/* Drag hint badge */}
-        {mapReady && !isDragging && (
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 px-4 py-2 bg-white/90 backdrop-blur border border-gray-200 text-gray-600 text-xs font-semibold rounded-full shadow-lg flex items-center gap-2">
-            <GripVertical className="w-3.5 h-3.5" />
-            Drag the pin or click the map to adjust
-          </div>
-        )}
-      </div>
-
-      {/* Selected location display */}
-      {selectedLocation && (
-        <div className="flex items-start gap-3 p-4 bg-mint/5 border border-mint/20 rounded-2xl">
-          <div className="w-9 h-9 rounded-full bg-mint/20 text-mint flex items-center justify-center shrink-0 mt-0.5">
-            <Navigation className="w-4 h-4" />
-          </div>
-          <div className="flex-1 min-w-0">
-            <p className="text-xs font-bold text-mint uppercase tracking-wider mb-1">📍 Event Location Confirmed</p>
-            {selectedLocation.street && (
-              <p className="text-sm font-bold text-navy">{selectedLocation.street}</p>
+            {isSearching && <Loader2 className="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 animate-spin text-coral" />}
+            {query && !isSearching && (
+              <button
+                onClick={() => { setQuery(""); onAddressChange(""); setSuggestions([]); }}
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors bg-white rounded-full p-1 shadow-sm"
+              >
+                <X className="w-5 h-5" />
+              </button>
             )}
-            <div className="flex flex-wrap gap-x-3 gap-y-0.5 mt-1">
-              {selectedLocation.city && (
-                <span className="text-sm text-gray-600 font-medium">
-                  🏙 <span className="font-bold text-navy">{selectedLocation.city}</span>
-                </span>
-              )}
-              {selectedLocation.zip && (
-                <span className="text-sm text-gray-600 font-medium">
-                  📮 ZIP: <span className="font-bold text-navy">{selectedLocation.zip}</span>
-                </span>
-              )}
-              {!selectedLocation.street && !selectedLocation.city && (
-                <span className="text-sm text-gray-500">{selectedLocation.display}</span>
-              )}
-            </div>
+
+            {showSuggestions && suggestions.length > 0 && (
+              <div ref={suggestionsRef} className="absolute z-50 w-full mt-2 bg-white border border-gray-200 rounded-2xl shadow-2xl shadow-navy/10 overflow-hidden">
+                {suggestions.map((result) => {
+                  const addr = result.address;
+                  const primary = [addr?.house_number, addr?.road].filter(Boolean).join(" ");
+                  const secondary = [addr?.city || addr?.town || addr?.village, addr?.state, addr?.postcode].filter(Boolean).join(", ");
+                  return (
+                    <button
+                      key={result.place_id}
+                      onClick={() => selectSuggestion(result)}
+                      className="w-full text-left px-5 py-3.5 hover:bg-coral/5 transition-colors flex items-start gap-3 border-b border-gray-50 last:border-b-0"
+                    >
+                      <MapPin className="w-4 h-4 text-coral mt-0.5 shrink-0" />
+                      <div className="min-w-0">
+                        <p className="font-semibold text-navy text-sm truncate">{primary || result.display_name.split(",")[0]}</p>
+                        <p className="text-xs text-gray-500 truncate">{secondary || result.display_name}</p>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            )}
           </div>
         </div>
-      )}
+
+        {/* Map Container — fixed height so Leaflet/Google Maps can render */}
+        <div className="relative rounded-2xl border-2 border-gray-200 overflow-hidden bg-gray-100 shadow-inner" style={{ height: "420px" }}>
+          <div
+            ref={mapContainerRef}
+            className={`w-full h-full ${isDragging ? "cursor-grabbing" : "cursor-crosshair"}`}
+            style={{ position: "relative", zIndex: 1 }}
+          >
+            <style>{`
+              .leaflet-container { background: #f8f9fc; font-family: 'Inter', sans-serif; }
+              .leaflet-control-zoom { border: none !important; box-shadow: 0 8px 24px rgba(0,0,0,0.12) !important; border-radius: 12px !important; overflow: hidden; margin: 16px !important; }
+              .leaflet-control-zoom a { background: rgba(255,255,255,0.9) !important; backdrop-filter: blur(12px); color: #071B3A !important; width: 36px !important; height: 36px !important; line-height: 36px !important; transition: all 0.2s !important; border-bottom: 1px solid rgba(0,0,0,0.05) !important; }
+              .leaflet-control-zoom a:hover { background: #071B3A !important; color: #C9232D !important; }
+              .leaflet-control-attribution { background: rgba(255,255,255,0.7) !important; backdrop-filter: blur(4px); border-radius: 4px 0 0 0; font-size: 9px !important; color: #9CA3AF !important; }
+              .leaflet-control-attribution a { color: #071B3A !important; }
+              @keyframes bounce-in { 0% { transform: scale(0.3) translateY(20px); opacity: 0; } 50% { transform: scale(1.1) translateY(-5px); } 100% { transform: scale(1) translateY(0); opacity: 1; } }
+            `}</style>
+          </div>
+
+          {!mapReady && (
+            <div className="absolute inset-0 flex items-center justify-center bg-gray-100 z-10">
+              <div className="text-center">
+                <Loader2 className="w-8 h-8 animate-spin text-coral mx-auto mb-3" />
+                <p className="text-sm text-gray-500 font-medium">Loading map...</p>
+              </div>
+            </div>
+          )}
+
+          {isDragging && (
+            <div className="absolute top-4 left-1/2 -translate-x-1/2 z-20 px-4 py-2 bg-navy/90 backdrop-blur text-white text-xs font-bold rounded-full shadow-lg">
+              Release to set location
+            </div>
+          )}
+
+          {mapReady && !isDragging && (
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 px-4 py-2 bg-white/90 backdrop-blur border border-gray-200 text-gray-600 text-xs font-semibold rounded-full shadow-lg flex items-center gap-2">
+              <GripVertical className="w-3.5 h-3.5" />
+              Drag the pin or click the map to adjust
+            </div>
+          )}
+        </div>
+
+        {/* Selected location display */}
+        {selectedLocation && (
+          <div className="flex items-start gap-3 p-4 bg-mint/5 border border-mint/20 rounded-2xl">
+            <div className="w-9 h-9 rounded-full bg-mint/20 text-mint flex items-center justify-center shrink-0 mt-0.5">
+              <Navigation className="w-4 h-4" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="text-xs font-bold text-mint uppercase tracking-wider mb-1">📍 Event Location Confirmed</p>
+              {selectedLocation.street && <p className="text-sm font-bold text-navy">{selectedLocation.street}</p>}
+              <div className="flex flex-wrap gap-x-3 gap-y-0.5 mt-1">
+                {selectedLocation.city && (
+                  <span className="text-sm text-gray-600 font-medium">🏙 <span className="font-bold text-navy">{selectedLocation.city}</span></span>
+                )}
+                {selectedLocation.zip && (
+                  <span className="text-sm text-gray-600 font-medium">📮 ZIP: <span className="font-bold text-navy">{selectedLocation.zip}</span></span>
+                )}
+                {!selectedLocation.street && !selectedLocation.city && (
+                  <span className="text-sm text-gray-500">{selectedLocation.display}</span>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
 }
-

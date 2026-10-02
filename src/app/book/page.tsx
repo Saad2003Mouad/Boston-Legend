@@ -7,8 +7,6 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import Logo from "@/components/shared/Logo";
 
-import prisma from "@/lib/prisma";
-
 export const metadata: Metadata = constructMetadata({
   title: "Book Your Event | American Legend Ice Cream Truck",
   description: "Book your ice cream truck or van experience for any event in New England. Easy online booking in just a few steps.",
@@ -36,21 +34,6 @@ export default async function BookPage({
   const params = await searchParams;
   if (!params.package) {
     redirect("/packages");
-  }
-  let dbPackages: any[] = [];
-  try {
-    const timeout = new Promise<any[]>((_, reject) =>
-      setTimeout(() => reject(new Error("DB timeout")), 15000)
-    );
-    dbPackages = await Promise.race([
-      prisma.package.findMany({
-        where: { isActive: true },
-        orderBy: { sortOrder: "asc" },
-      }),
-      timeout,
-    ]);
-  } catch (err) {
-    console.error("[Book] Failed to fetch packages (using static fallback):", err);
   }
 
   return (
@@ -88,7 +71,7 @@ export default async function BookPage({
           </div>
 
           <Suspense fallback={<BookingLoading />}>
-            <MultiStepQuoteForm dbPackages={dbPackages} />
+            <MultiStepQuoteForm />
           </Suspense>
         </div>
       </main>

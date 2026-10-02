@@ -32,7 +32,7 @@ import FAQSection from "@/components/shared/FAQSection";
 import BrandCarousel from "@/components/shared/BrandCarousel";
 import TestimonialsCarousel from "@/components/home/TestimonialsCarousel";
 import Image from "next/image";
-import { prisma } from "@/lib/prisma";
+import { PACKAGES } from "@/lib/packages-data";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -256,55 +256,25 @@ export default async function CityPage({ params }: Props) {
   const h2Text = H2_TEMPLATES[(seed + 1) % H2_TEMPLATES.length](city.name, stateCode);
   const introText = INTRO_TEMPLATES[(seed + 2) % INTRO_TEMPLATES.length](city.name);
   
-  // Cache packages fetch to prevent connection exhaustion during static generation of 500+ cities
-  const getPackages = unstable_cache(
-    async () => {
-      try {
-        return await prisma.package.findMany({
-          where: { isActive: true },
-          orderBy: { sortOrder: 'asc' }
-        });
-      } catch (err) {
-        console.error("[CityPage] Failed to fetch packages:", err);
-        return [];
-      }
-    },
-    ['active-packages'],
-    { revalidate: 3600, tags: ['packages'] }
-  );
-
-  const dbPackages = await getPackages();
-
-  const formattedPackages = dbPackages.map((pkg) => {
-    let featuresList: string[] = [];
-    try {
-      featuresList = pkg.features ? JSON.parse(pkg.features) : [];
-    } catch {}
-
-    const durationHrs = Math.floor(pkg.durationMins / 60);
-    const durationMinsRem = pkg.durationMins % 60;
-    const durationLabel = pkg.durationMins === 0 
-      ? "Custom Duration" 
-      : (durationHrs > 0 ? `${durationHrs}h ` : "") + (durationMinsRem > 0 ? `${durationMinsRem}m` : "") + " Service";
-
+  const formattedPackages = PACKAGES.map((pkg) => {
     return {
       id: pkg.id,
       slug: pkg.slug,
       name: pkg.name,
-      tagline: pkg.description || "The perfect ice cream experience",
-      description: pkg.description || "",
-      vehicleType: pkg.serviceType,
-      vehicleLabel: pkg.serviceType === "TRUCK" ? "Ice Cream Truck" : pkg.serviceType === "VAN" ? "Premium Van" : "Custom",
+      tagline: pkg.tagline,
+      description: pkg.description,
+      vehicleType: pkg.vehicleType,
+      vehicleLabel: pkg.vehicleLabel,
       servings: pkg.servings,
       price: pkg.price,
-      extraGuestPrice: pkg.extraGuestPrice ?? 5,
+      extraGuestPrice: pkg.extraGuestPrice,
       durationMins: pkg.durationMins,
-      durationLabel: durationLabel.trim(),
+      durationLabel: pkg.durationLabel,
       badge: pkg.badge,
-      badgeVariant: pkg.badge === "Most Popular" || pkg.badge?.includes("Value") ? "coral" : (pkg.badge === "Corporate Choice" || pkg.badge?.includes("Luxury") ? "gold" : "mint"),
-      features: featuresList,
-      isPopular: pkg.badge === "Most Popular",
-      isCustom: pkg.serviceType === "CUSTOM",
+      badgeVariant: pkg.badgeVariant || (pkg.badge === "Most Popular" || pkg.badge?.includes("Value") ? "coral" : (pkg.badge === "Corporate Choice" || pkg.badge?.includes("Luxury") ? "gold" : "mint")),
+      features: pkg.features,
+      isPopular: pkg.isPopular,
+      isCustom: pkg.isCustom,
       sortOrder: pkg.sortOrder,
     };
   });
@@ -403,7 +373,7 @@ export default async function CityPage({ params }: Props) {
 
             <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
               <Link
-                href={`/book?city=${encodeURIComponent(city.name)}`}
+                href="/packages"
                 className={`inline-flex items-center gap-3 px-10 py-5 font-bold text-base rounded-full transition-all duration-300 hover:scale-105 ${theme.buttonClass}`}
               >
                 Book in {city.name} <ArrowRight size={18} />

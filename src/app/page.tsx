@@ -15,6 +15,8 @@ import FinalCTA from "@/components/home/FinalCTA";
 
 import { prisma } from "@/lib/prisma";
 
+import { PACKAGES } from "@/lib/packages-data";
+
 export const metadata: Metadata = constructMetadata({
   description: "New England's premier ice cream truck catering service. Bringing iconic frozen treats, artisan novelties, and legendary sweet celebrations to birthdays, corporate events, and weddings across all 6 states.",
 });
@@ -22,47 +24,26 @@ export const metadata: Metadata = constructMetadata({
 export const revalidate = 3600; // Cache page for 1 hour for lightning fast loads
 
 export default async function HomePage() {
-  let dbPackages: any[] = [];
-  try {
-    dbPackages = await prisma.package.findMany({
-      where: { isActive: true },
-      orderBy: { sortOrder: 'asc' }
-    });
-  } catch (err) {
-    console.error("[Home] Failed to fetch packages:", err);
-  }
-
-  const formattedPackages = dbPackages.map((pkg) => {
-    let featuresList: string[] = [];
-    try {
-      featuresList = pkg.features ? JSON.parse(pkg.features) : [];
-    } catch {}
-
-    const durationHrs = Math.floor(pkg.durationMins / 60);
-    const durationMinsRem = pkg.durationMins % 60;
-    const durationLabel = pkg.durationMins === 0 
-      ? "Custom Duration" 
-      : (durationHrs > 0 ? `${durationHrs}h ` : "") + (durationMinsRem > 0 ? `${durationMinsRem}m` : "") + " Service";
-
+  const formattedPackages = PACKAGES.map((pkg) => {
     return {
       id: pkg.id,
       slug: pkg.slug,
       name: pkg.name,
-      tagline: pkg.description || "The perfect ice cream experience",
-      description: pkg.description || "",
-      imageUrl: pkg.imageUrl,
-      vehicleType: pkg.serviceType,
-      vehicleLabel: pkg.serviceType === "TRUCK" ? "Ice Cream Truck" : pkg.serviceType === "VAN" ? "Premium Van" : "Custom",
+      tagline: pkg.tagline,
+      description: pkg.description,
+      imageUrl: `/images/${pkg.vehicleType === "VAN" ? "van" : "truck"}_packages/${pkg.slug}.jpg`,
+      vehicleType: pkg.vehicleType,
+      vehicleLabel: pkg.vehicleLabel,
       servings: pkg.servings,
       price: pkg.price,
-      extraGuestPrice: pkg.extraGuestPrice ?? 5,
+      extraGuestPrice: pkg.extraGuestPrice,
       durationMins: pkg.durationMins,
-      durationLabel: durationLabel.trim(),
+      durationLabel: pkg.durationLabel,
       badge: pkg.badge,
-      badgeVariant: pkg.badge === "Most Popular" || pkg.badge?.includes("Value") ? "coral" : (pkg.badge === "Corporate Choice" || pkg.badge?.includes("Luxury") ? "gold" : "mint"),
-      features: featuresList,
-      isPopular: pkg.badge === "Most Popular",
-      isCustom: pkg.serviceType === "CUSTOM",
+      badgeVariant: pkg.badgeVariant || (pkg.badge === "Most Popular" || pkg.badge?.includes("Value") ? "coral" : (pkg.badge === "Corporate Choice" || pkg.badge?.includes("Luxury") ? "gold" : "mint")),
+      features: pkg.features,
+      isPopular: pkg.isPopular,
+      isCustom: pkg.isCustom,
       sortOrder: pkg.sortOrder,
     };
   });
