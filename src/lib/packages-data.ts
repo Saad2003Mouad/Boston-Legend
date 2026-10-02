@@ -397,8 +397,8 @@ export function getPackageBySlug(slug: string): Package | undefined {
 
 export function formatDuration(mins: number): string {
   if (mins === 0) return "Custom";
-  if (mins < 60) return \`\${mins} Minutes\`;
+  if (mins < 60) return `${mins} Minutes`;
   if (mins === 60) return "1 Hour";
-  if (mins % 60 === 0) return \`\${mins / 60} Hours\`;
-  return \`\${Math.floor(mins / 60)}h \${mins % 60}m\`;
+  if (mins % 60 === 0) return `${mins / 60} Hours`;
+  return `${Math.floor(mins / 60)}h ${mins % 60}m`;
 }
