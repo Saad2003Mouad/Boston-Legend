@@ -87,7 +87,7 @@ export default function FinalCTA({ themeColor, topColor }: FinalCTAProps = {}) {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-5 w-full sm:w-auto mb-12">
               <Link
-                href="/book"
+                href="/packages"
                 className="group relative flex items-center justify-center gap-3 w-full sm:w-auto px-10 py-5 rounded-full font-black text-sm tracking-[0.15em] uppercase transition-all duration-300 transform hover:scale-[1.02] shadow-xl hover:shadow-2xl bg-[#FFF4D6]"
                 style={{ color: bgColor }}
               >

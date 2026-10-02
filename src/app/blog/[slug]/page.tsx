@@ -102,7 +102,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </Link>
           
           <div className="flex gap-4">
-            <Link href="/book" className="px-8 py-3 rounded-full bg-coral text-white font-black text-sm uppercase tracking-widest hover:bg-navy transition-colors shadow-md hover:shadow-xl transform hover:-translate-y-1">
+            <Link href="/packages" className="px-8 py-3 rounded-full bg-coral text-white font-black text-sm uppercase tracking-widest hover:bg-navy transition-colors shadow-md hover:shadow-xl transform hover:-translate-y-1">
               Book Our Truck
             </Link>
           </div>

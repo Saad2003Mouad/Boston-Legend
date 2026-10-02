@@ -304,7 +304,7 @@ export default function AdminDashboard() {
               {stats.pending} Pending Review
             </Link>
           )}
-          <Link href="/book" target="_blank"
+          <Link href="/packages" target="_blank"
             className="flex items-center gap-2 px-4 py-2.5 bg-coral text-white rounded-xl text-sm font-bold hover:bg-coral-dark transition-colors shadow-sm">
             <Plus className="w-4 h-4" />
             New Booking
@@ -635,7 +635,7 @@ export default function AdminDashboard() {
         <SectionHeader title="Quick Actions" sub="Common admin tasks" />
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
           {[
-            { href: "/book", label: "New Booking", icon: Plus, color: "bg-coral/10 text-coral", external: true },
+            { href: "/packages", label: "New Booking", icon: Plus, color: "bg-coral/10 text-coral", external: true },
             { href: "/admin/inquiries", label: "View Inquiries", icon: Inbox, color: "bg-blue-500/10 text-blue-400" },
             { href: "/admin/customers", label: "Customers", icon: Users, color: "bg-purple-500/10 text-purple-400" },
             { href: "/admin/packages", label: "Packages", icon: Package, color: "bg-amber-500/10 text-amber-400" },

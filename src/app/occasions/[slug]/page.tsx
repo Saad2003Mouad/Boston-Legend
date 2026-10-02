@@ -140,7 +140,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
               </ul>
 
               <Link 
-                href="/book" 
+                href="/packages" 
                 className="inline-flex items-center gap-2 px-10 py-5 bg-coral text-white text-lg font-bold rounded-full hover:bg-navy transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 group"
               >
                 {service.ctaText}

@@ -138,7 +138,7 @@ export default function ContactPage() {
                   <p className="font-bold text-cream">Want to book an event?</p>
                   <p className="text-sm text-cream/60 mt-1">Skip the form and go straight to booking.</p>
                 </div>
-                <Link href="/book" className="w-12 h-12 rounded-full bg-coral text-cream flex items-center justify-center hover:scale-105 transition-transform shrink-0 shadow-lg shadow-coral/20">
+                <Link href="/packages" className="w-12 h-12 rounded-full bg-coral text-cream flex items-center justify-center hover:scale-105 transition-transform shrink-0 shadow-lg shadow-coral/20">
                   <ArrowRight size={20} />
                 </Link>
               </div>

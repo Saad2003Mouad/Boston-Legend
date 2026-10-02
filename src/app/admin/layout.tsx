@@ -380,7 +380,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
 
             {/* Quick Create */}
             <Link
-              href="/book"
+              href="/packages"
               target="_blank"
               className="hidden md:flex items-center gap-1.5 px-3 py-2 bg-coral text-white rounded-xl text-[13px] font-bold hover:bg-coral-dark transition-colors shadow-sm"
             >

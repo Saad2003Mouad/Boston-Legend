@@ -209,7 +209,7 @@ export default async function BlogPage() {
           Book American Legend Ice Cream Truck for your next birthday, corporate event, or wedding and let us bring the joy.
         </p>
         <Link
-          href="/book"
+          href="/packages"
           className="inline-flex items-center gap-2 bg-coral text-white px-8 py-4 rounded-full font-black text-lg hover:bg-coral/90 transition-colors shadow-lg shadow-coral/30"
         >
           Book Your Event →
