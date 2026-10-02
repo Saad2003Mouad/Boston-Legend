@@ -9,7 +9,7 @@ export default async function PackagesPage() {
       name: pkg.name,
       tagline: pkg.tagline,
       description: pkg.description,
-      imageUrl: `/images/${pkg.vehicleType === "VAN" ? "van" : "truck"}_packages/${pkg.slug}.jpg`,
+      imageUrl: pkg.imageUrl || `/images/${pkg.vehicleType === "VAN" ? "van" : "truck"}_packages/${pkg.slug}.jpg`,
       vehicleType: pkg.vehicleType,
       vehicleLabel: pkg.vehicleLabel,
       servings: pkg.servings,
