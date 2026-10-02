@@ -268,6 +268,7 @@ function PackageGrid({ packages, accentColor }: { packages: any[]; accentColor: 
                   fill 
                   className="object-contain p-6 transition-transform duration-700 group-hover:scale-110 drop-shadow-2xl"
                   sizes="(max-width: 768px) 100vw, 33vw"
+                  priority={i < 3}
                 />
                 {/* Smooth gradient blending into the header */}
                 <div className={`absolute bottom-0 left-0 w-full h-1/3 z-10 bg-gradient-to-t ${isHighlight ? "from-navy" : "from-[#FFFDF8]"} to-transparent pointer-events-none`} />
