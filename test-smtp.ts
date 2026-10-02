@@ -10,7 +10,7 @@ async function testSMTP() {
     requireTLS: true,
     auth: {
       user: "info@americanlegendicecreamtruck.com",
-      pass: "americanlegend2026"
+      pass: "Khaldoun#american2026"
     }
   });
 
