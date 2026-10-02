@@ -75,8 +75,7 @@ function baseTemplate(content: string, title: string) {
         <tr>
           <td class="hdr" style="padding:28px 32px 20px;text-align:center;border-bottom:1px solid ${BRAND_BORDER};">
             <a href="${SITE_URL}" target="_blank" style="text-decoration:none;display:inline-block;">
-              <img src="${LOGO_URL}" alt="${BUSINESS_CONFIG.name}" width="64" height="64" style="width:64px;height:64px;border-radius:50%;object-fit:cover;margin:0 auto 10px;border:1px solid ${BRAND_BORDER};"/>
-              <p style="margin:0;font-size:12px;font-weight:700;color:${BRAND_TEXT_MUTED};letter-spacing:1.5px;text-transform:uppercase;">${BUSINESS_CONFIG.name}</p>
+              <img src="${LOGO_URL}" alt="${BUSINESS_CONFIG.name}" style="width:100%;max-width:240px;height:auto;margin:0 auto;display:block;"/>
             </a>
           </td>
         </tr>
