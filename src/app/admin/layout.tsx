@@ -176,12 +176,11 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
     return (
       <div className="flex h-screen items-center justify-center bg-[#F9FAFB]">
         <div className="flex flex-col items-center gap-5">
-          <div className="relative animate-pulse">
-            <div className="w-16 h-16 rounded-2xl overflow-hidden shadow-lg">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <Image src="/images/logo_new.png" alt="American Legend Assistant" fill className="object-contain" sizes="48px" />
+          <div className="relative animate-pulse flex justify-center items-center">
+            <div className="relative w-64 h-24">
+              <Image src="/images/logo_new.png" alt="American Legend Assistant" fill className="object-contain" sizes="256px" priority />
             </div>
-            <div className="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-coral border-2 border-white animate-ping" />
+            <div className="absolute bottom-2 -right-2 w-4 h-4 rounded-full bg-coral border-2 border-white animate-ping" />
           </div>
           <p className="text-sm font-semibold text-gray-400">Loading dashboard...</p>
         </div>
