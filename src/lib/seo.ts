@@ -74,6 +74,9 @@ export function constructMetadata({
         "max-snippet": -1,
       },
     },
+    verification: {
+      google: "kznxQsBlKtEP132WZlUb7GE_HzXLOymnxiVxiX8w1_4",
+    },
     manifest: "/site.webmanifest",
   };
 }

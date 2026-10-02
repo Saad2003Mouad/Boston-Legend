@@ -32,8 +32,8 @@ async function main() {
   console.log('🌱 Seeding database...');
 
   // 1. Create Admin User
-  const adminEmail = 'saadmoad2004@gmail.com';
-  const adminPassword = 'Kals123456##';
+  const adminEmail = 'info@americanlegendicecreamtruck.com';
+  const adminPassword = 'americanlegend2026';
   const hashedPassword = await bcrypt.hash(adminPassword, 10);
 
   const admin = await prisma.user.upsert({
@@ -41,7 +41,7 @@ async function main() {
     update: {
       passwordHash: hashedPassword,
       role: 'OWNER',
-      name: 'Saad Moad',
+      name: 'Khaldoun',
       permissions: '["*"]',
       active: true,
     },
@@ -49,7 +49,7 @@ async function main() {
       email: adminEmail,
       passwordHash: hashedPassword,
       role: 'OWNER',
-      name: 'Saad Moad',
+      name: 'Khaldoun',
       permissions: '["*"]',
       active: true,
     },
