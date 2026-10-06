@@ -25,7 +25,7 @@ export async function POST(req: NextRequest, { params }: { params: Promise<{ id:
     }
 
     const replySubject = subject || "American Legend Ice Cream Truck Support Response";
-    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.bostonlegendicecreamtruck.com";
+    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://americanlegendicecreamtruck.com";
     
     const emailSent = await sendEmail({
       to: inquiry.email,

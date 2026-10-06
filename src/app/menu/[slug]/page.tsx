@@ -108,7 +108,7 @@ export default async function MenuItemPage({ params }: PageProps) {
     "@context": "https://schema.org/",
     "@type": "Product",
     name: item.name,
-    image: `https://www.bostonlegendicecream.com${item.image}`,
+    image: `https://americanlegendicecreamtruck.com${item.image}`,
     description: item.description,
     brand: {
       "@type": "Brand",
@@ -146,7 +146,7 @@ export default async function MenuItemPage({ params }: PageProps) {
       highPrice: "9.00",
       offerCount: "20",
       availability: "https://schema.org/InStock",
-      url: `https://www.bostonlegendicecream.com/menu/${item.slug}`,
+      url: `https://americanlegendicecreamtruck.com/menu/${item.slug}`,
       seller: {
         "@type": "Organization",
         name: "American Legend Ice Cream Truck",

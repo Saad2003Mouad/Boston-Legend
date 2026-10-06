@@ -110,7 +110,7 @@ export async function PATCH(req: NextRequest, { params }: { params: Promise<{ id
     // Send emails on status change
     try {
       if (status === "CONFIRMED" || status === "PENDING_PAYMENT") {
-        const portalUrl = `${process.env.NEXTAUTH_URL || 'https://bostonlegendwebflowio.vercel.app'}/customer/booking/${booking.id}`;
+        const portalUrl = `${process.env.NEXTAUTH_URL || 'https://americanlegendicecreamtruck.com'}/customer/booking/${booking.id}`;
         await sendBookingApprovedEmail(
           booking.customer.email,
           booking.customer.firstName,

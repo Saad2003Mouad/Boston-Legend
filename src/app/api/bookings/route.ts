@@ -234,7 +234,7 @@ export async function POST(req: Request) {
           booking.id
         );
       } else if (status === "CONFIRMED") {
-        const portalUrl = `${process.env.NEXTAUTH_URL || 'https://bostonlegendwebflowio.vercel.app'}/customer/booking/${booking.id}`;
+        const portalUrl = `${process.env.NEXTAUTH_URL || 'https://americanlegendicecreamtruck.com'}/customer/booking/${booking.id}`;
         await sendBookingApprovedEmail(
           email.toLowerCase(),
           firstName,

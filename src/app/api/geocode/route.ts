@@ -99,8 +99,8 @@ export async function GET(request: Request) {
     const res = await fetch(url, {
       headers: {
         "Accept-Language": "en",
-        "User-Agent": "BostonLegendIceCreamTruck/2.0 (info@bostonlegendicecreamtruck.com)",
-        "Referer": "https://bostonlegendicecreamtruck.com",
+        "User-Agent": "AmericanLegendIceCreamTruck/2.0 (info@americanlegendicecreamtruck.com)",
+        "Referer": "https://americanlegendicecreamtruck.com",
       },
       next: { revalidate: 60 },
     });

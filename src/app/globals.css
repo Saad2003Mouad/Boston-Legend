@@ -238,17 +238,4 @@
   box-shadow: none !important;
 }
 
-/* Move reCAPTCHA badge to the bottom-left so it doesn't overlap the AI Chatbot */
-.grecaptcha-badge {
-    width: 70px !important;
-    overflow: hidden !important;
-    transition: all 0.3s ease !important;
-    left: 4px !important;
-    right: auto !important;
-    bottom: 24px !important;
-    z-index: 50 !important;
-}
 
-.grecaptcha-badge:hover {
-    width: 256px !important;
-}

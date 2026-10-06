@@ -5,31 +5,6 @@ import { BUSINESS_CONFIG } from "@/lib/config";
 import { Phone, Mail, ArrowRight, CheckCircle, Clock } from "lucide-react";
 import Link from "next/link";
 
-const SITE_KEY = "6LchenctAAAAAHpLKDsK-Igil1E3rCXzI8J2DqzC";
-
-function useRecaptcha() {
-  useEffect(() => {
-    const existingScript = document.querySelector(`script[src*="recaptcha/enterprise"]`);
-    if (existingScript) return;
-    const script = document.createElement("script");
-    script.src = `https://www.google.com/recaptcha/enterprise.js?render=${SITE_KEY}`;
-    script.async = true;
-    document.head.appendChild(script);
-  }, []);
-
-  const getToken = (action: string): Promise<string> =>
-    new Promise((resolve, reject) => {
-      const w = window as any;
-      if (!w.grecaptcha?.enterprise) { reject(new Error("reCAPTCHA not loaded")); return; }
-      w.grecaptcha.enterprise.ready(async () => {
-        try { resolve(await w.grecaptcha.enterprise.execute(SITE_KEY, { action })); }
-        catch (err) { reject(err); }
-      });
-    });
-
-  return { getToken };
-}
-
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -41,19 +16,16 @@ export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [error, setError] = useState("");
-  const { getToken } = useRecaptcha();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setError("");
     try {
-      let recaptchaToken = "";
-      try { recaptchaToken = await getToken("CONTACT_FORM"); } catch {}
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...formData, recaptchaToken }),
+        body: JSON.stringify(formData),
       });
       const data = await res.json();
       if (res.ok && data.success) {
@@ -247,9 +219,6 @@ export default function ContactPage() {
                       </>
                     )}
                   </button>
-                  <p className="text-xs text-navy/40 mt-6 max-w-sm">
-                    This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" className="underline hover:text-navy">Privacy Policy</a> and <a href="https://policies.google.com/terms" className="underline hover:text-navy">Terms of Service</a> apply.
-                  </p>
                 </div>
               </form>
             )}

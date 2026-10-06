@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
 import { sendContactMessageNotification } from '@/lib/email';
-import { isHuman } from '@/lib/recaptcha';
 
 // Simple name sanity check — rejects obvious bot-generated strings
 // (all-consonants, random char sequences, etc.)
@@ -25,14 +24,6 @@ export async function POST(request: Request) {
       console.warn('[Contact] Honeypot triggered — rejecting bot submission');
       // Return 200 so bots think it worked
       return NextResponse.json({ success: true, messageId: 'msg-' + Date.now() });
-    }
-
-    // ── reCAPTCHA Enterprise verification ───────────────────────
-    const recaptchaToken = body.recaptchaToken;
-    const human = await isHuman(recaptchaToken || '', 'CONTACT_FORM');
-    if (!human) {
-      console.warn('[Contact] reCAPTCHA score too low — rejected');
-      return NextResponse.json({ error: 'Security check failed. Please try again.' }, { status: 400 });
     }
 
     // ── Field validation ────────────────────────────────────────

@@ -72,7 +72,7 @@ export async function geocodeAddress(address: string): Promise<GeoResult | null>
       countrycodes: "us",
     });
     const res = await fetch(`${NOMINATIM_BASE}/search?${params}`, {
-      headers: { "User-Agent": "BostonLegendIceCreamTruck/1.0" },
+      headers: { "User-Agent": "AmericanLegendIceCreamTruck/1.0" },
     });
     if (!res.ok) return null;
     const data = await res.json();
@@ -103,7 +103,7 @@ export async function searchAddresses(query: string): Promise<{ label: string; v
       countrycodes: "us",
     });
     const res = await fetch(`${NOMINATIM_BASE}/search?${params}`, {
-      headers: { "User-Agent": "BostonLegendIceCreamTruck/1.0" },
+      headers: { "User-Agent": "AmericanLegendIceCreamTruck/1.0" },
     });
     if (!res.ok) return [];
     const data = await res.json();
@@ -162,7 +162,7 @@ export class OSRMRoutingProvider implements RoutingProvider {
     try {
       const fetchRoute = async (url: string) => {
         const res = await fetch(url, {
-          headers: { "User-Agent": "BostonLegendIceCreamTruck/1.0 (info@bostonlegendicecream.com)" },
+          headers: { "User-Agent": "AmericanLegendIceCreamTruck/1.0 (info@americanlegendicecreamtruck.com)" },
           signal: AbortSignal.timeout(8000),
           cache: "no-store"
         });
@@ -284,7 +284,7 @@ export async function reverseGeocode(lat: number, lng: number): Promise<GeoResul
   try {
     const params = new URLSearchParams({ lat: String(lat), lon: String(lng), format: "json", addressdetails: "1" });
     const res = await fetch(`${NOMINATIM_BASE}/reverse?${params}`, {
-      headers: { "User-Agent": "BostonLegendIceCreamTruck/1.0" },
+      headers: { "User-Agent": "AmericanLegendIceCreamTruck/1.0" },
     });
     if (!res.ok) return null;
     const item = await res.json();
